@@ -1,4 +1,4 @@
-# Nöro Dikkat
+# Neuro Attention - Nöro Dikkat
 Nöro Dikkat Eğitim Yazılımı<br/>
 01.12.2019 tarihinde proje sözleşmesi imzalanmıştır.<br/>
 Hedeflenen Süre : 3 AY<br/>
