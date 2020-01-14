@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\SeyahatAcentasi\SeyahatAcentasi\SeyahatAcentasi\lib\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="ChreneLib">
+      <HintPath>..\..\..\SeyahatAcentasi\SeyahatAcentasi\SeyahatAcentasi\source\ChreneLib.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI">
       <HintPath>..\..\..\SeyahatAcentasi\SeyahatAcentasi\SeyahatAcentasi\source\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
