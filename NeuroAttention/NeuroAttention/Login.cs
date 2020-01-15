@@ -97,12 +97,32 @@ namespace NeuroAttention
 
         private void txt_sifre_TextChanged(object sender, EventArgs e)
         {
-           
+            if (txt_kullaniciadi.Text != "KULLANICI ADI" & txt_sifre.Text != "ŞİFRE")
+            {
+                btn_logindisabled.Visible = false;
+                btn_loginenabled.Visible = true;
+            }
+
+            else
+            {
+                btn_logindisabled.Visible = true;
+                btn_loginenabled.Visible = false;
+            }
         }
 
         private void txt_kullaniciadi_TextChanged(object sender, EventArgs e)
         {
-           
+            if(txt_kullaniciadi.Text!="KULLANICI ADI" & txt_sifre.Text!= "ŞİFRE")
+            {
+                btn_logindisabled.Visible = false;
+                btn_loginenabled.Visible = true;
+            }
+
+            else
+            {
+                btn_logindisabled.Visible = true;
+                btn_loginenabled.Visible = false;
+            }
         }
 
         private void gunaAdvenceButton5_Click(object sender, EventArgs e)
@@ -118,6 +138,39 @@ namespace NeuroAttention
             }
         }
 
-      
+        private void gunaTileButton1_MouseHover(object sender, EventArgs e)
+        {
+            gunaElipsePanel_duyuru.Visible = true;
+        }
+
+        private void gunaTileButton1_MouseLeave(object sender, EventArgs e)
+        {
+            gunaElipsePanel_duyuru.Visible = false;
+        }
+
+        private void gunaTileButton1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void gunaPanel3_MouseLeave(object sender, EventArgs e)
+        {
+            gunaElipsePanel_duyuru.Visible = false;
+        }
+
+        private void gunaElipsePanel_duyuru_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaPanel2_MouseHover(object sender, EventArgs e)
+        {
+            gunaElipsePanel_duyuru.Visible = false;
+        }
+
+        private void gunaPanel_rightside_MouseHover(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
