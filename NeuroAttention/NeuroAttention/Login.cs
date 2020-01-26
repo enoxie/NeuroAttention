@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,48 @@ namespace NeuroAttention
         public Login()
         {
             InitializeComponent();
+        }
+     
+
+        SqlConnection con;
+        SqlCommand cmd;
+        SqlDataReader dr;
+
+
+        /* Database Connection */
+        public string conString = ("Data Source = 94.73.146.4; Initial Catalog = db60B; User Id = user60B; Password = PIuc71A0MQmp62Y;");
+        //
+
+        public void login()
+        {
+            string user = txt_kullaniciadi.Text;
+            string pass = txt_sifre.Text;
+            con = new SqlConnection(conString);
+            cmd = new SqlCommand();
+            con.Open();
+            cmd.Connection = con;
+            cmd.CommandText = "SELECT * FROM users where k_adi='" + user + "' AND k_sifre='" + pass + "'";
+            dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                MessageBox.Show("Tebrikler! Başarılı bir şekilde giriş yaptınız. https://mayaacademia.com");
+                this.Hide();
+                Dashboard dash = new Dashboard();
+                dash.Show();
+            }
+
+            else if (user == "" || pass == "")
+            {
+                MessageBox.Show("Eksik yada hatalı bilgi girdiniz.");
+            }
+
+            else
+            {
+                MessageBox.Show("Geçerli bir kullanıcı adı veya şifre girmelisiniz.");
+            }
+            con.Close();
+
+
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -90,10 +133,7 @@ namespace NeuroAttention
         
         }
 
-        private void btn_logindisabled_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void txt_sifre_TextChanged(object sender, EventArgs e)
         {
@@ -148,29 +188,33 @@ namespace NeuroAttention
             gunaElipsePanel_duyuru.Visible = false;
         }
 
-        private void gunaTileButton1_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
 
         private void gunaPanel3_MouseLeave(object sender, EventArgs e)
         {
             gunaElipsePanel_duyuru.Visible = false;
         }
 
-        private void gunaElipsePanel_duyuru_MouseLeave(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void gunaPanel2_MouseHover(object sender, EventArgs e)
         {
             gunaElipsePanel_duyuru.Visible = false;
         }
 
-        private void gunaPanel_rightside_MouseHover(object sender, EventArgs e)
+       
+
+        private void btn_loginenabled_Click(object sender, EventArgs e)
+        {
+            login();
+        }
+
+        private void gunaTileButton2_Click(object sender, EventArgs e)
         {
             
+            Settings settings = new Settings();
+            settings.Show();
+            this.Hide();
         }
     }
 }
