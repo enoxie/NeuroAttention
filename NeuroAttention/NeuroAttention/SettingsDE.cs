@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace NeuroAttention
 {
-    public partial class Settings : Form
+    public partial class SettingsDE : Form
     {
-        public Settings()
+        public SettingsDE()
         {
             InitializeComponent();
         }

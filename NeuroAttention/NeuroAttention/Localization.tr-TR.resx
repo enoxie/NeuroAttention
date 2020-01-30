@@ -117,21 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="gunaDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="gunaDragControl2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>170, 17</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btn_back.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        xAAADsQBlSsOGwAAAOVJREFUaEPtjzFqBEEQxPb/L91f2JwtwQXiUtfgFQiGoQL19fAfuO/7i+d5vOKV
-        r3N4jz/uiIpXJvtUvDLZp+KVyT4Vr0z2qXhlsk/FK5N9Kl6Z7FPxymSfilcm+1S8Mtmn4pXJPhWvTPap
-        eGWyT8Urk30qXpnsU/HKZJ+KVya/1OAEyT/3gJfPAX/pT/wyFa1MdqloZbJLRSuTXSpamexS0cpkl4pW
-        JrtUtDLZpaKVyS4VrUx2qWhlsktFK5NdKlqZ7FLRymSXilYmu1S0MtmlopXJLhWtTPY5Ol6Ojpej4x8+
-        cl3fLLxqUR98l/AAAAAASUVORK5CYII=
-</value>
+  <data name="btn_forgotpassword" xml:space="preserve">
+    <value>Oturum açamıyor musun?</value>
+  </data>
+  <data name="btn_language" xml:space="preserve">
+    <value>Türkçe (TR)</value>
+  </data>
+  <data name="btn_logindisabled" xml:space="preserve">
+    <value>false</value>
+  </data>
+  <data name="btn_register" xml:space="preserve">
+    <value>Hesap oluştur</value>
+  </data>
+  <data name="btn_session" xml:space="preserve">
+    <value>OTURUMU AÇIK TUT</value>
+  </data>
+  <data name="cbox_language" xml:space="preserve">
+    <value>Türkçe</value>
+  </data>
+  <data name="cbox_server" xml:space="preserve">
+    <value>TR NATRO - db60</value>
+  </data>
+  <data name="lbl_signin" xml:space="preserve">
+    <value>OTURUM AÇ</value>
+  </data>
+  <data name="lbl_title" xml:space="preserve">
+    <value>SERVER / DİL</value>
+  </data>
+  <data name="txt_password" xml:space="preserve">
+    <value>ŞİFRE</value>
+  </data>
+  <data name="txt_username" xml:space="preserve">
+    <value>KULLANICI ADI</value>
   </data>
 </root>

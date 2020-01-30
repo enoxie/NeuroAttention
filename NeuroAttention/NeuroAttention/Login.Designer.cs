@@ -30,519 +30,473 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.gunaPanel_rightside = new Guna.UI.WinForms.GunaPanel();
-            this.gunaTileButton2 = new Guna.UI.WinForms.GunaTileButton();
-            this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaPanel_right = new Guna.UI.WinForms.GunaPanel();
+            this.btn_settings = new Guna.UI.WinForms.GunaTileButton();
+            this.gunaPanel_rightattention = new Guna.UI.WinForms.GunaPanel();
             this.gunaPanel3 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaTileButton1 = new Guna.UI.WinForms.GunaTileButton();
-            this.gunaElipsePanel_duyuru = new Guna.UI.WinForms.GunaElipsePanel();
-            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaAdvenceButton6 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaAdvenceButton8 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaAdvenceButton7 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaPanel_upper = new Guna.UI.WinForms.GunaPanel();
-            this.gunaAdvenceButton4 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaControlBox3 = new Guna.UI.WinForms.GunaControlBox();
-            this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
+            this.btn_attention = new Guna.UI.WinForms.GunaTileButton();
+            this.gunaPanel_attention = new Guna.UI.WinForms.GunaElipsePanel();
+            this.lbl_attentionmsg = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_attentiontime = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_attentiontitle = new Guna.UI.WinForms.GunaLabel();
+            this.btn_moredetails = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btn_appstore = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btn_googleplay = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaPanel_rightupper = new Guna.UI.WinForms.GunaPanel();
+            this.btn_help = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaControlBox_minimize = new Guna.UI.WinForms.GunaControlBox();
+            this.gunaControlBox_close = new Guna.UI.WinForms.GunaControlBox();
+            this.panel_language = new Guna.UI.WinForms.GunaElipsePanel();
+            this.cbox_language = new Guna.UI.WinForms.GunaComboBox();
+            this.lbl_title = new Guna.UI.WinForms.GunaLabel();
+            this.cbox_server = new Guna.UI.WinForms.GunaComboBox();
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaDragControl2 = new Guna.UI.WinForms.GunaDragControl(this.components);
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-            this.btn_sifremiunuttum = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaAdvenceButton3 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaAdvenceButton2 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaPanel_leftupper = new Guna.UI.WinForms.GunaPanel();
-            this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.txt_kullaniciadi = new Guna.UI.WinForms.GunaTextBox();
-            this.txt_sifre = new Guna.UI.WinForms.GunaTextBox();
+            this.lbl_signin = new Guna.UI.WinForms.GunaLabel();
+            this.btn_register = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btn_version = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btn_forgotpassword = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.pbox_logo = new Guna.UI.WinForms.GunaPictureBox();
+            this.btn_language = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.txt_username = new Guna.UI.WinForms.GunaTextBox();
+            this.txt_password = new Guna.UI.WinForms.GunaTextBox();
             this.btn_logindisabled = new Guna.UI.WinForms.GunaTileButton();
             this.btn_loginenabled = new Guna.UI.WinForms.GunaTileButton();
             this.checked_session = new Guna.UI.WinForms.GunaMediumCheckBox();
             this.btn_session = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaAdvenceButton5 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaPanel_leftside = new Guna.UI.WinForms.GunaPanel();
-            this.gunaPanel_rightside.SuspendLayout();
-            this.gunaPanel2.SuspendLayout();
+            this.btn_languageicon = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaPanel_left = new Guna.UI.WinForms.GunaPanel();
+            this.gunaPanel_right.SuspendLayout();
+            this.gunaPanel_rightattention.SuspendLayout();
             this.gunaPanel3.SuspendLayout();
-            this.gunaElipsePanel_duyuru.SuspendLayout();
-            this.gunaPanel_upper.SuspendLayout();
-            this.gunaPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
-            this.gunaPanel_leftside.SuspendLayout();
+            this.gunaPanel_attention.SuspendLayout();
+            this.gunaPanel_rightupper.SuspendLayout();
+            this.panel_language.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_logo)).BeginInit();
+            this.gunaPanel_left.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gunaPanel_rightside
+            // gunaPanel_right
             // 
-            this.gunaPanel_rightside.BackColor = System.Drawing.Color.Black;
-            this.gunaPanel_rightside.Controls.Add(this.gunaTileButton2);
-            this.gunaPanel_rightside.Controls.Add(this.gunaPanel2);
-            this.gunaPanel_rightside.Controls.Add(this.gunaAdvenceButton8);
-            this.gunaPanel_rightside.Controls.Add(this.gunaAdvenceButton7);
-            this.gunaPanel_rightside.Controls.Add(this.gunaPanel_upper);
-            this.gunaPanel_rightside.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gunaPanel_rightside.Location = new System.Drawing.Point(396, 0);
-            this.gunaPanel_rightside.Name = "gunaPanel_rightside";
-            this.gunaPanel_rightside.Size = new System.Drawing.Size(884, 720);
-            this.gunaPanel_rightside.TabIndex = 2;
-            
+            this.gunaPanel_right.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaPanel_right.BackColor = System.Drawing.Color.Black;
+            this.gunaPanel_right.Controls.Add(this.btn_settings);
+            this.gunaPanel_right.Controls.Add(this.gunaPanel_rightattention);
+            this.gunaPanel_right.Controls.Add(this.btn_appstore);
+            this.gunaPanel_right.Controls.Add(this.btn_googleplay);
+            this.gunaPanel_right.Controls.Add(this.gunaPanel_rightupper);
+            this.gunaPanel_right.Location = new System.Drawing.Point(396, 0);
+            this.gunaPanel_right.Name = "gunaPanel_right";
+            this.gunaPanel_right.Size = new System.Drawing.Size(884, 720);
+            this.gunaPanel_right.TabIndex = 2;
+            this.gunaPanel_right.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaPanel_right_Paint);
             // 
-            // gunaTileButton2
+            // btn_settings
             // 
-            this.gunaTileButton2.Animated = true;
-            this.gunaTileButton2.AnimationHoverSpeed = 0.07F;
-            this.gunaTileButton2.AnimationSpeed = 0.03F;
-            this.gunaTileButton2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTileButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaTileButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(121)))), ((int)(((byte)(123)))));
-            this.gunaTileButton2.BorderColor = System.Drawing.Color.Transparent;
-            this.gunaTileButton2.BorderSize = 2;
-            this.gunaTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaTileButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaTileButton2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaTileButton2.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
-            this.gunaTileButton2.ForeColor = System.Drawing.Color.White;
-            this.gunaTileButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaTileButton2.Image")));
-            this.gunaTileButton2.ImageSize = new System.Drawing.Size(25, 25);
-            this.gunaTileButton2.Location = new System.Drawing.Point(774, 577);
-            this.gunaTileButton2.Name = "gunaTileButton2";
-            this.gunaTileButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
-            this.gunaTileButton2.OnHoverBorderColor = System.Drawing.Color.Transparent;
-            this.gunaTileButton2.OnHoverForeColor = System.Drawing.Color.Empty;
-            this.gunaTileButton2.OnHoverImage = null;
-            this.gunaTileButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaTileButton2.Radius = 6;
-            this.gunaTileButton2.Size = new System.Drawing.Size(50, 40);
-            this.gunaTileButton2.TabIndex = 21;
-            this.gunaTileButton2.Click += new System.EventHandler(this.gunaTileButton2_Click);
+            this.btn_settings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_settings.Animated = true;
+            this.btn_settings.AnimationHoverSpeed = 0.07F;
+            this.btn_settings.AnimationSpeed = 0.03F;
+            this.btn_settings.BackColor = System.Drawing.Color.Transparent;
+            this.btn_settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_settings.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(121)))), ((int)(((byte)(123)))));
+            this.btn_settings.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_settings.BorderSize = 2;
+            this.btn_settings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_settings.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_settings.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_settings.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
+            this.btn_settings.ForeColor = System.Drawing.Color.White;
+            this.btn_settings.Image = ((System.Drawing.Image)(resources.GetObject("btn_settings.Image")));
+            this.btn_settings.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_settings.Location = new System.Drawing.Point(774, 577);
+            this.btn_settings.Name = "btn_settings";
+            this.btn_settings.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
+            this.btn_settings.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.btn_settings.OnHoverForeColor = System.Drawing.Color.Empty;
+            this.btn_settings.OnHoverImage = null;
+            this.btn_settings.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_settings.Radius = 6;
+            this.btn_settings.Size = new System.Drawing.Size(50, 40);
+            this.btn_settings.TabIndex = 21;
+            this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
             // 
-            // gunaPanel2
+            // gunaPanel_rightattention
             // 
-            this.gunaPanel2.Controls.Add(this.gunaPanel3);
-            this.gunaPanel2.Controls.Add(this.gunaElipsePanel_duyuru);
-            this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaPanel2.Location = new System.Drawing.Point(0, 40);
-            this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(884, 306);
-            this.gunaPanel2.TabIndex = 20;
+            this.gunaPanel_rightattention.Controls.Add(this.gunaPanel3);
+            this.gunaPanel_rightattention.Controls.Add(this.gunaPanel_attention);
+            this.gunaPanel_rightattention.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaPanel_rightattention.Location = new System.Drawing.Point(0, 40);
+            this.gunaPanel_rightattention.Name = "gunaPanel_rightattention";
+            this.gunaPanel_rightattention.Size = new System.Drawing.Size(884, 306);
+            this.gunaPanel_rightattention.TabIndex = 20;
             // 
             // gunaPanel3
             // 
-            this.gunaPanel3.Controls.Add(this.gunaTileButton1);
+            this.gunaPanel3.Controls.Add(this.btn_attention);
             this.gunaPanel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.gunaPanel3.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel3.Name = "gunaPanel3";
             this.gunaPanel3.Size = new System.Drawing.Size(98, 306);
             this.gunaPanel3.TabIndex = 20;
             // 
-            // gunaTileButton1
+            // btn_attention
             // 
-            this.gunaTileButton1.Animated = true;
-            this.gunaTileButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaTileButton1.AnimationSpeed = 0.03F;
-            this.gunaTileButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTileButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaTileButton1.BaseColor = System.Drawing.Color.Black;
-            this.gunaTileButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaTileButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaTileButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaTileButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaTileButton1.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
-            this.gunaTileButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaTileButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaTileButton1.Image")));
-            this.gunaTileButton1.ImageSize = new System.Drawing.Size(64, 64);
-            this.gunaTileButton1.Location = new System.Drawing.Point(0, 0);
-            this.gunaTileButton1.Name = "gunaTileButton1";
-            this.gunaTileButton1.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaTileButton1.OnHoverBorderColor = System.Drawing.Color.White;
-            this.gunaTileButton1.OnHoverForeColor = System.Drawing.Color.Empty;
-            this.gunaTileButton1.OnHoverImage = null;
-            this.gunaTileButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaTileButton1.Radius = 20;
-            this.gunaTileButton1.Size = new System.Drawing.Size(98, 64);
-            this.gunaTileButton1.TabIndex = 17;
-            
-            this.gunaTileButton1.MouseLeave += new System.EventHandler(this.gunaTileButton1_MouseLeave);
-            this.gunaTileButton1.MouseHover += new System.EventHandler(this.gunaTileButton1_MouseHover);
+            this.btn_attention.Animated = true;
+            this.btn_attention.AnimationHoverSpeed = 0.07F;
+            this.btn_attention.AnimationSpeed = 0.03F;
+            this.btn_attention.BackColor = System.Drawing.Color.Transparent;
+            this.btn_attention.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_attention.BaseColor = System.Drawing.Color.Black;
+            this.btn_attention.BorderColor = System.Drawing.Color.Black;
+            this.btn_attention.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_attention.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_attention.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_attention.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
+            this.btn_attention.ForeColor = System.Drawing.Color.White;
+            this.btn_attention.Image = ((System.Drawing.Image)(resources.GetObject("btn_attention.Image")));
+            this.btn_attention.ImageSize = new System.Drawing.Size(64, 64);
+            this.btn_attention.Location = new System.Drawing.Point(0, 0);
+            this.btn_attention.Name = "btn_attention";
+            this.btn_attention.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_attention.OnHoverBorderColor = System.Drawing.Color.White;
+            this.btn_attention.OnHoverForeColor = System.Drawing.Color.Empty;
+            this.btn_attention.OnHoverImage = null;
+            this.btn_attention.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_attention.Radius = 20;
+            this.btn_attention.Size = new System.Drawing.Size(98, 64);
+            this.btn_attention.TabIndex = 17;
+            this.btn_attention.MouseLeave += new System.EventHandler(this.gunaTileButton1_MouseLeave);
+            this.btn_attention.MouseHover += new System.EventHandler(this.gunaTileButton1_MouseHover);
             // 
-            // gunaElipsePanel_duyuru
+            // gunaPanel_attention
             // 
-            this.gunaElipsePanel_duyuru.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel_duyuru.BaseColor = System.Drawing.Color.White;
-            this.gunaElipsePanel_duyuru.Controls.Add(this.gunaLabel4);
-            this.gunaElipsePanel_duyuru.Controls.Add(this.gunaLabel3);
-            this.gunaElipsePanel_duyuru.Controls.Add(this.gunaLabel2);
-            this.gunaElipsePanel_duyuru.Controls.Add(this.gunaAdvenceButton6);
-            this.gunaElipsePanel_duyuru.Location = new System.Drawing.Point(99, 5);
-            this.gunaElipsePanel_duyuru.Name = "gunaElipsePanel_duyuru";
-            this.gunaElipsePanel_duyuru.Size = new System.Drawing.Size(357, 208);
-            this.gunaElipsePanel_duyuru.TabIndex = 19;
-            this.gunaElipsePanel_duyuru.Visible = false;
-            
+            this.gunaPanel_attention.BackColor = System.Drawing.Color.Transparent;
+            this.gunaPanel_attention.BaseColor = System.Drawing.Color.White;
+            this.gunaPanel_attention.Controls.Add(this.lbl_attentionmsg);
+            this.gunaPanel_attention.Controls.Add(this.lbl_attentiontime);
+            this.gunaPanel_attention.Controls.Add(this.lbl_attentiontitle);
+            this.gunaPanel_attention.Controls.Add(this.btn_moredetails);
+            this.gunaPanel_attention.Location = new System.Drawing.Point(99, 5);
+            this.gunaPanel_attention.Name = "gunaPanel_attention";
+            this.gunaPanel_attention.Size = new System.Drawing.Size(357, 208);
+            this.gunaPanel_attention.TabIndex = 19;
+            this.gunaPanel_attention.Visible = false;
             // 
-            // gunaLabel4
+            // lbl_attentionmsg
             // 
-            this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.Font = new System.Drawing.Font("Museo Sans 500", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(16, 68);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(308, 48);
-            this.gunaLabel4.TabIndex = 10;
-            this.gunaLabel4.Text = "Kullanıcı giriş panelindeki bazı kodlama hatalarının\r\nfarkındayız. Yazılım ekibim" +
+            this.lbl_attentionmsg.AutoSize = true;
+            this.lbl_attentionmsg.Font = new System.Drawing.Font("Museo Sans 500", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_attentionmsg.Location = new System.Drawing.Point(16, 68);
+            this.lbl_attentionmsg.Name = "lbl_attentionmsg";
+            this.lbl_attentionmsg.Size = new System.Drawing.Size(308, 48);
+            this.lbl_attentionmsg.TabIndex = 10;
+            this.lbl_attentionmsg.Text = "Kullanıcı giriş panelindeki bazı kodlama hatalarının\r\nfarkındayız. Yazılım ekibim" +
     "iz bu sorunun üzerinde \r\nçalışmaktadır.\r\n";
             // 
-            // gunaLabel3
+            // lbl_attentiontime
             // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Museo Sans 300", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(17, 51);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(118, 13);
-            this.gunaLabel3.TabIndex = 9;
-            this.gunaLabel3.Text = "1/15/2020, 5:20:15 AM";
+            this.lbl_attentiontime.AutoSize = true;
+            this.lbl_attentiontime.Font = new System.Drawing.Font("Museo Sans 300", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_attentiontime.Location = new System.Drawing.Point(17, 51);
+            this.lbl_attentiontime.Name = "lbl_attentiontime";
+            this.lbl_attentiontime.Size = new System.Drawing.Size(118, 13);
+            this.lbl_attentiontime.TabIndex = 9;
+            this.lbl_attentiontime.Text = "1/15/2020, 5:20:15 AM";
             // 
-            // gunaLabel2
+            // lbl_attentiontitle
             // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Museo Sans 300", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(15, 11);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(258, 25);
-            this.gunaLabel2.TabIndex = 8;
-            this.gunaLabel2.Text = "Arayüz Kodlama Problemi";
+            this.lbl_attentiontitle.AutoSize = true;
+            this.lbl_attentiontitle.Font = new System.Drawing.Font("Museo Sans 300", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_attentiontitle.Location = new System.Drawing.Point(15, 11);
+            this.lbl_attentiontitle.Name = "lbl_attentiontitle";
+            this.lbl_attentiontitle.Size = new System.Drawing.Size(258, 25);
+            this.lbl_attentiontitle.TabIndex = 8;
+            this.lbl_attentiontitle.Text = "Arayüz Kodlama Problemi";
             // 
-            // gunaAdvenceButton6
+            // btn_moredetails
             // 
-            this.gunaAdvenceButton6.Animated = true;
-            this.gunaAdvenceButton6.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton6.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton6.BaseColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton6.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton6.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton6.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton6.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton6.CheckedImage = null;
-            this.gunaAdvenceButton6.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaAdvenceButton6.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton6.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton6.Font = new System.Drawing.Font("Museo Sans 300", 8F);
-            this.gunaAdvenceButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
-            this.gunaAdvenceButton6.Image = null;
-            this.gunaAdvenceButton6.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton6.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton6.Location = new System.Drawing.Point(19, 136);
-            this.gunaAdvenceButton6.Name = "gunaAdvenceButton6";
-            this.gunaAdvenceButton6.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton6.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton6.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.gunaAdvenceButton6.OnHoverImage = null;
-            this.gunaAdvenceButton6.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton6.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton6.OnPressedDepth = 0;
-            this.gunaAdvenceButton6.Size = new System.Drawing.Size(99, 20);
-            this.gunaAdvenceButton6.TabIndex = 7;
-            this.gunaAdvenceButton6.Text = "Daha fazla ayrıntı";
-            this.gunaAdvenceButton6.TextOffsetX = -10;
+            this.btn_moredetails.Animated = true;
+            this.btn_moredetails.AnimationHoverSpeed = 0.07F;
+            this.btn_moredetails.AnimationSpeed = 0.03F;
+            this.btn_moredetails.BaseColor = System.Drawing.Color.White;
+            this.btn_moredetails.BorderColor = System.Drawing.Color.Black;
+            this.btn_moredetails.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_moredetails.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_moredetails.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_moredetails.CheckedImage = null;
+            this.btn_moredetails.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_moredetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_moredetails.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_moredetails.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_moredetails.Font = new System.Drawing.Font("Museo Sans 300", 8F);
+            this.btn_moredetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
+            this.btn_moredetails.Image = null;
+            this.btn_moredetails.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_moredetails.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_moredetails.Location = new System.Drawing.Point(19, 136);
+            this.btn_moredetails.Name = "btn_moredetails";
+            this.btn_moredetails.OnHoverBaseColor = System.Drawing.Color.White;
+            this.btn_moredetails.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_moredetails.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.btn_moredetails.OnHoverImage = null;
+            this.btn_moredetails.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btn_moredetails.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_moredetails.OnPressedDepth = 0;
+            this.btn_moredetails.Size = new System.Drawing.Size(99, 20);
+            this.btn_moredetails.TabIndex = 7;
+            this.btn_moredetails.Text = "Daha fazla ayrıntı";
+            this.btn_moredetails.TextOffsetX = -10;
             // 
-            // gunaAdvenceButton8
+            // btn_appstore
             // 
-            this.gunaAdvenceButton8.Animated = true;
-            this.gunaAdvenceButton8.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton8.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton8.BackColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceButton8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton8.BackgroundImage")));
-            this.gunaAdvenceButton8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.gunaAdvenceButton8.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceButton8.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton8.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton8.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton8.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton8.CheckedImage = null;
-            this.gunaAdvenceButton8.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaAdvenceButton8.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton8.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton8.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaAdvenceButton8.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton8.Image = null;
-            this.gunaAdvenceButton8.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton8.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton8.Location = new System.Drawing.Point(733, 662);
-            this.gunaAdvenceButton8.Name = "gunaAdvenceButton8";
-            this.gunaAdvenceButton8.OnHoverBaseColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton8.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton8.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton8.OnHoverImage = null;
-            this.gunaAdvenceButton8.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton8.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton8.Size = new System.Drawing.Size(129, 40);
-            this.gunaAdvenceButton8.TabIndex = 11;
-            this.gunaAdvenceButton8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_appstore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_appstore.Animated = true;
+            this.btn_appstore.AnimationHoverSpeed = 0.07F;
+            this.btn_appstore.AnimationSpeed = 0.03F;
+            this.btn_appstore.BackColor = System.Drawing.Color.Transparent;
+            this.btn_appstore.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_appstore.BackgroundImage")));
+            this.btn_appstore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_appstore.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_appstore.BorderColor = System.Drawing.Color.Black;
+            this.btn_appstore.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_appstore.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_appstore.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_appstore.CheckedImage = null;
+            this.btn_appstore.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_appstore.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_appstore.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_appstore.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_appstore.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_appstore.ForeColor = System.Drawing.Color.White;
+            this.btn_appstore.Image = null;
+            this.btn_appstore.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_appstore.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_appstore.Location = new System.Drawing.Point(733, 662);
+            this.btn_appstore.Name = "btn_appstore";
+            this.btn_appstore.OnHoverBaseColor = System.Drawing.Color.Empty;
+            this.btn_appstore.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_appstore.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_appstore.OnHoverImage = null;
+            this.btn_appstore.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btn_appstore.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_appstore.Size = new System.Drawing.Size(129, 40);
+            this.btn_appstore.TabIndex = 11;
+            this.btn_appstore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // gunaAdvenceButton7
+            // btn_googleplay
             // 
-            this.gunaAdvenceButton7.Animated = true;
-            this.gunaAdvenceButton7.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton7.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton7.BackColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceButton7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton7.BackgroundImage")));
-            this.gunaAdvenceButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaAdvenceButton7.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceButton7.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton7.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton7.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton7.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton7.CheckedImage = null;
-            this.gunaAdvenceButton7.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaAdvenceButton7.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton7.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton7.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaAdvenceButton7.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton7.Image = null;
-            this.gunaAdvenceButton7.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton7.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton7.Location = new System.Drawing.Point(737, 623);
-            this.gunaAdvenceButton7.Name = "gunaAdvenceButton7";
-            this.gunaAdvenceButton7.OnHoverBaseColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton7.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton7.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton7.OnHoverImage = null;
-            this.gunaAdvenceButton7.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton7.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton7.Size = new System.Drawing.Size(120, 50);
-            this.gunaAdvenceButton7.TabIndex = 10;
-            this.gunaAdvenceButton7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_googleplay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_googleplay.Animated = true;
+            this.btn_googleplay.AnimationHoverSpeed = 0.07F;
+            this.btn_googleplay.AnimationSpeed = 0.03F;
+            this.btn_googleplay.BackColor = System.Drawing.Color.Transparent;
+            this.btn_googleplay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_googleplay.BackgroundImage")));
+            this.btn_googleplay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_googleplay.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_googleplay.BorderColor = System.Drawing.Color.Black;
+            this.btn_googleplay.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_googleplay.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_googleplay.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_googleplay.CheckedImage = null;
+            this.btn_googleplay.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_googleplay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_googleplay.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_googleplay.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_googleplay.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_googleplay.ForeColor = System.Drawing.Color.White;
+            this.btn_googleplay.Image = null;
+            this.btn_googleplay.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_googleplay.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_googleplay.Location = new System.Drawing.Point(737, 623);
+            this.btn_googleplay.Name = "btn_googleplay";
+            this.btn_googleplay.OnHoverBaseColor = System.Drawing.Color.Empty;
+            this.btn_googleplay.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_googleplay.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_googleplay.OnHoverImage = null;
+            this.btn_googleplay.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btn_googleplay.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_googleplay.Size = new System.Drawing.Size(120, 50);
+            this.btn_googleplay.TabIndex = 10;
+            this.btn_googleplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // gunaPanel_upper
+            // gunaPanel_rightupper
             // 
-            this.gunaPanel_upper.Controls.Add(this.gunaAdvenceButton4);
-            this.gunaPanel_upper.Controls.Add(this.gunaControlBox3);
-            this.gunaPanel_upper.Controls.Add(this.gunaControlBox1);
-            this.gunaPanel_upper.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaPanel_upper.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel_upper.Name = "gunaPanel_upper";
-            this.gunaPanel_upper.Size = new System.Drawing.Size(884, 40);
-            this.gunaPanel_upper.TabIndex = 2;
+            this.gunaPanel_rightupper.Controls.Add(this.btn_help);
+            this.gunaPanel_rightupper.Controls.Add(this.gunaControlBox_minimize);
+            this.gunaPanel_rightupper.Controls.Add(this.gunaControlBox_close);
+            this.gunaPanel_rightupper.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaPanel_rightupper.Location = new System.Drawing.Point(0, 0);
+            this.gunaPanel_rightupper.Name = "gunaPanel_rightupper";
+            this.gunaPanel_rightupper.Size = new System.Drawing.Size(884, 40);
+            this.gunaPanel_rightupper.TabIndex = 2;
             // 
-            // gunaAdvenceButton4
+            // btn_help
             // 
-            this.gunaAdvenceButton4.Animated = true;
-            this.gunaAdvenceButton4.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton4.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaAdvenceButton4.BaseColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton4.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton4.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton4.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton4.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton4.CheckedImage = null;
-            this.gunaAdvenceButton4.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaAdvenceButton4.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gunaAdvenceButton4.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton4.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaAdvenceButton4.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton4.Image = null;
-            this.gunaAdvenceButton4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaAdvenceButton4.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaAdvenceButton4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton4.Location = new System.Drawing.Point(734, 0);
-            this.gunaAdvenceButton4.Name = "gunaAdvenceButton4";
-            this.gunaAdvenceButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
-            this.gunaAdvenceButton4.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton4.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton4.OnHoverImage = null;
-            this.gunaAdvenceButton4.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton4.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton4.Size = new System.Drawing.Size(50, 40);
-            this.gunaAdvenceButton4.TabIndex = 5;
-            this.gunaAdvenceButton4.Text = "?";
-            this.gunaAdvenceButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_help.Animated = true;
+            this.btn_help.AnimationHoverSpeed = 0.07F;
+            this.btn_help.AnimationSpeed = 0.03F;
+            this.btn_help.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_help.BaseColor = System.Drawing.Color.Black;
+            this.btn_help.BorderColor = System.Drawing.Color.Black;
+            this.btn_help.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_help.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_help.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_help.CheckedImage = null;
+            this.btn_help.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_help.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_help.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_help.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_help.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_help.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_help.ForeColor = System.Drawing.Color.White;
+            this.btn_help.Image = null;
+            this.btn_help.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_help.ImageSize = new System.Drawing.Size(15, 15);
+            this.btn_help.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_help.Location = new System.Drawing.Point(734, 0);
+            this.btn_help.Name = "btn_help";
+            this.btn_help.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
+            this.btn_help.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_help.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_help.OnHoverImage = null;
+            this.btn_help.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btn_help.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_help.Size = new System.Drawing.Size(50, 40);
+            this.btn_help.TabIndex = 5;
+            this.btn_help.Text = "?";
+            this.btn_help.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_help.Click += new System.EventHandler(this.btn_help_Click);
             // 
-            // gunaControlBox3
+            // gunaControlBox_minimize
             // 
-            this.gunaControlBox3.Animated = true;
-            this.gunaControlBox3.AnimationHoverSpeed = 0.07F;
-            this.gunaControlBox3.AnimationSpeed = 0.03F;
-            this.gunaControlBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.gunaControlBox3.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MinimizeBox;
-            this.gunaControlBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaControlBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gunaControlBox3.IconColor = System.Drawing.Color.White;
-            this.gunaControlBox3.IconSize = 14F;
-            this.gunaControlBox3.Location = new System.Drawing.Point(784, 0);
-            this.gunaControlBox3.Name = "gunaControlBox3";
-            this.gunaControlBox3.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
-            this.gunaControlBox3.OnHoverIconColor = System.Drawing.Color.White;
-            this.gunaControlBox3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaControlBox3.Size = new System.Drawing.Size(50, 40);
-            this.gunaControlBox3.TabIndex = 6;
+            this.gunaControlBox_minimize.Animated = true;
+            this.gunaControlBox_minimize.AnimationHoverSpeed = 0.07F;
+            this.gunaControlBox_minimize.AnimationSpeed = 0.03F;
+            this.gunaControlBox_minimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.gunaControlBox_minimize.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MinimizeBox;
+            this.gunaControlBox_minimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaControlBox_minimize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gunaControlBox_minimize.IconColor = System.Drawing.Color.White;
+            this.gunaControlBox_minimize.IconSize = 14F;
+            this.gunaControlBox_minimize.Location = new System.Drawing.Point(784, 0);
+            this.gunaControlBox_minimize.Name = "gunaControlBox_minimize";
+            this.gunaControlBox_minimize.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
+            this.gunaControlBox_minimize.OnHoverIconColor = System.Drawing.Color.White;
+            this.gunaControlBox_minimize.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaControlBox_minimize.Size = new System.Drawing.Size(50, 40);
+            this.gunaControlBox_minimize.TabIndex = 6;
             // 
-            // gunaControlBox1
+            // gunaControlBox_close
             // 
-            this.gunaControlBox1.Animated = true;
-            this.gunaControlBox1.AnimationHoverSpeed = 0.07F;
-            this.gunaControlBox1.AnimationSpeed = 0.03F;
-            this.gunaControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaControlBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gunaControlBox1.IconColor = System.Drawing.Color.White;
-            this.gunaControlBox1.IconSize = 14F;
-            this.gunaControlBox1.Location = new System.Drawing.Point(834, 0);
-            this.gunaControlBox1.Name = "gunaControlBox1";
-            this.gunaControlBox1.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(54)))), ((int)(((byte)(57)))));
-            this.gunaControlBox1.OnHoverIconColor = System.Drawing.Color.White;
-            this.gunaControlBox1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaControlBox1.Size = new System.Drawing.Size(50, 40);
-            this.gunaControlBox1.TabIndex = 4;
+            this.gunaControlBox_close.Animated = true;
+            this.gunaControlBox_close.AnimationHoverSpeed = 0.07F;
+            this.gunaControlBox_close.AnimationSpeed = 0.03F;
+            this.gunaControlBox_close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaControlBox_close.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gunaControlBox_close.IconColor = System.Drawing.Color.White;
+            this.gunaControlBox_close.IconSize = 14F;
+            this.gunaControlBox_close.Location = new System.Drawing.Point(834, 0);
+            this.gunaControlBox_close.Name = "gunaControlBox_close";
+            this.gunaControlBox_close.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(54)))), ((int)(((byte)(57)))));
+            this.gunaControlBox_close.OnHoverIconColor = System.Drawing.Color.White;
+            this.gunaControlBox_close.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaControlBox_close.Size = new System.Drawing.Size(50, 40);
+            this.gunaControlBox_close.TabIndex = 4;
+            // 
+            // panel_language
+            // 
+            this.panel_language.BackColor = System.Drawing.Color.Transparent;
+            this.panel_language.BaseColor = System.Drawing.Color.White;
+            this.panel_language.Controls.Add(this.cbox_language);
+            this.panel_language.Controls.Add(this.lbl_title);
+            this.panel_language.Controls.Add(this.cbox_server);
+            this.panel_language.Location = new System.Drawing.Point(30, 40);
+            this.panel_language.Name = "panel_language";
+            this.panel_language.Size = new System.Drawing.Size(316, 160);
+            this.panel_language.TabIndex = 22;
+            this.panel_language.Visible = false;
+            // 
+            // cbox_language
+            // 
+            this.cbox_language.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbox_language.BackColor = System.Drawing.Color.Transparent;
+            this.cbox_language.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.cbox_language.BorderColor = System.Drawing.Color.Silver;
+            this.cbox_language.BorderSize = 0;
+            this.cbox_language.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbox_language.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbox_language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbox_language.FocusedColor = System.Drawing.Color.Empty;
+            this.cbox_language.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbox_language.ForeColor = System.Drawing.Color.White;
+            this.cbox_language.FormattingEnabled = true;
+            this.cbox_language.ItemHeight = 33;
+            this.cbox_language.Items.AddRange(new object[] {
+            "Türkçe",
+            "İngilizce",
+            "Almanca"});
+            this.cbox_language.Location = new System.Drawing.Point(26, 86);
+            this.cbox_language.Name = "cbox_language";
+            this.cbox_language.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cbox_language.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cbox_language.Radius = 6;
+            this.cbox_language.Size = new System.Drawing.Size(240, 39);
+            this.cbox_language.TabIndex = 21;
+            this.cbox_language.SelectionChangeCommitted += new System.EventHandler(this.cbox_language_SelectionChangeCommitted);
+            // 
+            // lbl_title
+            // 
+            this.lbl_title.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.Font = new System.Drawing.Font("Infoma Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.Location = new System.Drawing.Point(29, 18);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(91, 13);
+            this.lbl_title.TabIndex = 20;
+            this.lbl_title.Text = "SUNUCU / DİL";
+            // 
+            // cbox_server
+            // 
+            this.cbox_server.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbox_server.BackColor = System.Drawing.Color.Transparent;
+            this.cbox_server.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.cbox_server.BorderColor = System.Drawing.Color.Silver;
+            this.cbox_server.BorderSize = 0;
+            this.cbox_server.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbox_server.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbox_server.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbox_server.FocusedColor = System.Drawing.Color.Empty;
+            this.cbox_server.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbox_server.ForeColor = System.Drawing.Color.White;
+            this.cbox_server.FormattingEnabled = true;
+            this.cbox_server.ItemHeight = 33;
+            this.cbox_server.Items.AddRange(new object[] {
+            "TR NATRO - db60"});
+            this.cbox_server.Location = new System.Drawing.Point(26, 41);
+            this.cbox_server.Name = "cbox_server";
+            this.cbox_server.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cbox_server.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cbox_server.Radius = 6;
+            this.cbox_server.Size = new System.Drawing.Size(240, 39);
+            this.cbox_server.TabIndex = 19;
             // 
             // gunaDragControl1
             // 
-            this.gunaDragControl1.TargetControl = this.gunaPanel_upper;
+            this.gunaDragControl1.TargetControl = this.gunaPanel_rightupper;
             // 
             // gunaDragControl2
             // 
             this.gunaDragControl2.TargetControl = this.gunaPanel_leftupper;
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Infoma Heavy", 20F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(51, 228);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(162, 27);
-            this.gunaLabel1.TabIndex = 0;
-            this.gunaLabel1.Text = "OTURUM AÇ";
-            // 
-            // gunaPanel1
-            // 
-            this.gunaPanel1.Controls.Add(this.gunaAdvenceButton2);
-            this.gunaPanel1.Controls.Add(this.gunaAdvenceButton3);
-            this.gunaPanel1.Controls.Add(this.btn_sifremiunuttum);
-            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gunaPanel1.Location = new System.Drawing.Point(0, 624);
-            this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(396, 96);
-            this.gunaPanel1.TabIndex = 3;
-            // 
-            // btn_sifremiunuttum
-            // 
-            this.btn_sifremiunuttum.Animated = true;
-            this.btn_sifremiunuttum.AnimationHoverSpeed = 0.07F;
-            this.btn_sifremiunuttum.AnimationSpeed = 0.03F;
-            this.btn_sifremiunuttum.BaseColor = System.Drawing.Color.White;
-            this.btn_sifremiunuttum.BorderColor = System.Drawing.Color.Black;
-            this.btn_sifremiunuttum.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btn_sifremiunuttum.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btn_sifremiunuttum.CheckedForeColor = System.Drawing.Color.White;
-            this.btn_sifremiunuttum.CheckedImage = null;
-            this.btn_sifremiunuttum.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btn_sifremiunuttum.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_sifremiunuttum.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_sifremiunuttum.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_sifremiunuttum.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_sifremiunuttum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
-            this.btn_sifremiunuttum.Image = null;
-            this.btn_sifremiunuttum.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_sifremiunuttum.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_sifremiunuttum.Location = new System.Drawing.Point(36, 31);
-            this.btn_sifremiunuttum.Name = "btn_sifremiunuttum";
-            this.btn_sifremiunuttum.OnHoverBaseColor = System.Drawing.Color.White;
-            this.btn_sifremiunuttum.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.btn_sifremiunuttum.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.btn_sifremiunuttum.OnHoverImage = null;
-            this.btn_sifremiunuttum.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.btn_sifremiunuttum.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_sifremiunuttum.OnPressedDepth = 0;
-            this.btn_sifremiunuttum.Size = new System.Drawing.Size(180, 20);
-            this.btn_sifremiunuttum.TabIndex = 6;
-            this.btn_sifremiunuttum.Text = "Oturum açamıyor musun?";
-            this.btn_sifremiunuttum.TextOffsetX = -10;
-            // 
-            // gunaAdvenceButton3
-            // 
-            this.gunaAdvenceButton3.Animated = true;
-            this.gunaAdvenceButton3.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton3.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton3.BaseColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton3.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton3.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton3.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton3.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton3.CheckedImage = null;
-            this.gunaAdvenceButton3.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaAdvenceButton3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton3.Font = new System.Drawing.Font("Infoma Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaAdvenceButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(208)))));
-            this.gunaAdvenceButton3.Image = null;
-            this.gunaAdvenceButton3.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton3.Location = new System.Drawing.Point(330, 26);
-            this.gunaAdvenceButton3.Name = "gunaAdvenceButton3";
-            this.gunaAdvenceButton3.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton3.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton3.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
-            this.gunaAdvenceButton3.OnHoverImage = null;
-            this.gunaAdvenceButton3.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton3.OnPressedDepth = 0;
-            this.gunaAdvenceButton3.Size = new System.Drawing.Size(48, 25);
-            this.gunaAdvenceButton3.TabIndex = 9;
-            this.gunaAdvenceButton3.Text = "v1.0.0";
-            this.gunaAdvenceButton3.TextOffsetX = -10;
-            // 
-            // gunaAdvenceButton2
-            // 
-            this.gunaAdvenceButton2.Animated = true;
-            this.gunaAdvenceButton2.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton2.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton2.BaseColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton2.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton2.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton2.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton2.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton2.CheckedImage = null;
-            this.gunaAdvenceButton2.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaAdvenceButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton2.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaAdvenceButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
-            this.gunaAdvenceButton2.Image = null;
-            this.gunaAdvenceButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton2.Location = new System.Drawing.Point(36, 12);
-            this.gunaAdvenceButton2.Name = "gunaAdvenceButton2";
-            this.gunaAdvenceButton2.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton2.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton2.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.gunaAdvenceButton2.OnHoverImage = null;
-            this.gunaAdvenceButton2.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton2.OnPressedDepth = 0;
-            this.gunaAdvenceButton2.Size = new System.Drawing.Size(180, 20);
-            this.gunaAdvenceButton2.TabIndex = 8;
-            this.gunaAdvenceButton2.Text = "Hesap oluştur";
-            this.gunaAdvenceButton2.TextOffsetX = -10;
-            // 
-            // gunaPictureBox1
-            // 
-            this.gunaPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(36, 82);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(180, 130);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaPictureBox1.TabIndex = 2;
-            this.gunaPictureBox1.TabStop = false;
             // 
             // gunaPanel_leftupper
             // 
@@ -552,96 +506,229 @@
             this.gunaPanel_leftupper.Size = new System.Drawing.Size(396, 40);
             this.gunaPanel_leftupper.TabIndex = 3;
             // 
-            // gunaAdvenceButton1
+            // lbl_signin
             // 
-            this.gunaAdvenceButton1.Animated = true;
-            this.gunaAdvenceButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton1.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton1.BaseColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton1.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.CheckedImage = null;
-            this.gunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaAdvenceButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton1.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
-            this.gunaAdvenceButton1.Image = null;
-            this.gunaAdvenceButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.gunaAdvenceButton1.ImageOffsetX = -3;
-            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(268, 103);
-            this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
-            this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.gunaAdvenceButton1.OnHoverImage = null;
-            this.gunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.OnPressedDepth = 0;
-            this.gunaAdvenceButton1.Size = new System.Drawing.Size(80, 24);
-            this.gunaAdvenceButton1.TabIndex = 7;
-            this.gunaAdvenceButton1.Text = "Türkçe (TR)";
-            this.gunaAdvenceButton1.TextOffsetX = -10;
+            this.lbl_signin.AutoSize = true;
+            this.lbl_signin.Font = new System.Drawing.Font("Infoma Heavy", 20F, System.Drawing.FontStyle.Bold);
+            this.lbl_signin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.lbl_signin.Location = new System.Drawing.Point(51, 228);
+            this.lbl_signin.Name = "lbl_signin";
+            this.lbl_signin.Size = new System.Drawing.Size(162, 27);
+            this.lbl_signin.TabIndex = 0;
+            this.lbl_signin.Text = "OTURUM AÇ";
             // 
-            // txt_kullaniciadi
+            // btn_register
             // 
-            this.txt_kullaniciadi.BackColor = System.Drawing.Color.Transparent;
-            this.txt_kullaniciadi.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.txt_kullaniciadi.BorderColor = System.Drawing.Color.Silver;
-            this.txt_kullaniciadi.BorderSize = 0;
-            this.txt_kullaniciadi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_kullaniciadi.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_kullaniciadi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.txt_kullaniciadi.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.txt_kullaniciadi.Font = new System.Drawing.Font("Infoma Medium", 10F, System.Drawing.FontStyle.Bold);
-            this.txt_kullaniciadi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.txt_kullaniciadi.Location = new System.Drawing.Point(56, 296);
-            this.txt_kullaniciadi.Name = "txt_kullaniciadi";
-            this.txt_kullaniciadi.PasswordChar = '\0';
-            this.txt_kullaniciadi.Radius = 4;
-            this.txt_kullaniciadi.Size = new System.Drawing.Size(265, 50);
-            this.txt_kullaniciadi.TabIndex = 11;
-            this.txt_kullaniciadi.Text = "KULLANICI ADI";
-            this.txt_kullaniciadi.TextOffsetX = 6;
-            this.txt_kullaniciadi.TextChanged += new System.EventHandler(this.txt_kullaniciadi_TextChanged);
-            this.txt_kullaniciadi.Enter += new System.EventHandler(this.txt_kullaniciadi_Enter);
-            this.txt_kullaniciadi.Leave += new System.EventHandler(this.txt_kullaniciadi_Leave);
-            this.txt_kullaniciadi.MouseLeave += new System.EventHandler(this.txt_kullaniciadi_MouseLeave);
-            this.txt_kullaniciadi.MouseHover += new System.EventHandler(this.txt_kullaniciadi_MouseHover);
+            this.btn_register.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_register.Animated = true;
+            this.btn_register.AnimationHoverSpeed = 0.07F;
+            this.btn_register.AnimationSpeed = 0.03F;
+            this.btn_register.BaseColor = System.Drawing.Color.White;
+            this.btn_register.BorderColor = System.Drawing.Color.Black;
+            this.btn_register.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_register.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_register.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_register.CheckedImage = null;
+            this.btn_register.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_register.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_register.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_register.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_register.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_register.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
+            this.btn_register.Image = null;
+            this.btn_register.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_register.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_register.Location = new System.Drawing.Point(36, 643);
+            this.btn_register.Name = "btn_register";
+            this.btn_register.OnHoverBaseColor = System.Drawing.Color.White;
+            this.btn_register.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_register.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.btn_register.OnHoverImage = null;
+            this.btn_register.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btn_register.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_register.OnPressedDepth = 0;
+            this.btn_register.Size = new System.Drawing.Size(180, 20);
+            this.btn_register.TabIndex = 8;
+            this.btn_register.Text = "Hesap oluştur";
+            this.btn_register.TextOffsetX = -10;
             // 
-            // txt_sifre
+            // btn_version
             // 
-            this.txt_sifre.BackColor = System.Drawing.Color.Transparent;
-            this.txt_sifre.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.txt_sifre.BorderColor = System.Drawing.Color.Silver;
-            this.txt_sifre.BorderSize = 0;
-            this.txt_sifre.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_sifre.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_sifre.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.txt_sifre.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.txt_sifre.Font = new System.Drawing.Font("Infoma Medium", 10F, System.Drawing.FontStyle.Bold);
-            this.txt_sifre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.txt_sifre.Location = new System.Drawing.Point(56, 361);
-            this.txt_sifre.Name = "txt_sifre";
-            this.txt_sifre.PasswordChar = '\0';
-            this.txt_sifre.Radius = 4;
-            this.txt_sifre.Size = new System.Drawing.Size(265, 50);
-            this.txt_sifre.TabIndex = 12;
-            this.txt_sifre.Text = "ŞİFRE";
-            this.txt_sifre.TextOffsetX = 6;
-            this.txt_sifre.TextChanged += new System.EventHandler(this.txt_sifre_TextChanged);
-            this.txt_sifre.Enter += new System.EventHandler(this.txt_sifre_Enter);
-            this.txt_sifre.Leave += new System.EventHandler(this.txt_sifre_Leave);
-            this.txt_sifre.MouseLeave += new System.EventHandler(this.txt_sifre_MouseLeave);
-            this.txt_sifre.MouseHover += new System.EventHandler(this.txt_sifre_MouseHover);
+            this.btn_version.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_version.Animated = true;
+            this.btn_version.AnimationHoverSpeed = 0.07F;
+            this.btn_version.AnimationSpeed = 0.03F;
+            this.btn_version.BaseColor = System.Drawing.Color.White;
+            this.btn_version.BorderColor = System.Drawing.Color.Black;
+            this.btn_version.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_version.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_version.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_version.CheckedImage = null;
+            this.btn_version.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_version.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_version.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_version.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_version.Font = new System.Drawing.Font("Infoma Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_version.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(208)))));
+            this.btn_version.Image = null;
+            this.btn_version.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_version.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_version.Location = new System.Drawing.Point(310, 657);
+            this.btn_version.Name = "btn_version";
+            this.btn_version.OnHoverBaseColor = System.Drawing.Color.White;
+            this.btn_version.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_version.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
+            this.btn_version.OnHoverImage = null;
+            this.btn_version.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btn_version.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_version.OnPressedDepth = 0;
+            this.btn_version.Size = new System.Drawing.Size(62, 25);
+            this.btn_version.TabIndex = 9;
+            this.btn_version.Text = "v1.0.0";
+            this.btn_version.TextOffsetX = -10;
+            // 
+            // btn_forgotpassword
+            // 
+            this.btn_forgotpassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_forgotpassword.Animated = true;
+            this.btn_forgotpassword.AnimationHoverSpeed = 0.07F;
+            this.btn_forgotpassword.AnimationSpeed = 0.03F;
+            this.btn_forgotpassword.BaseColor = System.Drawing.Color.White;
+            this.btn_forgotpassword.BorderColor = System.Drawing.Color.Black;
+            this.btn_forgotpassword.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_forgotpassword.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_forgotpassword.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_forgotpassword.CheckedImage = null;
+            this.btn_forgotpassword.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_forgotpassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_forgotpassword.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_forgotpassword.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_forgotpassword.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_forgotpassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
+            this.btn_forgotpassword.Image = null;
+            this.btn_forgotpassword.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_forgotpassword.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_forgotpassword.Location = new System.Drawing.Point(36, 662);
+            this.btn_forgotpassword.Name = "btn_forgotpassword";
+            this.btn_forgotpassword.OnHoverBaseColor = System.Drawing.Color.White;
+            this.btn_forgotpassword.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_forgotpassword.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.btn_forgotpassword.OnHoverImage = null;
+            this.btn_forgotpassword.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btn_forgotpassword.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_forgotpassword.OnPressedDepth = 0;
+            this.btn_forgotpassword.Size = new System.Drawing.Size(180, 20);
+            this.btn_forgotpassword.TabIndex = 6;
+            this.btn_forgotpassword.Text = "Oturum açamıyor musun?";
+            this.btn_forgotpassword.TextOffsetX = -10;
+            // 
+            // pbox_logo
+            // 
+            this.pbox_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbox_logo.BaseColor = System.Drawing.Color.White;
+            this.pbox_logo.Image = ((System.Drawing.Image)(resources.GetObject("pbox_logo.Image")));
+            this.pbox_logo.Location = new System.Drawing.Point(36, 82);
+            this.pbox_logo.Name = "pbox_logo";
+            this.pbox_logo.Size = new System.Drawing.Size(180, 130);
+            this.pbox_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbox_logo.TabIndex = 2;
+            this.pbox_logo.TabStop = false;
+            // 
+            // btn_language
+            // 
+            this.btn_language.Animated = true;
+            this.btn_language.AnimationHoverSpeed = 0.07F;
+            this.btn_language.AnimationSpeed = 0.03F;
+            this.btn_language.BaseColor = System.Drawing.Color.White;
+            this.btn_language.BorderColor = System.Drawing.Color.Black;
+            this.btn_language.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_language.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_language.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_language.CheckedImage = null;
+            this.btn_language.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_language.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_language.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_language.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_language.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_language.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
+            this.btn_language.Image = null;
+            this.btn_language.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_language.ImageOffsetX = -3;
+            this.btn_language.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_language.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_language.Location = new System.Drawing.Point(261, 103);
+            this.btn_language.Name = "btn_language";
+            this.btn_language.OnHoverBaseColor = System.Drawing.Color.White;
+            this.btn_language.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_language.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.btn_language.OnHoverImage = null;
+            this.btn_language.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btn_language.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_language.OnPressedDepth = 0;
+            this.btn_language.Size = new System.Drawing.Size(106, 24);
+            this.btn_language.TabIndex = 7;
+            this.btn_language.Text = "Türkçe (TR)";
+            this.btn_language.TextOffsetX = -10;
+            this.btn_language.Click += new System.EventHandler(this.btn_language_Click);
+            // 
+            // txt_username
+            // 
+            this.txt_username.BackColor = System.Drawing.Color.Transparent;
+            this.txt_username.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.txt_username.BorderColor = System.Drawing.Color.Silver;
+            this.txt_username.BorderSize = 0;
+            this.txt_username.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_username.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_username.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.txt_username.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.txt_username.Font = new System.Drawing.Font("Infoma Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.txt_username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.txt_username.Location = new System.Drawing.Point(56, 296);
+            this.txt_username.Name = "txt_username";
+            this.txt_username.PasswordChar = '\0';
+            this.txt_username.Radius = 4;
+            this.txt_username.Size = new System.Drawing.Size(265, 50);
+            this.txt_username.TabIndex = 11;
+            this.txt_username.Text = "KULLANICI ADI";
+            this.txt_username.TextOffsetX = 6;
+            this.txt_username.TextChanged += new System.EventHandler(this.txt_kullaniciadi_TextChanged);
+            this.txt_username.Enter += new System.EventHandler(this.txt_kullaniciadi_Enter);
+            this.txt_username.Leave += new System.EventHandler(this.txt_kullaniciadi_Leave);
+            this.txt_username.MouseLeave += new System.EventHandler(this.txt_kullaniciadi_MouseLeave);
+            this.txt_username.MouseHover += new System.EventHandler(this.txt_kullaniciadi_MouseHover);
+            // 
+            // txt_password
+            // 
+            this.txt_password.BackColor = System.Drawing.Color.Transparent;
+            this.txt_password.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.txt_password.BorderColor = System.Drawing.Color.Silver;
+            this.txt_password.BorderSize = 0;
+            this.txt_password.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_password.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_password.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.txt_password.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.txt_password.Font = new System.Drawing.Font("Infoma Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.txt_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.txt_password.Location = new System.Drawing.Point(56, 361);
+            this.txt_password.Name = "txt_password";
+            this.txt_password.PasswordChar = '\0';
+            this.txt_password.Radius = 4;
+            this.txt_password.Size = new System.Drawing.Size(265, 50);
+            this.txt_password.TabIndex = 12;
+            this.txt_password.Text = "ŞİFRE";
+            this.txt_password.TextOffsetX = 6;
+            this.txt_password.TextChanged += new System.EventHandler(this.txt_sifre_TextChanged);
+            this.txt_password.Enter += new System.EventHandler(this.txt_sifre_Enter);
+            this.txt_password.Leave += new System.EventHandler(this.txt_sifre_Leave);
+            this.txt_password.MouseLeave += new System.EventHandler(this.txt_sifre_MouseLeave);
+            this.txt_password.MouseHover += new System.EventHandler(this.txt_sifre_MouseHover);
             // 
             // btn_logindisabled
             // 
+            this.btn_logindisabled.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_logindisabled.Animated = true;
             this.btn_logindisabled.AnimationHoverSpeed = 0.07F;
             this.btn_logindisabled.AnimationSpeed = 0.03F;
@@ -667,10 +754,11 @@
             this.btn_logindisabled.Radius = 20;
             this.btn_logindisabled.Size = new System.Drawing.Size(64, 64);
             this.btn_logindisabled.TabIndex = 15;
-           
             // 
             // btn_loginenabled
             // 
+            this.btn_loginenabled.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_loginenabled.Animated = true;
             this.btn_loginenabled.AnimationHoverSpeed = 0.07F;
             this.btn_loginenabled.AnimationSpeed = 0.03F;
@@ -740,65 +828,69 @@
             this.btn_session.OnHoverLineColor = System.Drawing.Color.Empty;
             this.btn_session.OnPressedColor = System.Drawing.Color.Black;
             this.btn_session.OnPressedDepth = 0;
-            this.btn_session.Size = new System.Drawing.Size(145, 20);
+            this.btn_session.Size = new System.Drawing.Size(171, 20);
             this.btn_session.TabIndex = 21;
             this.btn_session.Text = "OTURUMU AÇIK TUT";
             this.btn_session.TextOffsetX = -10;
             this.btn_session.Click += new System.EventHandler(this.gunaAdvenceButton5_Click);
             // 
-            // gunaAdvenceButton5
+            // btn_languageicon
             // 
-            this.gunaAdvenceButton5.Animated = true;
-            this.gunaAdvenceButton5.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton5.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton5.BaseColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton5.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton5.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton5.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton5.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton5.CheckedImage = null;
-            this.gunaAdvenceButton5.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaAdvenceButton5.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton5.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton5.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaAdvenceButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
-            this.gunaAdvenceButton5.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton5.Image")));
-            this.gunaAdvenceButton5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaAdvenceButton5.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton5.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton5.Location = new System.Drawing.Point(348, 101);
-            this.gunaAdvenceButton5.Name = "gunaAdvenceButton5";
-            this.gunaAdvenceButton5.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton5.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton5.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.gunaAdvenceButton5.OnHoverImage = null;
-            this.gunaAdvenceButton5.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton5.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton5.OnPressedDepth = 0;
-            this.gunaAdvenceButton5.Size = new System.Drawing.Size(24, 24);
-            this.gunaAdvenceButton5.TabIndex = 22;
+            this.btn_languageicon.Animated = true;
+            this.btn_languageicon.AnimationHoverSpeed = 0.07F;
+            this.btn_languageicon.AnimationSpeed = 0.03F;
+            this.btn_languageicon.BaseColor = System.Drawing.Color.White;
+            this.btn_languageicon.BorderColor = System.Drawing.Color.Black;
+            this.btn_languageicon.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_languageicon.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_languageicon.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_languageicon.CheckedImage = null;
+            this.btn_languageicon.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_languageicon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_languageicon.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_languageicon.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_languageicon.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_languageicon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
+            this.btn_languageicon.Image = ((System.Drawing.Image)(resources.GetObject("btn_languageicon.Image")));
+            this.btn_languageicon.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_languageicon.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_languageicon.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_languageicon.Location = new System.Drawing.Point(343, 101);
+            this.btn_languageicon.Name = "btn_languageicon";
+            this.btn_languageicon.OnHoverBaseColor = System.Drawing.Color.White;
+            this.btn_languageicon.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_languageicon.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.btn_languageicon.OnHoverImage = null;
+            this.btn_languageicon.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btn_languageicon.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_languageicon.OnPressedDepth = 0;
+            this.btn_languageicon.Size = new System.Drawing.Size(24, 24);
+            this.btn_languageicon.TabIndex = 22;
+            this.btn_languageicon.Click += new System.EventHandler(this.btn_languageicon_Click);
             // 
-            // gunaPanel_leftside
+            // gunaPanel_left
             // 
-            this.gunaPanel_leftside.Controls.Add(this.gunaAdvenceButton5);
-            this.gunaPanel_leftside.Controls.Add(this.btn_session);
-            this.gunaPanel_leftside.Controls.Add(this.checked_session);
-            this.gunaPanel_leftside.Controls.Add(this.btn_loginenabled);
-            this.gunaPanel_leftside.Controls.Add(this.btn_logindisabled);
-            this.gunaPanel_leftside.Controls.Add(this.txt_sifre);
-            this.gunaPanel_leftside.Controls.Add(this.txt_kullaniciadi);
-            this.gunaPanel_leftside.Controls.Add(this.gunaAdvenceButton1);
-            this.gunaPanel_leftside.Controls.Add(this.gunaPanel_leftupper);
-            this.gunaPanel_leftside.Controls.Add(this.gunaPictureBox1);
-            this.gunaPanel_leftside.Controls.Add(this.gunaPanel1);
-            this.gunaPanel_leftside.Controls.Add(this.gunaLabel1);
-            this.gunaPanel_leftside.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gunaPanel_leftside.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel_leftside.Name = "gunaPanel_leftside";
-            this.gunaPanel_leftside.Size = new System.Drawing.Size(396, 720);
-            this.gunaPanel_leftside.TabIndex = 1;
-            this.gunaPanel_leftside.MouseClick += new System.Windows.Forms.MouseEventHandler(this.gunaPanel_leftside_MouseClick);
+            this.gunaPanel_left.Controls.Add(this.panel_language);
+            this.gunaPanel_left.Controls.Add(this.btn_register);
+            this.gunaPanel_left.Controls.Add(this.btn_version);
+            this.gunaPanel_left.Controls.Add(this.btn_languageicon);
+            this.gunaPanel_left.Controls.Add(this.btn_forgotpassword);
+            this.gunaPanel_left.Controls.Add(this.btn_session);
+            this.gunaPanel_left.Controls.Add(this.checked_session);
+            this.gunaPanel_left.Controls.Add(this.btn_loginenabled);
+            this.gunaPanel_left.Controls.Add(this.btn_logindisabled);
+            this.gunaPanel_left.Controls.Add(this.txt_password);
+            this.gunaPanel_left.Controls.Add(this.txt_username);
+            this.gunaPanel_left.Controls.Add(this.btn_language);
+            this.gunaPanel_left.Controls.Add(this.gunaPanel_leftupper);
+            this.gunaPanel_left.Controls.Add(this.pbox_logo);
+            this.gunaPanel_left.Controls.Add(this.lbl_signin);
+            this.gunaPanel_left.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gunaPanel_left.Location = new System.Drawing.Point(0, 0);
+            this.gunaPanel_left.Name = "gunaPanel_left";
+            this.gunaPanel_left.Size = new System.Drawing.Size(396, 720);
+            this.gunaPanel_left.TabIndex = 1;
+            this.gunaPanel_left.MouseClick += new System.Windows.Forms.MouseEventHandler(this.gunaPanel_leftside_MouseClick);
             // 
             // Login
             // 
@@ -806,63 +898,67 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1280, 720);
-            this.Controls.Add(this.gunaPanel_rightside);
-            this.Controls.Add(this.gunaPanel_leftside);
+            this.Controls.Add(this.gunaPanel_right);
+            this.Controls.Add(this.gunaPanel_left);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nöro Dikkat - Hareket Temelli Dikkat, Öğrenme ve Düşünme Becerileri Geliştirme Pr" +
     "ogramı";
             this.Load += new System.EventHandler(this.Login_Load);
-            this.gunaPanel_rightside.ResumeLayout(false);
-            this.gunaPanel2.ResumeLayout(false);
+            this.gunaPanel_right.ResumeLayout(false);
+            this.gunaPanel_rightattention.ResumeLayout(false);
             this.gunaPanel3.ResumeLayout(false);
-            this.gunaElipsePanel_duyuru.ResumeLayout(false);
-            this.gunaElipsePanel_duyuru.PerformLayout();
-            this.gunaPanel_upper.ResumeLayout(false);
-            this.gunaPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
-            this.gunaPanel_leftside.ResumeLayout(false);
-            this.gunaPanel_leftside.PerformLayout();
+            this.gunaPanel_attention.ResumeLayout(false);
+            this.gunaPanel_attention.PerformLayout();
+            this.gunaPanel_rightupper.ResumeLayout(false);
+            this.panel_language.ResumeLayout(false);
+            this.panel_language.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_logo)).EndInit();
+            this.gunaPanel_left.ResumeLayout(false);
+            this.gunaPanel_left.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Guna.UI.WinForms.GunaPanel gunaPanel_rightside;
-        private Guna.UI.WinForms.GunaPanel gunaPanel_upper;
-        private Guna.UI.WinForms.GunaControlBox gunaControlBox3;
-        private Guna.UI.WinForms.GunaControlBox gunaControlBox1;
+        private Guna.UI.WinForms.GunaPanel gunaPanel_right;
+        private Guna.UI.WinForms.GunaPanel gunaPanel_rightupper;
+        private Guna.UI.WinForms.GunaControlBox gunaControlBox_minimize;
+        private Guna.UI.WinForms.GunaControlBox gunaControlBox_close;
         private Guna.UI.WinForms.GunaDragControl gunaDragControl1;
         private Guna.UI.WinForms.GunaDragControl gunaDragControl2;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton7;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton8;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton4;
-        private Guna.UI.WinForms.GunaTileButton gunaTileButton1;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel_duyuru;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton6;
-        private Guna.UI.WinForms.GunaPanel gunaPanel2;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_googleplay;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_appstore;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_help;
+        private Guna.UI.WinForms.GunaTileButton btn_attention;
+        private Guna.UI.WinForms.GunaElipsePanel gunaPanel_attention;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_moredetails;
+        private Guna.UI.WinForms.GunaPanel gunaPanel_rightattention;
         private Guna.UI.WinForms.GunaPanel gunaPanel3;
-        private Guna.UI.WinForms.GunaLabel gunaLabel4;
-        private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private Guna.UI.WinForms.GunaTileButton gunaTileButton2;
+        private Guna.UI.WinForms.GunaLabel lbl_attentionmsg;
+        private Guna.UI.WinForms.GunaLabel lbl_attentiontime;
+        private Guna.UI.WinForms.GunaLabel lbl_attentiontitle;
+        private Guna.UI.WinForms.GunaTileButton btn_settings;
         private Guna.UI.WinForms.GunaPanel gunaPanel_leftupper;
-        private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaPanel gunaPanel1;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton2;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton3;
-        private Guna.UI.WinForms.GunaAdvenceButton btn_sifremiunuttum;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
-        private Guna.UI.WinForms.GunaTextBox txt_kullaniciadi;
-        private Guna.UI.WinForms.GunaTextBox txt_sifre;
+        private Guna.UI.WinForms.GunaLabel lbl_signin;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_register;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_version;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_forgotpassword;
+        private Guna.UI.WinForms.GunaPictureBox pbox_logo;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_language;
+        private Guna.UI.WinForms.GunaTextBox txt_username;
+        private Guna.UI.WinForms.GunaTextBox txt_password;
         private Guna.UI.WinForms.GunaTileButton btn_logindisabled;
         private Guna.UI.WinForms.GunaTileButton btn_loginenabled;
         private Guna.UI.WinForms.GunaMediumCheckBox checked_session;
         private Guna.UI.WinForms.GunaAdvenceButton btn_session;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton5;
-        private Guna.UI.WinForms.GunaPanel gunaPanel_leftside;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_languageicon;
+        private Guna.UI.WinForms.GunaPanel gunaPanel_left;
+        private Guna.UI.WinForms.GunaElipsePanel panel_language;
+        private Guna.UI.WinForms.GunaComboBox cbox_language;
+        private Guna.UI.WinForms.GunaLabel lbl_title;
+        private Guna.UI.WinForms.GunaComboBox cbox_server;
     }
 }
 
