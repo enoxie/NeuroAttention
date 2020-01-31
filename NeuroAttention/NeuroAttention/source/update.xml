@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<sharpUpdate>
+       <update appId="NeuroAttention">
+       <version>2.0.0.0</version>
+       <url>http://www.enesbilgi.com/test/NeuroAttention.exe</url>
+       <fileName>MayaAcademia.exe</fileName>
+       <md5>7b3f03fe144557e403602535395f41a3</md5>
+       <description>Uygulamaya dil paketi eklendi.</description>
+       <launchArgs></launchArgs>
+       </update>
+ 
+</sharpUpdate>
