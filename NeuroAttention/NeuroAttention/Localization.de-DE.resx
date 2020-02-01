@@ -120,6 +120,9 @@
   <data name="btn_forgotpassword" xml:space="preserve">
     <value>Passwort vergessen?</value>
   </data>
+  <data name="btn_kullanimsozlesmesi" xml:space="preserve">
+    <value>NUTZUNGSBEDINGUNGEN</value>
+  </data>
   <data name="btn_language" xml:space="preserve">
     <value>Deutsch (DE)</value>
   </data>
@@ -137,6 +140,15 @@
   </data>
   <data name="cbox_server" xml:space="preserve">
     <value>TR NATRO - db60</value>
+  </data>
+  <data name="lbl_applanguage" xml:space="preserve">
+    <value>SPRACHE</value>
+  </data>
+  <data name="lbl_currentversion" xml:space="preserve">
+    <value>AKTUELLE VERSION</value>
+  </data>
+  <data name="lbl_settings" xml:space="preserve">
+    <value>EINSTELLUNGEN</value>
   </data>
   <data name="lbl_signin" xml:space="preserve">
     <value>ANMELDEN</value>

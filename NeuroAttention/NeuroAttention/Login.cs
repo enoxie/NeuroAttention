@@ -10,7 +10,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Reflection;
 using NeuroAttention.Properties;
+
 
 namespace NeuroAttention
 {
@@ -87,7 +89,8 @@ namespace NeuroAttention
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            string version =  Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            btn_version.Text = "v" + version[0] + version[1] + version[2] + version[3] + version[4].ToString();
             string dil = Settings1.Default["dil"].ToString();
             Application.CurrentCulture = new CultureInfo(dil);
             language(dil);

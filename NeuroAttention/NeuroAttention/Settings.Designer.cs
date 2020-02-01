@@ -31,14 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.gunaPanel_upper_left = new Guna.UI.WinForms.GunaPanel();
             this.gunaDragControl2 = new Guna.UI.WinForms.GunaDragControl(this.components);
-            this.btn_back = new Guna.UI.WinForms.GunaTileButton();
             this.gunaPanel_upper_right = new Guna.UI.WinForms.GunaPanel();
             this.gunaAdvenceButton4 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaControlBox3 = new Guna.UI.WinForms.GunaControlBox();
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
-            this.gunaPanel_upper_left = new Guna.UI.WinForms.GunaPanel();
+            this.btn_back = new Guna.UI.WinForms.GunaTileButton();
             this.gunaPanel_left = new Guna.UI.WinForms.GunaPanel();
+            this.lbl_title = new Guna.UI.WinForms.GunaLabel();
             this.copyrights = new NeuroAttention.copyrights();
             this.btn_kullanimsozlesmesi = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btn_version = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -55,37 +56,17 @@
             // 
             this.gunaDragControl1.TargetControl = this.gunaPanel_upper_left;
             // 
+            // gunaPanel_upper_left
+            // 
+            this.gunaPanel_upper_left.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaPanel_upper_left.Location = new System.Drawing.Point(0, 0);
+            this.gunaPanel_upper_left.Name = "gunaPanel_upper_left";
+            this.gunaPanel_upper_left.Size = new System.Drawing.Size(1080, 40);
+            this.gunaPanel_upper_left.TabIndex = 9;
+            // 
             // gunaDragControl2
             // 
             this.gunaDragControl2.TargetControl = this.gunaPanel_upper_right;
-            // 
-            // btn_back
-            // 
-            this.btn_back.Animated = true;
-            this.btn_back.AnimationHoverSpeed = 0.07F;
-            this.btn_back.AnimationSpeed = 0.03F;
-            this.btn_back.BackColor = System.Drawing.Color.Transparent;
-            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_back.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.btn_back.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.btn_back.BorderSize = 2;
-            this.btn_back.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_back.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_back.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_back.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_back.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
-            this.btn_back.ForeColor = System.Drawing.Color.White;
-            this.btn_back.Image = ((System.Drawing.Image)(resources.GetObject("btn_back.Image")));
-            this.btn_back.ImageSize = new System.Drawing.Size(22, 20);
-            this.btn_back.Location = new System.Drawing.Point(1080, 0);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.btn_back.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.btn_back.OnHoverForeColor = System.Drawing.Color.Empty;
-            this.btn_back.OnHoverImage = null;
-            this.btn_back.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_back.Size = new System.Drawing.Size(200, 720);
-            this.btn_back.TabIndex = 19;
             // 
             // gunaPanel_upper_right
             // 
@@ -171,17 +152,40 @@
             this.gunaControlBox1.Size = new System.Drawing.Size(50, 40);
             this.gunaControlBox1.TabIndex = 4;
             // 
-            // gunaPanel_upper_left
+            // btn_back
             // 
-            this.gunaPanel_upper_left.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaPanel_upper_left.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel_upper_left.Name = "gunaPanel_upper_left";
-            this.gunaPanel_upper_left.Size = new System.Drawing.Size(1080, 40);
-            this.gunaPanel_upper_left.TabIndex = 9;
+            this.btn_back.Animated = true;
+            this.btn_back.AnimationHoverSpeed = 0.07F;
+            this.btn_back.AnimationSpeed = 0.03F;
+            this.btn_back.BackColor = System.Drawing.Color.Transparent;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.btn_back.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.btn_back.BorderSize = 2;
+            this.btn_back.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_back.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_back.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_back.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_back.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
+            this.btn_back.ForeColor = System.Drawing.Color.White;
+            this.btn_back.Image = ((System.Drawing.Image)(resources.GetObject("btn_back.Image")));
+            this.btn_back.ImageSize = new System.Drawing.Size(22, 20);
+            this.btn_back.Location = new System.Drawing.Point(1080, 0);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.btn_back.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.btn_back.OnHoverForeColor = System.Drawing.Color.Empty;
+            this.btn_back.OnHoverImage = null;
+            this.btn_back.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_back.Size = new System.Drawing.Size(200, 720);
+            this.btn_back.TabIndex = 19;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // gunaPanel_left
             // 
             this.gunaPanel_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.gunaPanel_left.Controls.Add(this.lbl_title);
+            this.gunaPanel_left.Controls.Add(this.copyrights);
             this.gunaPanel_left.Controls.Add(this.btn_kullanimsozlesmesi);
             this.gunaPanel_left.Controls.Add(this.btn_version);
             this.gunaPanel_left.Controls.Add(this.cbox_version);
@@ -189,7 +193,6 @@
             this.gunaPanel_left.Controls.Add(this.lbl_applanguage);
             this.gunaPanel_left.Controls.Add(this.lbl_currentversion);
             this.gunaPanel_left.Controls.Add(this.lbl_settings);
-            this.gunaPanel_left.Controls.Add(this.copyrights);
             this.gunaPanel_left.Controls.Add(this.gunaPanel_upper_left);
             this.gunaPanel_left.Dock = System.Windows.Forms.DockStyle.Left;
             this.gunaPanel_left.Location = new System.Drawing.Point(0, 0);
@@ -197,13 +200,25 @@
             this.gunaPanel_left.Size = new System.Drawing.Size(1080, 720);
             this.gunaPanel_left.TabIndex = 0;
             // 
+            // lbl_title
+            // 
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(54)))), ((int)(((byte)(57)))));
+            this.lbl_title.Location = new System.Drawing.Point(607, 43);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(134, 15);
+            this.lbl_title.TabIndex = 26;
+            this.lbl_title.Text = "KULLANICI SÖZLEŞMESİ";
+            this.lbl_title.Visible = false;
+            // 
             // copyrights
             // 
             this.copyrights.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.copyrights.Location = new System.Drawing.Point(406, 71);
+            this.copyrights.Location = new System.Drawing.Point(441, 64);
             this.copyrights.Name = "copyrights";
-            this.copyrights.Size = new System.Drawing.Size(613, 565);
-            this.copyrights.TabIndex = 13;
+            this.copyrights.Size = new System.Drawing.Size(597, 546);
+            this.copyrights.TabIndex = 25;
             this.copyrights.Visible = false;
             // 
             // btn_kullanimsozlesmesi
@@ -235,10 +250,11 @@
             this.btn_kullanimsozlesmesi.OnHoverLineColor = System.Drawing.Color.Empty;
             this.btn_kullanimsozlesmesi.OnPressedColor = System.Drawing.Color.Black;
             this.btn_kullanimsozlesmesi.OnPressedDepth = 0;
-            this.btn_kullanimsozlesmesi.Size = new System.Drawing.Size(180, 20);
+            this.btn_kullanimsozlesmesi.Size = new System.Drawing.Size(170, 20);
             this.btn_kullanimsozlesmesi.TabIndex = 24;
-            this.btn_kullanimsozlesmesi.Text = "KULLANIM SÖZLEŞMESİ";
+            this.btn_kullanimsozlesmesi.Text = "KULLANICI SÖZLEŞMESİ";
             this.btn_kullanimsozlesmesi.TextOffsetX = -10;
+            this.btn_kullanimsozlesmesi.Click += new System.EventHandler(this.btn_kullanimsozlesmesi_Click);
             // 
             // btn_version
             // 
@@ -288,8 +304,6 @@
             this.cbox_version.ForeColor = System.Drawing.Color.White;
             this.cbox_version.FormattingEnabled = true;
             this.cbox_version.ItemHeight = 33;
-            this.cbox_version.Items.AddRange(new object[] {
-            "v1.0.0"});
             this.cbox_version.Location = new System.Drawing.Point(26, 259);
             this.cbox_version.Name = "cbox_version";
             this.cbox_version.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -324,6 +338,7 @@
             this.cbox_language.Radius = 6;
             this.cbox_language.Size = new System.Drawing.Size(240, 39);
             this.cbox_language.TabIndex = 20;
+            this.cbox_language.SelectionChangeCommitted += new System.EventHandler(this.cbox_language_SelectionChangeCommitted);
             // 
             // lbl_applanguage
             // 
@@ -371,6 +386,7 @@
             this.Name = "Settings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings";
+            this.Load += new System.EventHandler(this.Settings_Load);
             this.gunaPanel_upper_right.ResumeLayout(false);
             this.gunaPanel_left.ResumeLayout(false);
             this.gunaPanel_left.PerformLayout();
@@ -396,5 +412,6 @@
         private Guna.UI.WinForms.GunaLabel lbl_currentversion;
         private Guna.UI.WinForms.GunaLabel lbl_settings;
         private copyrights copyrights;
+        private Guna.UI.WinForms.GunaLabel lbl_title;
     }
 }

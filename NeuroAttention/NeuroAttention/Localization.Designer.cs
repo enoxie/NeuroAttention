@@ -70,6 +70,15 @@ namespace NeuroAttention {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to KULLANICI SÖZLEŞMESİ.
+        /// </summary>
+        internal static string btn_kullanimsozlesmesi {
+            get {
+                return ResourceManager.GetString("btn_kullanimsozlesmesi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Türkçe (TR).
         /// </summary>
         internal static string btn_language {
@@ -120,6 +129,33 @@ namespace NeuroAttention {
         internal static string cbox_server {
             get {
                 return ResourceManager.GetString("cbox_server", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to UYGULAMA DİLİ.
+        /// </summary>
+        internal static string lbl_applanguage {
+            get {
+                return ResourceManager.GetString("lbl_applanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MEVCUT SÜRÜM.
+        /// </summary>
+        internal static string lbl_currentversion {
+            get {
+                return ResourceManager.GetString("lbl_currentversion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AYARLAR.
+        /// </summary>
+        internal static string lbl_settings {
+            get {
+                return ResourceManager.GetString("lbl_settings", resourceCulture);
             }
         }
         

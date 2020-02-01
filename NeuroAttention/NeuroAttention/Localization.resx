@@ -120,6 +120,9 @@
   <data name="btn_forgotpassword" xml:space="preserve">
     <value>Oturum açamıyor musun?</value>
   </data>
+  <data name="btn_kullanimsozlesmesi" xml:space="preserve">
+    <value>KULLANICI SÖZLEŞMESİ</value>
+  </data>
   <data name="btn_language" xml:space="preserve">
     <value>Türkçe (TR)</value>
   </data>
@@ -137,6 +140,15 @@
   </data>
   <data name="cbox_server" xml:space="preserve">
     <value>TR NATRO - db60</value>
+  </data>
+  <data name="lbl_applanguage" xml:space="preserve">
+    <value>UYGULAMA DİLİ</value>
+  </data>
+  <data name="lbl_currentversion" xml:space="preserve">
+    <value>MEVCUT SÜRÜM</value>
+  </data>
+  <data name="lbl_settings" xml:space="preserve">
+    <value>AYARLAR</value>
   </data>
   <data name="lbl_signin" xml:space="preserve">
     <value>OTURUM AÇ</value>

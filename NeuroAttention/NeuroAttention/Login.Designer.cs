@@ -82,7 +82,7 @@
             this.gunaPanel_right.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaPanel_right.BackColor = System.Drawing.Color.Black;
+            this.gunaPanel_right.BackColor = System.Drawing.Color.Transparent;
             this.gunaPanel_right.Controls.Add(this.btn_settings);
             this.gunaPanel_right.Controls.Add(this.gunaPanel_rightattention);
             this.gunaPanel_right.Controls.Add(this.btn_appstore);
@@ -96,7 +96,6 @@
             // 
             // btn_settings
             // 
-            this.btn_settings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_settings.Animated = true;
             this.btn_settings.AnimationHoverSpeed = 0.07F;
             this.btn_settings.AnimationSpeed = 0.03F;
@@ -150,7 +149,7 @@
             this.btn_attention.AnimationSpeed = 0.03F;
             this.btn_attention.BackColor = System.Drawing.Color.Transparent;
             this.btn_attention.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_attention.BaseColor = System.Drawing.Color.Black;
+            this.btn_attention.BaseColor = System.Drawing.Color.Transparent;
             this.btn_attention.BorderColor = System.Drawing.Color.Black;
             this.btn_attention.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_attention.Dock = System.Windows.Forms.DockStyle.Top;
@@ -180,7 +179,7 @@
             this.gunaPanel_attention.Controls.Add(this.lbl_attentiontime);
             this.gunaPanel_attention.Controls.Add(this.lbl_attentiontitle);
             this.gunaPanel_attention.Controls.Add(this.btn_moredetails);
-            this.gunaPanel_attention.Location = new System.Drawing.Point(99, 5);
+            this.gunaPanel_attention.Location = new System.Drawing.Point(104, 0);
             this.gunaPanel_attention.Name = "gunaPanel_attention";
             this.gunaPanel_attention.Size = new System.Drawing.Size(357, 208);
             this.gunaPanel_attention.TabIndex = 19;
@@ -237,7 +236,7 @@
             this.btn_moredetails.Image = null;
             this.btn_moredetails.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_moredetails.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_moredetails.Location = new System.Drawing.Point(19, 136);
+            this.btn_moredetails.Location = new System.Drawing.Point(19, 119);
             this.btn_moredetails.Name = "btn_moredetails";
             this.btn_moredetails.OnHoverBaseColor = System.Drawing.Color.White;
             this.btn_moredetails.OnHoverBorderColor = System.Drawing.Color.Empty;
@@ -340,7 +339,7 @@
             this.btn_help.AnimationHoverSpeed = 0.07F;
             this.btn_help.AnimationSpeed = 0.03F;
             this.btn_help.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_help.BaseColor = System.Drawing.Color.Black;
+            this.btn_help.BaseColor = System.Drawing.Color.Transparent;
             this.btn_help.BorderColor = System.Drawing.Color.Black;
             this.btn_help.CheckedBaseColor = System.Drawing.Color.Gray;
             this.btn_help.CheckedBorderColor = System.Drawing.Color.Black;
@@ -897,6 +896,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.gunaPanel_right);
             this.Controls.Add(this.gunaPanel_left);
