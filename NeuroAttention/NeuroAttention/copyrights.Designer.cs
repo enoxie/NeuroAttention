@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(copyrights));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.gunaVScrollBar1 = new Guna.UI.WinForms.GunaVScrollBar();
             this.lbl_description = new Guna.UI.WinForms.GunaLabel();
+            this.gunaVScrollBar1 = new Guna.UI.WinForms.GunaVScrollBar();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,6 +43,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(694, 635);
             this.panel1.TabIndex = 8;
+            // 
+            // lbl_description
+            // 
+            this.lbl_description.AutoSize = true;
+            this.lbl_description.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_description.Font = new System.Drawing.Font("Infoma Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_description.ForeColor = System.Drawing.Color.White;
+            this.lbl_description.Location = new System.Drawing.Point(0, 0);
+            this.lbl_description.Name = "lbl_description";
+            this.lbl_description.Size = new System.Drawing.Size(557, 780);
+            this.lbl_description.TabIndex = 0;
+            this.lbl_description.Text = resources.GetString("lbl_description.Text");
             // 
             // gunaVScrollBar1
             // 
@@ -57,18 +69,6 @@
             this.gunaVScrollBar1.ThumbColor = System.Drawing.Color.DimGray;
             this.gunaVScrollBar1.ThumbHoverColor = System.Drawing.Color.Gray;
             this.gunaVScrollBar1.ThumbPressedColor = System.Drawing.Color.DarkGray;
-            // 
-            // lbl_description
-            // 
-            this.lbl_description.AutoSize = true;
-            this.lbl_description.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_description.Font = new System.Drawing.Font("Infoma Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_description.ForeColor = System.Drawing.Color.White;
-            this.lbl_description.Location = new System.Drawing.Point(0, 0);
-            this.lbl_description.Name = "lbl_description";
-            this.lbl_description.Size = new System.Drawing.Size(557, 780);
-            this.lbl_description.TabIndex = 0;
-            this.lbl_description.Text = resources.GetString("lbl_description.Text");
             // 
             // copyrights
             // 

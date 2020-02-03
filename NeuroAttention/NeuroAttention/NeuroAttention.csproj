@@ -68,6 +68,12 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="forgotpassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forgotpassword.Designer.cs">
+      <DependentUpon>forgotpassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     <EmbeddedResource Include="copyrights.resx">
       <DependentUpon>copyrights.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forgotpassword.resx">
+      <DependentUpon>forgotpassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +170,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
@@ -190,6 +200,12 @@
       <Project>{200fb6f3-7977-4557-a6b8-d52dbf24713c}</Project>
       <Name>SharpUpdate</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rolling-1s-200px.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

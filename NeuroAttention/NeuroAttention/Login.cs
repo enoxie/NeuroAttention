@@ -67,10 +67,25 @@ namespace NeuroAttention
             dr = cmd.ExecuteReader();
             if (dr.Read())
             {
-                MessageBox.Show("Tebrikler! Başarılı bir şekilde giriş yaptınız. https://mayaacademia.com");
-                this.Hide();
-                Dashboard dash = new Dashboard();
-                dash.Show();
+                if (lbl_accessdenied.Visible == true)
+                    lbl_accessdenied.Visible = false;
+                timer1.Start();
+                pbox_loading.Visible = true;
+                panel_forgotpassword.Visible = false;
+                btn_logindisabled.Visible = false;
+                btn_loginenabled.Visible = false;            
+                lbl_signin.Visible = false;
+                txt_username.Visible = false;
+                txt_password.Visible = false;
+                btn_session.Visible = false;
+                btn_language.Visible = false;
+                btn_languageicon.Visible = false;
+                btn_version.Visible = false;
+                checked_session.Visible = false;
+                btn_register.Visible = false;
+                btn_forgotpassword.Visible = false;
+                pbox_logo.Visible = false;
+
             }
 
             else if (user == "" || pass == "")
@@ -80,7 +95,25 @@ namespace NeuroAttention
 
             else
             {
-                MessageBox.Show("Geçerli bir kullanıcı adı veya şifre girmelisiniz.");
+                if (lbl_accessdenied.Visible == true)
+                    lbl_accessdenied.Visible = false;
+                timer2.Start();
+                pbox_loading.Visible = true;
+                panel_forgotpassword.Visible = false;
+                btn_logindisabled.Visible = false;
+                btn_loginenabled.Visible = false;
+                lbl_signin.Visible = false;
+                txt_username.Visible = false;
+                txt_password.Visible = false;
+                btn_session.Visible = false;
+                btn_language.Visible = false;
+                btn_languageicon.Visible = false;
+                btn_version.Visible = false;
+                checked_session.Visible = false;
+                btn_register.Visible = false;
+                btn_forgotpassword.Visible = false;
+                pbox_logo.Visible = false;
+                
             }
             con.Close();
 
@@ -89,6 +122,8 @@ namespace NeuroAttention
 
         private void Login_Load(object sender, EventArgs e)
         {
+            timer1.Interval = 2000;
+            timer2.Interval = 1500;
             string version =  Assembly.GetExecutingAssembly().GetName().Version.ToString();
             btn_version.Text = "v" + version[0] + version[1] + version[2] + version[3] + version[4].ToString();
             string dil = Settings1.Default["dil"].ToString();
@@ -397,6 +432,127 @@ namespace NeuroAttention
         private void cbox_language_SelectedValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_forgotpassword_Click(object sender, EventArgs e)
+        {
+            if (panel_forgotpassword.Visible == false)
+            {
+                if (lbl_accessdenied.Visible == true)
+                    lbl_accessdenied.Visible = false;
+                panel_forgotpassword.Visible = true;
+                btn_register.Visible = false;
+                btn_forgotpassword.Visible = false;
+                lbl_signin.Visible = false;
+                txt_username.Visible = false;
+                txt_password.Visible = false;
+                btn_session.Visible = false;
+                btn_language.Visible = false;
+                btn_languageicon.Visible = false;
+                btn_version.Visible = false;
+                checked_session.Visible = false;
+                this.pbox_logo.Location = new Point(100, 60);
+            }
+
+          
+                
+        }
+
+        private void btn_version_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_backtologin_Click(object sender, EventArgs e)
+        {
+            panel_forgotpassword.Visible = false;
+            btn_register.Visible = true;
+            btn_forgotpassword.Visible = true;
+            lbl_signin.Visible = true;
+            txt_username.Visible = true;
+            txt_password.Visible = true;
+            btn_session.Visible = true;
+            btn_language.Visible = true;
+            btn_languageicon.Visible = true;
+            btn_version.Visible = true;
+            checked_session.Visible = true;
+            this.pbox_logo.Location = new Point(33,61);
+            
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            
+            this.Hide();
+            Dashboard dash = new Dashboard();
+            dash.Show();
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            timer2.Stop();
+            lbl_accessdenied.Visible = true;
+            pbox_loading.Visible = false;
+            btn_logindisabled.Visible = true;
+            btn_loginenabled.Visible = true;
+            lbl_signin.Visible = true;
+            txt_username.Visible = true;
+            txt_password.Visible = true;
+            btn_session.Visible = true;
+            btn_language.Visible = true;
+            btn_languageicon.Visible = true;
+            btn_version.Visible = true;
+            checked_session.Visible = true;
+            btn_register.Visible = true;
+            btn_forgotpassword.Visible = true;
+            pbox_logo.Visible = true;
+            txt_username.Text = "KULLANICI ADI";
+            txt_password.Text = "ŞİFRE";
+            btn_loginenabled.Visible = false;
+        }
+
+        private void txt_fusername_Enter(object sender, EventArgs e)
+        {
+            txt_fusername.BorderSize = 2;
+
+            if (txt_fusername.Text == "KULLANICI ADI")
+            {
+                txt_fusername.Text = "";
+            }
+        }
+
+        private void txt_fusername_Leave(object sender, EventArgs e)
+        {
+            txt_fusername.BorderSize = 0;
+
+            if (txt_fusername.Text == "")
+                txt_fusername.Text = "KULLANICI ADI";
+        }
+
+        private void txt_fusername_MouseHover(object sender, EventArgs e)
+        {
+            txt_fusername.BaseColor = Color.FromArgb(231, 231, 231);
+        }
+
+        private void txt_fusername_MouseLeave(object sender, EventArgs e)
+        {
+            txt_fusername.BaseColor = Color.FromArgb(237, 237, 237);
+        }
+
+        private void txt_fusername_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_fusername.Text != "KULLANICI ADI" && txt_fusername.Text != "")
+            {
+                btn_disabledlogin.Visible = false;
+                btn_login.Visible = true;
+            }
+
+            else
+            {
+                btn_disabledlogin.Visible = true;
+                btn_login.Visible = false;
+            }
         }
     }
 }
