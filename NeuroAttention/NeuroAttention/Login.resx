@@ -137,26 +137,6 @@
         YII=
 </value>
   </data>
-  <data name="btn_login.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        xAAADsQBlSsOGwAAAOVJREFUaEPtjzFqBEEQxPb/L91f2JwtwQXiUtfgFQiGoQL19fAfuO/7i+d5vOKV
-        r3N4jz/uiIpXJvtUvDLZp+KVyT4Vr0z2qXhlsk/FK5N9Kl6Z7FPxymSfilcm+1S8Mtmn4pXJPhWvTPap
-        eGWyT8Urk30qXpnsU/HKZJ+KVya/1OAEyT/3gJfPAX/pT/wyFa1MdqloZbJLRSuTXSpamexS0cpkl4pW
-        JrtUtDLZpaKVyS4VrUx2qWhlsktFK5NdKlqZ7FLRymSXilYmu1S0MtmlopXJLhWtTPY5Ol6Ojpej4x8+
-        cl3fLLxqUR98l/AAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btn_disabledlogin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        xAAADsQBlSsOGwAAAOVJREFUaEPtjzFqBEEQxPb/L91f2JwtwQXiUtfgFQiGoQL19fAfuO/7i+d5vOKV
-        r3N4jz/uiIpXJvtUvDLZp+KVyT4Vr0z2qXhlsk/FK5N9Kl6Z7FPxymSfilcm+1S8Mtmn4pXJPhWvTPap
-        eGWyT8Urk30qXpnsU/HKZJ+KVya/1OAEyT/3gJfPAX/pT/wyFa1MdqloZbJLRSuTXSpamexS0cpkl4pW
-        JrtUtDLZpaKVyS4VrUx2qWhlsktFK5NdKlqZ7FLRymSXilYmu1S0MtmlopXJLhWtTPY5Ol6Ojpej4x8+
-        cl3fLLxqUR98l/AAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="btn_attention.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAABHZJREFUeF7t
@@ -786,6 +766,26 @@
         AEDXuLH/D8mI26MtlIK8AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="btn_login.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        xAAADsQBlSsOGwAAAOVJREFUaEPtjzFqBEEQxPb/L91f2JwtwQXiUtfgFQiGoQL19fAfuO/7i+d5vOKV
+        r3N4jz/uiIpXJvtUvDLZp+KVyT4Vr0z2qXhlsk/FK5N9Kl6Z7FPxymSfilcm+1S8Mtmn4pXJPhWvTPap
+        eGWyT8Urk30qXpnsU/HKZJ+KVya/1OAEyT/3gJfPAX/pT/wyFa1MdqloZbJLRSuTXSpamexS0cpkl4pW
+        JrtUtDLZpaKVyS4VrUx2qWhlsktFK5NdKlqZ7FLRymSXilYmu1S0MtmlopXJLhWtTPY5Ol6Ojpej4x8+
+        cl3fLLxqUR98l/AAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btn_disabledlogin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        xAAADsQBlSsOGwAAAOVJREFUaEPtjzFqBEEQxPb/L91f2JwtwQXiUtfgFQiGoQL19fAfuO/7i+d5vOKV
+        r3N4jz/uiIpXJvtUvDLZp+KVyT4Vr0z2qXhlsk/FK5N9Kl6Z7FPxymSfilcm+1S8Mtmn4pXJPhWvTPap
+        eGWyT8Urk30qXpnsU/HKZJ+KVya/1OAEyT/3gJfPAX/pT/wyFa1MdqloZbJLRSuTXSpamexS0cpkl4pW
+        JrtUtDLZpaKVyS4VrUx2qWhlsktFK5NdKlqZ7FLRymSXilYmu1S0MtmlopXJLhWtTPY5Ol6Ojpej4x8+
+        cl3fLLxqUR98l/AAAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="gunaDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -1273,11 +1273,23 @@
         oz8LtunjhrbEfD3ymJ0Dk9GszP+2aLOtOoqtKoplkHkCMnIOe0wAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="timer_login.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>323, 17</value>
   </metadata>
-  <metadata name="timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="timer_logindenied.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>410, 17</value>
+  </metadata>
+  <metadata name="timer_resetpassword.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>570, 19</value>
+  </metadata>
+  <metadata name="timer_resetpassworddenied.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>752, 18</value>
+  </metadata>
+  <metadata name="timer_btnforgotpassword.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>950, 16</value>
+  </metadata>
+  <metadata name="timer_backtologin.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1131, 20</value>
   </metadata>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

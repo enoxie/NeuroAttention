@@ -40,7 +40,6 @@
             this.btn_back = new Guna.UI.WinForms.GunaTileButton();
             this.gunaPanel_left = new Guna.UI.WinForms.GunaPanel();
             this.lbl_title = new Guna.UI.WinForms.GunaLabel();
-            this.copyrights = new NeuroAttention.copyrights();
             this.btn_kullanimsozlesmesi = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btn_version = new Guna.UI.WinForms.GunaAdvenceButton();
             this.cbox_version = new Guna.UI.WinForms.GunaComboBox();
@@ -48,6 +47,8 @@
             this.lbl_applanguage = new Guna.UI.WinForms.GunaLabel();
             this.lbl_currentversion = new Guna.UI.WinForms.GunaLabel();
             this.lbl_settings = new Guna.UI.WinForms.GunaLabel();
+            this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.copyrights = new NeuroAttention.copyrights();
             this.gunaPanel_upper_right.SuspendLayout();
             this.gunaPanel_left.SuspendLayout();
             this.SuspendLayout();
@@ -184,6 +185,7 @@
             // gunaPanel_left
             // 
             this.gunaPanel_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.gunaPanel_left.Controls.Add(this.gunaAdvenceButton1);
             this.gunaPanel_left.Controls.Add(this.lbl_title);
             this.gunaPanel_left.Controls.Add(this.copyrights);
             this.gunaPanel_left.Controls.Add(this.btn_kullanimsozlesmesi);
@@ -211,15 +213,6 @@
             this.lbl_title.TabIndex = 26;
             this.lbl_title.Text = "KULLANICI SÖZLEŞMESİ";
             this.lbl_title.Visible = false;
-            // 
-            // copyrights
-            // 
-            this.copyrights.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.copyrights.Location = new System.Drawing.Point(441, 64);
-            this.copyrights.Name = "copyrights";
-            this.copyrights.Size = new System.Drawing.Size(597, 546);
-            this.copyrights.TabIndex = 25;
-            this.copyrights.Visible = false;
             // 
             // btn_kullanimsozlesmesi
             // 
@@ -373,6 +366,47 @@
             this.lbl_settings.TabIndex = 18;
             this.lbl_settings.Text = "AYARLAR";
             // 
+            // gunaAdvenceButton1
+            // 
+            this.gunaAdvenceButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaAdvenceButton1.AnimationSpeed = 0.03F;
+            this.gunaAdvenceButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaAdvenceButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.gunaAdvenceButton1.CheckedBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.CheckedForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton1.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton1.CheckedImage")));
+            this.gunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.gunaAdvenceButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaAdvenceButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton1.Image")));
+            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton1.Location = new System.Drawing.Point(30, 392);
+            this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
+            this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton1.OnHoverImage = null;
+            this.gunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.Size = new System.Drawing.Size(180, 42);
+            this.gunaAdvenceButton1.TabIndex = 27;
+            this.gunaAdvenceButton1.Text = "Güncelleme Kontrol Et";
+            this.gunaAdvenceButton1.Click += new System.EventHandler(this.gunaAdvenceButton1_Click);
+            // 
+            // copyrights
+            // 
+            this.copyrights.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.copyrights.Location = new System.Drawing.Point(441, 64);
+            this.copyrights.Name = "copyrights";
+            this.copyrights.Size = new System.Drawing.Size(597, 546);
+            this.copyrights.TabIndex = 25;
+            this.copyrights.Visible = false;
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -413,5 +447,6 @@
         private Guna.UI.WinForms.GunaLabel lbl_settings;
         private copyrights copyrights;
         private Guna.UI.WinForms.GunaLabel lbl_title;
+        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
     }
 }
