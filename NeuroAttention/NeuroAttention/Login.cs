@@ -734,7 +734,7 @@ namespace NeuroAttention
             timer_login.Stop();
 
             this.Hide();
-            Dashboard dash = new Dashboard();
+            ConstantAttention dash = new ConstantAttention();
             dash.Show();
         }
 

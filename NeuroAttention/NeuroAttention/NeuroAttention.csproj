@@ -62,6 +62,12 @@
     <Compile Include="copyrights.Designer.cs">
       <DependentUpon>copyrights.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConstantAttention.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConstantAttention.Designer.cs">
+      <DependentUpon>ConstantAttention.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </Compile>
     <EmbeddedResource Include="copyrights.resx">
       <DependentUpon>copyrights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConstantAttention.resx">
+      <DependentUpon>ConstantAttention.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
