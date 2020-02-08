@@ -187,6 +187,7 @@ namespace NeuroAttention
             }
         }
 
+        
 
         public void login()
         {
@@ -254,6 +255,8 @@ namespace NeuroAttention
         private void Login_Load(object sender, EventArgs e)
         {
             
+            
+            
             timer_login.Interval = 2000;
             timer_logindenied.Interval = 1500;
             timer_resetpassword.Interval = 1500;
@@ -272,30 +275,37 @@ namespace NeuroAttention
                 btn_appstore.BackgroundImage = Resources.appstore_tr;
                 SqlConnection con = new SqlConnection(conString);
                 SqlCommand cmd = new SqlCommand("SELECT * from attention_tr", con);
+                DataTable dt = new DataTable();
+               
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
 
+                da.Fill(dt);
                 con.Open();
-                SqlDataReader dr = cmd.ExecuteReader();
-                string attentiontitle = "";
-                string attentiontime = "";
-                string attentionmessage = "";
-
-
-
-
-
-                while (dr.Read())
+               
+              
+                dgw_attention.DataSource = dt;
+                int numRows = dt.Rows.Count;
+                if (numRows > 1)
                 {
-                    attentiontitle = dr["attentiontitle"].ToString();
-                    attentiontime = dr["attentiontime"].ToString();
-                    attentionmessage = dr["attentionmessage"].ToString();
-                }
-                dr.Close();
-                con.Close();
 
-                lbl_attentiontitle.Text = attentiontitle;
-                lbl_attentiontime.Text = attentiontime;
-                lbl_attentionmsg.Text = attentionmessage;
-                
+                    gunaPanel_attention.Size = new Size(360, 350);
+                    
+                    attention2.Location = new Point(20, 135);
+                    gunaSeparator.Location = new Point(6, 120);
+                    btn_moredetails.Location = new Point(6, 300);
+                    attention2.Show();
+                    lbl_attentiontitle.Text = dgw_attention.Rows[0].Cells[1].Value.ToString();
+                    lbl_attentiontime.Text = dgw_attention.Rows[0].Cells[2].Value.ToString();
+                    lbl_attentionmsg.Text = dgw_attention.Rows[0].Cells[3].Value.ToString();
+                    lbl_attentiontitle2.Text = dgw_attention.Rows[1].Cells[1].Value.ToString();
+                    lbl_attentiontime2.Text= dgw_attention.Rows[1].Cells[2].Value.ToString();
+                    lbl_attentionmessage2.Text= dgw_attention.Rows[1].Cells[3].Value.ToString();
+
+                }
+                lbl_attentiontitle.Text = dgw_attention.Rows[0].Cells[1].Value.ToString();
+                lbl_attentiontime.Text = dgw_attention.Rows[0].Cells[2].Value.ToString();
+                lbl_attentionmsg.Text = dgw_attention.Rows[0].Cells[3].Value.ToString();
+
             }
             
             else if (dil == "en-US")
@@ -640,11 +650,6 @@ namespace NeuroAttention
                 cbox_language.SelectedItem = "Deutsch";
             }
 
-
-        }
-
-        private void gunaPanel_right_Paint(object sender, PaintEventArgs e)
-        {
 
         }
 
