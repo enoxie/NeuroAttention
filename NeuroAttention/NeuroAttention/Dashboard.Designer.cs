@@ -43,12 +43,12 @@
             this.gunaCircleButton1 = new Guna.UI.WinForms.GunaCircleButton();
             this.gunaCircleButton2 = new Guna.UI.WinForms.GunaCircleButton();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
-            this.lbl_appname = new Guna.UI.WinForms.GunaLabel();
-            this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();
-            this.lbl_details = new Guna.UI.WinForms.GunaLabel();
             this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lbl_appname = new Guna.UI.WinForms.GunaLabel();
+            this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();
+            this.lbl_details = new Guna.UI.WinForms.GunaLabel();
             this.btn_startapp = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaAdvenceButton6 = new Guna.UI.WinForms.GunaAdvenceButton();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox_car)).BeginInit();
@@ -363,6 +363,21 @@
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.gunaDataGridView1.Visible = false;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Column2";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Column3";
+            this.Column3.Name = "Column3";
+            // 
             // lbl_appname
             // 
             this.lbl_appname.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -398,21 +413,6 @@
             this.lbl_details.TabIndex = 18;
             this.lbl_details.Text = "Normal işlem ve görev atamalı işlem özelliği vardır.";
             this.lbl_details.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Column2";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Column3";
-            this.Column3.Name = "Column3";
             // 
             // btn_startapp
             // 

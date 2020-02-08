@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btn_appstore" xml:space="preserve">
+    <value>Resources.appstore_tr</value>
+  </data>
   <data name="btn_forgotpassword" xml:space="preserve">
     <value>Oturum açamıyor musun?</value>
   </data>
@@ -128,6 +131,9 @@
   </data>
   <data name="btn_logindisabled" xml:space="preserve">
     <value>false</value>
+  </data>
+  <data name="btn_moredetails" xml:space="preserve">
+    <value>Daha fazla ayrıntı</value>
   </data>
   <data name="btn_register" xml:space="preserve">
     <value>Hesap oluştur</value>

@@ -51,7 +51,9 @@ namespace NeuroAttention
             cbox_language.SelectedItem = Localization.cbox_language;
             btn_loginenabled.Visible = false;
             btn_logindisabled.Visible = true;
-          
+            btn_moredetails.Text = Localization.btn_moredetails;
+
+
         }
 
 
@@ -127,6 +129,65 @@ namespace NeuroAttention
 
         }
 
+
+        public void forgotPasswordSMS()
+        {
+
+            SqlConnection con = new SqlConnection(conString);
+            SqlCommand cmd = new SqlCommand("SELECT * from users where k_adi = '" + txt_fusername.Text +"'", con);
+            
+            con.Open();
+            SqlDataReader dr = cmd.ExecuteReader();
+            string telno = "";
+            string sifre = "";
+
+            while (dr.Read())
+            {
+                telno = dr["k_telefon"].ToString();
+                sifre = dr["k_sifre"].ToString();
+            }
+
+            dr.Close();
+            con.Close();
+
+            //kno.Text= MÜŞTERİ NUMARASI
+            //kad.Text= KULLANICI ADI
+            //ksifre.Text= ŞİFRE
+            //orjinator.Text= ORJİNATÖR (ONAYLI VE TAM DOĞRU OLMALIDIR)
+
+            //xml içerisinde aşağıdaki gibi değerleri gönderebilirsiniz..
+            //<zaman>2014-04-17 08:30:00</zaman>//sms gitmeye başlama zamanı
+            //<zamanasimi>2014-04-17 10:30:00</zamanasimi>//son gönderim deneme zamanı
+            string tur = "Normal";
+            tur = "Turkce";
+            string kNo = "38074";
+            string kAd = "905376097218";
+            string kSifre = "1811ou72";
+            string orjinator = "MAYACADEMIA";
+            string mesaj = "MAYAACADEMIA Giriş Şifreniz:" + " " + kSifre;
+            string smsNN = "data=<sms><kno>" + kNo + "</kno><kulad>" + kAd + "</kulad><sifre>" + kSifre + "</sifre>" +
+            "<gonderen>" + orjinator + "</gonderen>" +
+            "<telmesajlar>" +
+            "<telmesaj><tel>" + telno + "</tel><mesaj>" + mesaj + "</mesaj></telmesaj>" + 
+            "</telmesajlar>" +
+            "<tur>" + tur + "</tur></sms>";
+            string post = XmlPost("http://panel.vatansms.com/panel/smsgonderNNpost.php", smsNN);
+        }
+
+        private string XmlPost(string PostAddress, string xmlData)
+        {
+            using (WebClient wUpload = new WebClient())
+            {
+                wUpload.Headers.Add("Content-Type", "application/x-www-form-urlencoded");
+                Byte[] bPostArray = Encoding.UTF8.GetBytes(xmlData);
+                Byte[] bResponse = wUpload.UploadData(PostAddress, "POST", bPostArray);
+                Char[] sReturnChars = Encoding.UTF8.GetChars(bResponse);
+                string sWebPage = new string(sReturnChars);
+                return sWebPage;
+            }
+        }
+
+
         public void login()
         {
            
@@ -192,6 +253,7 @@ namespace NeuroAttention
 
         private void Login_Load(object sender, EventArgs e)
         {
+            
             timer_login.Interval = 2000;
             timer_logindenied.Interval = 1500;
             timer_resetpassword.Interval = 1500;
@@ -203,31 +265,75 @@ namespace NeuroAttention
             string dil = Settings1.Default["dil"].ToString();
             Application.CurrentCulture = new CultureInfo(dil);
             language(dil);
-            SqlConnection con = new SqlConnection(conString);
-            SqlCommand cmd = new SqlCommand("SELECT * from attention", con);
 
-            con.Open();
-            SqlDataReader dr = cmd.ExecuteReader();
-            string attentiontitle = "";
-            string attentiontime = "";
-            string attentionmessage = "";
-            
-
-
-
-
-            while (dr.Read())
+            if(dil == "tr-TR")
             {
-                attentiontitle = dr["attentiontitle"].ToString();
-                attentiontime = dr["attentiontime"].ToString();
-                attentionmessage = dr["attentionmessage"].ToString();
-            }
-            dr.Close();
-            con.Close();
+                btn_googleplay.BackgroundImage = Resources.googleplay_tr;
+                btn_appstore.BackgroundImage = Resources.appstore_tr;
+                SqlConnection con = new SqlConnection(conString);
+                SqlCommand cmd = new SqlCommand("SELECT * from attention_tr", con);
 
-            lbl_attentiontitle.Text = attentiontitle;
-            lbl_attentiontime.Text = attentiontime;
-            lbl_attentionmsg.Text = attentionmessage;
+                con.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                string attentiontitle = "";
+                string attentiontime = "";
+                string attentionmessage = "";
+
+
+
+
+
+                while (dr.Read())
+                {
+                    attentiontitle = dr["attentiontitle"].ToString();
+                    attentiontime = dr["attentiontime"].ToString();
+                    attentionmessage = dr["attentionmessage"].ToString();
+                }
+                dr.Close();
+                con.Close();
+
+                lbl_attentiontitle.Text = attentiontitle;
+                lbl_attentiontime.Text = attentiontime;
+                lbl_attentionmsg.Text = attentionmessage;
+                
+            }
+            
+            else if (dil == "en-US")
+            {
+                btn_googleplay.BackgroundImage = Resources.googleplay_en;
+                btn_appstore.BackgroundImage = Resources.appstore_en;
+                SqlConnection con = new SqlConnection(conString);
+                SqlCommand cmd = new SqlCommand("SELECT * from attention_en", con);
+
+                con.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                string attentiontitle = "";
+                string attentiontime = "";
+                string attentionmessage = "";
+
+
+
+
+
+                while (dr.Read())
+                {
+                    attentiontitle = dr["attentiontitle"].ToString();
+                    attentiontime = dr["attentiontime"].ToString();
+                    attentionmessage = dr["attentionmessage"].ToString();
+                }
+                dr.Close();
+                con.Close();
+
+                lbl_attentiontitle.Text = attentiontitle;
+                lbl_attentiontime.Text = attentiontime;
+                lbl_attentionmsg.Text = attentionmessage;
+            }
+
+            else if(dil == "de-DE")
+            {
+                btn_googleplay.BackgroundImage = Resources.googleplay_de;
+                btn_appstore.BackgroundImage = Resources.appstore_de;
+            }
             
 
         }
@@ -549,6 +655,34 @@ namespace NeuroAttention
             pbox_logo.Hide();
             btn_language.Hide();
             btn_languageicon.Hide();
+
+
+            if (CultureInfo.CurrentCulture.Name == "tr-TR")
+            {
+                cbox_language.Items.Clear();
+                cbox_language.Items.Add("Türkçe");
+                cbox_language.Items.Add("İngilizce");
+                cbox_language.Items.Add("Almanca");
+                cbox_language.SelectedItem = "Türkçe";
+            }
+
+            else if (CultureInfo.CurrentCulture.Name == "en-US")
+            {
+                cbox_language.Items.Clear();
+                cbox_language.Items.Add("Turkish");
+                cbox_language.Items.Add("English");
+                cbox_language.Items.Add("German");
+                cbox_language.SelectedItem = "English";
+            }
+
+            else if (CultureInfo.CurrentCulture.Name == "de-DE")
+            {
+                cbox_language.Items.Clear();
+                cbox_language.Items.Add("Türkisch");
+                cbox_language.Items.Add("Englisch");
+                cbox_language.Items.Add("Deutsch");
+                cbox_language.SelectedItem = "Deutsch";
+            }
         }
 
         private void cbox_language_SelectionChangeCommitted(object sender, EventArgs e)
@@ -714,7 +848,7 @@ namespace NeuroAttention
         {
             
             forgotPassword();
-            
+            forgotPasswordSMS();
         }
 
        
@@ -734,7 +868,7 @@ namespace NeuroAttention
             timer_login.Stop();
 
             this.Hide();
-            ConstantAttention dash = new ConstantAttention();
+            Dashboard dash = new Dashboard();
             dash.Show();
         }
 
@@ -808,6 +942,11 @@ namespace NeuroAttention
             btn_logindisabled.Visible = true;
             btn_loginenabled.Visible = false;
             this.pbox_logo.Location = new Point(33, 61);
+        }
+
+        private void gunaTileButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
     }

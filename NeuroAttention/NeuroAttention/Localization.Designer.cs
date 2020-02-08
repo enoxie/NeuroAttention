@@ -61,11 +61,59 @@ namespace NeuroAttention {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap appstore_de {
+            get {
+                object obj = ResourceManager.GetObject("appstore_de", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap appstore_en {
+            get {
+                object obj = ResourceManager.GetObject("appstore_en", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap appstore_tr {
+            get {
+                object obj = ResourceManager.GetObject("appstore_tr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to im_car\\app_storetr.png.
+        /// </summary>
+        internal static string btn_appstore {
+            get {
+                return ResourceManager.GetString("btn_appstore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Oturum açamıyor musun?.
         /// </summary>
         internal static string btn_forgotpassword {
             get {
                 return ResourceManager.GetString("btn_forgotpassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to im_car\\google-play-badge.png.
+        /// </summary>
+        internal static string btn_googleplay {
+            get {
+                return ResourceManager.GetString("btn_googleplay", resourceCulture);
             }
         }
         
@@ -93,6 +141,15 @@ namespace NeuroAttention {
         internal static string btn_logindisabled {
             get {
                 return ResourceManager.GetString("btn_logindisabled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Daha fazla ayrıntı.
+        /// </summary>
+        internal static string btn_moredetails {
+            get {
+                return ResourceManager.GetString("btn_moredetails", resourceCulture);
             }
         }
         
@@ -129,6 +186,26 @@ namespace NeuroAttention {
         internal static string cbox_server {
             get {
                 return ResourceManager.GetString("cbox_server", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap googleplay_de {
+            get {
+                object obj = ResourceManager.GetObject("googleplay_de", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap googleplay_tr {
+            get {
+                object obj = ResourceManager.GetObject("googleplay_tr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
