@@ -30,11 +30,38 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaPanel_right = new Guna.UI.WinForms.GunaPanel();
             this.btn_settings = new Guna.UI.WinForms.GunaTileButton();
+            this.gunaPanel_rightattention = new Guna.UI.WinForms.GunaPanel();
+            this.gunaPanel_btnattention = new Guna.UI.WinForms.GunaPanel();
+            this.dgw_attention = new Guna.UI.WinForms.GunaDataGridView();
+            this.btn_attention = new Guna.UI.WinForms.GunaTileButton();
+            this.gunaPanel_attention = new Guna.UI.WinForms.GunaElipsePanel();
+            this.attention2 = new Guna.UI.WinForms.GunaPanel();
+            this.panel_forgotpassword = new Guna.UI.WinForms.GunaPanel();
+            this.lbl_resetpassinfo = new Guna.UI.WinForms.GunaLabel();
+            this.btn_backtologin = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.lbl_forgotusername = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.lbl_contactsupport = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.lbl_info = new Guna.UI.WinForms.GunaLabel();
+            this.btn_login = new Guna.UI.WinForms.GunaTileButton();
+            this.btn_disabledlogin = new Guna.UI.WinForms.GunaTileButton();
+            this.txt_fusername = new Guna.UI.WinForms.GunaTextBox();
+            this.lbl_infotitle = new Guna.UI.WinForms.GunaLabel();
+            this.gunaSeparator2 = new Guna.UI.WinForms.GunaSeparator();
+            this.lbl_attentionmessage2 = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_attentiontitle2 = new Guna.UI.WinForms.GunaLabel();
+            this.btn_moredetails2 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.lbl_attentiontime2 = new Guna.UI.WinForms.GunaLabel();
+            this.usercontrol_attention = new Guna.UI.WinForms.GunaPanel();
+            this.gunaSeparator = new Guna.UI.WinForms.GunaSeparator();
+            this.lbl_attentionmsg = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_attentiontitle = new Guna.UI.WinForms.GunaLabel();
+            this.btn_moredetails = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.lbl_attentiontime = new Guna.UI.WinForms.GunaLabel();
             this.btn_appstore = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btn_googleplay = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPanel_rightupper = new Guna.UI.WinForms.GunaPanel();
@@ -43,43 +70,33 @@
             this.gunaControlBox_close = new Guna.UI.WinForms.GunaControlBox();
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaDragControl2 = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.gunaPanel_leftupper = new Guna.UI.WinForms.GunaPanel();
+            this.gunaPanel8 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaTileButton3 = new Guna.UI.WinForms.GunaTileButton();
+            this.gunaPanel9 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaPanel10 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaTileButton4 = new Guna.UI.WinForms.GunaTileButton();
+            this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.gunaPanel11 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaSeparator3 = new Guna.UI.WinForms.GunaSeparator();
+            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaAdvenceButton5 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaAdvenceButton6 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaAdvenceButton7 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaPanel12 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaAdvenceButton8 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaControlBox3 = new Guna.UI.WinForms.GunaControlBox();
+            this.gunaControlBox4 = new Guna.UI.WinForms.GunaControlBox();
             this.timer_login = new System.Windows.Forms.Timer(this.components);
             this.timer_logindenied = new System.Windows.Forms.Timer(this.components);
             this.timer_resetpassword = new System.Windows.Forms.Timer(this.components);
             this.timer_resetpassworddenied = new System.Windows.Forms.Timer(this.components);
             this.timer_btnforgotpassword = new System.Windows.Forms.Timer(this.components);
             this.timer_backtologin = new System.Windows.Forms.Timer(this.components);
-            this.gunaPanel_attention = new Guna.UI.WinForms.GunaElipsePanel();
-            this.usercontrol_attention = new Guna.UI.WinForms.GunaPanel();
-            this.lbl_attentiontime = new Guna.UI.WinForms.GunaLabel();
-            this.btn_moredetails = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.lbl_attentiontitle = new Guna.UI.WinForms.GunaLabel();
-            this.lbl_attentionmsg = new Guna.UI.WinForms.GunaLabel();
-            this.gunaSeparator = new Guna.UI.WinForms.GunaSeparator();
-            this.gunaPanel_btnattention = new Guna.UI.WinForms.GunaPanel();
-            this.btn_attention = new Guna.UI.WinForms.GunaTileButton();
-            this.gunaPanel_rightattention = new Guna.UI.WinForms.GunaPanel();
             this.lbl_signin = new Guna.UI.WinForms.GunaLabel();
             this.pbox_logo = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaPanel_leftupper = new Guna.UI.WinForms.GunaPanel();
-            this.gunaPanel8 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaPanel12 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaControlBox4 = new Guna.UI.WinForms.GunaControlBox();
-            this.gunaControlBox3 = new Guna.UI.WinForms.GunaControlBox();
-            this.gunaAdvenceButton8 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaAdvenceButton7 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaAdvenceButton6 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaPanel9 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.gunaPanel11 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaAdvenceButton5 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaSeparator3 = new Guna.UI.WinForms.GunaSeparator();
-            this.gunaPanel10 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaTileButton4 = new Guna.UI.WinForms.GunaTileButton();
-            this.gunaTileButton3 = new Guna.UI.WinForms.GunaTileButton();
             this.btn_language = new Guna.UI.WinForms.GunaAdvenceButton();
             this.txt_username = new Guna.UI.WinForms.GunaTextBox();
             this.txt_password = new Guna.UI.WinForms.GunaTextBox();
@@ -92,49 +109,32 @@
             this.btn_version = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btn_register = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panel_language = new Guna.UI.WinForms.GunaElipsePanel();
-            this.cbox_server = new Guna.UI.WinForms.GunaComboBox();
-            this.lbl_title = new Guna.UI.WinForms.GunaLabel();
             this.cbox_language = new Guna.UI.WinForms.GunaComboBox();
+            this.lbl_title = new Guna.UI.WinForms.GunaLabel();
+            this.cbox_server = new Guna.UI.WinForms.GunaComboBox();
             this.pbox_loading = new Guna.UI.WinForms.GunaPictureBox();
             this.lbl_accessdenied = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel_left = new Guna.UI.WinForms.GunaPanel();
-            this.lbl_infotitle = new Guna.UI.WinForms.GunaLabel();
-            this.txt_fusername = new Guna.UI.WinForms.GunaTextBox();
-            this.btn_disabledlogin = new Guna.UI.WinForms.GunaTileButton();
-            this.btn_login = new Guna.UI.WinForms.GunaTileButton();
-            this.lbl_info = new Guna.UI.WinForms.GunaLabel();
-            this.lbl_contactsupport = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.lbl_forgotusername = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btn_backtologin = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.lbl_resetpassinfo = new Guna.UI.WinForms.GunaLabel();
-            this.panel_forgotpassword = new Guna.UI.WinForms.GunaPanel();
-            this.dgw_attention = new Guna.UI.WinForms.GunaDataGridView();
-            this.attention2 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaSeparator2 = new Guna.UI.WinForms.GunaSeparator();
-            this.lbl_attentionmessage2 = new Guna.UI.WinForms.GunaLabel();
-            this.lbl_attentiontitle2 = new Guna.UI.WinForms.GunaLabel();
-            this.lbl_attentiontime2 = new Guna.UI.WinForms.GunaLabel();
-            this.btn_moredetails2 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPanel_right.SuspendLayout();
-            this.gunaPanel_rightupper.SuspendLayout();
-            this.gunaPanel_attention.SuspendLayout();
-            this.usercontrol_attention.SuspendLayout();
-            this.gunaPanel_btnattention.SuspendLayout();
             this.gunaPanel_rightattention.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_logo)).BeginInit();
+            this.gunaPanel_btnattention.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgw_attention)).BeginInit();
+            this.gunaPanel_attention.SuspendLayout();
+            this.attention2.SuspendLayout();
+            this.panel_forgotpassword.SuspendLayout();
+            this.usercontrol_attention.SuspendLayout();
+            this.gunaPanel_rightupper.SuspendLayout();
             this.gunaPanel_leftupper.SuspendLayout();
             this.gunaPanel8.SuspendLayout();
-            this.gunaPanel12.SuspendLayout();
             this.gunaPanel9.SuspendLayout();
+            this.gunaPanel10.SuspendLayout();
             this.gunaElipsePanel2.SuspendLayout();
             this.gunaPanel11.SuspendLayout();
-            this.gunaPanel10.SuspendLayout();
+            this.gunaPanel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_logo)).BeginInit();
             this.panel_language.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_loading)).BeginInit();
             this.gunaPanel_left.SuspendLayout();
-            this.panel_forgotpassword.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgw_attention)).BeginInit();
-            this.attention2.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaPanel_right
@@ -182,6 +182,542 @@
             this.btn_settings.Size = new System.Drawing.Size(50, 40);
             this.btn_settings.TabIndex = 21;
             this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
+            // 
+            // gunaPanel_rightattention
+            // 
+            this.gunaPanel_rightattention.Controls.Add(this.gunaPanel_btnattention);
+            this.gunaPanel_rightattention.Controls.Add(this.gunaPanel_attention);
+            this.gunaPanel_rightattention.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaPanel_rightattention.Location = new System.Drawing.Point(0, 40);
+            this.gunaPanel_rightattention.Name = "gunaPanel_rightattention";
+            this.gunaPanel_rightattention.Size = new System.Drawing.Size(884, 306);
+            this.gunaPanel_rightattention.TabIndex = 20;
+            // 
+            // gunaPanel_btnattention
+            // 
+            this.gunaPanel_btnattention.Controls.Add(this.dgw_attention);
+            this.gunaPanel_btnattention.Controls.Add(this.btn_attention);
+            this.gunaPanel_btnattention.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gunaPanel_btnattention.Location = new System.Drawing.Point(0, 0);
+            this.gunaPanel_btnattention.Name = "gunaPanel_btnattention";
+            this.gunaPanel_btnattention.Size = new System.Drawing.Size(98, 306);
+            this.gunaPanel_btnattention.TabIndex = 20;
+            // 
+            // dgw_attention
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgw_attention.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgw_attention.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgw_attention.BackgroundColor = System.Drawing.Color.White;
+            this.dgw_attention.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgw_attention.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgw_attention.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgw_attention.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgw_attention.ColumnHeadersHeight = 4;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgw_attention.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgw_attention.EnableHeadersVisualStyles = false;
+            this.dgw_attention.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgw_attention.Location = new System.Drawing.Point(29, 70);
+            this.dgw_attention.Name = "dgw_attention";
+            this.dgw_attention.RowHeadersVisible = false;
+            this.dgw_attention.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgw_attention.Size = new System.Drawing.Size(38, 36);
+            this.dgw_attention.TabIndex = 22;
+            this.dgw_attention.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgw_attention.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgw_attention.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgw_attention.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgw_attention.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgw_attention.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgw_attention.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgw_attention.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgw_attention.ThemeStyle.HeaderStyle.Height = 4;
+            this.dgw_attention.ThemeStyle.ReadOnly = false;
+            this.dgw_attention.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgw_attention.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgw_attention.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgw_attention.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgw_attention.ThemeStyle.RowsStyle.Height = 22;
+            this.dgw_attention.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgw_attention.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgw_attention.Visible = false;
+            // 
+            // btn_attention
+            // 
+            this.btn_attention.Animated = true;
+            this.btn_attention.AnimationHoverSpeed = 0.07F;
+            this.btn_attention.AnimationSpeed = 0.03F;
+            this.btn_attention.BackColor = System.Drawing.Color.Transparent;
+            this.btn_attention.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_attention.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_attention.BorderColor = System.Drawing.Color.Black;
+            this.btn_attention.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_attention.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_attention.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_attention.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
+            this.btn_attention.ForeColor = System.Drawing.Color.White;
+            this.btn_attention.Image = ((System.Drawing.Image)(resources.GetObject("btn_attention.Image")));
+            this.btn_attention.ImageSize = new System.Drawing.Size(64, 64);
+            this.btn_attention.Location = new System.Drawing.Point(0, 0);
+            this.btn_attention.Name = "btn_attention";
+            this.btn_attention.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_attention.OnHoverBorderColor = System.Drawing.Color.White;
+            this.btn_attention.OnHoverForeColor = System.Drawing.Color.Empty;
+            this.btn_attention.OnHoverImage = null;
+            this.btn_attention.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_attention.Radius = 20;
+            this.btn_attention.Size = new System.Drawing.Size(98, 64);
+            this.btn_attention.TabIndex = 17;
+            this.btn_attention.MouseLeave += new System.EventHandler(this.gunaTileButton1_MouseLeave);
+            this.btn_attention.MouseHover += new System.EventHandler(this.gunaTileButton1_MouseHover);
+            // 
+            // gunaPanel_attention
+            // 
+            this.gunaPanel_attention.BackColor = System.Drawing.Color.Transparent;
+            this.gunaPanel_attention.BaseColor = System.Drawing.Color.White;
+            this.gunaPanel_attention.Controls.Add(this.attention2);
+            this.gunaPanel_attention.Controls.Add(this.usercontrol_attention);
+            this.gunaPanel_attention.Location = new System.Drawing.Point(104, 0);
+            this.gunaPanel_attention.Name = "gunaPanel_attention";
+            this.gunaPanel_attention.Radius = 10;
+            this.gunaPanel_attention.Size = new System.Drawing.Size(360, 200);
+            this.gunaPanel_attention.TabIndex = 19;
+            this.gunaPanel_attention.Visible = false;
+            // 
+            // attention2
+            // 
+            this.attention2.Controls.Add(this.gunaSeparator2);
+            this.attention2.Controls.Add(this.lbl_attentionmessage2);
+            this.attention2.Controls.Add(this.lbl_attentiontitle2);
+            this.attention2.Controls.Add(this.btn_moredetails2);
+            this.attention2.Controls.Add(this.lbl_attentiontime2);
+            this.attention2.Location = new System.Drawing.Point(15, 6);
+            this.attention2.Name = "attention2";
+            this.attention2.Size = new System.Drawing.Size(316, 183);
+            this.attention2.TabIndex = 23;
+            this.attention2.Visible = false;
+            // 
+            // panel_forgotpassword
+            // 
+            this.panel_forgotpassword.Controls.Add(this.lbl_resetpassinfo);
+            this.panel_forgotpassword.Controls.Add(this.btn_backtologin);
+            this.panel_forgotpassword.Controls.Add(this.lbl_forgotusername);
+            this.panel_forgotpassword.Controls.Add(this.lbl_contactsupport);
+            this.panel_forgotpassword.Controls.Add(this.lbl_info);
+            this.panel_forgotpassword.Controls.Add(this.btn_login);
+            this.panel_forgotpassword.Controls.Add(this.btn_disabledlogin);
+            this.panel_forgotpassword.Controls.Add(this.txt_fusername);
+            this.panel_forgotpassword.Controls.Add(this.lbl_infotitle);
+            this.panel_forgotpassword.Location = new System.Drawing.Point(40, 200);
+            this.panel_forgotpassword.Name = "panel_forgotpassword";
+            this.panel_forgotpassword.Size = new System.Drawing.Size(300, 502);
+            this.panel_forgotpassword.TabIndex = 22;
+            this.panel_forgotpassword.Visible = false;
+            // 
+            // lbl_resetpassinfo
+            // 
+            this.lbl_resetpassinfo.AutoSize = true;
+            this.lbl_resetpassinfo.Font = new System.Drawing.Font("Infoma Demi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_resetpassinfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(41)))), ((int)(((byte)(212)))));
+            this.lbl_resetpassinfo.Location = new System.Drawing.Point(36, 219);
+            this.lbl_resetpassinfo.Name = "lbl_resetpassinfo";
+            this.lbl_resetpassinfo.Size = new System.Drawing.Size(219, 32);
+            this.lbl_resetpassinfo.TabIndex = 42;
+            this.lbl_resetpassinfo.Text = "Giriş bilgilerin sistemimizdeki \r\nhesapla uyuşmuyor.";
+            this.lbl_resetpassinfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_resetpassinfo.Visible = false;
+            // 
+            // btn_backtologin
+            // 
+            this.btn_backtologin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_backtologin.Animated = true;
+            this.btn_backtologin.AnimationHoverSpeed = 0.07F;
+            this.btn_backtologin.AnimationSpeed = 0.03F;
+            this.btn_backtologin.BaseColor = System.Drawing.Color.White;
+            this.btn_backtologin.BorderColor = System.Drawing.Color.Black;
+            this.btn_backtologin.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_backtologin.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_backtologin.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_backtologin.CheckedImage = null;
+            this.btn_backtologin.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_backtologin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_backtologin.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_backtologin.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_backtologin.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_backtologin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
+            this.btn_backtologin.Image = null;
+            this.btn_backtologin.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_backtologin.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_backtologin.Location = new System.Drawing.Point(119, 464);
+            this.btn_backtologin.Name = "btn_backtologin";
+            this.btn_backtologin.OnHoverBaseColor = System.Drawing.Color.White;
+            this.btn_backtologin.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_backtologin.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.btn_backtologin.OnHoverImage = null;
+            this.btn_backtologin.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btn_backtologin.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_backtologin.OnPressedDepth = 0;
+            this.btn_backtologin.Size = new System.Drawing.Size(65, 20);
+            this.btn_backtologin.TabIndex = 41;
+            this.btn_backtologin.Text = "Giriş yap";
+            this.btn_backtologin.TextOffsetX = -10;
+            this.btn_backtologin.Click += new System.EventHandler(this.btn_backtologin_Click);
+            // 
+            // lbl_forgotusername
+            // 
+            this.lbl_forgotusername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_forgotusername.Animated = true;
+            this.lbl_forgotusername.AnimationHoverSpeed = 0.07F;
+            this.lbl_forgotusername.AnimationSpeed = 0.03F;
+            this.lbl_forgotusername.BaseColor = System.Drawing.Color.White;
+            this.lbl_forgotusername.BorderColor = System.Drawing.Color.Black;
+            this.lbl_forgotusername.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.lbl_forgotusername.CheckedBorderColor = System.Drawing.Color.Black;
+            this.lbl_forgotusername.CheckedForeColor = System.Drawing.Color.White;
+            this.lbl_forgotusername.CheckedImage = null;
+            this.lbl_forgotusername.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.lbl_forgotusername.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_forgotusername.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.lbl_forgotusername.FocusedColor = System.Drawing.Color.Empty;
+            this.lbl_forgotusername.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_forgotusername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
+            this.lbl_forgotusername.Image = null;
+            this.lbl_forgotusername.ImageSize = new System.Drawing.Size(20, 20);
+            this.lbl_forgotusername.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.lbl_forgotusername.Location = new System.Drawing.Point(67, 425);
+            this.lbl_forgotusername.Name = "lbl_forgotusername";
+            this.lbl_forgotusername.OnHoverBaseColor = System.Drawing.Color.White;
+            this.lbl_forgotusername.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.lbl_forgotusername.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.lbl_forgotusername.OnHoverImage = null;
+            this.lbl_forgotusername.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.lbl_forgotusername.OnPressedColor = System.Drawing.Color.Black;
+            this.lbl_forgotusername.OnPressedDepth = 0;
+            this.lbl_forgotusername.Size = new System.Drawing.Size(180, 20);
+            this.lbl_forgotusername.TabIndex = 40;
+            this.lbl_forgotusername.Text = "Kullanıcı adını mı unuttun?";
+            this.lbl_forgotusername.TextOffsetX = -10;
+            // 
+            // lbl_contactsupport
+            // 
+            this.lbl_contactsupport.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_contactsupport.Animated = true;
+            this.lbl_contactsupport.AnimationHoverSpeed = 0.07F;
+            this.lbl_contactsupport.AnimationSpeed = 0.03F;
+            this.lbl_contactsupport.BaseColor = System.Drawing.Color.White;
+            this.lbl_contactsupport.BorderColor = System.Drawing.Color.Black;
+            this.lbl_contactsupport.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.lbl_contactsupport.CheckedBorderColor = System.Drawing.Color.Black;
+            this.lbl_contactsupport.CheckedForeColor = System.Drawing.Color.White;
+            this.lbl_contactsupport.CheckedImage = null;
+            this.lbl_contactsupport.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.lbl_contactsupport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_contactsupport.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.lbl_contactsupport.FocusedColor = System.Drawing.Color.Empty;
+            this.lbl_contactsupport.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_contactsupport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
+            this.lbl_contactsupport.Image = null;
+            this.lbl_contactsupport.ImageSize = new System.Drawing.Size(20, 20);
+            this.lbl_contactsupport.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.lbl_contactsupport.Location = new System.Drawing.Point(84, 444);
+            this.lbl_contactsupport.Name = "lbl_contactsupport";
+            this.lbl_contactsupport.OnHoverBaseColor = System.Drawing.Color.White;
+            this.lbl_contactsupport.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.lbl_contactsupport.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.lbl_contactsupport.OnHoverImage = null;
+            this.lbl_contactsupport.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.lbl_contactsupport.OnPressedColor = System.Drawing.Color.Black;
+            this.lbl_contactsupport.OnPressedDepth = 0;
+            this.lbl_contactsupport.Size = new System.Drawing.Size(132, 20);
+            this.lbl_contactsupport.TabIndex = 39;
+            this.lbl_contactsupport.Text = "Destek ekibine ulaş";
+            this.lbl_contactsupport.TextOffsetX = -10;
+            // 
+            // lbl_info
+            // 
+            this.lbl_info.AutoSize = true;
+            this.lbl_info.Font = new System.Drawing.Font("Infoma Demi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_info.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.lbl_info.Location = new System.Drawing.Point(17, 96);
+            this.lbl_info.Name = "lbl_info";
+            this.lbl_info.Size = new System.Drawing.Size(273, 38);
+            this.lbl_info.TabIndex = 38;
+            this.lbl_info.Text = "Bu, giriş yapmak için kullandığın\r\n                       ad olmalı.";
+            // 
+            // btn_login
+            // 
+            this.btn_login.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_login.Animated = true;
+            this.btn_login.AnimationHoverSpeed = 0.07F;
+            this.btn_login.AnimationSpeed = 0.03F;
+            this.btn_login.BackColor = System.Drawing.Color.Transparent;
+            this.btn_login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_login.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(54)))), ((int)(((byte)(57)))));
+            this.btn_login.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(54)))), ((int)(((byte)(57)))));
+            this.btn_login.BorderSize = 2;
+            this.btn_login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_login.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_login.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_login.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
+            this.btn_login.ForeColor = System.Drawing.Color.White;
+            this.btn_login.Image = ((System.Drawing.Image)(resources.GetObject("btn_login.Image")));
+            this.btn_login.ImageSize = new System.Drawing.Size(22, 20);
+            this.btn_login.Location = new System.Drawing.Point(122, 291);
+            this.btn_login.Name = "btn_login";
+            this.btn_login.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(54)))), ((int)(((byte)(57)))));
+            this.btn_login.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(54)))), ((int)(((byte)(57)))));
+            this.btn_login.OnHoverForeColor = System.Drawing.Color.Empty;
+            this.btn_login.OnHoverImage = null;
+            this.btn_login.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_login.Radius = 20;
+            this.btn_login.Size = new System.Drawing.Size(64, 64);
+            this.btn_login.TabIndex = 37;
+            this.btn_login.Visible = false;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
+            // 
+            // btn_disabledlogin
+            // 
+            this.btn_disabledlogin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_disabledlogin.Animated = true;
+            this.btn_disabledlogin.AnimationHoverSpeed = 0.07F;
+            this.btn_disabledlogin.AnimationSpeed = 0.03F;
+            this.btn_disabledlogin.BackColor = System.Drawing.Color.Transparent;
+            this.btn_disabledlogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_disabledlogin.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_disabledlogin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.btn_disabledlogin.BorderSize = 2;
+            this.btn_disabledlogin.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_disabledlogin.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_disabledlogin.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
+            this.btn_disabledlogin.ForeColor = System.Drawing.Color.White;
+            this.btn_disabledlogin.Image = ((System.Drawing.Image)(resources.GetObject("btn_disabledlogin.Image")));
+            this.btn_disabledlogin.ImageSize = new System.Drawing.Size(22, 20);
+            this.btn_disabledlogin.Location = new System.Drawing.Point(122, 291);
+            this.btn_disabledlogin.Name = "btn_disabledlogin";
+            this.btn_disabledlogin.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_disabledlogin.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.btn_disabledlogin.OnHoverForeColor = System.Drawing.Color.Empty;
+            this.btn_disabledlogin.OnHoverImage = null;
+            this.btn_disabledlogin.OnPressedColor = System.Drawing.Color.Empty;
+            this.btn_disabledlogin.OnPressedDepth = 0;
+            this.btn_disabledlogin.Radius = 20;
+            this.btn_disabledlogin.Size = new System.Drawing.Size(64, 64);
+            this.btn_disabledlogin.TabIndex = 36;
+            // 
+            // txt_fusername
+            // 
+            this.txt_fusername.BackColor = System.Drawing.Color.Transparent;
+            this.txt_fusername.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.txt_fusername.BorderColor = System.Drawing.Color.Silver;
+            this.txt_fusername.BorderSize = 0;
+            this.txt_fusername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_fusername.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_fusername.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.txt_fusername.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.txt_fusername.Font = new System.Drawing.Font("Infoma Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.txt_fusername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.txt_fusername.Location = new System.Drawing.Point(18, 160);
+            this.txt_fusername.Name = "txt_fusername";
+            this.txt_fusername.PasswordChar = '\0';
+            this.txt_fusername.Radius = 4;
+            this.txt_fusername.Size = new System.Drawing.Size(265, 50);
+            this.txt_fusername.TabIndex = 35;
+            this.txt_fusername.Text = "KULLANICI ADI";
+            this.txt_fusername.TextOffsetX = 6;
+            this.txt_fusername.TextChanged += new System.EventHandler(this.txt_fusername_TextChanged);
+            this.txt_fusername.Enter += new System.EventHandler(this.txt_fusername_Enter);
+            this.txt_fusername.Leave += new System.EventHandler(this.txt_fusername_Leave);
+            this.txt_fusername.MouseLeave += new System.EventHandler(this.txt_fusername_MouseLeave);
+            this.txt_fusername.MouseHover += new System.EventHandler(this.txt_fusername_MouseHover);
+            // 
+            // lbl_infotitle
+            // 
+            this.lbl_infotitle.AutoSize = true;
+            this.lbl_infotitle.Font = new System.Drawing.Font("Infoma Heavy", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_infotitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.lbl_infotitle.Location = new System.Drawing.Point(51, 52);
+            this.lbl_infotitle.Name = "lbl_infotitle";
+            this.lbl_infotitle.Size = new System.Drawing.Size(199, 24);
+            this.lbl_infotitle.TabIndex = 34;
+            this.lbl_infotitle.Text = "Kullanıcı adını gir";
+            // 
+            // gunaSeparator2
+            // 
+            this.gunaSeparator2.LineColor = System.Drawing.Color.Silver;
+            this.gunaSeparator2.Location = new System.Drawing.Point(6, 115);
+            this.gunaSeparator2.Name = "gunaSeparator2";
+            this.gunaSeparator2.Size = new System.Drawing.Size(304, 10);
+            this.gunaSeparator2.TabIndex = 11;
+            // 
+            // lbl_attentionmessage2
+            // 
+            this.lbl_attentionmessage2.Font = new System.Drawing.Font("Museo Sans 500", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_attentionmessage2.Location = new System.Drawing.Point(3, 63);
+            this.lbl_attentionmessage2.Name = "lbl_attentionmessage2";
+            this.lbl_attentionmessage2.Size = new System.Drawing.Size(308, 74);
+            this.lbl_attentionmessage2.TabIndex = 10;
+            this.lbl_attentionmessage2.Text = "Attention message details.";
+            // 
+            // lbl_attentiontitle2
+            // 
+            this.lbl_attentiontitle2.AutoSize = true;
+            this.lbl_attentiontitle2.Font = new System.Drawing.Font("Museo Sans 300", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_attentiontitle2.Location = new System.Drawing.Point(2, 6);
+            this.lbl_attentiontitle2.Name = "lbl_attentiontitle2";
+            this.lbl_attentiontitle2.Size = new System.Drawing.Size(219, 25);
+            this.lbl_attentiontitle2.TabIndex = 8;
+            this.lbl_attentiontitle2.Text = "Attention Screen Title";
+            // 
+            // btn_moredetails2
+            // 
+            this.btn_moredetails2.Animated = true;
+            this.btn_moredetails2.AnimationHoverSpeed = 0.07F;
+            this.btn_moredetails2.AnimationSpeed = 0.03F;
+            this.btn_moredetails2.BaseColor = System.Drawing.Color.White;
+            this.btn_moredetails2.BorderColor = System.Drawing.Color.Black;
+            this.btn_moredetails2.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_moredetails2.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_moredetails2.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_moredetails2.CheckedImage = null;
+            this.btn_moredetails2.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_moredetails2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_moredetails2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_moredetails2.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_moredetails2.Font = new System.Drawing.Font("Museo Sans 300", 8F);
+            this.btn_moredetails2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
+            this.btn_moredetails2.Image = null;
+            this.btn_moredetails2.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_moredetails2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_moredetails2.Location = new System.Drawing.Point(7, 134);
+            this.btn_moredetails2.Name = "btn_moredetails2";
+            this.btn_moredetails2.OnHoverBaseColor = System.Drawing.Color.White;
+            this.btn_moredetails2.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_moredetails2.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.btn_moredetails2.OnHoverImage = null;
+            this.btn_moredetails2.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btn_moredetails2.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_moredetails2.OnPressedDepth = 0;
+            this.btn_moredetails2.Size = new System.Drawing.Size(99, 20);
+            this.btn_moredetails2.TabIndex = 7;
+            this.btn_moredetails2.Text = "Daha fazla ayrıntı";
+            this.btn_moredetails2.TextOffsetX = -10;
+            // 
+            // lbl_attentiontime2
+            // 
+            this.lbl_attentiontime2.AutoSize = true;
+            this.lbl_attentiontime2.Font = new System.Drawing.Font("Museo Sans 300", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_attentiontime2.Location = new System.Drawing.Point(4, 46);
+            this.lbl_attentiontime2.Name = "lbl_attentiontime2";
+            this.lbl_attentiontime2.Size = new System.Drawing.Size(118, 13);
+            this.lbl_attentiontime2.TabIndex = 9;
+            this.lbl_attentiontime2.Text = "1/15/2020, 5:20:15 AM";
+            // 
+            // usercontrol_attention
+            // 
+            this.usercontrol_attention.Controls.Add(this.gunaSeparator);
+            this.usercontrol_attention.Controls.Add(this.lbl_attentionmsg);
+            this.usercontrol_attention.Controls.Add(this.lbl_attentiontitle);
+            this.usercontrol_attention.Controls.Add(this.btn_moredetails);
+            this.usercontrol_attention.Controls.Add(this.lbl_attentiontime);
+            this.usercontrol_attention.Location = new System.Drawing.Point(15, 6);
+            this.usercontrol_attention.Name = "usercontrol_attention";
+            this.usercontrol_attention.Size = new System.Drawing.Size(316, 183);
+            this.usercontrol_attention.TabIndex = 22;
+            // 
+            // gunaSeparator
+            // 
+            this.gunaSeparator.LineColor = System.Drawing.Color.Silver;
+            this.gunaSeparator.Location = new System.Drawing.Point(6, 127);
+            this.gunaSeparator.Name = "gunaSeparator";
+            this.gunaSeparator.Size = new System.Drawing.Size(304, 10);
+            this.gunaSeparator.TabIndex = 11;
+            // 
+            // lbl_attentionmsg
+            // 
+            this.lbl_attentionmsg.Font = new System.Drawing.Font("Museo Sans 500", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_attentionmsg.Location = new System.Drawing.Point(3, 63);
+            this.lbl_attentionmsg.Name = "lbl_attentionmsg";
+            this.lbl_attentionmsg.Size = new System.Drawing.Size(308, 74);
+            this.lbl_attentionmsg.TabIndex = 10;
+            this.lbl_attentionmsg.Text = "Attention message details.";
+            // 
+            // lbl_attentiontitle
+            // 
+            this.lbl_attentiontitle.AutoSize = true;
+            this.lbl_attentiontitle.Font = new System.Drawing.Font("Museo Sans 300", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_attentiontitle.Location = new System.Drawing.Point(2, 6);
+            this.lbl_attentiontitle.Name = "lbl_attentiontitle";
+            this.lbl_attentiontitle.Size = new System.Drawing.Size(219, 25);
+            this.lbl_attentiontitle.TabIndex = 8;
+            this.lbl_attentiontitle.Text = "Attention Screen Title";
+            // 
+            // btn_moredetails
+            // 
+            this.btn_moredetails.Animated = true;
+            this.btn_moredetails.AnimationHoverSpeed = 0.07F;
+            this.btn_moredetails.AnimationSpeed = 0.03F;
+            this.btn_moredetails.BaseColor = System.Drawing.Color.White;
+            this.btn_moredetails.BorderColor = System.Drawing.Color.Black;
+            this.btn_moredetails.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_moredetails.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_moredetails.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_moredetails.CheckedImage = null;
+            this.btn_moredetails.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_moredetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_moredetails.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_moredetails.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_moredetails.Font = new System.Drawing.Font("Museo Sans 300", 8F);
+            this.btn_moredetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
+            this.btn_moredetails.Image = null;
+            this.btn_moredetails.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_moredetails.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_moredetails.Location = new System.Drawing.Point(7, 143);
+            this.btn_moredetails.Name = "btn_moredetails";
+            this.btn_moredetails.OnHoverBaseColor = System.Drawing.Color.White;
+            this.btn_moredetails.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_moredetails.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.btn_moredetails.OnHoverImage = null;
+            this.btn_moredetails.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btn_moredetails.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_moredetails.OnPressedDepth = 0;
+            this.btn_moredetails.Size = new System.Drawing.Size(99, 20);
+            this.btn_moredetails.TabIndex = 7;
+            this.btn_moredetails.Text = "Daha fazla ayrıntı";
+            this.btn_moredetails.TextOffsetX = -10;
+            // 
+            // lbl_attentiontime
+            // 
+            this.lbl_attentiontime.AutoSize = true;
+            this.lbl_attentiontime.Font = new System.Drawing.Font("Museo Sans 300", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_attentiontime.Location = new System.Drawing.Point(4, 46);
+            this.lbl_attentiontime.Name = "lbl_attentiontime";
+            this.lbl_attentiontime.Size = new System.Drawing.Size(118, 13);
+            this.lbl_attentiontime.TabIndex = 9;
+            this.lbl_attentiontime.Text = "1/15/2020, 5:20:15 AM";
             // 
             // btn_appstore
             // 
@@ -347,198 +883,6 @@
             // 
             this.gunaDragControl2.TargetControl = this.gunaPanel_leftupper;
             // 
-            // timer_login
-            // 
-            this.timer_login.Tick += new System.EventHandler(this.timer_login_Tick);
-            // 
-            // timer_logindenied
-            // 
-            this.timer_logindenied.Tick += new System.EventHandler(this.timer_logindenied_Tick);
-            // 
-            // timer_resetpassword
-            // 
-            this.timer_resetpassword.Tick += new System.EventHandler(this.timer_resetpassword_Tick);
-            // 
-            // timer_resetpassworddenied
-            // 
-            this.timer_resetpassworddenied.Tick += new System.EventHandler(this.timer_resetpassworddenied_Tick);
-            // 
-            // timer_btnforgotpassword
-            // 
-            this.timer_btnforgotpassword.Tick += new System.EventHandler(this.timer_btnforgotpassword_Tick);
-            // 
-            // timer_backtologin
-            // 
-            this.timer_backtologin.Tick += new System.EventHandler(this.timer_backtologin_Tick);
-            // 
-            // gunaPanel_attention
-            // 
-            this.gunaPanel_attention.BackColor = System.Drawing.Color.Transparent;
-            this.gunaPanel_attention.BaseColor = System.Drawing.Color.White;
-            this.gunaPanel_attention.Controls.Add(this.attention2);
-            this.gunaPanel_attention.Controls.Add(this.usercontrol_attention);
-            this.gunaPanel_attention.Location = new System.Drawing.Point(104, 0);
-            this.gunaPanel_attention.Name = "gunaPanel_attention";
-            this.gunaPanel_attention.Radius = 10;
-            this.gunaPanel_attention.Size = new System.Drawing.Size(360, 200);
-            this.gunaPanel_attention.TabIndex = 19;
-            this.gunaPanel_attention.Visible = false;
-            // 
-            // usercontrol_attention
-            // 
-            this.usercontrol_attention.Controls.Add(this.gunaSeparator);
-            this.usercontrol_attention.Controls.Add(this.lbl_attentionmsg);
-            this.usercontrol_attention.Controls.Add(this.lbl_attentiontitle);
-            this.usercontrol_attention.Controls.Add(this.btn_moredetails);
-            this.usercontrol_attention.Controls.Add(this.lbl_attentiontime);
-            this.usercontrol_attention.Location = new System.Drawing.Point(15, 6);
-            this.usercontrol_attention.Name = "usercontrol_attention";
-            this.usercontrol_attention.Size = new System.Drawing.Size(316, 183);
-            this.usercontrol_attention.TabIndex = 22;
-            // 
-            // lbl_attentiontime
-            // 
-            this.lbl_attentiontime.AutoSize = true;
-            this.lbl_attentiontime.Font = new System.Drawing.Font("Museo Sans 300", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_attentiontime.Location = new System.Drawing.Point(4, 46);
-            this.lbl_attentiontime.Name = "lbl_attentiontime";
-            this.lbl_attentiontime.Size = new System.Drawing.Size(118, 13);
-            this.lbl_attentiontime.TabIndex = 9;
-            this.lbl_attentiontime.Text = "1/15/2020, 5:20:15 AM";
-            // 
-            // btn_moredetails
-            // 
-            this.btn_moredetails.Animated = true;
-            this.btn_moredetails.AnimationHoverSpeed = 0.07F;
-            this.btn_moredetails.AnimationSpeed = 0.03F;
-            this.btn_moredetails.BaseColor = System.Drawing.Color.White;
-            this.btn_moredetails.BorderColor = System.Drawing.Color.Black;
-            this.btn_moredetails.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btn_moredetails.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btn_moredetails.CheckedForeColor = System.Drawing.Color.White;
-            this.btn_moredetails.CheckedImage = null;
-            this.btn_moredetails.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btn_moredetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_moredetails.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_moredetails.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_moredetails.Font = new System.Drawing.Font("Museo Sans 300", 8F);
-            this.btn_moredetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
-            this.btn_moredetails.Image = null;
-            this.btn_moredetails.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_moredetails.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_moredetails.Location = new System.Drawing.Point(7, 143);
-            this.btn_moredetails.Name = "btn_moredetails";
-            this.btn_moredetails.OnHoverBaseColor = System.Drawing.Color.White;
-            this.btn_moredetails.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.btn_moredetails.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.btn_moredetails.OnHoverImage = null;
-            this.btn_moredetails.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.btn_moredetails.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_moredetails.OnPressedDepth = 0;
-            this.btn_moredetails.Size = new System.Drawing.Size(99, 20);
-            this.btn_moredetails.TabIndex = 7;
-            this.btn_moredetails.Text = "Daha fazla ayrıntı";
-            this.btn_moredetails.TextOffsetX = -10;
-            // 
-            // lbl_attentiontitle
-            // 
-            this.lbl_attentiontitle.AutoSize = true;
-            this.lbl_attentiontitle.Font = new System.Drawing.Font("Museo Sans 300", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_attentiontitle.Location = new System.Drawing.Point(2, 6);
-            this.lbl_attentiontitle.Name = "lbl_attentiontitle";
-            this.lbl_attentiontitle.Size = new System.Drawing.Size(219, 25);
-            this.lbl_attentiontitle.TabIndex = 8;
-            this.lbl_attentiontitle.Text = "Attention Screen Title";
-            // 
-            // lbl_attentionmsg
-            // 
-            this.lbl_attentionmsg.Font = new System.Drawing.Font("Museo Sans 500", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_attentionmsg.Location = new System.Drawing.Point(3, 63);
-            this.lbl_attentionmsg.Name = "lbl_attentionmsg";
-            this.lbl_attentionmsg.Size = new System.Drawing.Size(308, 74);
-            this.lbl_attentionmsg.TabIndex = 10;
-            this.lbl_attentionmsg.Text = "Attention message details.";
-            // 
-            // gunaSeparator
-            // 
-            this.gunaSeparator.LineColor = System.Drawing.Color.Silver;
-            this.gunaSeparator.Location = new System.Drawing.Point(6, 127);
-            this.gunaSeparator.Name = "gunaSeparator";
-            this.gunaSeparator.Size = new System.Drawing.Size(304, 10);
-            this.gunaSeparator.TabIndex = 11;
-            // 
-            // gunaPanel_btnattention
-            // 
-            this.gunaPanel_btnattention.Controls.Add(this.dgw_attention);
-            this.gunaPanel_btnattention.Controls.Add(this.btn_attention);
-            this.gunaPanel_btnattention.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gunaPanel_btnattention.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel_btnattention.Name = "gunaPanel_btnattention";
-            this.gunaPanel_btnattention.Size = new System.Drawing.Size(98, 306);
-            this.gunaPanel_btnattention.TabIndex = 20;
-            // 
-            // btn_attention
-            // 
-            this.btn_attention.Animated = true;
-            this.btn_attention.AnimationHoverSpeed = 0.07F;
-            this.btn_attention.AnimationSpeed = 0.03F;
-            this.btn_attention.BackColor = System.Drawing.Color.Transparent;
-            this.btn_attention.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_attention.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_attention.BorderColor = System.Drawing.Color.Black;
-            this.btn_attention.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_attention.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_attention.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_attention.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
-            this.btn_attention.ForeColor = System.Drawing.Color.White;
-            this.btn_attention.Image = ((System.Drawing.Image)(resources.GetObject("btn_attention.Image")));
-            this.btn_attention.ImageSize = new System.Drawing.Size(64, 64);
-            this.btn_attention.Location = new System.Drawing.Point(0, 0);
-            this.btn_attention.Name = "btn_attention";
-            this.btn_attention.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.btn_attention.OnHoverBorderColor = System.Drawing.Color.White;
-            this.btn_attention.OnHoverForeColor = System.Drawing.Color.Empty;
-            this.btn_attention.OnHoverImage = null;
-            this.btn_attention.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_attention.Radius = 20;
-            this.btn_attention.Size = new System.Drawing.Size(98, 64);
-            this.btn_attention.TabIndex = 17;
-            this.btn_attention.MouseLeave += new System.EventHandler(this.gunaTileButton1_MouseLeave);
-            this.btn_attention.MouseHover += new System.EventHandler(this.gunaTileButton1_MouseHover);
-            // 
-            // gunaPanel_rightattention
-            // 
-            this.gunaPanel_rightattention.Controls.Add(this.gunaPanel_btnattention);
-            this.gunaPanel_rightattention.Controls.Add(this.gunaPanel_attention);
-            this.gunaPanel_rightattention.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaPanel_rightattention.Location = new System.Drawing.Point(0, 40);
-            this.gunaPanel_rightattention.Name = "gunaPanel_rightattention";
-            this.gunaPanel_rightattention.Size = new System.Drawing.Size(884, 306);
-            this.gunaPanel_rightattention.TabIndex = 20;
-            // 
-            // lbl_signin
-            // 
-            this.lbl_signin.AutoSize = true;
-            this.lbl_signin.Font = new System.Drawing.Font("Infoma Heavy", 20F, System.Drawing.FontStyle.Bold);
-            this.lbl_signin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.lbl_signin.Location = new System.Drawing.Point(51, 202);
-            this.lbl_signin.Name = "lbl_signin";
-            this.lbl_signin.Size = new System.Drawing.Size(162, 27);
-            this.lbl_signin.TabIndex = 0;
-            this.lbl_signin.Text = "OTURUM AÇ";
-            // 
-            // pbox_logo
-            // 
-            this.pbox_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pbox_logo.BaseColor = System.Drawing.Color.White;
-            this.pbox_logo.Image = ((System.Drawing.Image)(resources.GetObject("pbox_logo.Image")));
-            this.pbox_logo.Location = new System.Drawing.Point(36, 61);
-            this.pbox_logo.Name = "pbox_logo";
-            this.pbox_logo.Size = new System.Drawing.Size(180, 130);
-            this.pbox_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbox_logo.TabIndex = 2;
-            this.pbox_logo.TabStop = false;
-            // 
             // gunaPanel_leftupper
             // 
             this.gunaPanel_leftupper.Controls.Add(this.gunaPanel8);
@@ -564,160 +908,34 @@
             this.gunaPanel8.Size = new System.Drawing.Size(884, 720);
             this.gunaPanel8.TabIndex = 22;
             // 
-            // gunaPanel12
+            // gunaTileButton3
             // 
-            this.gunaPanel12.Controls.Add(this.gunaAdvenceButton8);
-            this.gunaPanel12.Controls.Add(this.gunaControlBox3);
-            this.gunaPanel12.Controls.Add(this.gunaControlBox4);
-            this.gunaPanel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaPanel12.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel12.Name = "gunaPanel12";
-            this.gunaPanel12.Size = new System.Drawing.Size(884, 40);
-            this.gunaPanel12.TabIndex = 2;
-            // 
-            // gunaControlBox4
-            // 
-            this.gunaControlBox4.Animated = true;
-            this.gunaControlBox4.AnimationHoverSpeed = 0.07F;
-            this.gunaControlBox4.AnimationSpeed = 0.03F;
-            this.gunaControlBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaControlBox4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gunaControlBox4.IconColor = System.Drawing.Color.White;
-            this.gunaControlBox4.IconSize = 14F;
-            this.gunaControlBox4.Location = new System.Drawing.Point(834, 0);
-            this.gunaControlBox4.Name = "gunaControlBox4";
-            this.gunaControlBox4.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(54)))), ((int)(((byte)(57)))));
-            this.gunaControlBox4.OnHoverIconColor = System.Drawing.Color.White;
-            this.gunaControlBox4.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaControlBox4.Size = new System.Drawing.Size(50, 40);
-            this.gunaControlBox4.TabIndex = 4;
-            // 
-            // gunaControlBox3
-            // 
-            this.gunaControlBox3.Animated = true;
-            this.gunaControlBox3.AnimationHoverSpeed = 0.07F;
-            this.gunaControlBox3.AnimationSpeed = 0.03F;
-            this.gunaControlBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.gunaControlBox3.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MinimizeBox;
-            this.gunaControlBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaControlBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gunaControlBox3.IconColor = System.Drawing.Color.White;
-            this.gunaControlBox3.IconSize = 14F;
-            this.gunaControlBox3.Location = new System.Drawing.Point(784, 0);
-            this.gunaControlBox3.Name = "gunaControlBox3";
-            this.gunaControlBox3.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
-            this.gunaControlBox3.OnHoverIconColor = System.Drawing.Color.White;
-            this.gunaControlBox3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaControlBox3.Size = new System.Drawing.Size(50, 40);
-            this.gunaControlBox3.TabIndex = 6;
-            // 
-            // gunaAdvenceButton8
-            // 
-            this.gunaAdvenceButton8.Animated = true;
-            this.gunaAdvenceButton8.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton8.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaAdvenceButton8.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceButton8.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton8.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton8.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton8.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton8.CheckedImage = null;
-            this.gunaAdvenceButton8.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaAdvenceButton8.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gunaAdvenceButton8.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton8.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaAdvenceButton8.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton8.Image = null;
-            this.gunaAdvenceButton8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaAdvenceButton8.ImageSize = new System.Drawing.Size(15, 15);
-            this.gunaAdvenceButton8.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton8.Location = new System.Drawing.Point(734, 0);
-            this.gunaAdvenceButton8.Name = "gunaAdvenceButton8";
-            this.gunaAdvenceButton8.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
-            this.gunaAdvenceButton8.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton8.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton8.OnHoverImage = null;
-            this.gunaAdvenceButton8.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton8.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton8.Size = new System.Drawing.Size(50, 40);
-            this.gunaAdvenceButton8.TabIndex = 5;
-            this.gunaAdvenceButton8.Text = "?";
-            this.gunaAdvenceButton8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // gunaAdvenceButton7
-            // 
-            this.gunaAdvenceButton7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaAdvenceButton7.Animated = true;
-            this.gunaAdvenceButton7.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton7.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton7.BackColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceButton7.BackgroundImage = global::NeuroAttention.Properties.Resources.googleplay_tr;
-            this.gunaAdvenceButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaAdvenceButton7.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceButton7.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton7.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton7.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton7.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton7.CheckedImage = null;
-            this.gunaAdvenceButton7.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaAdvenceButton7.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton7.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton7.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaAdvenceButton7.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton7.Image = null;
-            this.gunaAdvenceButton7.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton7.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton7.Location = new System.Drawing.Point(737, 623);
-            this.gunaAdvenceButton7.Name = "gunaAdvenceButton7";
-            this.gunaAdvenceButton7.OnHoverBaseColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton7.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton7.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton7.OnHoverImage = null;
-            this.gunaAdvenceButton7.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton7.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton7.Size = new System.Drawing.Size(120, 50);
-            this.gunaAdvenceButton7.TabIndex = 10;
-            this.gunaAdvenceButton7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // gunaAdvenceButton6
-            // 
-            this.gunaAdvenceButton6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaAdvenceButton6.Animated = true;
-            this.gunaAdvenceButton6.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton6.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton6.BackColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceButton6.BackgroundImage = global::NeuroAttention.Properties.Resources.appstore_tr;
-            this.gunaAdvenceButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaAdvenceButton6.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceButton6.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton6.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton6.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton6.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton6.CheckedImage = null;
-            this.gunaAdvenceButton6.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaAdvenceButton6.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton6.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton6.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaAdvenceButton6.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton6.Image = null;
-            this.gunaAdvenceButton6.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton6.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton6.Location = new System.Drawing.Point(733, 662);
-            this.gunaAdvenceButton6.Name = "gunaAdvenceButton6";
-            this.gunaAdvenceButton6.OnHoverBaseColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton6.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton6.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton6.OnHoverImage = null;
-            this.gunaAdvenceButton6.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton6.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton6.Size = new System.Drawing.Size(129, 40);
-            this.gunaAdvenceButton6.TabIndex = 11;
-            this.gunaAdvenceButton6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaTileButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaTileButton3.Animated = true;
+            this.gunaTileButton3.AnimationHoverSpeed = 0.07F;
+            this.gunaTileButton3.AnimationSpeed = 0.03F;
+            this.gunaTileButton3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTileButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaTileButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(121)))), ((int)(((byte)(123)))));
+            this.gunaTileButton3.BorderColor = System.Drawing.Color.Transparent;
+            this.gunaTileButton3.BorderSize = 2;
+            this.gunaTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaTileButton3.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaTileButton3.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaTileButton3.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
+            this.gunaTileButton3.ForeColor = System.Drawing.Color.White;
+            this.gunaTileButton3.Image = ((System.Drawing.Image)(resources.GetObject("gunaTileButton3.Image")));
+            this.gunaTileButton3.ImageSize = new System.Drawing.Size(25, 25);
+            this.gunaTileButton3.Location = new System.Drawing.Point(774, 577);
+            this.gunaTileButton3.Name = "gunaTileButton3";
+            this.gunaTileButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
+            this.gunaTileButton3.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.gunaTileButton3.OnHoverForeColor = System.Drawing.Color.Empty;
+            this.gunaTileButton3.OnHoverImage = null;
+            this.gunaTileButton3.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaTileButton3.Radius = 6;
+            this.gunaTileButton3.Size = new System.Drawing.Size(50, 40);
+            this.gunaTileButton3.TabIndex = 21;
             // 
             // gunaPanel9
             // 
@@ -728,100 +946,6 @@
             this.gunaPanel9.Name = "gunaPanel9";
             this.gunaPanel9.Size = new System.Drawing.Size(884, 306);
             this.gunaPanel9.TabIndex = 20;
-            // 
-            // gunaElipsePanel2
-            // 
-            this.gunaElipsePanel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel2.BaseColor = System.Drawing.Color.White;
-            this.gunaElipsePanel2.Controls.Add(this.gunaPanel11);
-            this.gunaElipsePanel2.Location = new System.Drawing.Point(104, 0);
-            this.gunaElipsePanel2.Name = "gunaElipsePanel2";
-            this.gunaElipsePanel2.Size = new System.Drawing.Size(357, 208);
-            this.gunaElipsePanel2.TabIndex = 19;
-            this.gunaElipsePanel2.Visible = false;
-            // 
-            // gunaPanel11
-            // 
-            this.gunaPanel11.Controls.Add(this.gunaSeparator3);
-            this.gunaPanel11.Controls.Add(this.gunaLabel4);
-            this.gunaPanel11.Controls.Add(this.gunaLabel5);
-            this.gunaPanel11.Controls.Add(this.gunaAdvenceButton5);
-            this.gunaPanel11.Controls.Add(this.gunaLabel6);
-            this.gunaPanel11.Location = new System.Drawing.Point(20, 6);
-            this.gunaPanel11.Name = "gunaPanel11";
-            this.gunaPanel11.Size = new System.Drawing.Size(316, 183);
-            this.gunaPanel11.TabIndex = 22;
-            // 
-            // gunaLabel6
-            // 
-            this.gunaLabel6.AutoSize = true;
-            this.gunaLabel6.Font = new System.Drawing.Font("Museo Sans 300", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel6.Location = new System.Drawing.Point(4, 46);
-            this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(118, 13);
-            this.gunaLabel6.TabIndex = 9;
-            this.gunaLabel6.Text = "1/15/2020, 5:20:15 AM";
-            // 
-            // gunaAdvenceButton5
-            // 
-            this.gunaAdvenceButton5.Animated = true;
-            this.gunaAdvenceButton5.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton5.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton5.BaseColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton5.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton5.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton5.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton5.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton5.CheckedImage = null;
-            this.gunaAdvenceButton5.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaAdvenceButton5.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton5.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton5.Font = new System.Drawing.Font("Museo Sans 300", 8F);
-            this.gunaAdvenceButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
-            this.gunaAdvenceButton5.Image = null;
-            this.gunaAdvenceButton5.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton5.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton5.Location = new System.Drawing.Point(6, 143);
-            this.gunaAdvenceButton5.Name = "gunaAdvenceButton5";
-            this.gunaAdvenceButton5.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton5.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton5.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.gunaAdvenceButton5.OnHoverImage = null;
-            this.gunaAdvenceButton5.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton5.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton5.OnPressedDepth = 0;
-            this.gunaAdvenceButton5.Size = new System.Drawing.Size(99, 20);
-            this.gunaAdvenceButton5.TabIndex = 7;
-            this.gunaAdvenceButton5.Text = "Daha fazla ayrıntı";
-            this.gunaAdvenceButton5.TextOffsetX = -10;
-            // 
-            // gunaLabel5
-            // 
-            this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.Font = new System.Drawing.Font("Museo Sans 300", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.Location = new System.Drawing.Point(2, 6);
-            this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(219, 25);
-            this.gunaLabel5.TabIndex = 8;
-            this.gunaLabel5.Text = "Attention Screen Title";
-            // 
-            // gunaLabel4
-            // 
-            this.gunaLabel4.Font = new System.Drawing.Font("Museo Sans 500", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(3, 63);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(308, 74);
-            this.gunaLabel4.TabIndex = 10;
-            this.gunaLabel4.Text = "Attention message details.";
-            // 
-            // gunaSeparator3
-            // 
-            this.gunaSeparator3.LineColor = System.Drawing.Color.Silver;
-            this.gunaSeparator3.Location = new System.Drawing.Point(6, 127);
-            this.gunaSeparator3.Name = "gunaSeparator3";
-            this.gunaSeparator3.Size = new System.Drawing.Size(304, 10);
-            this.gunaSeparator3.TabIndex = 11;
             // 
             // gunaPanel10
             // 
@@ -859,34 +983,301 @@
             this.gunaTileButton4.Size = new System.Drawing.Size(98, 64);
             this.gunaTileButton4.TabIndex = 17;
             // 
-            // gunaTileButton3
+            // gunaElipsePanel2
             // 
-            this.gunaTileButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaTileButton3.Animated = true;
-            this.gunaTileButton3.AnimationHoverSpeed = 0.07F;
-            this.gunaTileButton3.AnimationSpeed = 0.03F;
-            this.gunaTileButton3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTileButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaTileButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(121)))), ((int)(((byte)(123)))));
-            this.gunaTileButton3.BorderColor = System.Drawing.Color.Transparent;
-            this.gunaTileButton3.BorderSize = 2;
-            this.gunaTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaTileButton3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaTileButton3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaTileButton3.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
-            this.gunaTileButton3.ForeColor = System.Drawing.Color.White;
-            this.gunaTileButton3.Image = ((System.Drawing.Image)(resources.GetObject("gunaTileButton3.Image")));
-            this.gunaTileButton3.ImageSize = new System.Drawing.Size(25, 25);
-            this.gunaTileButton3.Location = new System.Drawing.Point(774, 577);
-            this.gunaTileButton3.Name = "gunaTileButton3";
-            this.gunaTileButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
-            this.gunaTileButton3.OnHoverBorderColor = System.Drawing.Color.Transparent;
-            this.gunaTileButton3.OnHoverForeColor = System.Drawing.Color.Empty;
-            this.gunaTileButton3.OnHoverImage = null;
-            this.gunaTileButton3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaTileButton3.Radius = 6;
-            this.gunaTileButton3.Size = new System.Drawing.Size(50, 40);
-            this.gunaTileButton3.TabIndex = 21;
+            this.gunaElipsePanel2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaElipsePanel2.BaseColor = System.Drawing.Color.White;
+            this.gunaElipsePanel2.Controls.Add(this.gunaPanel11);
+            this.gunaElipsePanel2.Location = new System.Drawing.Point(104, 0);
+            this.gunaElipsePanel2.Name = "gunaElipsePanel2";
+            this.gunaElipsePanel2.Size = new System.Drawing.Size(357, 208);
+            this.gunaElipsePanel2.TabIndex = 19;
+            this.gunaElipsePanel2.Visible = false;
+            // 
+            // gunaPanel11
+            // 
+            this.gunaPanel11.Controls.Add(this.gunaSeparator3);
+            this.gunaPanel11.Controls.Add(this.gunaLabel4);
+            this.gunaPanel11.Controls.Add(this.gunaLabel5);
+            this.gunaPanel11.Controls.Add(this.gunaAdvenceButton5);
+            this.gunaPanel11.Controls.Add(this.gunaLabel6);
+            this.gunaPanel11.Location = new System.Drawing.Point(20, 6);
+            this.gunaPanel11.Name = "gunaPanel11";
+            this.gunaPanel11.Size = new System.Drawing.Size(316, 183);
+            this.gunaPanel11.TabIndex = 22;
+            // 
+            // gunaSeparator3
+            // 
+            this.gunaSeparator3.LineColor = System.Drawing.Color.Silver;
+            this.gunaSeparator3.Location = new System.Drawing.Point(6, 127);
+            this.gunaSeparator3.Name = "gunaSeparator3";
+            this.gunaSeparator3.Size = new System.Drawing.Size(304, 10);
+            this.gunaSeparator3.TabIndex = 11;
+            // 
+            // gunaLabel4
+            // 
+            this.gunaLabel4.Font = new System.Drawing.Font("Museo Sans 500", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.Location = new System.Drawing.Point(3, 63);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(308, 74);
+            this.gunaLabel4.TabIndex = 10;
+            this.gunaLabel4.Text = "Attention message details.";
+            // 
+            // gunaLabel5
+            // 
+            this.gunaLabel5.AutoSize = true;
+            this.gunaLabel5.Font = new System.Drawing.Font("Museo Sans 300", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel5.Location = new System.Drawing.Point(2, 6);
+            this.gunaLabel5.Name = "gunaLabel5";
+            this.gunaLabel5.Size = new System.Drawing.Size(219, 25);
+            this.gunaLabel5.TabIndex = 8;
+            this.gunaLabel5.Text = "Attention Screen Title";
+            // 
+            // gunaAdvenceButton5
+            // 
+            this.gunaAdvenceButton5.Animated = true;
+            this.gunaAdvenceButton5.AnimationHoverSpeed = 0.07F;
+            this.gunaAdvenceButton5.AnimationSpeed = 0.03F;
+            this.gunaAdvenceButton5.BaseColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton5.BorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton5.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.gunaAdvenceButton5.CheckedBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton5.CheckedForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton5.CheckedImage = null;
+            this.gunaAdvenceButton5.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.gunaAdvenceButton5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaAdvenceButton5.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaAdvenceButton5.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton5.Font = new System.Drawing.Font("Museo Sans 300", 8F);
+            this.gunaAdvenceButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
+            this.gunaAdvenceButton5.Image = null;
+            this.gunaAdvenceButton5.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaAdvenceButton5.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton5.Location = new System.Drawing.Point(6, 143);
+            this.gunaAdvenceButton5.Name = "gunaAdvenceButton5";
+            this.gunaAdvenceButton5.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton5.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton5.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.gunaAdvenceButton5.OnHoverImage = null;
+            this.gunaAdvenceButton5.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton5.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton5.OnPressedDepth = 0;
+            this.gunaAdvenceButton5.Size = new System.Drawing.Size(99, 20);
+            this.gunaAdvenceButton5.TabIndex = 7;
+            this.gunaAdvenceButton5.Text = "Daha fazla ayrıntı";
+            this.gunaAdvenceButton5.TextOffsetX = -10;
+            // 
+            // gunaLabel6
+            // 
+            this.gunaLabel6.AutoSize = true;
+            this.gunaLabel6.Font = new System.Drawing.Font("Museo Sans 300", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel6.Location = new System.Drawing.Point(4, 46);
+            this.gunaLabel6.Name = "gunaLabel6";
+            this.gunaLabel6.Size = new System.Drawing.Size(118, 13);
+            this.gunaLabel6.TabIndex = 9;
+            this.gunaLabel6.Text = "1/15/2020, 5:20:15 AM";
+            // 
+            // gunaAdvenceButton6
+            // 
+            this.gunaAdvenceButton6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaAdvenceButton6.Animated = true;
+            this.gunaAdvenceButton6.AnimationHoverSpeed = 0.07F;
+            this.gunaAdvenceButton6.AnimationSpeed = 0.03F;
+            this.gunaAdvenceButton6.BackColor = System.Drawing.Color.Transparent;
+            this.gunaAdvenceButton6.BackgroundImage = global::NeuroAttention.Properties.Resources.appstore_tr;
+            this.gunaAdvenceButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaAdvenceButton6.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaAdvenceButton6.BorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton6.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.gunaAdvenceButton6.CheckedBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton6.CheckedForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton6.CheckedImage = null;
+            this.gunaAdvenceButton6.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.gunaAdvenceButton6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaAdvenceButton6.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaAdvenceButton6.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton6.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaAdvenceButton6.ForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton6.Image = null;
+            this.gunaAdvenceButton6.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaAdvenceButton6.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton6.Location = new System.Drawing.Point(733, 662);
+            this.gunaAdvenceButton6.Name = "gunaAdvenceButton6";
+            this.gunaAdvenceButton6.OnHoverBaseColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton6.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton6.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton6.OnHoverImage = null;
+            this.gunaAdvenceButton6.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton6.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton6.Size = new System.Drawing.Size(129, 40);
+            this.gunaAdvenceButton6.TabIndex = 11;
+            this.gunaAdvenceButton6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // gunaAdvenceButton7
+            // 
+            this.gunaAdvenceButton7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaAdvenceButton7.Animated = true;
+            this.gunaAdvenceButton7.AnimationHoverSpeed = 0.07F;
+            this.gunaAdvenceButton7.AnimationSpeed = 0.03F;
+            this.gunaAdvenceButton7.BackColor = System.Drawing.Color.Transparent;
+            this.gunaAdvenceButton7.BackgroundImage = global::NeuroAttention.Properties.Resources.googleplay_tr;
+            this.gunaAdvenceButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaAdvenceButton7.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaAdvenceButton7.BorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton7.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.gunaAdvenceButton7.CheckedBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton7.CheckedForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton7.CheckedImage = null;
+            this.gunaAdvenceButton7.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.gunaAdvenceButton7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaAdvenceButton7.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaAdvenceButton7.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton7.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaAdvenceButton7.ForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton7.Image = null;
+            this.gunaAdvenceButton7.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaAdvenceButton7.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton7.Location = new System.Drawing.Point(737, 623);
+            this.gunaAdvenceButton7.Name = "gunaAdvenceButton7";
+            this.gunaAdvenceButton7.OnHoverBaseColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton7.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton7.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton7.OnHoverImage = null;
+            this.gunaAdvenceButton7.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton7.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton7.Size = new System.Drawing.Size(120, 50);
+            this.gunaAdvenceButton7.TabIndex = 10;
+            this.gunaAdvenceButton7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // gunaPanel12
+            // 
+            this.gunaPanel12.Controls.Add(this.gunaAdvenceButton8);
+            this.gunaPanel12.Controls.Add(this.gunaControlBox3);
+            this.gunaPanel12.Controls.Add(this.gunaControlBox4);
+            this.gunaPanel12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaPanel12.Location = new System.Drawing.Point(0, 0);
+            this.gunaPanel12.Name = "gunaPanel12";
+            this.gunaPanel12.Size = new System.Drawing.Size(884, 40);
+            this.gunaPanel12.TabIndex = 2;
+            // 
+            // gunaAdvenceButton8
+            // 
+            this.gunaAdvenceButton8.Animated = true;
+            this.gunaAdvenceButton8.AnimationHoverSpeed = 0.07F;
+            this.gunaAdvenceButton8.AnimationSpeed = 0.03F;
+            this.gunaAdvenceButton8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaAdvenceButton8.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaAdvenceButton8.BorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton8.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.gunaAdvenceButton8.CheckedBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton8.CheckedForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton8.CheckedImage = null;
+            this.gunaAdvenceButton8.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.gunaAdvenceButton8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaAdvenceButton8.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaAdvenceButton8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gunaAdvenceButton8.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton8.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaAdvenceButton8.ForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton8.Image = null;
+            this.gunaAdvenceButton8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaAdvenceButton8.ImageSize = new System.Drawing.Size(15, 15);
+            this.gunaAdvenceButton8.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton8.Location = new System.Drawing.Point(734, 0);
+            this.gunaAdvenceButton8.Name = "gunaAdvenceButton8";
+            this.gunaAdvenceButton8.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
+            this.gunaAdvenceButton8.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton8.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton8.OnHoverImage = null;
+            this.gunaAdvenceButton8.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton8.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton8.Size = new System.Drawing.Size(50, 40);
+            this.gunaAdvenceButton8.TabIndex = 5;
+            this.gunaAdvenceButton8.Text = "?";
+            this.gunaAdvenceButton8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // gunaControlBox3
+            // 
+            this.gunaControlBox3.Animated = true;
+            this.gunaControlBox3.AnimationHoverSpeed = 0.07F;
+            this.gunaControlBox3.AnimationSpeed = 0.03F;
+            this.gunaControlBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.gunaControlBox3.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MinimizeBox;
+            this.gunaControlBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaControlBox3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gunaControlBox3.IconColor = System.Drawing.Color.White;
+            this.gunaControlBox3.IconSize = 14F;
+            this.gunaControlBox3.Location = new System.Drawing.Point(784, 0);
+            this.gunaControlBox3.Name = "gunaControlBox3";
+            this.gunaControlBox3.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
+            this.gunaControlBox3.OnHoverIconColor = System.Drawing.Color.White;
+            this.gunaControlBox3.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaControlBox3.Size = new System.Drawing.Size(50, 40);
+            this.gunaControlBox3.TabIndex = 6;
+            // 
+            // gunaControlBox4
+            // 
+            this.gunaControlBox4.Animated = true;
+            this.gunaControlBox4.AnimationHoverSpeed = 0.07F;
+            this.gunaControlBox4.AnimationSpeed = 0.03F;
+            this.gunaControlBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaControlBox4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gunaControlBox4.IconColor = System.Drawing.Color.White;
+            this.gunaControlBox4.IconSize = 14F;
+            this.gunaControlBox4.Location = new System.Drawing.Point(834, 0);
+            this.gunaControlBox4.Name = "gunaControlBox4";
+            this.gunaControlBox4.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(54)))), ((int)(((byte)(57)))));
+            this.gunaControlBox4.OnHoverIconColor = System.Drawing.Color.White;
+            this.gunaControlBox4.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaControlBox4.Size = new System.Drawing.Size(50, 40);
+            this.gunaControlBox4.TabIndex = 4;
+            // 
+            // timer_login
+            // 
+            this.timer_login.Tick += new System.EventHandler(this.timer_login_Tick);
+            // 
+            // timer_logindenied
+            // 
+            this.timer_logindenied.Tick += new System.EventHandler(this.timer_logindenied_Tick);
+            // 
+            // timer_resetpassword
+            // 
+            this.timer_resetpassword.Tick += new System.EventHandler(this.timer_resetpassword_Tick);
+            // 
+            // timer_resetpassworddenied
+            // 
+            this.timer_resetpassworddenied.Tick += new System.EventHandler(this.timer_resetpassworddenied_Tick);
+            // 
+            // timer_btnforgotpassword
+            // 
+            this.timer_btnforgotpassword.Tick += new System.EventHandler(this.timer_btnforgotpassword_Tick);
+            // 
+            // timer_backtologin
+            // 
+            this.timer_backtologin.Tick += new System.EventHandler(this.timer_backtologin_Tick);
+            // 
+            // lbl_signin
+            // 
+            this.lbl_signin.AutoSize = true;
+            this.lbl_signin.Font = new System.Drawing.Font("Infoma Heavy", 20F, System.Drawing.FontStyle.Bold);
+            this.lbl_signin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.lbl_signin.Location = new System.Drawing.Point(51, 202);
+            this.lbl_signin.Name = "lbl_signin";
+            this.lbl_signin.Size = new System.Drawing.Size(162, 27);
+            this.lbl_signin.TabIndex = 0;
+            this.lbl_signin.Text = "OTURUM AÇ";
+            // 
+            // pbox_logo
+            // 
+            this.pbox_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbox_logo.BaseColor = System.Drawing.Color.White;
+            this.pbox_logo.Image = ((System.Drawing.Image)(resources.GetObject("pbox_logo.Image")));
+            this.pbox_logo.Location = new System.Drawing.Point(36, 61);
+            this.pbox_logo.Name = "pbox_logo";
+            this.pbox_logo.Size = new System.Drawing.Size(180, 130);
+            this.pbox_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbox_logo.TabIndex = 2;
+            this.pbox_logo.TabStop = false;
             // 
             // btn_language
             // 
@@ -947,6 +1338,7 @@
             this.txt_username.TextOffsetX = 6;
             this.txt_username.TextChanged += new System.EventHandler(this.txt_kullaniciadi_TextChanged);
             this.txt_username.Enter += new System.EventHandler(this.txt_kullaniciadi_Enter);
+            this.txt_username.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_username_KeyDown);
             this.txt_username.Leave += new System.EventHandler(this.txt_kullaniciadi_Leave);
             this.txt_username.MouseLeave += new System.EventHandler(this.txt_kullaniciadi_MouseLeave);
             this.txt_username.MouseHover += new System.EventHandler(this.txt_kullaniciadi_MouseHover);
@@ -973,6 +1365,7 @@
             this.txt_password.TextOffsetX = 6;
             this.txt_password.TextChanged += new System.EventHandler(this.txt_sifre_TextChanged);
             this.txt_password.Enter += new System.EventHandler(this.txt_sifre_Enter);
+            this.txt_password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_password_KeyDown);
             this.txt_password.Leave += new System.EventHandler(this.txt_sifre_Leave);
             this.txt_password.MouseLeave += new System.EventHandler(this.txt_sifre_MouseLeave);
             this.txt_password.MouseHover += new System.EventHandler(this.txt_sifre_MouseHover);
@@ -1242,46 +1635,6 @@
             this.panel_language.TabIndex = 22;
             this.panel_language.Visible = false;
             // 
-            // cbox_server
-            // 
-            this.cbox_server.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbox_server.BackColor = System.Drawing.Color.Transparent;
-            this.cbox_server.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.cbox_server.BorderColor = System.Drawing.Color.Silver;
-            this.cbox_server.BorderSize = 0;
-            this.cbox_server.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbox_server.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbox_server.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbox_server.FocusedColor = System.Drawing.Color.Empty;
-            this.cbox_server.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbox_server.ForeColor = System.Drawing.Color.White;
-            this.cbox_server.FormattingEnabled = true;
-            this.cbox_server.ItemHeight = 33;
-            this.cbox_server.Items.AddRange(new object[] {
-            "TR NATRO - db60"});
-            this.cbox_server.Location = new System.Drawing.Point(26, 41);
-            this.cbox_server.Name = "cbox_server";
-            this.cbox_server.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cbox_server.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cbox_server.Radius = 6;
-            this.cbox_server.Size = new System.Drawing.Size(240, 39);
-            this.cbox_server.TabIndex = 19;
-            // 
-            // lbl_title
-            // 
-            this.lbl_title.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_title.AutoSize = true;
-            this.lbl_title.Font = new System.Drawing.Font("Infoma Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_title.Location = new System.Drawing.Point(29, 18);
-            this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(91, 13);
-            this.lbl_title.TabIndex = 20;
-            this.lbl_title.Text = "SUNUCU / DİL";
-            // 
             // cbox_language
             // 
             this.cbox_language.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1311,6 +1664,46 @@
             this.cbox_language.Size = new System.Drawing.Size(240, 39);
             this.cbox_language.TabIndex = 21;
             this.cbox_language.SelectionChangeCommitted += new System.EventHandler(this.cbox_language_SelectionChangeCommitted);
+            // 
+            // lbl_title
+            // 
+            this.lbl_title.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.Font = new System.Drawing.Font("Infoma Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.Location = new System.Drawing.Point(29, 18);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(91, 13);
+            this.lbl_title.TabIndex = 20;
+            this.lbl_title.Text = "SUNUCU / DİL";
+            // 
+            // cbox_server
+            // 
+            this.cbox_server.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbox_server.BackColor = System.Drawing.Color.Transparent;
+            this.cbox_server.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.cbox_server.BorderColor = System.Drawing.Color.Silver;
+            this.cbox_server.BorderSize = 0;
+            this.cbox_server.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbox_server.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbox_server.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbox_server.FocusedColor = System.Drawing.Color.Empty;
+            this.cbox_server.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbox_server.ForeColor = System.Drawing.Color.White;
+            this.cbox_server.FormattingEnabled = true;
+            this.cbox_server.ItemHeight = 33;
+            this.cbox_server.Items.AddRange(new object[] {
+            "TR NATRO - db60"});
+            this.cbox_server.Location = new System.Drawing.Point(26, 41);
+            this.cbox_server.Name = "cbox_server";
+            this.cbox_server.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cbox_server.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cbox_server.Radius = 6;
+            this.cbox_server.Size = new System.Drawing.Size(240, 39);
+            this.cbox_server.TabIndex = 19;
             // 
             // pbox_loading
             // 
@@ -1363,397 +1756,6 @@
             this.gunaPanel_left.TabIndex = 1;
             this.gunaPanel_left.MouseClick += new System.Windows.Forms.MouseEventHandler(this.gunaPanel_leftside_MouseClick);
             // 
-            // lbl_infotitle
-            // 
-            this.lbl_infotitle.AutoSize = true;
-            this.lbl_infotitle.Font = new System.Drawing.Font("Infoma Heavy", 18F, System.Drawing.FontStyle.Bold);
-            this.lbl_infotitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.lbl_infotitle.Location = new System.Drawing.Point(51, 52);
-            this.lbl_infotitle.Name = "lbl_infotitle";
-            this.lbl_infotitle.Size = new System.Drawing.Size(199, 24);
-            this.lbl_infotitle.TabIndex = 34;
-            this.lbl_infotitle.Text = "Kullanıcı adını gir";
-            // 
-            // txt_fusername
-            // 
-            this.txt_fusername.BackColor = System.Drawing.Color.Transparent;
-            this.txt_fusername.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.txt_fusername.BorderColor = System.Drawing.Color.Silver;
-            this.txt_fusername.BorderSize = 0;
-            this.txt_fusername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_fusername.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_fusername.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.txt_fusername.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.txt_fusername.Font = new System.Drawing.Font("Infoma Medium", 10F, System.Drawing.FontStyle.Bold);
-            this.txt_fusername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.txt_fusername.Location = new System.Drawing.Point(18, 160);
-            this.txt_fusername.Name = "txt_fusername";
-            this.txt_fusername.PasswordChar = '\0';
-            this.txt_fusername.Radius = 4;
-            this.txt_fusername.Size = new System.Drawing.Size(265, 50);
-            this.txt_fusername.TabIndex = 35;
-            this.txt_fusername.Text = "KULLANICI ADI";
-            this.txt_fusername.TextOffsetX = 6;
-            this.txt_fusername.TextChanged += new System.EventHandler(this.txt_fusername_TextChanged);
-            this.txt_fusername.Enter += new System.EventHandler(this.txt_fusername_Enter);
-            this.txt_fusername.Leave += new System.EventHandler(this.txt_fusername_Leave);
-            this.txt_fusername.MouseLeave += new System.EventHandler(this.txt_fusername_MouseLeave);
-            this.txt_fusername.MouseHover += new System.EventHandler(this.txt_fusername_MouseHover);
-            // 
-            // btn_disabledlogin
-            // 
-            this.btn_disabledlogin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_disabledlogin.Animated = true;
-            this.btn_disabledlogin.AnimationHoverSpeed = 0.07F;
-            this.btn_disabledlogin.AnimationSpeed = 0.03F;
-            this.btn_disabledlogin.BackColor = System.Drawing.Color.Transparent;
-            this.btn_disabledlogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_disabledlogin.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_disabledlogin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.btn_disabledlogin.BorderSize = 2;
-            this.btn_disabledlogin.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_disabledlogin.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_disabledlogin.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
-            this.btn_disabledlogin.ForeColor = System.Drawing.Color.White;
-            this.btn_disabledlogin.Image = ((System.Drawing.Image)(resources.GetObject("btn_disabledlogin.Image")));
-            this.btn_disabledlogin.ImageSize = new System.Drawing.Size(22, 20);
-            this.btn_disabledlogin.Location = new System.Drawing.Point(122, 291);
-            this.btn_disabledlogin.Name = "btn_disabledlogin";
-            this.btn_disabledlogin.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.btn_disabledlogin.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.btn_disabledlogin.OnHoverForeColor = System.Drawing.Color.Empty;
-            this.btn_disabledlogin.OnHoverImage = null;
-            this.btn_disabledlogin.OnPressedColor = System.Drawing.Color.Empty;
-            this.btn_disabledlogin.OnPressedDepth = 0;
-            this.btn_disabledlogin.Radius = 20;
-            this.btn_disabledlogin.Size = new System.Drawing.Size(64, 64);
-            this.btn_disabledlogin.TabIndex = 36;
-            // 
-            // btn_login
-            // 
-            this.btn_login.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_login.Animated = true;
-            this.btn_login.AnimationHoverSpeed = 0.07F;
-            this.btn_login.AnimationSpeed = 0.03F;
-            this.btn_login.BackColor = System.Drawing.Color.Transparent;
-            this.btn_login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_login.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(54)))), ((int)(((byte)(57)))));
-            this.btn_login.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(54)))), ((int)(((byte)(57)))));
-            this.btn_login.BorderSize = 2;
-            this.btn_login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_login.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_login.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_login.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
-            this.btn_login.ForeColor = System.Drawing.Color.White;
-            this.btn_login.Image = ((System.Drawing.Image)(resources.GetObject("btn_login.Image")));
-            this.btn_login.ImageSize = new System.Drawing.Size(22, 20);
-            this.btn_login.Location = new System.Drawing.Point(122, 291);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(54)))), ((int)(((byte)(57)))));
-            this.btn_login.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(54)))), ((int)(((byte)(57)))));
-            this.btn_login.OnHoverForeColor = System.Drawing.Color.Empty;
-            this.btn_login.OnHoverImage = null;
-            this.btn_login.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_login.Radius = 20;
-            this.btn_login.Size = new System.Drawing.Size(64, 64);
-            this.btn_login.TabIndex = 37;
-            this.btn_login.Visible = false;
-            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
-            // 
-            // lbl_info
-            // 
-            this.lbl_info.AutoSize = true;
-            this.lbl_info.Font = new System.Drawing.Font("Infoma Demi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_info.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.lbl_info.Location = new System.Drawing.Point(17, 96);
-            this.lbl_info.Name = "lbl_info";
-            this.lbl_info.Size = new System.Drawing.Size(273, 38);
-            this.lbl_info.TabIndex = 38;
-            this.lbl_info.Text = "Bu, giriş yapmak için kullandığın\r\n                       ad olmalı.";
-            // 
-            // lbl_contactsupport
-            // 
-            this.lbl_contactsupport.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_contactsupport.Animated = true;
-            this.lbl_contactsupport.AnimationHoverSpeed = 0.07F;
-            this.lbl_contactsupport.AnimationSpeed = 0.03F;
-            this.lbl_contactsupport.BaseColor = System.Drawing.Color.White;
-            this.lbl_contactsupport.BorderColor = System.Drawing.Color.Black;
-            this.lbl_contactsupport.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.lbl_contactsupport.CheckedBorderColor = System.Drawing.Color.Black;
-            this.lbl_contactsupport.CheckedForeColor = System.Drawing.Color.White;
-            this.lbl_contactsupport.CheckedImage = null;
-            this.lbl_contactsupport.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.lbl_contactsupport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_contactsupport.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.lbl_contactsupport.FocusedColor = System.Drawing.Color.Empty;
-            this.lbl_contactsupport.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_contactsupport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
-            this.lbl_contactsupport.Image = null;
-            this.lbl_contactsupport.ImageSize = new System.Drawing.Size(20, 20);
-            this.lbl_contactsupport.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.lbl_contactsupport.Location = new System.Drawing.Point(84, 444);
-            this.lbl_contactsupport.Name = "lbl_contactsupport";
-            this.lbl_contactsupport.OnHoverBaseColor = System.Drawing.Color.White;
-            this.lbl_contactsupport.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.lbl_contactsupport.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.lbl_contactsupport.OnHoverImage = null;
-            this.lbl_contactsupport.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.lbl_contactsupport.OnPressedColor = System.Drawing.Color.Black;
-            this.lbl_contactsupport.OnPressedDepth = 0;
-            this.lbl_contactsupport.Size = new System.Drawing.Size(132, 20);
-            this.lbl_contactsupport.TabIndex = 39;
-            this.lbl_contactsupport.Text = "Destek ekibine ulaş";
-            this.lbl_contactsupport.TextOffsetX = -10;
-            // 
-            // lbl_forgotusername
-            // 
-            this.lbl_forgotusername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_forgotusername.Animated = true;
-            this.lbl_forgotusername.AnimationHoverSpeed = 0.07F;
-            this.lbl_forgotusername.AnimationSpeed = 0.03F;
-            this.lbl_forgotusername.BaseColor = System.Drawing.Color.White;
-            this.lbl_forgotusername.BorderColor = System.Drawing.Color.Black;
-            this.lbl_forgotusername.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.lbl_forgotusername.CheckedBorderColor = System.Drawing.Color.Black;
-            this.lbl_forgotusername.CheckedForeColor = System.Drawing.Color.White;
-            this.lbl_forgotusername.CheckedImage = null;
-            this.lbl_forgotusername.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.lbl_forgotusername.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_forgotusername.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.lbl_forgotusername.FocusedColor = System.Drawing.Color.Empty;
-            this.lbl_forgotusername.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_forgotusername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
-            this.lbl_forgotusername.Image = null;
-            this.lbl_forgotusername.ImageSize = new System.Drawing.Size(20, 20);
-            this.lbl_forgotusername.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.lbl_forgotusername.Location = new System.Drawing.Point(67, 425);
-            this.lbl_forgotusername.Name = "lbl_forgotusername";
-            this.lbl_forgotusername.OnHoverBaseColor = System.Drawing.Color.White;
-            this.lbl_forgotusername.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.lbl_forgotusername.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.lbl_forgotusername.OnHoverImage = null;
-            this.lbl_forgotusername.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.lbl_forgotusername.OnPressedColor = System.Drawing.Color.Black;
-            this.lbl_forgotusername.OnPressedDepth = 0;
-            this.lbl_forgotusername.Size = new System.Drawing.Size(180, 20);
-            this.lbl_forgotusername.TabIndex = 40;
-            this.lbl_forgotusername.Text = "Kullanıcı adını mı unuttun?";
-            this.lbl_forgotusername.TextOffsetX = -10;
-            // 
-            // btn_backtologin
-            // 
-            this.btn_backtologin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_backtologin.Animated = true;
-            this.btn_backtologin.AnimationHoverSpeed = 0.07F;
-            this.btn_backtologin.AnimationSpeed = 0.03F;
-            this.btn_backtologin.BaseColor = System.Drawing.Color.White;
-            this.btn_backtologin.BorderColor = System.Drawing.Color.Black;
-            this.btn_backtologin.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btn_backtologin.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btn_backtologin.CheckedForeColor = System.Drawing.Color.White;
-            this.btn_backtologin.CheckedImage = null;
-            this.btn_backtologin.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btn_backtologin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_backtologin.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_backtologin.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_backtologin.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_backtologin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
-            this.btn_backtologin.Image = null;
-            this.btn_backtologin.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_backtologin.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_backtologin.Location = new System.Drawing.Point(119, 464);
-            this.btn_backtologin.Name = "btn_backtologin";
-            this.btn_backtologin.OnHoverBaseColor = System.Drawing.Color.White;
-            this.btn_backtologin.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.btn_backtologin.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.btn_backtologin.OnHoverImage = null;
-            this.btn_backtologin.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.btn_backtologin.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_backtologin.OnPressedDepth = 0;
-            this.btn_backtologin.Size = new System.Drawing.Size(65, 20);
-            this.btn_backtologin.TabIndex = 41;
-            this.btn_backtologin.Text = "Giriş yap";
-            this.btn_backtologin.TextOffsetX = -10;
-            this.btn_backtologin.Click += new System.EventHandler(this.btn_backtologin_Click);
-            // 
-            // lbl_resetpassinfo
-            // 
-            this.lbl_resetpassinfo.AutoSize = true;
-            this.lbl_resetpassinfo.Font = new System.Drawing.Font("Infoma Demi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_resetpassinfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(41)))), ((int)(((byte)(212)))));
-            this.lbl_resetpassinfo.Location = new System.Drawing.Point(36, 219);
-            this.lbl_resetpassinfo.Name = "lbl_resetpassinfo";
-            this.lbl_resetpassinfo.Size = new System.Drawing.Size(219, 32);
-            this.lbl_resetpassinfo.TabIndex = 42;
-            this.lbl_resetpassinfo.Text = "Giriş bilgilerin sistemimizdeki \r\nhesapla uyuşmuyor.";
-            this.lbl_resetpassinfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_resetpassinfo.Visible = false;
-            // 
-            // panel_forgotpassword
-            // 
-            this.panel_forgotpassword.Controls.Add(this.lbl_resetpassinfo);
-            this.panel_forgotpassword.Controls.Add(this.btn_backtologin);
-            this.panel_forgotpassword.Controls.Add(this.lbl_forgotusername);
-            this.panel_forgotpassword.Controls.Add(this.lbl_contactsupport);
-            this.panel_forgotpassword.Controls.Add(this.lbl_info);
-            this.panel_forgotpassword.Controls.Add(this.btn_login);
-            this.panel_forgotpassword.Controls.Add(this.btn_disabledlogin);
-            this.panel_forgotpassword.Controls.Add(this.txt_fusername);
-            this.panel_forgotpassword.Controls.Add(this.lbl_infotitle);
-            this.panel_forgotpassword.Location = new System.Drawing.Point(40, 200);
-            this.panel_forgotpassword.Name = "panel_forgotpassword";
-            this.panel_forgotpassword.Size = new System.Drawing.Size(300, 502);
-            this.panel_forgotpassword.TabIndex = 22;
-            this.panel_forgotpassword.Visible = false;
-            // 
-            // dgw_attention
-            // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.dgw_attention.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
-            this.dgw_attention.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgw_attention.BackgroundColor = System.Drawing.Color.White;
-            this.dgw_attention.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgw_attention.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgw_attention.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgw_attention.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            this.dgw_attention.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgw_attention.DefaultCellStyle = dataGridViewCellStyle15;
-            this.dgw_attention.EnableHeadersVisualStyles = false;
-            this.dgw_attention.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgw_attention.Location = new System.Drawing.Point(29, 70);
-            this.dgw_attention.Name = "dgw_attention";
-            this.dgw_attention.RowHeadersVisible = false;
-            this.dgw_attention.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgw_attention.Size = new System.Drawing.Size(38, 36);
-            this.dgw_attention.TabIndex = 22;
-            this.dgw_attention.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
-            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgw_attention.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgw_attention.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgw_attention.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dgw_attention.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgw_attention.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgw_attention.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgw_attention.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgw_attention.ThemeStyle.HeaderStyle.Height = 4;
-            this.dgw_attention.ThemeStyle.ReadOnly = false;
-            this.dgw_attention.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgw_attention.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgw_attention.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgw_attention.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgw_attention.ThemeStyle.RowsStyle.Height = 22;
-            this.dgw_attention.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgw_attention.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgw_attention.Visible = false;
-            // 
-            // attention2
-            // 
-            this.attention2.Controls.Add(this.gunaSeparator2);
-            this.attention2.Controls.Add(this.lbl_attentionmessage2);
-            this.attention2.Controls.Add(this.lbl_attentiontitle2);
-            this.attention2.Controls.Add(this.btn_moredetails2);
-            this.attention2.Controls.Add(this.lbl_attentiontime2);
-            this.attention2.Location = new System.Drawing.Point(15, 6);
-            this.attention2.Name = "attention2";
-            this.attention2.Size = new System.Drawing.Size(316, 183);
-            this.attention2.TabIndex = 23;
-            this.attention2.Visible = false;
-            // 
-            // gunaSeparator2
-            // 
-            this.gunaSeparator2.LineColor = System.Drawing.Color.Silver;
-            this.gunaSeparator2.Location = new System.Drawing.Point(6, 115);
-            this.gunaSeparator2.Name = "gunaSeparator2";
-            this.gunaSeparator2.Size = new System.Drawing.Size(304, 10);
-            this.gunaSeparator2.TabIndex = 11;
-            // 
-            // lbl_attentionmessage2
-            // 
-            this.lbl_attentionmessage2.Font = new System.Drawing.Font("Museo Sans 500", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_attentionmessage2.Location = new System.Drawing.Point(3, 63);
-            this.lbl_attentionmessage2.Name = "lbl_attentionmessage2";
-            this.lbl_attentionmessage2.Size = new System.Drawing.Size(308, 74);
-            this.lbl_attentionmessage2.TabIndex = 10;
-            this.lbl_attentionmessage2.Text = "Attention message details.";
-            // 
-            // lbl_attentiontitle2
-            // 
-            this.lbl_attentiontitle2.AutoSize = true;
-            this.lbl_attentiontitle2.Font = new System.Drawing.Font("Museo Sans 300", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_attentiontitle2.Location = new System.Drawing.Point(2, 6);
-            this.lbl_attentiontitle2.Name = "lbl_attentiontitle2";
-            this.lbl_attentiontitle2.Size = new System.Drawing.Size(219, 25);
-            this.lbl_attentiontitle2.TabIndex = 8;
-            this.lbl_attentiontitle2.Text = "Attention Screen Title";
-            // 
-            // lbl_attentiontime2
-            // 
-            this.lbl_attentiontime2.AutoSize = true;
-            this.lbl_attentiontime2.Font = new System.Drawing.Font("Museo Sans 300", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_attentiontime2.Location = new System.Drawing.Point(4, 46);
-            this.lbl_attentiontime2.Name = "lbl_attentiontime2";
-            this.lbl_attentiontime2.Size = new System.Drawing.Size(118, 13);
-            this.lbl_attentiontime2.TabIndex = 9;
-            this.lbl_attentiontime2.Text = "1/15/2020, 5:20:15 AM";
-            // 
-            // btn_moredetails2
-            // 
-            this.btn_moredetails2.Animated = true;
-            this.btn_moredetails2.AnimationHoverSpeed = 0.07F;
-            this.btn_moredetails2.AnimationSpeed = 0.03F;
-            this.btn_moredetails2.BaseColor = System.Drawing.Color.White;
-            this.btn_moredetails2.BorderColor = System.Drawing.Color.Black;
-            this.btn_moredetails2.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btn_moredetails2.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btn_moredetails2.CheckedForeColor = System.Drawing.Color.White;
-            this.btn_moredetails2.CheckedImage = null;
-            this.btn_moredetails2.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btn_moredetails2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_moredetails2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_moredetails2.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_moredetails2.Font = new System.Drawing.Font("Museo Sans 300", 8F);
-            this.btn_moredetails2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
-            this.btn_moredetails2.Image = null;
-            this.btn_moredetails2.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_moredetails2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_moredetails2.Location = new System.Drawing.Point(7, 134);
-            this.btn_moredetails2.Name = "btn_moredetails2";
-            this.btn_moredetails2.OnHoverBaseColor = System.Drawing.Color.White;
-            this.btn_moredetails2.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.btn_moredetails2.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.btn_moredetails2.OnHoverImage = null;
-            this.btn_moredetails2.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.btn_moredetails2.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_moredetails2.OnPressedDepth = 0;
-            this.btn_moredetails2.Size = new System.Drawing.Size(99, 20);
-            this.btn_moredetails2.TabIndex = 7;
-            this.btn_moredetails2.Text = "Daha fazla ayrıntı";
-            this.btn_moredetails2.TextOffsetX = -10;
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1771,31 +1773,31 @@
     "ogramı";
             this.Load += new System.EventHandler(this.Login_Load);
             this.gunaPanel_right.ResumeLayout(false);
-            this.gunaPanel_rightupper.ResumeLayout(false);
+            this.gunaPanel_rightattention.ResumeLayout(false);
+            this.gunaPanel_btnattention.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgw_attention)).EndInit();
             this.gunaPanel_attention.ResumeLayout(false);
+            this.attention2.ResumeLayout(false);
+            this.attention2.PerformLayout();
+            this.panel_forgotpassword.ResumeLayout(false);
+            this.panel_forgotpassword.PerformLayout();
             this.usercontrol_attention.ResumeLayout(false);
             this.usercontrol_attention.PerformLayout();
-            this.gunaPanel_btnattention.ResumeLayout(false);
-            this.gunaPanel_rightattention.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_logo)).EndInit();
+            this.gunaPanel_rightupper.ResumeLayout(false);
             this.gunaPanel_leftupper.ResumeLayout(false);
             this.gunaPanel8.ResumeLayout(false);
-            this.gunaPanel12.ResumeLayout(false);
             this.gunaPanel9.ResumeLayout(false);
+            this.gunaPanel10.ResumeLayout(false);
             this.gunaElipsePanel2.ResumeLayout(false);
             this.gunaPanel11.ResumeLayout(false);
             this.gunaPanel11.PerformLayout();
-            this.gunaPanel10.ResumeLayout(false);
+            this.gunaPanel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_logo)).EndInit();
             this.panel_language.ResumeLayout(false);
             this.panel_language.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_loading)).EndInit();
             this.gunaPanel_left.ResumeLayout(false);
             this.gunaPanel_left.PerformLayout();
-            this.panel_forgotpassword.ResumeLayout(false);
-            this.panel_forgotpassword.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgw_attention)).EndInit();
-            this.attention2.ResumeLayout(false);
-            this.attention2.PerformLayout();
             this.ResumeLayout(false);
 
         }

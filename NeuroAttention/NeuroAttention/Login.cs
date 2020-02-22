@@ -33,8 +33,16 @@ namespace NeuroAttention
         /* Database Connection */
         public string conString = ("Data Source = 94.73.146.4; Initial Catalog = db60B; User Id = user60B; Password = PIuc71A0MQmp62Y;");
         //
-            
-            public void language(string culture)
+
+        public static string username;
+        public static string recbyusername
+        {
+            get { return username; }
+            set { username = value; }
+        }
+
+
+        public void language(string culture)
         {
 
             Thread.CurrentThread.CurrentUICulture.ClearCachedData();
@@ -99,7 +107,7 @@ namespace NeuroAttention
             if (kayitsorgu == true)
             {
                 
-                MailMessage message = new MailMessage();
+                /*MailMessage message = new MailMessage();
                 SmtpClient client = new SmtpClient();
 
                 client.Credentials = new NetworkCredential("JemappelleWine@windowslive.com", "enoxie2k17");
@@ -112,10 +120,13 @@ namespace NeuroAttention
                 message.Body = "MayaAcademia Giriş Şifreniz:" + " " + password + " " + "\nGiriş yapmaya çalışan siz değilseniz en kısa sürede yetkiliye ulaşınız. \n\n Destek Hesaplarımız \n admin@enesbilgi.com \n support@enesbilgi.com";
 
                 client.Send(message);
+                */
                 timer_resetpassword.Start();
                 btn_disabledlogin.Visible = false;
 
                 
+
+                forgotPasswordSMS();
                 
             }
 
@@ -163,8 +174,8 @@ namespace NeuroAttention
             string kNo = "38074";
             string kAd = "905376097218";
             string kSifre = "1811ou72";
-            string orjinator = "MAYACADEMIA";
-            string mesaj = "MAYAACADEMIA Giriş Şifreniz:" + " " + kSifre;
+            string orjinator = "8505909237";
+            string mesaj = "MAYAACADEMIA Giriş Şifreniz:" + " " + sifre;
             string smsNN = "data=<sms><kno>" + kNo + "</kno><kulad>" + kAd + "</kulad><sifre>" + kSifre + "</sifre>" +
             "<gonderen>" + orjinator + "</gonderen>" +
             "<telmesajlar>" +
@@ -184,7 +195,11 @@ namespace NeuroAttention
                 Char[] sReturnChars = Encoding.UTF8.GetChars(bResponse);
                 string sWebPage = new string(sReturnChars);
                 return sWebPage;
+
+               
             }
+
+
         }
 
         
@@ -853,7 +868,7 @@ namespace NeuroAttention
         {
             
             forgotPassword();
-            forgotPasswordSMS();
+            
         }
 
        
@@ -873,6 +888,7 @@ namespace NeuroAttention
             timer_login.Stop();
 
             this.Hide();
+            username = txt_username.Text;
             Dashboard dash = new Dashboard();
             dash.Show();
         }
@@ -912,7 +928,7 @@ namespace NeuroAttention
             pbox_loading.Visible = false;
             pbox_logo.Visible = true;
             pbox_logo.Focus();
-            MessageBox.Show("Giriş şifreniz mail adresinize gönderildi.");
+            MessageBox.Show("Giriş şifreniz sistemde kayıtlı telefon numarasına gönderildi.");
         }
 
         private void timer_resetpassworddenied_Tick(object sender, EventArgs e)
@@ -952,6 +968,32 @@ namespace NeuroAttention
         private void gunaTileButton1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txt_password_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                login();
+            }
+
+            else
+            {
+
+            }
+        }
+
+        private void txt_username_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                login();
+            }
+
+            else
+            {
+
+            }
         }
     }
     }
