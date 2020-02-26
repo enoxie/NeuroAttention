@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(copyrights));
             this.gunaVScrollBar1 = new Guna.UI.WinForms.GunaVScrollBar();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbl_description = new Guna.UI.WinForms.GunaLabel();
             this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();
+            this.lbl_description = new Guna.UI.WinForms.GunaLabel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +60,14 @@
             this.panel1.Size = new System.Drawing.Size(550, 550);
             this.panel1.TabIndex = 8;
             // 
+            // gunaSeparator1
+            // 
+            this.gunaSeparator1.LineColor = System.Drawing.Color.Silver;
+            this.gunaSeparator1.Location = new System.Drawing.Point(0, 401);
+            this.gunaSeparator1.Name = "gunaSeparator1";
+            this.gunaSeparator1.Size = new System.Drawing.Size(438, 10);
+            this.gunaSeparator1.TabIndex = 1;
+            // 
             // lbl_description
             // 
             this.lbl_description.AutoSize = true;
@@ -71,14 +79,6 @@
             this.lbl_description.Size = new System.Drawing.Size(483, 880);
             this.lbl_description.TabIndex = 0;
             this.lbl_description.Text = resources.GetString("lbl_description.Text");
-            // 
-            // gunaSeparator1
-            // 
-            this.gunaSeparator1.LineColor = System.Drawing.Color.Silver;
-            this.gunaSeparator1.Location = new System.Drawing.Point(0, 401);
-            this.gunaSeparator1.Name = "gunaSeparator1";
-            this.gunaSeparator1.Size = new System.Drawing.Size(438, 10);
-            this.gunaSeparator1.TabIndex = 1;
             // 
             // copyrights
             // 

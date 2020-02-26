@@ -127,7 +127,7 @@ namespace NeuroAttention
                 label_gelistirici.Visible = true;
                 label_gelistirici.Top += tp;
             }
-            int a = 229;
+            
             if (label_loading.Top < 198)
             {
                 timer2.Stop();
