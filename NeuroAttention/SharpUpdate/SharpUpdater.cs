@@ -25,6 +25,7 @@ namespace SharpUpdate
         {
             if (!this.bgWorker.IsBusy)
                 this.bgWorker.RunWorkerAsync(this.applicationInfo);
+
         }
 
         private void BgWorker_DoWork(object sender, DoWorkEventArgs e)
@@ -71,12 +72,14 @@ namespace SharpUpdate
 
             else if (result == DialogResult.Abort)
             {
-                MessageBox.Show("The update download was cancelled. \nThis program has not been modified.", "Update Download Cancelled", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Güncelleme indirmesi iptal edildi. \nUygulama güncellenemedi.", "MayaUpdater - İndirme İptal Edildi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Application.Restart();
             }
 
             else
             {
-                MessageBox.Show("There was a problem downloading the update. \nPlease try again later.", "Update Download Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Güncelleme indirilirken bir sorun oluştu. \nLütfen daha sonra tekrar deneyiniz.", "MayaUpdater - Güncelleme Hatası", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
             }
         }
 

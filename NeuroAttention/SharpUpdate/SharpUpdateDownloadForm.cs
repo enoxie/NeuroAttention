@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Net;
@@ -45,8 +46,8 @@ namespace SharpUpdate
 
         private void WebClient_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
         {
-            this.progressBar.Value = e.ProgressPercentage;
-            this.lblProgress.Text = String.Format("Downloaded {0} of {1}",FormatBytes(e.BytesReceived, 1, true), FormatBytes(e.TotalBytesToReceive, 1, true));
+            this.gunaProgressBar1.Value = e.ProgressPercentage;
+            this.lblProgress.Text = String.Format("İndirilen boyut: {0} of {1}",FormatBytes(e.BytesReceived, 1, true), FormatBytes(e.TotalBytesToReceive, 1, true));
         }
 
         private string FormatBytes(long bytes, int decimalPlaces, bool showByteType)
@@ -102,8 +103,8 @@ namespace SharpUpdate
 
             else
             {
-                lblProgress.Text = "Verifying Download...";
-                progressBar.Style = ProgressBarStyle.Marquee;
+                lblProgress.Text = "İndirme Onaylanıyor...";
+                gunaProgressBar1.Style = Guna.UI.WinForms.ProgressBarStyle.Marquee;
 
                 bgWorker.RunWorkerAsync(new string[] { this.tempFile, this.md5 });
             }
@@ -139,6 +140,14 @@ namespace SharpUpdate
                 bgWorker.CancelAsync();
                 this.DialogResult = DialogResult.Abort;
             }
+        }
+
+        
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            
+            this.Close();
+           
         }
     }
 }

@@ -39,6 +39,8 @@
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
             this.btn_back = new Guna.UI.WinForms.GunaTileButton();
             this.gunaPanel_left = new Guna.UI.WinForms.GunaPanel();
+            this.copyrights = new NeuroAttention.copyrights();
+            this.pbox_logo = new Guna.UI.WinForms.GunaPictureBox();
             this.lbl_title = new Guna.UI.WinForms.GunaLabel();
             this.btn_kullanimsozlesmesi = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btn_version = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -47,10 +49,11 @@
             this.lbl_applanguage = new Guna.UI.WinForms.GunaLabel();
             this.lbl_currentversion = new Guna.UI.WinForms.GunaLabel();
             this.lbl_settings = new Guna.UI.WinForms.GunaLabel();
-            this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.copyrights = new NeuroAttention.copyrights();
+            this.btn_checkupdate = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();
             this.gunaPanel_upper_right.SuspendLayout();
             this.gunaPanel_left.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_logo)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaDragControl1
@@ -185,9 +188,11 @@
             // gunaPanel_left
             // 
             this.gunaPanel_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.gunaPanel_left.Controls.Add(this.gunaAdvenceButton1);
-            this.gunaPanel_left.Controls.Add(this.lbl_title);
+            this.gunaPanel_left.Controls.Add(this.gunaSeparator1);
+            this.gunaPanel_left.Controls.Add(this.btn_checkupdate);
             this.gunaPanel_left.Controls.Add(this.copyrights);
+            this.gunaPanel_left.Controls.Add(this.pbox_logo);
+            this.gunaPanel_left.Controls.Add(this.lbl_title);
             this.gunaPanel_left.Controls.Add(this.btn_kullanimsozlesmesi);
             this.gunaPanel_left.Controls.Add(this.btn_version);
             this.gunaPanel_left.Controls.Add(this.cbox_version);
@@ -202,16 +207,38 @@
             this.gunaPanel_left.Size = new System.Drawing.Size(1080, 720);
             this.gunaPanel_left.TabIndex = 0;
             // 
+            // copyrights
+            // 
+            this.copyrights.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.copyrights.Location = new System.Drawing.Point(488, 137);
+            this.copyrights.Name = "copyrights";
+            this.copyrights.Size = new System.Drawing.Size(535, 550);
+            this.copyrights.TabIndex = 29;
+            this.copyrights.Visible = false;
+            // 
+            // pbox_logo
+            // 
+            this.pbox_logo.BaseColor = System.Drawing.Color.White;
+            this.pbox_logo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbox_logo.Image = ((System.Drawing.Image)(resources.GetObject("pbox_logo.Image")));
+            this.pbox_logo.Location = new System.Drawing.Point(3, 12);
+            this.pbox_logo.Name = "pbox_logo";
+            this.pbox_logo.Size = new System.Drawing.Size(120, 120);
+            this.pbox_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbox_logo.TabIndex = 28;
+            this.pbox_logo.TabStop = false;
+            this.pbox_logo.Click += new System.EventHandler(this.pbox_logo_Click);
+            // 
             // lbl_title
             // 
             this.lbl_title.AutoSize = true;
-            this.lbl_title.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(54)))), ((int)(((byte)(57)))));
-            this.lbl_title.Location = new System.Drawing.Point(607, 43);
+            this.lbl_title.Font = new System.Drawing.Font("Infoma Demi", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.ForeColor = System.Drawing.Color.White;
+            this.lbl_title.Location = new System.Drawing.Point(483, 76);
             this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(134, 15);
+            this.lbl_title.Size = new System.Drawing.Size(439, 27);
             this.lbl_title.TabIndex = 26;
-            this.lbl_title.Text = "KULLANICI SÖZLEŞMESİ";
+            this.lbl_title.Text = "ÜÇÜNCÜ PARTİ YAZILIM LİSANSLARI";
             this.lbl_title.Visible = false;
             // 
             // btn_kullanimsozlesmesi
@@ -282,6 +309,7 @@
             this.btn_version.TabIndex = 23;
             this.btn_version.Text = "v1.0.0";
             this.btn_version.TextOffsetX = -10;
+            this.btn_version.Click += new System.EventHandler(this.btn_version_Click);
             // 
             // cbox_version
             // 
@@ -366,46 +394,48 @@
             this.lbl_settings.TabIndex = 18;
             this.lbl_settings.Text = "AYARLAR";
             // 
-            // gunaAdvenceButton1
+            // btn_checkupdate
             // 
-            this.gunaAdvenceButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton1.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaAdvenceButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton1.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton1.CheckedImage")));
-            this.gunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaAdvenceButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton1.Image")));
-            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(30, 392);
-            this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
-            this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.OnHoverImage = null;
-            this.gunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.Size = new System.Drawing.Size(180, 42);
-            this.gunaAdvenceButton1.TabIndex = 27;
-            this.gunaAdvenceButton1.Text = "Güncelleme Kontrol Et";
-            this.gunaAdvenceButton1.Click += new System.EventHandler(this.gunaAdvenceButton1_Click);
+            this.btn_checkupdate.Animated = true;
+            this.btn_checkupdate.AnimationHoverSpeed = 0.07F;
+            this.btn_checkupdate.AnimationSpeed = 0.03F;
+            this.btn_checkupdate.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_checkupdate.BorderColor = System.Drawing.Color.Black;
+            this.btn_checkupdate.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_checkupdate.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_checkupdate.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_checkupdate.CheckedImage = null;
+            this.btn_checkupdate.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_checkupdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_checkupdate.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_checkupdate.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_checkupdate.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_checkupdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btn_checkupdate.Image = null;
+            this.btn_checkupdate.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_checkupdate.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_checkupdate.Location = new System.Drawing.Point(26, 601);
+            this.btn_checkupdate.Name = "btn_checkupdate";
+            this.btn_checkupdate.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_checkupdate.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_checkupdate.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.btn_checkupdate.OnHoverImage = null;
+            this.btn_checkupdate.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btn_checkupdate.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_checkupdate.OnPressedDepth = 0;
+            this.btn_checkupdate.Size = new System.Drawing.Size(191, 20);
+            this.btn_checkupdate.TabIndex = 30;
+            this.btn_checkupdate.Text = "YAZILIM GÜNCELLEŞTİRME";
+            this.btn_checkupdate.TextOffsetX = -10;
+            this.btn_checkupdate.Click += new System.EventHandler(this.btn_checkupdate_Click);
             // 
-            // copyrights
+            // gunaSeparator1
             // 
-            this.copyrights.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.copyrights.Location = new System.Drawing.Point(441, 64);
-            this.copyrights.Name = "copyrights";
-            this.copyrights.Size = new System.Drawing.Size(597, 546);
-            this.copyrights.TabIndex = 25;
-            this.copyrights.Visible = false;
+            this.gunaSeparator1.LineColor = System.Drawing.Color.Silver;
+            this.gunaSeparator1.Location = new System.Drawing.Point(30, 93);
+            this.gunaSeparator1.Name = "gunaSeparator1";
+            this.gunaSeparator1.Size = new System.Drawing.Size(236, 10);
+            this.gunaSeparator1.TabIndex = 31;
             // 
             // Settings
             // 
@@ -417,6 +447,7 @@
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.gunaPanel_left);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Settings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings";
@@ -424,6 +455,7 @@
             this.gunaPanel_upper_right.ResumeLayout(false);
             this.gunaPanel_left.ResumeLayout(false);
             this.gunaPanel_left.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_logo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -445,8 +477,10 @@
         private Guna.UI.WinForms.GunaLabel lbl_applanguage;
         private Guna.UI.WinForms.GunaLabel lbl_currentversion;
         private Guna.UI.WinForms.GunaLabel lbl_settings;
-        private copyrights copyrights;
         private Guna.UI.WinForms.GunaLabel lbl_title;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
+        private Guna.UI.WinForms.GunaPictureBox pbox_logo;
+        private copyrights copyrights;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_checkupdate;
+        private Guna.UI.WinForms.GunaSeparator gunaSeparator1;
     }
 }

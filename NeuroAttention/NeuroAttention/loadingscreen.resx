@@ -117,61 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lbl_description.Text" xml:space="preserve">
-    <value>MIT License, EN
-
-Copyright (c) 2019 MayaAcademia
-
-Permission is hereby granted, free of charge, to any person
-obtaining a copy of this software and associated documentation
-files (the "Software"), to deal in the Software without restriction,
-including without limitation the rights to use, copy, modify, 
-merge, publish, distribute, sublicense, and/or sell copies 
-of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall
-be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY
-OF ANY KIND,  EXPRESS OR IMPLIED, INCLUDING BUT NOT 
-LIMITED TO THE WARRANTIES  OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND  NONINFRINGEMENT. IN 
-NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
-WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
-OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-
-İşbu sözleşme ile düzenlenen karşılıklı hak ve yükümlülükler 
-“Barbaros Mahallesi Bahar Sokak,  Bahar Sitesi A10 Blok Daire 6 
-ÜSKÜDAR/İSTANBUL” adresinde mukim “MAYAACADEMIA 
-HIZLI OKUMA TEKNİKLERİ TİCARET ANONİM ŞİRKETİ” 
-(bundan sonra “MayaAcademia A.Ş.” olarak anılacaktır) ile 
-MayaAcademia Nöro Dikkat Windows  tabanlı uygulamasından
-sözleşmede belirtilen koşullar dâhilinde yararlanan kullanıcının 
-üyelik kaydını  tamamladığında bu anlaşmayı okuyup anladığını
-ve kabul ettiğini elektronik olarak onaylaması ile  yürürlüğe girer.
-
-MADDE 2-TANIMLAR
-Aşağıdaki tanımlamalar, işbu sözleşme kapsamında atıfta bulunulacak 
-tanımlamalar olup,  açıklanan anlamlar çerçevesinde kullanılacaktır.
-   2.1. Uygulama: “MayaAcademia Nöro Dikkat Uygulaması” isimli 
-masaüstü uygulama,  tüm masaüstü bilgisayarlarda çalışan masaüstü
-uygulama yazılımını ve bu yazılım ile bağlantılı olarak oluşturulan ürün
-ve hizmetlerin  sunulduğu tüm sanal gerçeklik mecralarını ifade etmektedir.
-
-   2.2. Kullanıcı/Üye: Uygulamaya işbu sözleşmede belirlenen yöntemlerle kayıt
-olup uygulama tarafından sunulan ürün ve hizmetlerden işbu sözleşmede
-belirtilen koşullar dâhilinde yararlanan kişileri ifade etmektedir.
-   2.3. Alıcı: Uygulamaya işbu sözleşmede belirlenen yöntemlerle kayıt olup 
-uygulama tarafından sunulan ürünlerden işbu sözleşmede belirtilen koşullar
-dâhilinde yararlanan ve mesafeli satış sözleşmesi kapsamında ürün satın alan
-kişileri ifade etmektedir.
-   2.4. Sisteme Erişim Araçları: Kullanıcının hesabını yönetim sayfası, uygulamaya
-erişim sağlayan kullanıcı adı,şifre, kod, parola gibi yalnızca Kullanıcının bilgisinde
-olan bilgileri ifade etmektedir.</value>
-  </data>
+  <metadata name="timer3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

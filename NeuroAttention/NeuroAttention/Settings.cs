@@ -10,15 +10,93 @@ using System.Windows.Forms;
 using System.Reflection;
 using System.Globalization;
 using System.Threading;
+using SharpUpdate;
 
 namespace NeuroAttention
 {
-    public partial class Settings : Form
+    public partial class Settings : Form, ISharpUpdatable
     {
-        public Settings()
+
+
+        private SharpUpdater updater;
+        public bool InternetKontrol()
+        {
+            try
+            {
+                System.Net.Sockets.TcpClient kontrol_client = new System.Net.Sockets.TcpClient("www.google.com.tr", 80);
+                kontrol_client.Close();
+                return true;
+            }
+            catch (Exception)
+
+            {
+                return false;
+
+            }
+        }
+
+        public void networkStatus()
+        {
+            bool kontrol = InternetKontrol(); // Kontrol fonksiyonumuzu çağırdık
+                                              // Eğer internet varsa true yoksa false değeri gelecek. Bunu if ile kontrol edelim
+
+            if (kontrol == true)
+            {
+                this.Hide();
+                updater.DoUpdate();
+            }
+            else
+            {
+
+                MessageBox.Show("Sunucu ile bağlantı kurulamadı. Bağlantınızın doğruluğundan emin olun veya ISP ile görüşünüz.", "Bağlantı Kesildi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+
+            }
+
+
+        }
+
+
+            public Settings()
         {
             InitializeComponent();
+            
+            updater = new SharpUpdater(this);
         }
+
+        public string ApplicationName
+        {
+            get { return "NeuroAttention"; }
+        }
+
+        public string ApplicationID
+        {
+            get { return "NeuroAttention"; }
+        }
+
+        public Assembly ApplicationAssembly
+        {
+            get { return Assembly.GetExecutingAssembly(); }
+        }
+
+        public Icon ApplicationIcon
+        {
+            get { return this.Icon; }
+        }
+
+        public Uri UpdateXmlLocation
+        {
+            get { return new Uri("http://www.enesbilgi.com/test/update.xml"); }
+        }
+
+        public Form Context
+        {
+            get { return this; }
+        }
+
+
+
+
 
         public void language(string culture)
         {
@@ -37,6 +115,8 @@ namespace NeuroAttention
 
         private void Settings_Load(object sender, EventArgs e)
         {
+
+            
             string version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
             cbox_version.Items.Add("v" + version[0] + version[1] + version[2] + version[3] + version[4].ToString());
             cbox_version.SelectedItem = "v" + version[0] + version[1] + version[2] + version[3] + version[4].ToString();
@@ -77,9 +157,10 @@ namespace NeuroAttention
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Login login = new Login();
             login.Show();
+            this.Hide();
+            
         }
 
         private void cbox_language_SelectionChangeCommitted(object sender, EventArgs e)
@@ -139,8 +220,8 @@ namespace NeuroAttention
             if (copyrights.Visible == false)
             {
                 lbl_title.Visible = true;
-                this.copyrights.Location = new System.Drawing.Point(26, 64);
-                this.lbl_title.Location = new System.Drawing.Point(26, 45);
+                // this.copyrights.Location = new System.Drawing.Point(26, 64);
+                //this.lbl_title.Location = new System.Drawing.Point(26, 45);
                 copyrights.Show();
                 btn_kullanimsozlesmesi.ForeColor = Color.FromArgb(209, 54, 57);
                 lbl_settings.Visible = false;
@@ -148,6 +229,7 @@ namespace NeuroAttention
                 lbl_applanguage.Visible = false;
                 cbox_language.Visible = false;
                 cbox_version.Visible = false;
+                btn_checkupdate.Visible = false;
             }
 
             else
@@ -160,6 +242,7 @@ namespace NeuroAttention
                 lbl_applanguage.Visible = true;
                 cbox_language.Visible = true;
                 cbox_version.Visible = true;
+                btn_checkupdate.Visible = true;
             }
                 
 
@@ -167,8 +250,49 @@ namespace NeuroAttention
 
         private void gunaAdvenceButton1_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
-            form.Show();
+            
+            
+        }
+
+        private void pbox_logo_Click(object sender, EventArgs e)
+        {
+            if (copyrights.Visible == true)
+            {
+                lbl_title.Visible = false;
+                copyrights.Hide();
+                btn_kullanimsozlesmesi.ForeColor = Color.FromArgb(51, 51, 51);
+                lbl_settings.Visible = true;
+                lbl_currentversion.Visible = true;
+                lbl_applanguage.Visible = true;
+                cbox_language.Visible = true;
+                cbox_version.Visible = true;
+                btn_checkupdate.Visible = true;
+            }
+
+            else
+            {
+
+            }
+        }
+
+        private void btn_checkupdate_Click(object sender, EventArgs e)
+        {
+            networkStatus();
+        }
+
+        private void btn_version_Click(object sender, EventArgs e)
+        {
+
+            if (copyrights.Visible != true)
+            {
+                Version versiyon = new Version();
+                versiyon.Show();
+            }
+
+            else
+            {
+
+            }
         }
     }
 }

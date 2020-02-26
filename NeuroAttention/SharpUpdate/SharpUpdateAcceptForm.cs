@@ -9,6 +9,9 @@ namespace SharpUpdate
         private ISharpUpdatable applicationInfo;
         private SharpUpdateXml updateInfo;
         private SharpUpdateInfoForm updateInfoForm;
+        
+    
+
 
         internal SharpUpdateAcceptForm(ISharpUpdatable applicationInfo, SharpUpdateXml updateInfo)
         {
@@ -17,12 +20,18 @@ namespace SharpUpdate
             this.applicationInfo = applicationInfo;
             this.updateInfo = updateInfo;
 
-            this.Text = this.applicationInfo.ApplicationName + "- Update Available";
+            this.Text = "MayaUpdater" + " - Güncelleme Mevcut";
 
-            if (this.applicationInfo.ApplicationIcon != null)
-                this.Icon = applicationInfo.ApplicationIcon;
+          
 
-            this.lblNewVersion.Text = string.Format("New Version: {0}", this.updateInfo.Version.ToString());
+            this.lblNewVersion.Text = string.Format("Yeni Sürüm: {0}", this.updateInfo.Version.ToString());
+
+           
+
+            this.lbl_currentVersion.Text = String.Format("Eski Sürüm: {0}\nUpdate Version : {1}", applicationInfo.ApplicationAssembly.GetName().Version.ToString(),
+                updateInfo.Version.ToString());
+            this.lbl_updateinfo.Text = updateInfo.Description;
+
 
         }
 
@@ -36,6 +45,9 @@ namespace SharpUpdate
         {
             this.DialogResult = DialogResult.No;
             this.Close();
+            Application.Restart();
+            
+            
         }
 
         private void btnDetails_Click(object sender, EventArgs e)
@@ -45,5 +57,7 @@ namespace SharpUpdate
 
             this.updateInfoForm.ShowDialog(this);
         }
+
+      
     }
 }
