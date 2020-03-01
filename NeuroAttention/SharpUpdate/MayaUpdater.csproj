@@ -34,6 +34,15 @@
     <Reference Include="Guna.UI">
       <HintPath>..\..\..\SeyahatAcentasi\SeyahatAcentasi\SeyahatAcentasi\source\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -56,40 +65,49 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="SharpUpdateAcceptForm.cs">
+    <Compile Include="MayaUpdaterAcceptForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SharpUpdateAcceptForm.Designer.cs">
-      <DependentUpon>SharpUpdateAcceptForm.cs</DependentUpon>
+    <Compile Include="MayaUpdaterAcceptForm.Designer.cs">
+      <DependentUpon>MayaUpdaterAcceptForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SharpUpdateDownloadForm.cs">
+    <Compile Include="MayaUpdaterDownloadForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SharpUpdateDownloadForm.Designer.cs">
-      <DependentUpon>SharpUpdateDownloadForm.cs</DependentUpon>
+    <Compile Include="MayaUpdaterDownloadForm.Designer.cs">
+      <DependentUpon>MayaUpdaterDownloadForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SharpUpdateInfoForm.cs">
+    <Compile Include="MayaUpdaterInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SharpUpdateInfoForm.Designer.cs">
-      <DependentUpon>SharpUpdateInfoForm.cs</DependentUpon>
+    <Compile Include="MayaUpdaterInfoForm.Designer.cs">
+      <DependentUpon>MayaUpdaterInfoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SharpUpdater.cs" />
-    <Compile Include="SharpUpdateXml.cs" />
+    <Compile Include="MayaUpdater.cs" />
+    <Compile Include="MayaUpdateXml.cs" />
+    <Compile Include="UpdateOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateOK.Designer.cs">
+      <DependentUpon>UpdateOK.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="SharpUpdateAcceptForm.resx">
-      <DependentUpon>SharpUpdateAcceptForm.cs</DependentUpon>
+    <EmbeddedResource Include="MayaUpdaterAcceptForm.resx">
+      <DependentUpon>MayaUpdaterAcceptForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SharpUpdateDownloadForm.resx">
-      <DependentUpon>SharpUpdateDownloadForm.cs</DependentUpon>
+    <EmbeddedResource Include="MayaUpdaterDownloadForm.resx">
+      <DependentUpon>MayaUpdaterDownloadForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SharpUpdateInfoForm.resx">
-      <DependentUpon>SharpUpdateInfoForm.cs</DependentUpon>
+    <EmbeddedResource Include="MayaUpdaterInfoForm.resx">
+      <DependentUpon>MayaUpdaterInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateOK.resx">
+      <DependentUpon>UpdateOK.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,6 @@
 ﻿namespace SharpUpdate
 {
-    partial class SharpUpdateDownloadForm
+    partial class MayaUpdaterDownloadForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SharpUpdateDownloadForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MayaUpdaterDownloadForm));
             this.gunaPanel3 = new Guna.UI.WinForms.GunaPanel();
             this.btnClose = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaProgressBar1 = new Guna.UI.WinForms.GunaProgressBar();

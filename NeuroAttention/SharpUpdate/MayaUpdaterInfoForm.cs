@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace SharpUpdate
 {
-    internal partial class SharpUpdateInfoForm : Form
+    internal partial class MayaUpdaterInfoForm : Form
     {
-        internal SharpUpdateInfoForm(ISharpUpdatable applicationInfo, SharpUpdateXml updateInfo)
+        internal MayaUpdaterInfoForm(ISharpUpdatable applicationInfo, MayaUpdateXml updateInfo)
         {
             InitializeComponent();
 

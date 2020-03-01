@@ -1,6 +1,6 @@
 ﻿namespace SharpUpdate
 {
-    partial class SharpUpdateInfoForm
+    partial class MayaUpdaterInfoForm
     {
         /// <summary>
         /// Required designer variable.

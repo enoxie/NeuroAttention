@@ -634,18 +634,18 @@ namespace NeuroAttention
                 int rndoperators = rndmath.Next(1, 5);
 
                 if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Red;
-
-
-                else if (rndoperators == 2)
                     lbl_mustassignoperator.ForeColor = Color.Blue;
 
 
-                else if (rndoperators == 3)
+                else if (rndoperators == 2)
                     lbl_mustassignoperator.ForeColor = Color.Green;
 
+
+                else if (rndoperators == 3)
+                    lbl_mustassignoperator.ForeColor = Color.Red;
+
                 else if (rndoperators == 4)
-                    lbl_mustassignoperator.ForeColor = Color.Black;
+                    lbl_mustassignoperator.ForeColor = Color.Yellow;
 
 
                 if (number1 < number2)
@@ -666,11 +666,11 @@ namespace NeuroAttention
                 int rndoperators = rndmath.Next(1, 3);
 
                 if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Red;
+                    lbl_mustassignoperator.ForeColor = Color.Blue;
 
 
                 else if (rndoperators == 2)
-                    lbl_mustassignoperator.ForeColor = Color.Blue;
+                    lbl_mustassignoperator.ForeColor = Color.Green;
 
 
 
@@ -696,13 +696,13 @@ namespace NeuroAttention
                 int rndoperators = rndmath.Next(1, 4);
 
                 if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Red;
-
-                else if (rndoperators == 2)
                     lbl_mustassignoperator.ForeColor = Color.Blue;
 
-                else if (rndoperators == 3)
+                else if (rndoperators == 2)
                     lbl_mustassignoperator.ForeColor = Color.Green;
+
+                else if (rndoperators == 3)
+                    lbl_mustassignoperator.ForeColor = Color.Red;
 
                 if (number1 < number2)
                 {
@@ -722,7 +722,7 @@ namespace NeuroAttention
             {
 
 
-                lbl_mustassignoperator.ForeColor = Color.Red;
+                lbl_mustassignoperator.ForeColor = Color.Blue;
 
                 if (number1 < number2)
                 {
@@ -743,7 +743,7 @@ namespace NeuroAttention
             {
 
 
-                lbl_mustassignoperator.ForeColor = Color.Blue;
+                lbl_mustassignoperator.ForeColor = Color.Green;
 
                 if (number1 < number2)
                 {
@@ -762,7 +762,7 @@ namespace NeuroAttention
             else if (checkbox_colorplus.Checked == false && checkbox_colorminus.Checked == false && checkbox_colorimpact.Checked == true && checkbox_colorcompartment.Checked == false)
             {
 
-                lbl_mustassignoperator.ForeColor = Color.Green;
+                lbl_mustassignoperator.ForeColor = Color.Red;
 
                 if (number1 < number2)
                 {
@@ -781,7 +781,7 @@ namespace NeuroAttention
             else if (checkbox_colorplus.Checked == false && checkbox_colorminus.Checked == false && checkbox_colorimpact.Checked == false && checkbox_colorcompartment.Checked == true)
             {
 
-                lbl_mustassignoperator.ForeColor = Color.Black;
+                lbl_mustassignoperator.ForeColor = Color.Yellow;
 
                 if (number1 < number2)
                 {
@@ -808,10 +808,10 @@ namespace NeuroAttention
                 int rndoperators = rndmath.Next(1, 3);
 
                 if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Blue;
+                    lbl_mustassignoperator.ForeColor = Color.Green;
 
                 else if (rndoperators == 2)
-                    lbl_mustassignoperator.ForeColor = Color.Green;
+                    lbl_mustassignoperator.ForeColor = Color.Red;
 
 
                 if (number1 < number2)
@@ -834,10 +834,10 @@ namespace NeuroAttention
                 int rndoperators = rndmath.Next(1, 3);
 
                 if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Red;
+                    lbl_mustassignoperator.ForeColor = Color.Blue;
 
                 else if (rndoperators == 2)
-                    lbl_mustassignoperator.ForeColor = Color.Green;
+                    lbl_mustassignoperator.ForeColor = Color.Red;
 
 
                 if (number1 < number2)
@@ -860,10 +860,10 @@ namespace NeuroAttention
                 int rndoperators = rndmath.Next(1, 3);
 
                 if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Red;
+                    lbl_mustassignoperator.ForeColor = Color.Blue;
 
                 else if (rndoperators == 2)
-                    lbl_mustassignoperator.ForeColor = Color.Black;
+                    lbl_mustassignoperator.ForeColor = Color.Yellow;
 
 
                 if (number1 < number2)
@@ -887,10 +887,10 @@ namespace NeuroAttention
                 int rndoperators = rndmath.Next(1, 3);
 
                 if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Green;
+                    lbl_mustassignoperator.ForeColor = Color.Red;
 
                 else if (rndoperators == 2)
-                    lbl_mustassignoperator.ForeColor = Color.Black;
+                    lbl_mustassignoperator.ForeColor = Color.Yellow;
 
 
                 if (number1 < number2)
@@ -914,10 +914,10 @@ namespace NeuroAttention
                 int rndoperators = rndmath.Next(1, 3);
 
                 if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Blue;
+                    lbl_mustassignoperator.ForeColor = Color.Green;
 
                 else if (rndoperators == 2)
-                    lbl_mustassignoperator.ForeColor = Color.Black;
+                    lbl_mustassignoperator.ForeColor = Color.Yellow;
 
 
                 if (number1 < number2)
@@ -940,13 +940,13 @@ namespace NeuroAttention
                 int rndoperators = rndmath.Next(1, 4);
 
                 if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Blue;
-
-                else if (rndoperators == 2)
                     lbl_mustassignoperator.ForeColor = Color.Green;
 
+                else if (rndoperators == 2)
+                    lbl_mustassignoperator.ForeColor = Color.Red;
+
                 else if (rndoperators == 3)
-                    lbl_mustassignoperator.ForeColor = Color.Black;
+                    lbl_mustassignoperator.ForeColor = Color.Yellow;
 
 
                 if (number1 < number2)
@@ -969,13 +969,13 @@ namespace NeuroAttention
                 int rndoperators = rndmath.Next(1, 4);
 
                 if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Red;
-
-                else if (rndoperators == 2)
                     lbl_mustassignoperator.ForeColor = Color.Blue;
 
+                else if (rndoperators == 2)
+                    lbl_mustassignoperator.ForeColor = Color.Green;
+
                 else if (rndoperators == 3)
-                    lbl_mustassignoperator.ForeColor = Color.Black;
+                    lbl_mustassignoperator.ForeColor = Color.Yellow;
 
 
                 if (number1 < number2)
@@ -999,13 +999,13 @@ namespace NeuroAttention
                 int rndoperators = rndmath.Next(1, 4);
 
                 if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Red;
+                    lbl_mustassignoperator.ForeColor = Color.Blue;
 
                 else if (rndoperators == 2)
-                    lbl_mustassignoperator.ForeColor = Color.Green;
+                    lbl_mustassignoperator.ForeColor = Color.Red;
 
                 else if (rndoperators == 3)
-                    lbl_mustassignoperator.ForeColor = Color.Black;
+                    lbl_mustassignoperator.ForeColor = Color.Yellow;
 
 
                 if (number1 < number2)
@@ -1056,15 +1056,27 @@ namespace NeuroAttention
 
 
             }
+
+            else if (checkbox_gostergizle.Checked == true)
+            {
+                randomNumberNormal();
+                timer_time.Interval = (int)numeric_time.Value * 1000;
+                timer_screentime.Interval = (int)numeric_screentime.Value;
+                timer_hidetime.Interval = (int)numeric_screentime.Value;
+                timer_time.Start();
+                timer_hidetime.Start();
+                lbl_process.Visible = true;
+
+
+            }
+
             else
             { 
-               randomNumberNormal();
-                timer1.Interval = (int)numeric_time.Value * 1000;
-                timer2.Interval = (int)numeric_screentime.Value;
-                
-                timer1.Start();
-                timer2.Start();      
-                
+                randomNumberNormal();
+                timer_time.Interval = (int)numeric_time.Value * 1000;
+                timer_screentime.Interval = (int)numeric_screentime.Value;
+                timer_time.Start();
+                timer_screentime.Start();
                 lbl_process.Visible = true;
 
             }
@@ -1075,11 +1087,19 @@ namespace NeuroAttention
                 
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer_time_Tick(object sender, EventArgs e)
         {
-            timer1.Stop();
-            timer2.Stop();
-           
+            timer_time.Stop();
+            timer_screentime.Stop();
+            timer_hidetime.Stop();
+            checkbox_plus.Checked = false;
+            checkbox_minus.Checked = false;
+            checkbox_impact.Checked = false;
+            checkbox_compartment.Checked = false;
+            checkbox_colorplus.Checked = false;
+            checkbox_colorminus.Checked = false;
+            checkbox_colorimpact.Checked = false;
+            checkbox_colorcompartment.Checked = false;
             lbl_process.Visible = false;
             lbl_mustassignoperator.Visible = false;
             lbl_mustassignnumber1.Visible = false;
@@ -1088,13 +1108,50 @@ namespace NeuroAttention
             btn_start.Visible = true;
         }
 
-        private void timer2_Tick(object sender, EventArgs e)
+        private void timer_screentime_Tick(object sender, EventArgs e)
         {
-            if (checkbox_plus.Checked == true || checkbox_minus.Checked == true || checkbox_impact.Checked == true || checkbox_compartment.Checked == true)
+
+            if(checkbox_gostergizle.Checked == true)
+            {
+
+               if (checkbox_plus.Checked == true || checkbox_minus.Checked == true || checkbox_impact.Checked == true || checkbox_compartment.Checked == true)
+                {
+                    lbl_process.Visible = true;
+                    randomNumberNormal();
+
+                    timer_screentime.Stop();
+                    timer_hidetime.Start();
+                }
+
+                else
+                {
+                    lbl_mustassignoperator.Visible = true;
+                    lbl_mustassignnumber1.Visible = true;
+                    lbl_mustassignnumber2.Visible = true;
+                    randomNumberMustAssignTask();
+                    timer_screentime.Stop();
+                    timer_hidetime.Start();
+                }
+                
+            }
+
+
+            else if (checkbox_plus.Checked == true || checkbox_minus.Checked == true || checkbox_impact.Checked == true || checkbox_compartment.Checked == true)
+            {
                 randomNumberNormal();
+                lbl_process.Visible = true;
+            }
+
 
             else if (checkbox_colorplus.Checked == true || checkbox_colorminus.Checked == true || checkbox_colorimpact.Checked == true || checkbox_colorcompartment.Checked == true)
+            {
                 randomNumberMustAssignTask();
+                lbl_mustassignoperator.Visible = true;
+                lbl_mustassignnumber1.Visible = true;
+                lbl_mustassignnumber2.Visible = true;
+            }
+            
+            
         }
 
         private void ConstantAttention_Load(object sender, EventArgs e)
@@ -1231,22 +1288,66 @@ namespace NeuroAttention
             }
         }
 
-        private void timer3_Tick(object sender, EventArgs e)
-        {
-           
-        }
 
         private void btn_colortableok_Click(object sender, EventArgs e)
         {
             panel_colortable.Visible=false;
-            randomNumberMustAssignTask();
-            timer1.Interval = (int)numeric_time.Value * 1000;
-            timer2.Interval = (int)numeric_screentime.Value;
-            timer1.Start();
-            timer2.Start();
-            lbl_mustassignoperator.Visible = true;
-            lbl_mustassignnumber1.Visible = true;
-            lbl_mustassignnumber2.Visible = true;
+
+              if (checkbox_gostergizle.Checked == true)
+            {
+                randomNumberMustAssignTask();
+                timer_time.Interval = (int)numeric_time.Value * 1000;
+                timer_screentime.Interval = (int)numeric_screentime.Value;
+                timer_hidetime.Interval = (int)numeric_screentime.Value;
+                timer_time.Start();
+                timer_hidetime.Start();
+                lbl_mustassignoperator.Visible = true;
+                lbl_mustassignnumber1.Visible = true;
+                lbl_mustassignnumber2.Visible = true;
+
+            }
+
+            else
+            {
+                randomNumberMustAssignTask();
+                timer_time.Interval = (int)numeric_time.Value * 1000;
+                timer_screentime.Interval = (int)numeric_screentime.Value;
+                timer_time.Start();
+                timer_screentime.Start();
+                lbl_mustassignoperator.Visible = true;
+                lbl_mustassignnumber1.Visible = true;
+                lbl_mustassignnumber2.Visible = true;
+
+
+            }
+
+
+           
+        }
+
+        private void timer_hidetime_Tick(object sender, EventArgs e)
+        {
+            lbl_process.Visible = false;
+            lbl_mustassignoperator.Visible = false;
+            lbl_mustassignnumber1.Visible = false;
+            lbl_mustassignnumber2.Visible = false;
+            timer_screentime.Start();
+            timer_hidetime.Stop();
+        }
+
+     
+
+       
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
         }
 
         private void btn_stop_Click(object sender, EventArgs e)
@@ -1257,9 +1358,9 @@ namespace NeuroAttention
                 btn_start.Visible = true;
             }
 
-            timer1.Stop();
-            timer2.Stop();
-           
+            timer_time.Stop();
+            timer_screentime.Stop();
+            timer_hidetime.Stop();
             lbl_process.Visible = false;
             lbl_process.Text = "";
             lbl_mustassignnumber1.Visible = false;

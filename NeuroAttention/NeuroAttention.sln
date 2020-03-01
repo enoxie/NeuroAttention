@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuroAttention", "NeuroAttention\NeuroAttention.csproj", "{FE773B25-6F81-4C4E-8C15-1F8C47AF5C2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpUpdate", "SharpUpdate\SharpUpdate.csproj", "{200FB6F3-7977-4557-A6B8-D52DBF24713C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MayaUpdater", "SharpUpdate\MayaUpdater.csproj", "{200FB6F3-7977-4557-A6B8-D52DBF24713C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

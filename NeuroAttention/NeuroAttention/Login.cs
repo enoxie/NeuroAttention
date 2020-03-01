@@ -805,7 +805,8 @@ namespace NeuroAttention
 
         private void btn_version_Click(object sender, EventArgs e)
         {
-
+           /* VersionLogin versionlogin = new VersionLogin();
+            versionlogin.Show();*/
         }
 
         private void btn_backtologin_Click(object sender, EventArgs e)
@@ -815,6 +816,9 @@ namespace NeuroAttention
             pbox_logo.Visible = false;
             panel_forgotpassword.Visible = false;
             pbox_loading.Visible = true;
+            txt_username.Text = "KULLANICI ADI";
+            txt_password.Text = "ŞİFRE";
+            
             
             
 
@@ -994,6 +998,11 @@ namespace NeuroAttention
             {
 
             }
+        }
+
+        private void gunaControlBox_close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
     }

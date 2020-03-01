@@ -169,17 +169,28 @@ namespace NeuroAttention
         
         private void btn_startapp_Click(object sender, EventArgs e)
         {
-            if (cpt == 1)
-            {
-                ConstantAttention constantattention = new ConstantAttention();
-                constantattention.Show();
-                this.Hide();
-            }
 
-            else
+            switch (cpt)
             {
+                case 1:
+                    {
+                        ConstantAttention constantattention = new ConstantAttention();
+                        constantattention.Show();
+                        this.Hide();
+                        break;
+                    }
+
+                case 2:
+                    {
+                        cokluislem cokluislem = new cokluislem();
+                        cokluislem.Show();
+                        this.Hide();
+                        break;
+                    }
+
 
             }
+            
         }
 
         private void btn_logout_Click(object sender, EventArgs e)

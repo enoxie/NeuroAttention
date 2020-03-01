@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace SharpUpdate
 {
-    internal partial class SharpUpdateDownloadForm : Form
+    internal partial class MayaUpdaterDownloadForm : Form
     {
 
         private WebClient webClient;
@@ -20,7 +20,7 @@ namespace SharpUpdate
         {
             get { return this.tempFile; }
         }
-        internal SharpUpdateDownloadForm(Uri location, string md5, Icon programIcon)
+        internal MayaUpdaterDownloadForm(Uri location, string md5, Icon programIcon)
         {
             InitializeComponent();
 

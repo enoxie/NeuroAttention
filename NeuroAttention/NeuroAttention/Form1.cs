@@ -14,13 +14,13 @@ namespace NeuroAttention
 {
     public partial class Form1 : Form, ISharpUpdatable
     {
-        private SharpUpdater updater;
+        private MayaUpdater updater;
 
         public Form1()
         {
             InitializeComponent();
             this.label1.Text = this.ApplicationAssembly.GetName().Version.ToString();
-            updater = new SharpUpdater(this);
+            updater = new MayaUpdater(this);
         }
 
         public string ApplicationName 

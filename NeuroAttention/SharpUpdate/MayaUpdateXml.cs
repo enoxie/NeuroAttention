@@ -4,7 +4,7 @@ using System.Xml;
 
 namespace SharpUpdate
 {
-    internal class SharpUpdateXml
+    internal class MayaUpdateXml
     {
         private Version version;
         private Uri uri;
@@ -44,7 +44,7 @@ namespace SharpUpdate
             get { return this.launchArgs; }
         }
 
-        internal SharpUpdateXml(Version version, Uri uri, string fileName, string md5, string description, string launchArgs)
+        internal MayaUpdateXml(Version version, Uri uri, string fileName, string md5, string description, string launchArgs)
         {
             this.version = version;
             this.uri = uri;
@@ -73,7 +73,7 @@ namespace SharpUpdate
             catch { return false; }
         }
 
-        internal static SharpUpdateXml Parse(Uri location, string appID)
+        internal static MayaUpdateXml Parse(Uri location, string appID)
         {
             Version version = null;
             string url = "", fileName = "", md5 = "", description = "", launchArgs = "";
@@ -95,7 +95,7 @@ namespace SharpUpdate
                 description = node["description"].InnerText;
                 launchArgs = node["launchArgs"].InnerText;
 
-                return new SharpUpdateXml(version, new Uri(url), fileName, md5, description, launchArgs);
+                return new MayaUpdateXml(version, new Uri(url), fileName, md5, description, launchArgs);
             }
 
             catch { return null; }

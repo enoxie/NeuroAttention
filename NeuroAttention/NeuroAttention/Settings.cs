@@ -18,7 +18,7 @@ namespace NeuroAttention
     {
 
 
-        private SharpUpdater updater;
+        private MayaUpdater updater;
         public bool InternetKontrol()
         {
             try
@@ -61,7 +61,7 @@ namespace NeuroAttention
         {
             InitializeComponent();
             
-            updater = new SharpUpdater(this);
+            updater = new MayaUpdater(this);
         }
 
         public string ApplicationName
@@ -292,6 +292,11 @@ namespace NeuroAttention
             {
 
             }
+        }
+
+        private void gunaControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

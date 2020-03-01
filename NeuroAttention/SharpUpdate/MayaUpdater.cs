@@ -6,14 +6,14 @@ using System.Windows.Forms;
 
 namespace SharpUpdate
 {
-    public class SharpUpdater
+    public class MayaUpdater
     {
 
         private ISharpUpdatable applicationInfo;
         private BackgroundWorker bgWorker;
 
 
-        public SharpUpdater(ISharpUpdatable applicationInfo)
+        public MayaUpdater(ISharpUpdatable applicationInfo)
         {
             this.applicationInfo = applicationInfo;
             this.bgWorker = new BackgroundWorker();
@@ -32,10 +32,10 @@ namespace SharpUpdate
         {
             ISharpUpdatable application = (ISharpUpdatable)e.Argument;
 
-            if (!SharpUpdateXml.ExistOnServer(application.UpdateXmlLocation))
+            if (!MayaUpdateXml.ExistOnServer(application.UpdateXmlLocation))
                 e.Cancel = true;
             else
-                e.Result = SharpUpdateXml.Parse(application.UpdateXmlLocation, application.ApplicationID);
+                e.Result = MayaUpdateXml.Parse(application.UpdateXmlLocation, application.ApplicationID);
 
         }
         private void BgWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -43,21 +43,29 @@ namespace SharpUpdate
 
             if (!e.Cancelled)
             {
-                SharpUpdateXml update = (SharpUpdateXml)e.Result;
+                MayaUpdateXml update = (MayaUpdateXml)e.Result;
 
                 if(update != null && update.IsNewerThan(this.applicationInfo.ApplicationAssembly.GetName().Version))
                 {
-                    if (new SharpUpdateAcceptForm(this.applicationInfo, update).ShowDialog(this.applicationInfo.Context) == DialogResult.Yes)
+                    if (new MayaUpdaterAcceptForm(this.applicationInfo, update).ShowDialog(this.applicationInfo.Context) == DialogResult.Yes)
                         this.DownloadUpdate(update);
+                }
+
+                else
+                {
+
+                    UpdateOK updateok = new UpdateOK();
+                    updateok.Show();
+   
                 }
 
             }
             
         }
 
-        private void DownloadUpdate(SharpUpdateXml update)
+        private void DownloadUpdate(MayaUpdateXml update)
         {
-            SharpUpdateDownloadForm form = new SharpUpdateDownloadForm(update.Uri, update.MD5, this.applicationInfo.ApplicationIcon);
+            MayaUpdaterDownloadForm form = new MayaUpdaterDownloadForm(update.Uri, update.MD5, this.applicationInfo.ApplicationIcon);
             DialogResult result = form.ShowDialog(this.applicationInfo.Context);
 
             if (result == DialogResult.OK)
