@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaPanel_upper = new Guna.UI.WinForms.GunaPanel();
             this.btn_help = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -49,7 +49,6 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_appname = new Guna.UI.WinForms.GunaLabel();
-            this.btn_logout = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btn_attention = new Guna.UI.WinForms.GunaTileButton();
             this.gunaVSeparator1 = new Guna.UI.WinForms.GunaVSeparator();
             this.btn_startapp = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -68,13 +67,14 @@
             this.btn_moredetails = new Guna.UI.WinForms.GunaAdvenceButton();
             this.lbl_attentiontime = new Guna.UI.WinForms.GunaLabel();
             this.dgw_attention = new Guna.UI.WinForms.GunaDataGridView();
-            this.panel_logout = new Guna.UI.WinForms.GunaPanel();
             this.btn_logoutno = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btn_logoutyes = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_logout = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.panel_logout = new Guna.UI.WinForms.GunaElipsePanel();
             this.gunaPanel_upper.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox_car)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
@@ -243,34 +243,34 @@
             // 
             // gunaDataGridView1
             // 
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.White;
+            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
             this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
             this.gunaDataGridView1.ColumnHeadersHeight = 21;
             this.gunaDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle33;
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.Location = new System.Drawing.Point(1028, 108);
@@ -324,48 +324,11 @@
             this.lbl_appname.BackColor = System.Drawing.Color.Transparent;
             this.lbl_appname.Font = new System.Drawing.Font("Infoma Light", 20F);
             this.lbl_appname.ForeColor = System.Drawing.Color.Black;
-            this.lbl_appname.Location = new System.Drawing.Point(190, 648);
+            this.lbl_appname.Location = new System.Drawing.Point(190, 650);
             this.lbl_appname.Name = "lbl_appname";
-            this.lbl_appname.Size = new System.Drawing.Size(312, 36);
+            this.lbl_appname.Size = new System.Drawing.Size(700, 35);
             this.lbl_appname.TabIndex = 16;
             this.lbl_appname.Text = "Sürekli Dikkat Uygulaması";
-            // 
-            // btn_logout
-            // 
-            this.btn_logout.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_logout.AnimationHoverSpeed = 0.07F;
-            this.btn_logout.AnimationSpeed = 0.03F;
-            this.btn_logout.BackColor = System.Drawing.Color.Transparent;
-            this.btn_logout.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_logout.BorderColor = System.Drawing.Color.Black;
-            this.btn_logout.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btn_logout.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btn_logout.CheckedForeColor = System.Drawing.Color.White;
-            this.btn_logout.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btn_logout.CheckedImage")));
-            this.btn_logout.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_logout.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_logout.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_logout.Font = new System.Drawing.Font("Infoma Light", 8F);
-            this.btn_logout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(196)))), ((int)(((byte)(226)))));
-            this.btn_logout.Image = null;
-            this.btn_logout.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_logout.LineBottom = 4;
-            this.btn_logout.LineColor = System.Drawing.Color.Transparent;
-            this.btn_logout.Location = new System.Drawing.Point(24, 74);
-            this.btn_logout.Name = "btn_logout";
-            this.btn_logout.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.btn_logout.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_logout.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btn_logout.OnHoverImage = null;
-            this.btn_logout.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.btn_logout.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_logout.OnPressedDepth = 0;
-            this.btn_logout.Size = new System.Drawing.Size(99, 28);
-            this.btn_logout.TabIndex = 20;
-            this.btn_logout.Text = "OTURUMU KAPAT";
-            this.btn_logout.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
             // btn_attention
             // 
@@ -397,6 +360,7 @@
             // 
             // gunaVSeparator1
             // 
+            this.gunaVSeparator1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaVSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.gunaVSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.gunaVSeparator1.LineColor = System.Drawing.Color.Silver;
@@ -407,7 +371,8 @@
             // 
             // btn_startapp
             // 
-            this.btn_startapp.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_startapp.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_startapp.Animated = true;
             this.btn_startapp.AnimationHoverSpeed = 0.07F;
             this.btn_startapp.AnimationSpeed = 0.03F;
             this.btn_startapp.BackColor = System.Drawing.Color.Transparent;
@@ -423,7 +388,7 @@
             this.btn_startapp.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_startapp.FocusedColor = System.Drawing.Color.Empty;
             this.btn_startapp.Font = new System.Drawing.Font("Infoma Light", 20F);
-            this.btn_startapp.ForeColor = System.Drawing.Color.Black;
+            this.btn_startapp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
             this.btn_startapp.Image = null;
             this.btn_startapp.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_startapp.LineBottom = 4;
@@ -432,7 +397,7 @@
             this.btn_startapp.Name = "btn_startapp";
             this.btn_startapp.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.btn_startapp.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_startapp.OnHoverForeColor = System.Drawing.Color.Black;
+            this.btn_startapp.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.btn_startapp.OnHoverImage = null;
             this.btn_startapp.OnHoverLineColor = System.Drawing.Color.Empty;
             this.btn_startapp.OnPressedColor = System.Drawing.Color.Black;
@@ -445,12 +410,14 @@
             // 
             // lbl_username
             // 
-            this.lbl_username.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_username.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_username.AutoSize = true;
             this.lbl_username.BackColor = System.Drawing.Color.Transparent;
             this.lbl_username.Font = new System.Drawing.Font("Infoma Light", 20F);
             this.lbl_username.ForeColor = System.Drawing.Color.Black;
-            this.lbl_username.Location = new System.Drawing.Point(23, 47);
+            this.lbl_username.Location = new System.Drawing.Point(25, 50);
             this.lbl_username.Name = "lbl_username";
             this.lbl_username.Size = new System.Drawing.Size(229, 27);
             this.lbl_username.TabIndex = 32;
@@ -638,30 +605,30 @@
             // 
             // dgw_attention
             // 
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
-            this.dgw_attention.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.White;
+            this.dgw_attention.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle34;
             this.dgw_attention.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgw_attention.BackgroundColor = System.Drawing.Color.White;
             this.dgw_attention.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgw_attention.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgw_attention.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgw_attention.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgw_attention.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
             this.dgw_attention.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgw_attention.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle36.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgw_attention.DefaultCellStyle = dataGridViewCellStyle36;
             this.dgw_attention.EnableHeadersVisualStyles = false;
             this.dgw_attention.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgw_attention.Location = new System.Drawing.Point(542, 47);
@@ -694,30 +661,15 @@
             this.dgw_attention.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgw_attention.Visible = false;
             // 
-            // panel_logout
-            // 
-            this.panel_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.panel_logout.Controls.Add(this.btn_logoutno);
-            this.panel_logout.Controls.Add(this.btn_logoutyes);
-            this.panel_logout.Controls.Add(this.panel1);
-            this.panel_logout.Controls.Add(this.label4);
-            this.panel_logout.Controls.Add(this.label2);
-            this.panel_logout.Controls.Add(this.label1);
-            this.panel_logout.Location = new System.Drawing.Point(250, 200);
-            this.panel_logout.Name = "panel_logout";
-            this.panel_logout.Size = new System.Drawing.Size(735, 241);
-            this.panel_logout.TabIndex = 36;
-            this.panel_logout.Visible = false;
-            // 
             // btn_logoutno
             // 
-            this.btn_logoutno.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_logoutno.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_logoutno.Animated = true;
             this.btn_logoutno.AnimationHoverSpeed = 0.07F;
             this.btn_logoutno.AnimationSpeed = 0.03F;
             this.btn_logoutno.BackColor = System.Drawing.Color.Transparent;
             this.btn_logoutno.BaseColor = System.Drawing.Color.Transparent;
             this.btn_logoutno.BorderColor = System.Drawing.Color.White;
-            this.btn_logoutno.BorderSize = 1;
             this.btn_logoutno.CheckedBaseColor = System.Drawing.Color.Gray;
             this.btn_logoutno.CheckedBorderColor = System.Drawing.Color.Black;
             this.btn_logoutno.CheckedForeColor = System.Drawing.Color.White;
@@ -732,16 +684,16 @@
             this.btn_logoutno.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_logoutno.LineBottom = 4;
             this.btn_logoutno.LineColor = System.Drawing.Color.Transparent;
-            this.btn_logoutno.Location = new System.Drawing.Point(568, 176);
+            this.btn_logoutno.Location = new System.Drawing.Point(140, 235);
             this.btn_logoutno.Name = "btn_logoutno";
             this.btn_logoutno.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.btn_logoutno.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_logoutno.OnHoverForeColor = System.Drawing.Color.Black;
+            this.btn_logoutno.OnHoverBorderColor = System.Drawing.Color.White;
+            this.btn_logoutno.OnHoverForeColor = System.Drawing.Color.RosyBrown;
             this.btn_logoutno.OnHoverImage = null;
             this.btn_logoutno.OnHoverLineColor = System.Drawing.Color.Empty;
             this.btn_logoutno.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_logoutno.Radius = 6;
-            this.btn_logoutno.Size = new System.Drawing.Size(145, 45);
+            this.btn_logoutno.Radius = 10;
+            this.btn_logoutno.Size = new System.Drawing.Size(115, 45);
             this.btn_logoutno.TabIndex = 45;
             this.btn_logoutno.Text = "HAYIR";
             this.btn_logoutno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -749,13 +701,13 @@
             // 
             // btn_logoutyes
             // 
-            this.btn_logoutyes.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_logoutyes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_logoutyes.Animated = true;
             this.btn_logoutyes.AnimationHoverSpeed = 0.07F;
             this.btn_logoutyes.AnimationSpeed = 0.03F;
             this.btn_logoutyes.BackColor = System.Drawing.Color.Transparent;
             this.btn_logoutyes.BaseColor = System.Drawing.Color.Transparent;
             this.btn_logoutyes.BorderColor = System.Drawing.Color.White;
-            this.btn_logoutyes.BorderSize = 1;
             this.btn_logoutyes.CheckedBaseColor = System.Drawing.Color.Gray;
             this.btn_logoutyes.CheckedBorderColor = System.Drawing.Color.Black;
             this.btn_logoutyes.CheckedForeColor = System.Drawing.Color.White;
@@ -770,16 +722,16 @@
             this.btn_logoutyes.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_logoutyes.LineBottom = 4;
             this.btn_logoutyes.LineColor = System.Drawing.Color.Transparent;
-            this.btn_logoutyes.Location = new System.Drawing.Point(390, 176);
+            this.btn_logoutyes.Location = new System.Drawing.Point(300, 235);
             this.btn_logoutyes.Name = "btn_logoutyes";
             this.btn_logoutyes.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.btn_logoutyes.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_logoutyes.OnHoverForeColor = System.Drawing.Color.Black;
+            this.btn_logoutyes.OnHoverBorderColor = System.Drawing.Color.White;
+            this.btn_logoutyes.OnHoverForeColor = System.Drawing.Color.RosyBrown;
             this.btn_logoutyes.OnHoverImage = null;
             this.btn_logoutyes.OnHoverLineColor = System.Drawing.Color.Empty;
             this.btn_logoutyes.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_logoutyes.Radius = 6;
-            this.btn_logoutyes.Size = new System.Drawing.Size(145, 45);
+            this.btn_logoutyes.Radius = 10;
+            this.btn_logoutyes.Size = new System.Drawing.Size(115, 45);
             this.btn_logoutyes.TabIndex = 44;
             this.btn_logoutyes.Text = "EVET";
             this.btn_logoutyes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -787,55 +739,119 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(21, 19);
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.Location = new System.Drawing.Point(130, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(105, 84);
+            this.panel1.Size = new System.Drawing.Size(295, 105);
             this.panel1.TabIndex = 43;
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Infoma Light", 10F);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(206)))), ((int)(((byte)(217)))));
-            this.label4.Location = new System.Drawing.Point(133, 140);
+            this.label4.Location = new System.Drawing.Point(390, 175);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 13);
+            this.label4.Size = new System.Drawing.Size(72, 14);
             this.label4.TabIndex = 42;
             this.label4.Text = "BOS-14015";
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label2.Font = new System.Drawing.Font("Infoma Light", 15F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(132, 59);
+            this.label2.Location = new System.Drawing.Point(80, 145);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(327, 21);
+            this.label2.Size = new System.Drawing.Size(392, 20);
             this.label2.TabIndex = 41;
             this.label2.Text = "Oturumu kapatmak istediğinize emin misiniz?";
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Infoma Light", 20F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(132, 19);
+            this.label1.Location = new System.Drawing.Point(85, 110);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 30);
+            this.label1.Size = new System.Drawing.Size(362, 27);
             this.label1.TabIndex = 40;
-            this.label1.Text = "Oturum kapatılıyor..";
+            this.label1.Text = "MayaClient oturumu kapatıyor..";
+            // 
+            // btn_logout
+            // 
+            this.btn_logout.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_logout.Animated = true;
+            this.btn_logout.AnimationHoverSpeed = 0.07F;
+            this.btn_logout.AnimationSpeed = 0.03F;
+            this.btn_logout.BackColor = System.Drawing.Color.Transparent;
+            this.btn_logout.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_logout.BorderColor = System.Drawing.Color.Black;
+            this.btn_logout.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_logout.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_logout.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_logout.CheckedImage = null;
+            this.btn_logout.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_logout.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_logout.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_logout.Font = new System.Drawing.Font("Infoma Light", 8F);
+            this.btn_logout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(196)))), ((int)(((byte)(226)))));
+            this.btn_logout.Image = null;
+            this.btn_logout.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_logout.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_logout.Location = new System.Drawing.Point(32, 80);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.OnHoverBaseColor = System.Drawing.Color.Empty;
+            this.btn_logout.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_logout.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.btn_logout.OnHoverImage = null;
+            this.btn_logout.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btn_logout.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_logout.OnPressedDepth = 0;
+            this.btn_logout.Size = new System.Drawing.Size(100, 20);
+            this.btn_logout.TabIndex = 37;
+            this.btn_logout.Text = "OTURUMU KAPAT";
+            this.btn_logout.TextOffsetX = -9;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
+            // 
+            // panel_logout
+            // 
+            this.panel_logout.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_logout.BackColor = System.Drawing.Color.Transparent;
+            this.panel_logout.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.panel_logout.Controls.Add(this.btn_logoutno);
+            this.panel_logout.Controls.Add(this.btn_logoutyes);
+            this.panel_logout.Controls.Add(this.panel1);
+            this.panel_logout.Controls.Add(this.label1);
+            this.panel_logout.Controls.Add(this.label4);
+            this.panel_logout.Controls.Add(this.label2);
+            this.panel_logout.Location = new System.Drawing.Point(350, 200);
+            this.panel_logout.Name = "panel_logout";
+            this.panel_logout.Radius = 15;
+            this.panel_logout.Size = new System.Drawing.Size(550, 300);
+            this.panel_logout.TabIndex = 38;
+            this.panel_logout.Visible = false;
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::NeuroAttention.Properties.Resources.bg_dashboard1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.panel_logout);
+            this.Controls.Add(this.btn_logout);
             this.Controls.Add(this.dgw_attention);
             this.Controls.Add(this.gunaPanel_attention);
             this.Controls.Add(this.lbl_username);
@@ -843,7 +859,6 @@
             this.Controls.Add(this.gunaVSeparator1);
             this.Controls.Add(this.btn_attention);
             this.Controls.Add(this.gunaPanel_upper);
-            this.Controls.Add(this.btn_logout);
             this.Controls.Add(this.lbl_appname);
             this.Controls.Add(this.gunaDataGridView1);
             this.Controls.Add(this.btn_nextapp);
@@ -852,7 +867,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dashboard";
+            this.Text = "MayaAcademia Client";
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.gunaPanel_upper.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox_car)).EndInit();
@@ -881,7 +896,6 @@
         private System.Windows.Forms.DataGridViewImageColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private Guna.UI.WinForms.GunaAdvenceButton btn_logout;
         private Guna.UI.WinForms.GunaPanel gunaPanel_upper;
         private Guna.UI.WinForms.GunaAdvenceButton btn_help;
         private Guna.UI.WinForms.GunaControlBox gunaControlBox_minimize;
@@ -904,12 +918,13 @@
         private Guna.UI.WinForms.GunaAdvenceButton btn_moredetails;
         private Guna.UI.WinForms.GunaLabel lbl_attentiontime;
         private Guna.UI.WinForms.GunaDataGridView dgw_attention;
-        private Guna.UI.WinForms.GunaPanel panel_logout;
         private Guna.UI.WinForms.GunaAdvenceButton btn_logoutno;
         private Guna.UI.WinForms.GunaAdvenceButton btn_logoutyes;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_logout;
+        private Guna.UI.WinForms.GunaElipsePanel panel_logout;
     }
 }

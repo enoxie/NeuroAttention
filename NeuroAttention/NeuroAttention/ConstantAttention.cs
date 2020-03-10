@@ -19,1012 +19,1047 @@ namespace NeuroAttention
         }
 
 
-        public int number1, number2;
+        public int number1, number2,processnumber,rndoperators;
         public string operators;
-        
-        
+        Random rndmath = new Random();
+        Random rnd = new Random();
         public void randomNumberGenerator()
         {
             int numeric1 = (int)numeric_numberrange1.Value;
             int numeric2 = (int)numeric_numberrange2.Value;
-            Random rnd = new Random();
             number1 = rnd.Next(numeric1, numeric2);
             number2 = rnd.Next(numeric1, numeric2);
         }
 
-        public void randomNumberNormal()
+        public void processNumber()
+        {
+            if (checkbox_plus.Checked == true && checkbox_minus.Checked == true && checkbox_impact.Checked == true && checkbox_compartment.Checked == true)
+                processnumber = 1;
+
+            else if (checkbox_plus.Checked == true && checkbox_minus.Checked == true && checkbox_impact.Checked == false && checkbox_compartment.Checked == false)
+                processnumber = 2;
+
+            else if (checkbox_plus.Checked == true && checkbox_minus.Checked == true && checkbox_impact.Checked == true && checkbox_compartment.Checked == false)
+                processnumber = 3;
+
+            else if (checkbox_plus.Checked == true && checkbox_minus.Checked == false && checkbox_impact.Checked == false && checkbox_compartment.Checked == false)
+                processnumber = 4;
+
+            else if (checkbox_plus.Checked == false && checkbox_minus.Checked == true && checkbox_impact.Checked == false && checkbox_compartment.Checked == false)
+                processnumber = 5;
+
+            else if (checkbox_plus.Checked == false && checkbox_minus.Checked == false && checkbox_impact.Checked == true && checkbox_compartment.Checked == false)
+                processnumber = 6;
+
+            else if (checkbox_plus.Checked == false && checkbox_minus.Checked == false && checkbox_impact.Checked == false && checkbox_compartment.Checked == true)
+                processnumber = 7;
+
+            else if (checkbox_plus.Checked == false && checkbox_minus.Checked == true && checkbox_impact.Checked == true && checkbox_compartment.Checked == false)
+                processnumber = 8;
+
+            else if (checkbox_plus.Checked == true && checkbox_minus.Checked == false && checkbox_impact.Checked == true && checkbox_compartment.Checked == false)
+                processnumber = 9;
+
+            else if (checkbox_plus.Checked == true && checkbox_minus.Checked == false && checkbox_impact.Checked == false && checkbox_compartment.Checked == true)
+                processnumber = 10;
+
+            else if (checkbox_plus.Checked == false && checkbox_minus.Checked == false && checkbox_impact.Checked == true && checkbox_compartment.Checked == true)
+                processnumber = 11;
+
+            else if (checkbox_plus.Checked == false && checkbox_minus.Checked == true && checkbox_impact.Checked == false && checkbox_compartment.Checked == true)
+                processnumber = 12;
+
+            else if (checkbox_plus.Checked == false && checkbox_minus.Checked == true && checkbox_impact.Checked == true && checkbox_compartment.Checked == true)
+                processnumber = 13;
+
+            else if (checkbox_plus.Checked == true && checkbox_minus.Checked == true && checkbox_impact.Checked == false && checkbox_compartment.Checked == true)
+                processnumber = 14;
+
+            else if (checkbox_plus.Checked == true && checkbox_minus.Checked == false && checkbox_impact.Checked == true && checkbox_compartment.Checked == true)
+                processnumber = 15;
+
+      
+            else { }
+
+        }
+
+
+        public void randomNumber()
         {
             randomNumberGenerator();
-
-          if(checkbox_plus.Checked==true && checkbox_minus.Checked == true && checkbox_impact.Checked == true && checkbox_compartment.Checked == true)
+            processNumber();
+            switch (processnumber)
             {
-
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 5);
-
-                if (rndoperators == 1)
-                    operators = "+";
-
-
-                else if (rndoperators == 2)
-                    operators = "-";
-
-
-                else if (rndoperators == 3)
-                    operators = "x";
-
-                else if (rndoperators == 4)
-                    operators = "÷";
-
-                if(rndoperators == 4)
-                {
-                    if (number1 < number2)
+                case 1:
                     {
-                        if(number2 % number1 == 0)
-                        {
-                            lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
-                        }
-
-                        else
-                        {
-                            lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
-                        }
                         
-                    }
+                        rndoperators = rndmath.Next(1, 5);
 
-                    else
-                    {
+                        if (rndoperators == 1)
+                            operators = "+";
 
-                        if (number1 % number2 == 0)
+
+                        else if (rndoperators == 2)
+                            operators = "-";
+
+
+                        else if (rndoperators == 3)
+                            operators = "x";
+
+                        else if (rndoperators == 4)
+                            operators = "÷";
+
+                        if (rndoperators == 4)
                         {
-                            lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
+
+                            if (number1 < number2)
+                            {
+                                if (number2 % number1 == 0)
+                                {
+                                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                                else
+                                {
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                            }
+
+                            else
+                            {
+
+                                if (number1 % number2 == 0)
+                                {
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
+                                }
+
+                                else
+                                {
+
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                            }
                         }
-
-                        else
-                        {
-
-                            lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
-                        }
-
-                    }
-                }
-               else if (number1 < number2)
-                {
-                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
-                }
-
-                else
-                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-
-            }
-
-          else if(checkbox_plus.Checked == true && checkbox_minus.Checked == true && checkbox_impact.Checked == false && checkbox_compartment.Checked == false)
-            {
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 3);
-
-                if (rndoperators == 1)
-                    operators = "+";
-
-
-                else if (rndoperators == 2)
-                    operators = "-";
-
-
-          
-                if (number1 < number2)
-                {
-                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
-                }
-
-                else
-                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-            }
-
-          else if(checkbox_plus.Checked == true && checkbox_minus.Checked == true && checkbox_impact.Checked == true && checkbox_compartment.Checked == false)
-            {
-
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 4);
-
-                if (rndoperators == 1)
-                    operators = "+";
-
-                else if (rndoperators == 2)
-                    operators = "-";
-
-                else if (rndoperators == 3)
-                    operators = "x";
-
-                if (number1 < number2)
-                {
-                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
-                }
-
-                else
-                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-            }
-
-          else if (checkbox_plus.Checked == true && checkbox_minus.Checked == false && checkbox_impact.Checked == false && checkbox_compartment.Checked == false)
-            {
-              
-
-                    operators = "+";
-
-                if (number1 < number2)
-                {
-                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
-                }
-
-                else
-                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-
-            }
-
-          else if (checkbox_plus.Checked == false && checkbox_minus.Checked == true && checkbox_impact.Checked == false && checkbox_compartment.Checked == false)
-            {
-
-
-                operators = "-";
-
-                if (number1 < number2)
-                {
-                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
-                }
-
-                else
-                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-            }
-
-          else if (checkbox_plus.Checked == false && checkbox_minus.Checked == false && checkbox_impact.Checked == true && checkbox_compartment.Checked == false)
-            {
-
-                operators = "x";
-
-                if (number1 < number2)
-                {
-                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
-                }
-
-                else
-                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-            }
-
-          else if (checkbox_plus.Checked == false && checkbox_minus.Checked == false && checkbox_impact.Checked == false && checkbox_compartment.Checked == true)
-            {
-              
-                operators = "÷";
-
-                if (number1 < number2)
-                {
-                    if (number2 % number1 == 0)
-                    {
-                        lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
-                    }
-
-                    else
-                    {
-                        lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
-                    }
-
-                   
-                }
-                
-    
-                else 
-                {
-
-                    if (number1 % number2 == 0)
-                    {
-                        lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-                    }
-
-                    else
-                    {
-
-                        lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
-                    }
-
-                }
-
-
-
-
-            }
-
-          else if(checkbox_plus.Checked == false && checkbox_minus.Checked == true && checkbox_impact.Checked == true && checkbox_compartment.Checked == false)
-            {
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 3);
-
-                if (rndoperators == 1)
-                    operators = "-";
-
-                else if (rndoperators == 2)
-                    operators = "x";
-
-
-                if (number1 < number2)
-                {
-                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
-                }
-
-                else
-                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-            }
-
-          else if (checkbox_plus.Checked == true && checkbox_minus.Checked == false && checkbox_impact.Checked == true && checkbox_compartment.Checked == false)
-            {
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 3);
-
-                if (rndoperators == 1)
-                    operators = "+";
-
-                else if (rndoperators == 2)
-                    operators = "x";
-
-
-                if (number1 < number2)
-                {
-                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
-                }
-
-                else
-                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-            }
-
-          else if (checkbox_plus.Checked == true && checkbox_minus.Checked == false && checkbox_impact.Checked == false && checkbox_compartment.Checked == true)
-            {
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 3);
-
-                if (rndoperators == 1)
-                    operators = "+";
-
-                else if (rndoperators == 2)
-                    operators = "÷";
-
-
-
-                if (rndoperators == 2)
-                {
-                    if (number1 < number2)
-                    {
-                        if (number2 % number1 == 0)
+                        else if (number1 < number2)
                         {
                             lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
                         }
 
                         else
-                        {
-                            lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
-                        }
-
-                    }
-
-                    else
-                    {
-
-                        if (number1 % number2 == 0)
-                        {
                             lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-                        }
-
-                        else
-                        {
-
-                            lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
-                        }
-
+                        break;
                     }
-                }
-
-
-
-                else if (number1 < number2)
-                {
-                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
-                }
-
-                else
-                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-            }
-
-          else if (checkbox_plus.Checked == false && checkbox_minus.Checked == false && checkbox_impact.Checked == true && checkbox_compartment.Checked == true)
-            {
-
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 3);
-
-                if (rndoperators == 1)
-                    operators = "x";
-
-                else if (rndoperators == 2)
-                    operators = "÷";
-
-
-                if (rndoperators == 2)
-                {
-                    if (number1 < number2)
+                case 2:
                     {
-                        if (number2 % number1 == 0)
+                        
+                        rndoperators = rndmath.Next(1, 3);
+
+                        if (rndoperators == 1)
+                            operators = "+";
+
+
+                        else if (rndoperators == 2)
+                            operators = "-";
+
+
+
+                        if (number1 < number2)
                         {
                             lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
                         }
 
                         else
-                        {
-                            lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
-                        }
-
-                    }
-
-                    else
-                    {
-
-                        if (number1 % number2 == 0)
-                        {
                             lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-                        }
-
-                        else
-                        {
-
-                            lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
-                        }
-
+                        break;
                     }
-                }
 
-                else if (number1 < number2)
-                {
-                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
-                }
-
-                else
-                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-            }
-
-          else if (checkbox_plus.Checked == false && checkbox_minus.Checked == true && checkbox_impact.Checked == false && checkbox_compartment.Checked == true)
-            {
-
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 3);
-
-                if (rndoperators == 1)
-                    operators = "-";
-
-                else if (rndoperators == 2)
-                    operators = "÷";
-
-
-                if (rndoperators == 2)
-                {
-                    if (number1 < number2)
+                case 3:
                     {
-                        if (number2 % number1 == 0)
+                        
+                        rndoperators = rndmath.Next(1, 4);
+
+                        if (rndoperators == 1)
+                            operators = "+";
+
+                        else if (rndoperators == 2)
+                            operators = "-";
+
+                        else if (rndoperators == 3)
+                            operators = "x";
+
+                        if (number1 < number2)
                         {
                             lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
                         }
 
                         else
-                        {
-                            lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
-                        }
-
-                    }
-
-                    else
-                    {
-
-                        if (number1 % number2 == 0)
-                        {
                             lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-                        }
-
-                        else
-                        {
-
-                            lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
-                        }
-
+                        break;
                     }
-                }
-
-
-                else if (number1 < number2)
-                {
-                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
-                }
-
-                else
-                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-            }
-
-          else if(checkbox_plus.Checked == false && checkbox_minus.Checked == true && checkbox_impact.Checked == true && checkbox_compartment.Checked == true)
-            {
-
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 4);
-
-                if (rndoperators == 1)
-                    operators = "-";
-
-                else if (rndoperators == 2)
-                    operators = "x";
-
-                else if (rndoperators == 3)
-                    operators = "÷";
-
-                if (rndoperators == 3)
-                {
-                    if (number1 < number2)
+                case 4:
                     {
-                        if (number2 % number1 == 0)
+
+                        operators = "+";
+
+                        if (number1 < number2)
                         {
                             lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
                         }
 
                         else
-                        {
-                            lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
-                        }
-
-                    }
-
-                    else
-                    {
-
-                        if (number1 % number2 == 0)
-                        {
                             lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-                        }
-
-                        else
-                        {
-
-                            lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
-                        }
-
+                        break;
                     }
-                }
-                else if (number1 < number2)
-                {
-                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
-                }
-
-                else
-                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-            }
-
-          else if (checkbox_plus.Checked == true && checkbox_minus.Checked == true && checkbox_impact.Checked == false && checkbox_compartment.Checked == true)
-            {
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 4);
-
-                if (rndoperators == 1)
-                    operators = "+";
-
-                else if (rndoperators == 2)
-                    operators = "-";
-
-                else if (rndoperators == 3)
-                    operators = "÷";
-
-
-
-                if (rndoperators == 3)
-                {
-                    if (number1 < number2)
+                case 5:
                     {
-                        if (number2 % number1 == 0)
+                        operators = "-";
+
+                        if (number1 < number2)
                         {
                             lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
                         }
 
                         else
-                        {
-                            lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
-                        }
-
-                    }
-
-                    else
-                    {
-
-                        if (number1 % number2 == 0)
-                        {
                             lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-                        }
-
-                        else
-                        {
-
-                            lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
-                        }
-
+                        break;
                     }
-                }
-
-                else if (number1 < number2)
-                {
-                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
-                }
-
-                else
-                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-            }
-
-          else if(checkbox_plus.Checked == true && checkbox_minus.Checked == false && checkbox_impact.Checked == true && checkbox_compartment.Checked == true)
-            {
-
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 4);
-
-                if (rndoperators == 1)
-                    operators = "+";
-
-                else if (rndoperators == 2)
-                    operators = "x";
-
-                else if (rndoperators == 3)
-                    operators = "÷";
-
-                if (rndoperators == 3)
-                {
-                    if (number1 < number2)
+                case 6: 
                     {
-                        if (number2 % number1 == 0)
+                        operators = "x";
+
+                        if (number1 < number2)
                         {
                             lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
                         }
 
                         else
-                        {
-                            lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
-                        }
-
-                    }
-
-                    else
-                    {
-
-                        if (number1 % number2 == 0)
-                        {
                             lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
+                        break; 
+                    }
+                case 7:
+                    {
+                        operators = "÷";
+
+                        if (number1 < number2)
+                        {
+                            if (number2 % number1 == 0)
+                            {
+                                lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
+                            }
+
+                            else
+                            {
+                                lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
+                            }
+
+
                         }
+
 
                         else
                         {
 
-                            lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
+                            if (number1 % number2 == 0)
+                            {
+                                lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
+                            }
+
+                            else
+                            {
+
+                                lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
+                            }
+
                         }
 
+                        break;
                     }
-                }
-               else if (number1 < number2)
-                {
-                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
-                }
+                case 8:
+                    {
+                        rndoperators = rndmath.Next(1, 3);
 
-                else
-                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
-            }
+                        if (rndoperators == 1)
+                            operators = "-";
 
-            else
-            {
-                
+                        else if (rndoperators == 2)
+                            operators = "x";
+
+
+                        if (number1 < number2)
+                        {
+                            lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
+                        }
+
+                        else
+                            lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
+                        break;
+                    }
+                case 9:
+                    {  
+                        rndoperators = rndmath.Next(1, 3);
+
+                        if (rndoperators == 1)
+                            operators = "+";
+
+                        else if (rndoperators == 2)
+                            operators = "x";
+
+
+                        if (number1 < number2)
+                        {
+                            lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
+                        }
+
+                        else
+                            lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
+                        break;
+                    }
+                case 10:
+                    {
+                        rndoperators = rndmath.Next(1, 3);
+
+                        if (rndoperators == 1)
+                            operators = "+";
+
+                        else if (rndoperators == 2)
+                            operators = "÷";
+
+
+
+                        if (rndoperators == 2)
+                        {
+                            if (number1 < number2)
+                            {
+                                if (number2 % number1 == 0)
+                                {
+                                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                                else
+                                {
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                            }
+
+                            else
+                            {
+
+                                if (number1 % number2 == 0)
+                                {
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
+                                }
+
+                                else
+                                {
+
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                            }
+                        }
+
+
+
+                        else if (number1 < number2)
+                        {
+                            lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
+                        }
+
+                        else
+                            lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
+                        break;
+                    }
+                case 11:
+                    {
+                        rndoperators = rndmath.Next(1, 3);
+
+                        if (rndoperators == 1)
+                            operators = "x";
+
+                        else if (rndoperators == 2)
+                            operators = "÷";
+
+
+                        if (rndoperators == 2)
+                        {
+                            if (number1 < number2)
+                            {
+                                if (number2 % number1 == 0)
+                                {
+                                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                                else
+                                {
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                            }
+
+                            else
+                            {
+
+                                if (number1 % number2 == 0)
+                                {
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
+                                }
+
+                                else
+                                {
+
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                            }
+                        }
+
+                        else if (number1 < number2)
+                        {
+                            lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
+                        }
+
+                        else
+                            lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
+                        break;
+                    }
+                case 12:
+                    {
+                        rndoperators = rndmath.Next(1, 3);
+
+                        if (rndoperators == 1)
+                            operators = "-";
+
+                        else if (rndoperators == 2)
+                            operators = "÷";
+
+
+                        if (rndoperators == 2)
+                        {
+                            if (number1 < number2)
+                            {
+                                if (number2 % number1 == 0)
+                                {
+                                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                                else
+                                {
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                            }
+
+                            else
+                            {
+
+                                if (number1 % number2 == 0)
+                                {
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
+                                }
+
+                                else
+                                {
+
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                            }
+                        }
+
+
+                        else if (number1 < number2)
+                        {
+                            lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
+                        }
+
+                        else
+                            lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
+                        break;
+                    }
+                case 13:
+                    {
+                        rndoperators = rndmath.Next(1, 4);
+
+                        if (rndoperators == 1)
+                            operators = "-";
+
+                        else if (rndoperators == 2)
+                            operators = "x";
+
+                        else if (rndoperators == 3)
+                            operators = "÷";
+
+                        if (rndoperators == 3)
+                        {
+                            if (number1 < number2)
+                            {
+                                if (number2 % number1 == 0)
+                                {
+                                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                                else
+                                {
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                            }
+
+                            else
+                            {
+
+                                if (number1 % number2 == 0)
+                                {
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
+                                }
+
+                                else
+                                {
+
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                            }
+                        }
+                        else if (number1 < number2)
+                        {
+                            lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
+                        }
+
+                        else
+                            lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
+                        break;
+                    }
+                case 14:
+                    {
+                        rndoperators = rndmath.Next(1, 4);
+
+                        if (rndoperators == 1)
+                            operators = "+";
+
+                        else if (rndoperators == 2)
+                            operators = "-";
+
+                        else if (rndoperators == 3)
+                            operators = "÷";
+
+
+
+                        if (rndoperators == 3)
+                        {
+                            if (number1 < number2)
+                            {
+                                if (number2 % number1 == 0)
+                                {
+                                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                                else
+                                {
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                            }
+
+                            else
+                            {
+
+                                if (number1 % number2 == 0)
+                                {
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
+                                }
+
+                                else
+                                {
+
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                            }
+                        }
+
+                        else if (number1 < number2)
+                        {
+                            lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
+                        }
+
+                        else
+                            lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
+                        break;
+                    }
+                case 15:
+                    {
+                        rndoperators = rndmath.Next(1, 4);
+
+                        if (rndoperators == 1)
+                            operators = "+";
+
+                        else if (rndoperators == 2)
+                            operators = "x";
+
+                        else if (rndoperators == 3)
+                            operators = "÷";
+
+                        if (rndoperators == 3)
+                        {
+                            if (number1 < number2)
+                            {
+                                if (number2 % number1 == 0)
+                                {
+                                    lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                                else
+                                {
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                            }
+
+                            else
+                            {
+
+                                if (number1 % number2 == 0)
+                                {
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
+                                }
+
+                                else
+                                {
+
+                                    lbl_process.Text = number1.ToString() + " " + operators + " " + number1.ToString();
+                                }
+
+                            }
+                        }
+                        else if (number1 < number2)
+                        {
+                            lbl_process.Text = number2.ToString() + " " + operators + " " + number1.ToString();
+                        }
+
+                        else
+                            lbl_process.Text = number1.ToString() + " " + operators + " " + number2.ToString();
+                        break;
+                    }
             }
+         
+
 
         }
 
 
         public void randomNumberMustAssignTask()
         {
-            int numeric1 = (int)numeric_numberrange1.Value;
-            int numeric2 = (int)numeric_numberrange2.Value;
-            Random rnd = new Random();
-            number1 = rnd.Next(numeric1, numeric2);
-            number2 = rnd.Next(numeric1, numeric2);
+            randomNumberGenerator();
 
-            if (checkbox_colorplus.Checked==true && checkbox_colorminus.Checked == true && checkbox_colorimpact.Checked == true && checkbox_colorcompartment.Checked == true)
+            processNumber();
+            switch (processnumber)
             {
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 5);
+                case 1:
+                    {
+                        rndoperators = rndmath.Next(1, 5);
 
-                if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Blue;
+                        if (rndoperators == 1)
+                            lbl_mustassignoperator.ForeColor = Color.Blue;
 
 
-                else if (rndoperators == 2)
-                    lbl_mustassignoperator.ForeColor = Color.Green;
+                        else if (rndoperators == 2)
+                            lbl_mustassignoperator.ForeColor = Color.Green;
 
 
-                else if (rndoperators == 3)
-                    lbl_mustassignoperator.ForeColor = Color.Red;
+                        else if (rndoperators == 3)
+                            lbl_mustassignoperator.ForeColor = Color.Red;
 
-                else if (rndoperators == 4)
-                    lbl_mustassignoperator.ForeColor = Color.Yellow;
+                        else if (rndoperators == 4)
+                            lbl_mustassignoperator.ForeColor = Color.Yellow;
 
 
-                if (number1 < number2)
-                {
-                    lbl_mustassignnumber1.Text = number2.ToString();
-                    lbl_mustassignnumber2.Text = number1.ToString();
-                }
+                        if (rndoperators == 4)
+                        {
+                            if (number1 < number2)
+                            {
+                                if (number2 % number1 == 0)
+                                {
+                                    lbl_mustassignnumber1.Text = number2.ToString();
+                                    lbl_mustassignnumber2.Text = number1.ToString();
+                                }
 
-                else
-                    lbl_mustassignnumber1.Text = number1.ToString();
-                    lbl_mustassignnumber2.Text = number2.ToString();
-
-            }
-
-            else if (checkbox_colorplus.Checked == true && checkbox_colorminus.Checked == true && checkbox_colorimpact.Checked == false && checkbox_colorcompartment.Checked == false)
-            {
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 3);
-
-                if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Blue;
-
-
-                else if (rndoperators == 2)
-                    lbl_mustassignoperator.ForeColor = Color.Green;
-
-
-
-                if (number1 < number2)
-                {
-                    lbl_mustassignnumber1.Text = number2.ToString();
-                    lbl_mustassignnumber2.Text = number1.ToString();
-                   
-                }
-
-                else
-                {
-                    lbl_mustassignnumber1.Text = number1.ToString();
-                    lbl_mustassignnumber2.Text = number2.ToString();
-                }
-                    
-            }
-
-            else if (checkbox_colorplus.Checked == true && checkbox_colorminus.Checked == true && checkbox_colorimpact.Checked == true && checkbox_colorcompartment.Checked == false)
-            {
-
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 4);
-
-                if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Blue;
-
-                else if (rndoperators == 2)
-                    lbl_mustassignoperator.ForeColor = Color.Green;
-
-                else if (rndoperators == 3)
-                    lbl_mustassignoperator.ForeColor = Color.Red;
-
-                if (number1 < number2)
-                {
-                    lbl_mustassignnumber1.Text = number2.ToString();
-                    lbl_mustassignnumber2.Text = number1.ToString();
-                }
-
-                else
-                {
-                    lbl_mustassignnumber1.Text = number1.ToString();
-                    lbl_mustassignnumber2.Text = number2.ToString();
-                }
-                    
-            }
-
-            else if (checkbox_colorplus.Checked == true && checkbox_colorminus.Checked == false && checkbox_colorimpact.Checked == false && checkbox_colorcompartment.Checked == false)
-            {
-
-
-                lbl_mustassignoperator.ForeColor = Color.Blue;
-
-                if (number1 < number2)
-                {
-                    lbl_mustassignnumber1.Text = number2.ToString();
-                    lbl_mustassignnumber2.Text = number1.ToString();
-                }
-
-                else
-                {
-                    lbl_mustassignnumber1.Text = number1.ToString();
-                    lbl_mustassignnumber2.Text = number2.ToString();
-                }
-                    
-
-            }
-
-            else if (checkbox_colorplus.Checked == false && checkbox_colorminus.Checked == true && checkbox_colorimpact.Checked == false && checkbox_colorcompartment.Checked == false)
-            {
-
-
-                lbl_mustassignoperator.ForeColor = Color.Green;
-
-                if (number1 < number2)
-                {
-                    lbl_mustassignnumber1.Text = number2.ToString();
-                    lbl_mustassignnumber2.Text = number1.ToString();
-                }
-
-                else
-                {
-                    lbl_mustassignnumber1.Text = number1.ToString();
-                    lbl_mustassignnumber2.Text = number2.ToString();
-                }
-                    
-            }
-
-            else if (checkbox_colorplus.Checked == false && checkbox_colorminus.Checked == false && checkbox_colorimpact.Checked == true && checkbox_colorcompartment.Checked == false)
-            {
-
-                lbl_mustassignoperator.ForeColor = Color.Red;
-
-                if (number1 < number2)
-                {
-                    lbl_mustassignnumber1.Text = number2.ToString();
-                    lbl_mustassignnumber2.Text = number1.ToString();
-                }
-
-                else
-                {
-                    lbl_mustassignnumber1.Text = number1.ToString();
-                    lbl_mustassignnumber2.Text = number2.ToString();
-                }
-                   
-            }
-
-            else if (checkbox_colorplus.Checked == false && checkbox_colorminus.Checked == false && checkbox_colorimpact.Checked == false && checkbox_colorcompartment.Checked == true)
-            {
-
-                lbl_mustassignoperator.ForeColor = Color.Yellow;
-
-                if (number1 < number2)
-                {
-
-                    lbl_mustassignnumber1.Text = number2.ToString();
-                    lbl_mustassignnumber2.Text = number1.ToString();
-
-                }
-
-                else
-                {
-                    lbl_mustassignnumber1.Text = number1.ToString();
-                    lbl_mustassignnumber2.Text = number2.ToString();
-                }
-                    
-
-
-
-            }
-
-            else if (checkbox_colorplus.Checked == false && checkbox_colorminus.Checked == true && checkbox_colorimpact.Checked == true && checkbox_colorcompartment.Checked == false)
-            {
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 3);
-
-                if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Green;
-
-                else if (rndoperators == 2)
-                    lbl_mustassignoperator.ForeColor = Color.Red;
-
-
-                if (number1 < number2)
-                {
-                    lbl_mustassignnumber1.Text = number2.ToString();
-                    lbl_mustassignnumber2.Text = number1.ToString();
-                }
-
-                else
-                {
-                    lbl_mustassignnumber1.Text = number1.ToString();
-                    lbl_mustassignnumber2.Text = number2.ToString();
-                }
-                    
-            }
-
-            else if (checkbox_colorplus.Checked == true && checkbox_colorminus.Checked == false && checkbox_colorimpact.Checked == true && checkbox_colorcompartment.Checked == false)
-            {
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 3);
-
-                if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Blue;
-
-                else if (rndoperators == 2)
-                    lbl_mustassignoperator.ForeColor = Color.Red;
-
-
-                if (number1 < number2)
-                {
-                    lbl_mustassignnumber1.Text = number2.ToString();
-                    lbl_mustassignnumber2.Text = number1.ToString();
-                }
-
-                else
-                {
-                    lbl_mustassignnumber1.Text = number1.ToString();
-                    lbl_mustassignnumber2.Text = number2.ToString();
-                }
-                 
-            }
-
-            else if (checkbox_colorplus.Checked == true && checkbox_colorminus.Checked == false && checkbox_colorimpact.Checked == false && checkbox_colorcompartment.Checked == true)
-            {
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 3);
-
-                if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Blue;
-
-                else if (rndoperators == 2)
-                    lbl_mustassignoperator.ForeColor = Color.Yellow;
-
-
-                if (number1 < number2)
-                {
-                    lbl_mustassignnumber1.Text = number2.ToString();
-                    lbl_mustassignnumber2.Text = number1.ToString();
-                }
-
-                else
-                {
-                    lbl_mustassignnumber1.Text = number1.ToString();
-                    lbl_mustassignnumber2.Text = number2.ToString();
-                }
-                  
-            }
-
-            else if (checkbox_colorplus.Checked == false && checkbox_colorminus.Checked == false && checkbox_colorimpact.Checked == true && checkbox_colorcompartment.Checked == true)
-            {
-
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 3);
-
-                if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Red;
-
-                else if (rndoperators == 2)
-                    lbl_mustassignoperator.ForeColor = Color.Yellow;
-
-
-                if (number1 < number2)
-                {
-                    lbl_mustassignnumber1.Text = number2.ToString();
-                    lbl_mustassignnumber2.Text = number1.ToString();
-                }
-
-                else
-                {
-                    lbl_mustassignnumber1.Text = number1.ToString();
-                    lbl_mustassignnumber2.Text = number2.ToString();
-                }
-                    
-            }
-
-            else if (checkbox_colorplus.Checked == false && checkbox_colorminus.Checked == true && checkbox_colorimpact.Checked == false && checkbox_colorcompartment.Checked == true)
-            {
-
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 3);
-
-                if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Green;
-
-                else if (rndoperators == 2)
-                    lbl_mustassignoperator.ForeColor = Color.Yellow;
-
-
-                if (number1 < number2)
-                {
-                    lbl_mustassignnumber1.Text = number2.ToString();
-                    lbl_mustassignnumber2.Text = number1.ToString();
-                }
-
-                else
-                {
-                    lbl_mustassignnumber1.Text = number1.ToString();
-                    lbl_mustassignnumber2.Text = number2.ToString();
-                }
-            }
-
-            else if (checkbox_colorplus.Checked == false && checkbox_colorminus.Checked == true && checkbox_colorimpact.Checked == true && checkbox_colorcompartment.Checked == true)
-            {
-
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 4);
-
-                if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Green;
-
-                else if (rndoperators == 2)
-                    lbl_mustassignoperator.ForeColor = Color.Red;
-
-                else if (rndoperators == 3)
-                    lbl_mustassignoperator.ForeColor = Color.Yellow;
-
-
-                if (number1 < number2)
-                {
-                    lbl_mustassignnumber1.Text = number2.ToString();
-                    lbl_mustassignnumber2.Text = number1.ToString();
-                }
-
-                else
-                {
-                    lbl_mustassignnumber1.Text = number1.ToString();
-                    lbl_mustassignnumber2.Text = number2.ToString();
-                }
-                    
-            }
-
-            else if (checkbox_colorplus.Checked == true && checkbox_colorminus.Checked == true && checkbox_colorimpact.Checked == false && checkbox_colorcompartment.Checked == true)
-            {
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 4);
-
-                if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Blue;
-
-                else if (rndoperators == 2)
-                    lbl_mustassignoperator.ForeColor = Color.Green;
-
-                else if (rndoperators == 3)
-                    lbl_mustassignoperator.ForeColor = Color.Yellow;
-
-
-                if (number1 < number2)
-                {
-                    lbl_mustassignnumber1.Text = number2.ToString();
-                    lbl_mustassignnumber2.Text = number1.ToString();
-                }
-
-                else
-                {
-                    lbl_mustassignnumber1.Text = number1.ToString();
-                    lbl_mustassignnumber2.Text = number2.ToString();
-                }
-
-            }
-
-            else if (checkbox_colorplus.Checked == true && checkbox_colorminus.Checked == false && checkbox_colorimpact.Checked == true && checkbox_colorcompartment.Checked == true)
-            {
-
-                Random rndmath = new Random();
-                int rndoperators = rndmath.Next(1, 4);
-
-                if (rndoperators == 1)
-                    lbl_mustassignoperator.ForeColor = Color.Blue;
-
-                else if (rndoperators == 2)
-                    lbl_mustassignoperator.ForeColor = Color.Red;
-
-                else if (rndoperators == 3)
-                    lbl_mustassignoperator.ForeColor = Color.Yellow;
-
-
-                if (number1 < number2)
-                {
-                    lbl_mustassignnumber1.Text = number2.ToString();
-                    lbl_mustassignnumber2.Text = number1.ToString();
-                }
-
-                else
-                {
-                    lbl_mustassignnumber1.Text = number1.ToString();
-                    lbl_mustassignnumber2.Text = number2.ToString();
-                }
-
-                }
-
-            else
-            {
-
+                                else
+                                {
+                                    lbl_mustassignnumber1.Text = number2.ToString();
+                                    lbl_mustassignnumber2.Text = number2.ToString();
+                                }
+
+                            }
+
+                            else
+                            {
+
+                                if (number1 % number2 == 0)
+                                {
+                                    lbl_mustassignnumber1.Text = number1.ToString();
+                                    lbl_mustassignnumber2.Text = number2.ToString();
+                                }
+
+                                else
+                                {
+
+                                    lbl_mustassignnumber1.Text = number1.ToString();
+                                    lbl_mustassignnumber2.Text = number1.ToString();
+                                }
+
+                            }
+                        }
+                        else if (number1 < number2)
+                        {
+                            lbl_mustassignnumber1.Text = number2.ToString();
+                            lbl_mustassignnumber2.Text = number1.ToString();
+                        }
+
+                        else
+                        {
+                            lbl_mustassignnumber1.Text = number1.ToString();
+                            lbl_mustassignnumber2.Text = number2.ToString();
+                        }
+                            
+
+                        break;
+                    }
+                case 2:
+                    {
+                        rndoperators = rndmath.Next(1, 3);
+
+                        if (rndoperators == 1)
+                            lbl_mustassignoperator.ForeColor = Color.Blue;
+
+
+                        else if (rndoperators == 2)
+                            lbl_mustassignoperator.ForeColor = Color.Green;
+
+
+
+                        if (number1 < number2)
+                        {
+                            lbl_mustassignnumber1.Text = number2.ToString();
+                            lbl_mustassignnumber2.Text = number1.ToString();
+
+                        }
+
+                        else
+                        {
+                            lbl_mustassignnumber1.Text = number1.ToString();
+                            lbl_mustassignnumber2.Text = number2.ToString();
+                        }
+                        break;
+                    }
+                case 3:
+                    {
+                        rndoperators = rndmath.Next(1, 4);
+
+                        if (rndoperators == 1)
+                            lbl_mustassignoperator.ForeColor = Color.Blue;
+
+                        else if (rndoperators == 2)
+                            lbl_mustassignoperator.ForeColor = Color.Green;
+
+                        else if (rndoperators == 3)
+                            lbl_mustassignoperator.ForeColor = Color.Red;
+
+                        if (number1 < number2)
+                        {
+                            lbl_mustassignnumber1.Text = number2.ToString();
+                            lbl_mustassignnumber2.Text = number1.ToString();
+                        }
+
+                        else
+                        {
+                            lbl_mustassignnumber1.Text = number1.ToString();
+                            lbl_mustassignnumber2.Text = number2.ToString();
+                        }
+
+                        break;
+                    }
+                case 4:
+                    {
+                        lbl_mustassignoperator.ForeColor = Color.Blue;
+
+                        if (number1 < number2)
+                        {
+                            lbl_mustassignnumber1.Text = number2.ToString();
+                            lbl_mustassignnumber2.Text = number1.ToString();
+                        }
+
+                        else
+                        {
+                            lbl_mustassignnumber1.Text = number1.ToString();
+                            lbl_mustassignnumber2.Text = number2.ToString();
+                        }
+
+                        break;
+                    }
+                case 5:
+                    {
+                        lbl_mustassignoperator.ForeColor = Color.Green;
+
+                        if (number1 < number2)
+                        {
+                            lbl_mustassignnumber1.Text = number2.ToString();
+                            lbl_mustassignnumber2.Text = number1.ToString();
+                        }
+
+                        else
+                        {
+                            lbl_mustassignnumber1.Text = number1.ToString();
+                            lbl_mustassignnumber2.Text = number2.ToString();
+                        }
+
+                        break;
+                    }
+                case 6:
+                    {
+                        lbl_mustassignoperator.ForeColor = Color.Red;
+
+                        if (number1 < number2)
+                        {
+                            lbl_mustassignnumber1.Text = number2.ToString();
+                            lbl_mustassignnumber2.Text = number1.ToString();
+                        }
+
+                        else
+                        {
+                            lbl_mustassignnumber1.Text = number1.ToString();
+                            lbl_mustassignnumber2.Text = number2.ToString();
+                        }
+                        break;
+                    }
+                case 7:
+                    {
+                        lbl_mustassignoperator.ForeColor = Color.Yellow;
+
+                        if (number1 < number2)
+                        {
+
+                            lbl_mustassignnumber1.Text = number2.ToString();
+                            lbl_mustassignnumber2.Text = number1.ToString();
+
+                        }
+
+                        else
+                        {
+                            lbl_mustassignnumber1.Text = number1.ToString();
+                            lbl_mustassignnumber2.Text = number2.ToString();
+                        }
+
+                        break;
+                    }
+
+                case 8:
+                    {
+                        rndoperators = rndmath.Next(1, 3);
+
+                        if (rndoperators == 1)
+                            lbl_mustassignoperator.ForeColor = Color.Green;
+
+                        else if (rndoperators == 2)
+                            lbl_mustassignoperator.ForeColor = Color.Red;
+
+
+                        if (number1 < number2)
+                        {
+                            lbl_mustassignnumber1.Text = number2.ToString();
+                            lbl_mustassignnumber2.Text = number1.ToString();
+                        }
+
+                        else
+                        {
+                            lbl_mustassignnumber1.Text = number1.ToString();
+                            lbl_mustassignnumber2.Text = number2.ToString();
+                        }
+
+                        break;
+                    }
+                case 9:
+                    {
+                        rndoperators = rndmath.Next(1, 3);
+
+                        if (rndoperators == 1)
+                            lbl_mustassignoperator.ForeColor = Color.Blue;
+
+                        else if (rndoperators == 2)
+                            lbl_mustassignoperator.ForeColor = Color.Red;
+
+
+                        if (number1 < number2)
+                        {
+                            lbl_mustassignnumber1.Text = number2.ToString();
+                            lbl_mustassignnumber2.Text = number1.ToString();
+                        }
+
+                        else
+                        {
+                            lbl_mustassignnumber1.Text = number1.ToString();
+                            lbl_mustassignnumber2.Text = number2.ToString();
+                        }
+                        break;
+                    }
+                case 10:
+                    {
+                        rndoperators = rndmath.Next(1, 3);
+
+                        if (rndoperators == 1)
+                            lbl_mustassignoperator.ForeColor = Color.Blue;
+
+                        else if (rndoperators == 2)
+                            lbl_mustassignoperator.ForeColor = Color.Yellow;
+
+
+                        if (number1 < number2)
+                        {
+                            lbl_mustassignnumber1.Text = number2.ToString();
+                            lbl_mustassignnumber2.Text = number1.ToString();
+                        }
+
+                        else
+                        {
+                            lbl_mustassignnumber1.Text = number1.ToString();
+                            lbl_mustassignnumber2.Text = number2.ToString();
+                        }
+                        break;
+                    }
+                case 11:
+                    {
+                        rndoperators = rndmath.Next(1, 3);
+
+                        if (rndoperators == 1)
+                            lbl_mustassignoperator.ForeColor = Color.Red;
+
+                        else if (rndoperators == 2)
+                            lbl_mustassignoperator.ForeColor = Color.Yellow;
+
+
+                        if (number1 < number2)
+                        {
+                            lbl_mustassignnumber1.Text = number2.ToString();
+                            lbl_mustassignnumber2.Text = number1.ToString();
+                        }
+
+                        else
+                        {
+                            lbl_mustassignnumber1.Text = number1.ToString();
+                            lbl_mustassignnumber2.Text = number2.ToString();
+                        }
+
+                        break;
+                    }
+                case 12:
+                    {
+                        rndoperators = rndmath.Next(1, 3);
+
+                        if (rndoperators == 1)
+                            lbl_mustassignoperator.ForeColor = Color.Green;
+
+                        else if (rndoperators == 2)
+                            lbl_mustassignoperator.ForeColor = Color.Yellow;
+
+
+                        if (number1 < number2)
+                        {
+                            lbl_mustassignnumber1.Text = number2.ToString();
+                            lbl_mustassignnumber2.Text = number1.ToString();
+                        }
+
+                        else
+                        {
+                            lbl_mustassignnumber1.Text = number1.ToString();
+                            lbl_mustassignnumber2.Text = number2.ToString();
+                        }
+                        break;
+                    }
+                case 13:
+                    {
+                        rndoperators = rndmath.Next(1, 4);
+
+                        if (rndoperators == 1)
+                            lbl_mustassignoperator.ForeColor = Color.Green;
+
+                        else if (rndoperators == 2)
+                            lbl_mustassignoperator.ForeColor = Color.Red;
+
+                        else if (rndoperators == 3)
+                            lbl_mustassignoperator.ForeColor = Color.Yellow;
+
+
+                        if (number1 < number2)
+                        {
+                            lbl_mustassignnumber1.Text = number2.ToString();
+                            lbl_mustassignnumber2.Text = number1.ToString();
+                        }
+
+                        else
+                        {
+                            lbl_mustassignnumber1.Text = number1.ToString();
+                            lbl_mustassignnumber2.Text = number2.ToString();
+                        }
+
+                        break;
+                    }
+                case 14:
+                    {
+                        rndoperators = rndmath.Next(1, 4);
+
+                        if (rndoperators == 1)
+                            lbl_mustassignoperator.ForeColor = Color.Blue;
+
+                        else if (rndoperators == 2)
+                            lbl_mustassignoperator.ForeColor = Color.Green;
+
+                        else if (rndoperators == 3)
+                            lbl_mustassignoperator.ForeColor = Color.Yellow;
+
+
+                        if (number1 < number2)
+                        {
+                            lbl_mustassignnumber1.Text = number2.ToString();
+                            lbl_mustassignnumber2.Text = number1.ToString();
+                        }
+
+                        else
+                        {
+                            lbl_mustassignnumber1.Text = number1.ToString();
+                            lbl_mustassignnumber2.Text = number2.ToString();
+                        }
+                        break;
+                    }
+                case 15:
+                    {
+                        rndoperators = rndmath.Next(1, 4);
+
+                        if (rndoperators == 1)
+                            lbl_mustassignoperator.ForeColor = Color.Blue;
+
+                        else if (rndoperators == 2)
+                            lbl_mustassignoperator.ForeColor = Color.Red;
+
+                        else if (rndoperators == 3)
+                            lbl_mustassignoperator.ForeColor = Color.Yellow;
+
+
+                        if (number1 < number2)
+                        {
+                            lbl_mustassignnumber1.Text = number2.ToString();
+                            lbl_mustassignnumber2.Text = number1.ToString();
+                        }
+
+                        else
+                        {
+                            lbl_mustassignnumber1.Text = number1.ToString();
+                            lbl_mustassignnumber2.Text = number2.ToString();
+                        }
+                        break;
+                    }
             }
 
 
@@ -1033,51 +1068,56 @@ namespace NeuroAttention
         private void btn_start_Click(object sender, EventArgs e)
         {
             
-                
-
-            if (btn_stop.Visible == false)
-            {
-                btn_stop.Visible = true;
-                btn_start.Visible = false;
-            }
-
-            if(checkbox_plus.Checked == false && checkbox_minus.Checked == false && checkbox_impact.Checked == false && checkbox_compartment.Checked == false && checkbox_colorplus.Checked == false && checkbox_colorminus.Checked == false && checkbox_colorimpact.Checked == false && checkbox_colorcompartment.Checked == false)
+             
+            if(checkbox_plus.Checked == false && checkbox_minus.Checked == false && checkbox_impact.Checked == false && checkbox_compartment.Checked == false || numeric_time.Value == 0 || numeric_screentime.Value == 0)
             {
                 MessageBox.Show("Ayarları doğru şekilde yapınız.");
                 btn_stop.Visible = false;
                 btn_start.Visible = true;
+                numeric_time.Value = 60;
+                numeric_screentime.Value = 1000;
+                numeric_numberrange1.Value = 1;
+                numeric_numberrange2.Value = 9;
+                checkbox_plus.Checked = false;
+                checkbox_minus.Checked = false;
+                checkbox_impact.Checked = false;
+                checkbox_compartment.Checked = false;
                 lbl_screentime.Focus();
             }
 
-           else if (checkbox_colorplus.Checked == true || checkbox_colorminus.Checked == true || checkbox_colorimpact.Checked == true || checkbox_colorcompartment.Checked == true)
+            
+           else if (checkbox_mustasigntask.Checked==true)
             {
                 panel_colortable.Visible = true;
-
-
+               
 
             }
 
             else if (checkbox_gostergizle.Checked == true)
             {
-                randomNumberNormal();
+                randomNumber();
                 timer_time.Interval = (int)numeric_time.Value * 1000;
                 timer_screentime.Interval = (int)numeric_screentime.Value;
                 timer_hidetime.Interval = (int)numeric_screentime.Value;
                 timer_time.Start();
                 timer_hidetime.Start();
                 lbl_process.Visible = true;
+                btn_start.Visible = false;
+                btn_stop.Visible = true;
 
 
             }
 
             else
             { 
-                randomNumberNormal();
+                randomNumber();
                 timer_time.Interval = (int)numeric_time.Value * 1000;
                 timer_screentime.Interval = (int)numeric_screentime.Value;
                 timer_time.Start();
                 timer_screentime.Start();
                 lbl_process.Visible = true;
+                btn_start.Visible = false;
+                btn_stop.Visible = true;
 
             }
 
@@ -1096,14 +1136,9 @@ namespace NeuroAttention
             checkbox_minus.Checked = false;
             checkbox_impact.Checked = false;
             checkbox_compartment.Checked = false;
-            checkbox_colorplus.Checked = false;
-            checkbox_colorminus.Checked = false;
-            checkbox_colorimpact.Checked = false;
-            checkbox_colorcompartment.Checked = false;
+          
             lbl_process.Visible = false;
-            lbl_mustassignoperator.Visible = false;
-            lbl_mustassignnumber1.Visible = false;
-            lbl_mustassignnumber2.Visible = false;
+            panel_mustasigntask.Visible = false;
             btn_stop.Visible = false;
             btn_start.Visible = true;
         }
@@ -1116,40 +1151,51 @@ namespace NeuroAttention
 
                if (checkbox_plus.Checked == true || checkbox_minus.Checked == true || checkbox_impact.Checked == true || checkbox_compartment.Checked == true)
                 {
-                    lbl_process.Visible = true;
-                    randomNumberNormal();
 
-                    timer_screentime.Stop();
-                    timer_hidetime.Start();
+                    if (checkbox_mustasigntask.Checked == true)
+                    {
+
+                        panel_mustasigntask.Visible = true;
+                        randomNumberMustAssignTask();
+                        timer_screentime.Stop();
+                        timer_hidetime.Start();
+                    }
+
+                    else
+                    {
+                        lbl_process.Visible = true;
+                        randomNumber();
+
+                        timer_screentime.Stop();
+                        timer_hidetime.Start();
+                    }
+                  
                 }
 
-                else
-                {
-                    lbl_mustassignoperator.Visible = true;
-                    lbl_mustassignnumber1.Visible = true;
-                    lbl_mustassignnumber2.Visible = true;
-                    randomNumberMustAssignTask();
-                    timer_screentime.Stop();
-                    timer_hidetime.Start();
-                }
+                
                 
             }
 
 
             else if (checkbox_plus.Checked == true || checkbox_minus.Checked == true || checkbox_impact.Checked == true || checkbox_compartment.Checked == true)
             {
-                randomNumberNormal();
-                lbl_process.Visible = true;
+
+                if (checkbox_mustasigntask.Checked == true)
+                {
+                    randomNumberMustAssignTask();
+                    panel_mustasigntask.Visible = true;
+                }
+
+                else
+                {
+                    randomNumber();
+                    lbl_process.Visible = true;
+                }
+                
             }
 
 
-            else if (checkbox_colorplus.Checked == true || checkbox_colorminus.Checked == true || checkbox_colorimpact.Checked == true || checkbox_colorcompartment.Checked == true)
-            {
-                randomNumberMustAssignTask();
-                lbl_mustassignoperator.Visible = true;
-                lbl_mustassignnumber1.Visible = true;
-                lbl_mustassignnumber2.Visible = true;
-            }
+           
             
             
         }
@@ -1160,133 +1206,6 @@ namespace NeuroAttention
         }
 
        
-        private void checkbox_colorplus_Click(object sender, EventArgs e)
-        {
-            if (checkbox_plus.Checked == true || checkbox_minus.Checked == true || checkbox_impact.Checked == true || checkbox_compartment.Checked == true)
-            {
-                checkbox_plus.Checked = false;
-                checkbox_minus.Checked = false;
-                checkbox_impact.Checked = false;
-                checkbox_compartment.Checked = false;
-            }
-
-            else
-            {
-
-            }
-        }
-
-        private void checkbox_colorminus_Click(object sender, EventArgs e)
-        {
-            if (checkbox_plus.Checked == true || checkbox_minus.Checked == true || checkbox_impact.Checked == true || checkbox_compartment.Checked == true)
-            {
-                checkbox_plus.Checked = false;
-                checkbox_minus.Checked = false;
-                checkbox_impact.Checked = false;
-                checkbox_compartment.Checked = false;
-            }
-
-            else
-            {
-
-            }
-        }
-
-        private void checkbox_colorimpact_Click(object sender, EventArgs e)
-        {
-            if (checkbox_plus.Checked == true || checkbox_minus.Checked == true || checkbox_impact.Checked == true || checkbox_compartment.Checked == true)
-            {
-                checkbox_plus.Checked = false;
-                checkbox_minus.Checked = false;
-                checkbox_impact.Checked = false;
-                checkbox_compartment.Checked = false;
-            }
-
-            else
-            {
-
-            }
-        }
-
-        private void checkbox_colorcompartment_Click(object sender, EventArgs e)
-        {
-            if (checkbox_plus.Checked == true || checkbox_minus.Checked == true || checkbox_impact.Checked == true || checkbox_compartment.Checked == true)
-            {
-                checkbox_plus.Checked = false;
-                checkbox_minus.Checked = false;
-                checkbox_impact.Checked = false;
-                checkbox_compartment.Checked = false;
-            }
-
-            else
-            {
-
-            }
-        }
-
-        private void checkbox_plus_Click(object sender, EventArgs e)
-        {
-            if (checkbox_colorplus.Checked == true || checkbox_colorminus.Checked == true || checkbox_colorimpact.Checked == true || checkbox_colorcompartment.Checked == true)
-            {
-                checkbox_colorplus.Checked = false;
-                checkbox_colorminus.Checked = false;
-                checkbox_colorimpact.Checked = false;
-                checkbox_colorcompartment.Checked = false;
-            }
-
-            else
-            {
-
-            }
-        }
-
-        private void checkbox_minus_Click(object sender, EventArgs e)
-        {
-            if (checkbox_colorplus.Checked == true || checkbox_colorminus.Checked == true || checkbox_colorimpact.Checked == true || checkbox_colorcompartment.Checked == true)
-            {
-                checkbox_colorplus.Checked = false;
-                checkbox_colorminus.Checked = false;
-                checkbox_colorimpact.Checked = false;
-                checkbox_colorcompartment.Checked = false;
-            }
-
-            else
-            {
-
-            }
-        }
-
-        private void checkbox_impact_Click(object sender, EventArgs e)
-        {
-            if (checkbox_colorplus.Checked == true || checkbox_colorminus.Checked == true || checkbox_colorimpact.Checked == true || checkbox_colorcompartment.Checked == true)
-            {
-                checkbox_colorplus.Checked = false;
-                checkbox_colorminus.Checked = false;
-                checkbox_colorimpact.Checked = false;
-                checkbox_colorcompartment.Checked = false;
-            }
-
-            else
-            {
-
-            }
-        }
-
-        private void checkbox_compartment_Click(object sender, EventArgs e)
-        {
-            if (checkbox_colorplus.Checked == true || checkbox_colorminus.Checked == true || checkbox_colorimpact.Checked == true || checkbox_colorcompartment.Checked == true)
-            {
-                checkbox_colorplus.Checked = false;
-                checkbox_colorminus.Checked = false;
-                checkbox_colorimpact.Checked = false;
-                checkbox_colorcompartment.Checked = false;
-            }
-
-            else
-            {
-
-            }
-        }
 
 
         private void btn_colortableok_Click(object sender, EventArgs e)
@@ -1301,9 +1220,10 @@ namespace NeuroAttention
                 timer_hidetime.Interval = (int)numeric_screentime.Value;
                 timer_time.Start();
                 timer_hidetime.Start();
-                lbl_mustassignoperator.Visible = true;
-                lbl_mustassignnumber1.Visible = true;
-                lbl_mustassignnumber2.Visible = true;
+               panel_mustasigntask.Visible=true;
+                lbl_process.Visible = false;
+                btn_stop.Visible = true;
+                btn_start.Visible = false;
 
             }
 
@@ -1314,9 +1234,10 @@ namespace NeuroAttention
                 timer_screentime.Interval = (int)numeric_screentime.Value;
                 timer_time.Start();
                 timer_screentime.Start();
-                lbl_mustassignoperator.Visible = true;
-                lbl_mustassignnumber1.Visible = true;
-                lbl_mustassignnumber2.Visible = true;
+                panel_mustasigntask.Visible = true;
+                lbl_process.Visible = false;
+                btn_stop.Visible = true;
+                btn_start.Visible = false;
 
 
             }
@@ -1328,9 +1249,7 @@ namespace NeuroAttention
         private void timer_hidetime_Tick(object sender, EventArgs e)
         {
             lbl_process.Visible = false;
-            lbl_mustassignoperator.Visible = false;
-            lbl_mustassignnumber1.Visible = false;
-            lbl_mustassignnumber2.Visible = false;
+            panel_mustasigntask.Visible = false;
             timer_screentime.Start();
             timer_hidetime.Stop();
         }
@@ -1357,15 +1276,20 @@ namespace NeuroAttention
                 btn_stop.Visible = false;
                 btn_start.Visible = true;
             }
-
+            numeric_numberrange1.Value = 1;
+            numeric_numberrange2.Value = 9;
+            numeric_screentime.Value = 1000;
+            numeric_time.Value = 60;
             timer_time.Stop();
             timer_screentime.Stop();
             timer_hidetime.Stop();
+            checkbox_plus.Checked = false;
+            checkbox_minus.Checked = false;
+            checkbox_impact.Checked = false;
+            checkbox_compartment.Checked = false;
             lbl_process.Visible = false;
             lbl_process.Text = "";
-            lbl_mustassignnumber1.Visible = false;
-            lbl_mustassignnumber2.Visible = false;
-            lbl_mustassignoperator.Visible = false;
+            panel_mustasigntask.Visible = false;
             
 
         }

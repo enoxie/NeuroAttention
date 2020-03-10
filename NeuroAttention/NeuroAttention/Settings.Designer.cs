@@ -41,6 +41,7 @@
             this.gunaPanel_left = new Guna.UI.WinForms.GunaPanel();
             this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();
             this.btn_checkupdate = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.copyrights = new NeuroAttention.copyrights();
             this.pbox_logo = new Guna.UI.WinForms.GunaPictureBox();
             this.lbl_title = new Guna.UI.WinForms.GunaLabel();
             this.btn_kullanimsozlesmesi = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -50,7 +51,6 @@
             this.lbl_applanguage = new Guna.UI.WinForms.GunaLabel();
             this.lbl_currentversion = new Guna.UI.WinForms.GunaLabel();
             this.lbl_settings = new Guna.UI.WinForms.GunaLabel();
-            this.copyrights = new NeuroAttention.copyrights();
             this.gunaPanel_upper_right.SuspendLayout();
             this.gunaPanel_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_logo)).BeginInit();
@@ -218,6 +218,7 @@
             // 
             // btn_checkupdate
             // 
+            this.btn_checkupdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_checkupdate.Animated = true;
             this.btn_checkupdate.AnimationHoverSpeed = 0.07F;
             this.btn_checkupdate.AnimationSpeed = 0.03F;
@@ -231,7 +232,7 @@
             this.btn_checkupdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_checkupdate.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_checkupdate.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_checkupdate.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_checkupdate.Font = new System.Drawing.Font("Infoma", 11F);
             this.btn_checkupdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.btn_checkupdate.Image = null;
             this.btn_checkupdate.ImageSize = new System.Drawing.Size(20, 20);
@@ -245,11 +246,20 @@
             this.btn_checkupdate.OnHoverLineColor = System.Drawing.Color.Empty;
             this.btn_checkupdate.OnPressedColor = System.Drawing.Color.Black;
             this.btn_checkupdate.OnPressedDepth = 0;
-            this.btn_checkupdate.Size = new System.Drawing.Size(191, 20);
+            this.btn_checkupdate.Size = new System.Drawing.Size(190, 20);
             this.btn_checkupdate.TabIndex = 30;
-            this.btn_checkupdate.Text = "YAZILIM GÜNCELLEŞTİRME";
+            this.btn_checkupdate.Text = "YAZILIM GÜNCELLEMESİ";
             this.btn_checkupdate.TextOffsetX = -10;
             this.btn_checkupdate.Click += new System.EventHandler(this.btn_checkupdate_Click);
+            // 
+            // copyrights
+            // 
+            this.copyrights.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.copyrights.Location = new System.Drawing.Point(488, 137);
+            this.copyrights.Name = "copyrights";
+            this.copyrights.Size = new System.Drawing.Size(535, 550);
+            this.copyrights.TabIndex = 29;
+            this.copyrights.Visible = false;
             // 
             // pbox_logo
             // 
@@ -278,6 +288,7 @@
             // 
             // btn_kullanimsozlesmesi
             // 
+            this.btn_kullanimsozlesmesi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_kullanimsozlesmesi.Animated = true;
             this.btn_kullanimsozlesmesi.AnimationHoverSpeed = 0.07F;
             this.btn_kullanimsozlesmesi.AnimationSpeed = 0.03F;
@@ -291,7 +302,7 @@
             this.btn_kullanimsozlesmesi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_kullanimsozlesmesi.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_kullanimsozlesmesi.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_kullanimsozlesmesi.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_kullanimsozlesmesi.Font = new System.Drawing.Font("Infoma", 11F);
             this.btn_kullanimsozlesmesi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.btn_kullanimsozlesmesi.Image = null;
             this.btn_kullanimsozlesmesi.ImageSize = new System.Drawing.Size(20, 20);
@@ -305,7 +316,7 @@
             this.btn_kullanimsozlesmesi.OnHoverLineColor = System.Drawing.Color.Empty;
             this.btn_kullanimsozlesmesi.OnPressedColor = System.Drawing.Color.Black;
             this.btn_kullanimsozlesmesi.OnPressedDepth = 0;
-            this.btn_kullanimsozlesmesi.Size = new System.Drawing.Size(170, 20);
+            this.btn_kullanimsozlesmesi.Size = new System.Drawing.Size(190, 20);
             this.btn_kullanimsozlesmesi.TabIndex = 24;
             this.btn_kullanimsozlesmesi.Text = "KULLANICI SÖZLEŞMESİ";
             this.btn_kullanimsozlesmesi.TextOffsetX = -10;
@@ -313,6 +324,7 @@
             // 
             // btn_version
             // 
+            this.btn_version.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_version.Animated = true;
             this.btn_version.AnimationHoverSpeed = 0.07F;
             this.btn_version.AnimationSpeed = 0.03F;
@@ -326,7 +338,7 @@
             this.btn_version.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_version.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_version.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_version.Font = new System.Drawing.Font("Infoma", 8F);
+            this.btn_version.Font = new System.Drawing.Font("Infoma", 10F);
             this.btn_version.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.btn_version.Image = null;
             this.btn_version.ImageSize = new System.Drawing.Size(20, 20);
@@ -428,15 +440,6 @@
             this.lbl_settings.Size = new System.Drawing.Size(108, 24);
             this.lbl_settings.TabIndex = 18;
             this.lbl_settings.Text = "AYARLAR";
-            // 
-            // copyrights
-            // 
-            this.copyrights.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.copyrights.Location = new System.Drawing.Point(488, 137);
-            this.copyrights.Name = "copyrights";
-            this.copyrights.Size = new System.Drawing.Size(535, 550);
-            this.copyrights.TabIndex = 29;
-            this.copyrights.Visible = false;
             // 
             // Settings
             // 

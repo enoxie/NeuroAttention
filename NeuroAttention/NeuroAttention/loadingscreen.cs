@@ -42,12 +42,15 @@ namespace NeuroAttention
             {
 
                 MessageBox.Show("Sunucu ile bağlantı kuruldu.", "Bağlantı Kuruldu", MessageBoxButtons.OK, MessageBoxIcon.None);
+                Login login = new Login();
+                login.Show();
+                this.Hide();
             }
             else
             {
 
                 MessageBox.Show("Sunucu ile bağlantı kurulamadı. Bağlantınızın doğruluğundan emin olun veya ISP ile görüşünüz.", "Bağlantı Kesildi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
+                Application.Exit();
               
             }
 
@@ -134,9 +137,7 @@ namespace NeuroAttention
 
 
                 networkStatus();
-                Login login = new Login();
-                login.Show();
-                this.Hide();
+                
 
 
             }

@@ -83,11 +83,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cokluislem.cs">
+    <Compile Include="MultiplePerception.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cokluislem.Designer.cs">
-      <DependentUpon>cokluislem.cs</DependentUpon>
+    <Compile Include="MultiplePerception.Designer.cs">
+      <DependentUpon>MultiplePerception.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultipleProcessing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultipleProcessing.Designer.cs">
+      <DependentUpon>MultipleProcessing.cs</DependentUpon>
     </Compile>
     <Compile Include="copyrights.cs">
       <SubType>UserControl</SubType>
@@ -107,17 +113,23 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="forgotpassword.cs">
+    <Compile Include="ForgotPassword.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forgotpassword.Designer.cs">
-      <DependentUpon>forgotpassword.cs</DependentUpon>
+    <Compile Include="ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctioningMemory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctioningMemory.Designer.cs">
+      <DependentUpon>FunctioningMemory.cs</DependentUpon>
     </Compile>
     <Compile Include="loadingscreen.cs">
       <SubType>Form</SubType>
@@ -151,7 +163,18 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="networkStatus.cs" />
+    <Compile Include="NetworkStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetworkStatus.Designer.cs">
+      <DependentUpon>NetworkStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NetworkStatusFailed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetworkStatusFailed.Designer.cs">
+      <DependentUpon>NetworkStatusFailed.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -182,8 +205,11 @@
     <Compile Include="VersionLogin.Designer.cs">
       <DependentUpon>VersionLogin.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="cokluislem.resx">
-      <DependentUpon>cokluislem.cs</DependentUpon>
+    <EmbeddedResource Include="MultiplePerception.resx">
+      <DependentUpon>MultiplePerception.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultipleProcessing.resx">
+      <DependentUpon>MultipleProcessing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="copyrights.resx">
       <DependentUpon>copyrights.cs</DependentUpon>
@@ -194,11 +220,14 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forgotpassword.resx">
-      <DependentUpon>forgotpassword.cs</DependentUpon>
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctioningMemory.resx">
+      <DependentUpon>FunctioningMemory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loadingscreen.resx">
       <DependentUpon>loadingscreen.cs</DependentUpon>
@@ -224,6 +253,12 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NetworkStatus.resx">
+      <DependentUpon>NetworkStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetworkStatusFailed.resx">
+      <DependentUpon>NetworkStatusFailed.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -238,6 +273,7 @@
     <EmbeddedResource Include="VersionLogin.resx">
       <DependentUpon>VersionLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -274,6 +310,8 @@
     <Content Include="ma_Ch7_icon.ico" />
     <Content Include="source\appstore\appstore_de.png" />
     <Content Include="source\appstore\appstore_en.png" />
+    <None Include="source\bg-dashboard.jpg" />
+    <None Include="source\bg-dashboard.png" />
     <Content Include="source\googleplay\googleplay_de.png" />
     <Content Include="source\googleplay\googleplay_tr.png" />
     <Content Include="source\googleplay\googleplay_en.png" />

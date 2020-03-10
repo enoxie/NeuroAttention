@@ -137,6 +137,7 @@ namespace NeuroAttention
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
+            
             userInfo();
             attentionInfo();
             gunaDataGridView1.Rows.Add(3);
@@ -182,8 +183,24 @@ namespace NeuroAttention
 
                 case 2:
                     {
-                        cokluislem cokluislem = new cokluislem();
+                        MultipleProcessing cokluislem = new MultipleProcessing();
                         cokluislem.Show();
+                        this.Hide();
+                        break;
+                    }
+
+                case 3:
+                    {
+                        FunctioningMemory fmemory = new FunctioningMemory();
+                        fmemory.Show();
+                        this.Hide();
+                        break;
+                    }
+
+                case 4:
+                    {
+                        MultiplePerception mperception = new MultiplePerception();
+                        mperception.Show();
                         this.Hide();
                         break;
                     }

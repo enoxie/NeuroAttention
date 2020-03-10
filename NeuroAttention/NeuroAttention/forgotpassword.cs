@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace NeuroAttention
 {
-    public partial class forgotpassword : UserControl
+    public partial class ForgotPassword : UserControl
     {
-        public forgotpassword()
+        public ForgotPassword()
         {
             InitializeComponent();
         }

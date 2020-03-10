@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaPanel_right = new Guna.UI.WinForms.GunaPanel();
             this.btn_settings = new Guna.UI.WinForms.GunaTileButton();
             this.gunaPanel_rightattention = new Guna.UI.WinForms.GunaPanel();
@@ -203,30 +203,30 @@
             // 
             // dgw_attention
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.dgw_attention.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dgw_attention.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgw_attention.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgw_attention.BackgroundColor = System.Drawing.Color.White;
             this.dgw_attention.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgw_attention.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgw_attention.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgw_attention.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgw_attention.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgw_attention.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgw_attention.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgw_attention.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgw_attention.EnableHeadersVisualStyles = false;
             this.dgw_attention.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgw_attention.Location = new System.Drawing.Point(29, 70);
@@ -677,7 +677,7 @@
             this.btn_backtologin.Image = null;
             this.btn_backtologin.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_backtologin.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_backtologin.Location = new System.Drawing.Point(119, 464);
+            this.btn_backtologin.Location = new System.Drawing.Point(110, 465);
             this.btn_backtologin.Name = "btn_backtologin";
             this.btn_backtologin.OnHoverBaseColor = System.Drawing.Color.White;
             this.btn_backtologin.OnHoverBorderColor = System.Drawing.Color.Empty;
@@ -686,9 +686,10 @@
             this.btn_backtologin.OnHoverLineColor = System.Drawing.Color.Empty;
             this.btn_backtologin.OnPressedColor = System.Drawing.Color.Black;
             this.btn_backtologin.OnPressedDepth = 0;
-            this.btn_backtologin.Size = new System.Drawing.Size(65, 20);
+            this.btn_backtologin.Size = new System.Drawing.Size(80, 20);
             this.btn_backtologin.TabIndex = 41;
             this.btn_backtologin.Text = "Giriş yap";
+            this.btn_backtologin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_backtologin.TextOffsetX = -10;
             this.btn_backtologin.Click += new System.EventHandler(this.btn_backtologin_Click);
             // 
@@ -714,7 +715,7 @@
             this.lbl_forgotusername.Image = null;
             this.lbl_forgotusername.ImageSize = new System.Drawing.Size(20, 20);
             this.lbl_forgotusername.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.lbl_forgotusername.Location = new System.Drawing.Point(67, 425);
+            this.lbl_forgotusername.Location = new System.Drawing.Point(65, 425);
             this.lbl_forgotusername.Name = "lbl_forgotusername";
             this.lbl_forgotusername.OnHoverBaseColor = System.Drawing.Color.White;
             this.lbl_forgotusername.OnHoverBorderColor = System.Drawing.Color.Empty;
@@ -723,9 +724,10 @@
             this.lbl_forgotusername.OnHoverLineColor = System.Drawing.Color.Empty;
             this.lbl_forgotusername.OnPressedColor = System.Drawing.Color.Black;
             this.lbl_forgotusername.OnPressedDepth = 0;
-            this.lbl_forgotusername.Size = new System.Drawing.Size(180, 20);
+            this.lbl_forgotusername.Size = new System.Drawing.Size(185, 20);
             this.lbl_forgotusername.TabIndex = 40;
             this.lbl_forgotusername.Text = "Kullanıcı adını mı unuttun?";
+            this.lbl_forgotusername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lbl_forgotusername.TextOffsetX = -10;
             // 
             // lbl_contactsupport
@@ -750,7 +752,7 @@
             this.lbl_contactsupport.Image = null;
             this.lbl_contactsupport.ImageSize = new System.Drawing.Size(20, 20);
             this.lbl_contactsupport.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.lbl_contactsupport.Location = new System.Drawing.Point(84, 444);
+            this.lbl_contactsupport.Location = new System.Drawing.Point(80, 445);
             this.lbl_contactsupport.Name = "lbl_contactsupport";
             this.lbl_contactsupport.OnHoverBaseColor = System.Drawing.Color.White;
             this.lbl_contactsupport.OnHoverBorderColor = System.Drawing.Color.Empty;
@@ -759,21 +761,22 @@
             this.lbl_contactsupport.OnHoverLineColor = System.Drawing.Color.Empty;
             this.lbl_contactsupport.OnPressedColor = System.Drawing.Color.Black;
             this.lbl_contactsupport.OnPressedDepth = 0;
-            this.lbl_contactsupport.Size = new System.Drawing.Size(132, 20);
+            this.lbl_contactsupport.Size = new System.Drawing.Size(140, 20);
             this.lbl_contactsupport.TabIndex = 39;
             this.lbl_contactsupport.Text = "Destek ekibine ulaş";
+            this.lbl_contactsupport.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lbl_contactsupport.TextOffsetX = -10;
             // 
             // lbl_info
             // 
-            this.lbl_info.AutoSize = true;
             this.lbl_info.Font = new System.Drawing.Font("Infoma Demi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_info.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             this.lbl_info.Location = new System.Drawing.Point(17, 96);
             this.lbl_info.Name = "lbl_info";
             this.lbl_info.Size = new System.Drawing.Size(273, 38);
             this.lbl_info.TabIndex = 38;
-            this.lbl_info.Text = "Bu, giriş yapmak için kullandığın\r\n                       ad olmalı.";
+            this.lbl_info.Text = "Bu, giriş yapmak için kullandığın ad olmalı.";
+            this.lbl_info.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btn_login
             // 
@@ -1509,7 +1512,7 @@
             this.btn_forgotpassword.OnHoverLineColor = System.Drawing.Color.Empty;
             this.btn_forgotpassword.OnPressedColor = System.Drawing.Color.Black;
             this.btn_forgotpassword.OnPressedDepth = 0;
-            this.btn_forgotpassword.Size = new System.Drawing.Size(180, 20);
+            this.btn_forgotpassword.Size = new System.Drawing.Size(185, 20);
             this.btn_forgotpassword.TabIndex = 6;
             this.btn_forgotpassword.Text = "Oturum açamıyor musun?";
             this.btn_forgotpassword.TextOffsetX = -10;
@@ -1707,7 +1710,7 @@
             // pbox_loading
             // 
             this.pbox_loading.BaseColor = System.Drawing.Color.White;
-            this.pbox_loading.Image = global::NeuroAttention.Properties.Resources.Rolling_1s_200px;
+            this.pbox_loading.Image = ((System.Drawing.Image)(resources.GetObject("pbox_loading.Image")));
             this.pbox_loading.Location = new System.Drawing.Point(142, 313);
             this.pbox_loading.Name = "pbox_loading";
             this.pbox_loading.Size = new System.Drawing.Size(109, 79);

@@ -1,6 +1,6 @@
 ﻿namespace NeuroAttention
 {
-    partial class forgotpassword
+    partial class ForgotPassword
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(forgotpassword));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForgotPassword));
             this.btn_loginenabled = new Guna.UI.WinForms.GunaTileButton();
             this.btn_logindisabled = new Guna.UI.WinForms.GunaTileButton();
             this.txt_username = new Guna.UI.WinForms.GunaTextBox();

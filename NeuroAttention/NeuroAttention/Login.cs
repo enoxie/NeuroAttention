@@ -42,6 +42,61 @@ namespace NeuroAttention
         }
 
 
+        
+
+        public bool InternetKontrol()
+        {
+            try
+            {
+                System.Net.Sockets.TcpClient kontrol_client = new System.Net.Sockets.TcpClient("www.google.com.tr", 80);
+                kontrol_client.Close();
+                return true;
+            }
+            catch (Exception)
+
+            {
+                return false;
+
+            }
+        }
+        public void networkStatus()
+        {
+            bool kontrol = InternetKontrol(); // Kontrol fonksiyonumuzu çağırdık
+                                              // Eğer internet varsa true yoksa false değeri gelecek. Bunu if ile kontrol edelim
+
+            if (kontrol == true)
+            {
+
+                login();
+            }
+            else
+            {
+
+                lbl_accessdenied.Visible = true;
+                lbl_accessdenied.Text = " Sunucuyla bağlantı kuramadık.\n Lütfen internet bağlantını ve VPN \n ayarlarını kontrol et.";
+                txt_username.Text = "KULLANICI ADI";
+                txt_password.Text = "ŞİFRE";
+                btn_loginenabled.Visible = false;
+                btn_logindisabled.Visible = true;
+            }
+
+
+
+
+        }
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                // Turn on WS_EX_TOOLWINDOW style bit
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x80;
+                return cp;
+            }
+        }
+
+
         public void language(string culture)
         {
 
@@ -206,7 +261,7 @@ namespace NeuroAttention
 
         public void login()
         {
-           
+            
             string user = txt_username.Text;
             string pass = txt_password.Text;
             con = new SqlConnection(conString);
@@ -235,6 +290,7 @@ namespace NeuroAttention
                 btn_register.Visible = false;
                 btn_forgotpassword.Visible = false;
                 pbox_logo.Visible = false;
+
 
             }
 
@@ -614,7 +670,7 @@ namespace NeuroAttention
 
         private void btn_loginenabled_Click(object sender, EventArgs e)
         {
-            login();
+            networkStatus();
         }
 
         private void btn_settings_Click(object sender, EventArgs e)
@@ -978,7 +1034,7 @@ namespace NeuroAttention
         {
             if(e.KeyCode == Keys.Enter)
             {
-                login();
+                networkStatus();
             }
 
             else
