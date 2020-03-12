@@ -732,7 +732,7 @@
             this.gunaLabel4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Infoma Light", 9F);
-            this.gunaLabel4.Location = new System.Drawing.Point(519, 680);
+            this.gunaLabel4.Location = new System.Drawing.Point(520, 680);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(242, 24);
             this.gunaLabel4.TabIndex = 63;
@@ -755,7 +755,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ConstantAttention";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dashboard";
+            this.Text = "MayaClient - Sürekli Dikkat Uygulaması";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ConstantAttention_Load);
             this.gunaPanel1.ResumeLayout(false);

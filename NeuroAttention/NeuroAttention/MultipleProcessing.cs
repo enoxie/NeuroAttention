@@ -2266,6 +2266,12 @@ namespace NeuroAttention
         // Checkbox tıklama işlemleri
         private void checkbox_1_Click(object sender, EventArgs e)
         {
+
+            if(checkbox_2.Checked==false || checkbox_3.Checked == false || checkbox_4.Checked == false || checkbox_5.Checked == false || checkbox_6.Checked == false || checkbox_7.Checked == false || checkbox_8.Checked == false)
+            {
+                checkbox_1.Checked = true;
+            }
+
             int checkbox = 1;
 
             switch (checkbox)
@@ -2288,7 +2294,10 @@ namespace NeuroAttention
         }
         private void checkbox_2_Click(object sender, EventArgs e)
         {
-
+            if (checkbox_1.Checked == false || checkbox_3.Checked == false || checkbox_4.Checked == false || checkbox_5.Checked == false || checkbox_6.Checked == false || checkbox_7.Checked == false || checkbox_8.Checked == false)
+            {
+                checkbox_2.Checked = true;
+            }
             int checkbox = 2;
 
 
@@ -2310,7 +2319,10 @@ namespace NeuroAttention
         }
         private void checkbox_3_Click(object sender, EventArgs e)
         {
-
+            if (checkbox_1.Checked == false || checkbox_2.Checked == false || checkbox_4.Checked == false || checkbox_5.Checked == false || checkbox_6.Checked == false || checkbox_7.Checked == false || checkbox_8.Checked == false)
+            {
+                checkbox_3.Checked = true;
+            }
             int checkbox = 3;
 
             switch (checkbox)
@@ -2331,7 +2343,10 @@ namespace NeuroAttention
         }
         private void checkbox_4_Click(object sender, EventArgs e)
         {
-
+            if (checkbox_1.Checked == false || checkbox_2.Checked == false || checkbox_3.Checked == false || checkbox_5.Checked == false || checkbox_6.Checked == false || checkbox_7.Checked == false || checkbox_8.Checked == false)
+            {
+                checkbox_4.Checked = true;
+            }
             int checkbox = 4;
 
             switch (checkbox)
@@ -2353,7 +2368,10 @@ namespace NeuroAttention
         }
         private void checkbox_5_Click(object sender, EventArgs e)
         {
-
+            if (checkbox_1.Checked == false || checkbox_2.Checked == false || checkbox_3.Checked == false || checkbox_4.Checked == false || checkbox_6.Checked == false || checkbox_7.Checked == false || checkbox_8.Checked == false)
+            {
+                checkbox_5.Checked = true;
+            }
             int checkbox = 5;
 
 
@@ -2375,7 +2393,10 @@ namespace NeuroAttention
         }
         private void checkbox_6_Click(object sender, EventArgs e)
         {
-
+            if (checkbox_1.Checked == false || checkbox_2.Checked == false || checkbox_3.Checked == false || checkbox_4.Checked == false || checkbox_5.Checked == false || checkbox_7.Checked == false || checkbox_8.Checked == false)
+            {
+                checkbox_6.Checked = true;
+            }
             int checkbox = 6;
 
             switch (checkbox)
@@ -2396,7 +2417,10 @@ namespace NeuroAttention
         }
         private void checkbox_7_Click(object sender, EventArgs e)
         {
-
+            if (checkbox_1.Checked == false || checkbox_2.Checked == false || checkbox_3.Checked == false || checkbox_4.Checked == false || checkbox_5.Checked == false || checkbox_6.Checked == false || checkbox_8.Checked == false)
+            {
+                checkbox_7.Checked = true;
+            }
             int checkbox = 7;
 
             switch (checkbox)
@@ -2418,7 +2442,10 @@ namespace NeuroAttention
 
         private void checkbox_8_Click(object sender, EventArgs e)
         {
-
+            if (checkbox_1.Checked == false || checkbox_2.Checked == false || checkbox_3.Checked == false || checkbox_4.Checked == false || checkbox_5.Checked == false || checkbox_6.Checked == false || checkbox_7.Checked == false)
+            {
+                checkbox_8.Checked = true;
+            }
             int checkbox = 8;
 
 

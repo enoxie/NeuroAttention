@@ -16,7 +16,7 @@ namespace NeuroAttention
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MultiplePerception());
+            Application.Run(new FunctioningMemory());
         }
     }
 }

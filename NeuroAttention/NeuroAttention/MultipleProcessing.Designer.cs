@@ -245,7 +245,7 @@
             this.btn_start.OnHoverImage = null;
             this.btn_start.OnPressedColor = System.Drawing.Color.Black;
             this.btn_start.Radius = 20;
-            this.btn_start.Size = new System.Drawing.Size(64, 55);
+            this.btn_start.Size = new System.Drawing.Size(65, 55);
             this.btn_start.TabIndex = 38;
             this.btn_start.Click += new System.EventHandler(this.btn_start_Click);
             // 
@@ -681,8 +681,8 @@
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(242, 24);
             this.gunaLabel4.TabIndex = 55;
-            this.gunaLabel4.Text = "MayaAcademia Sürekli Dikkat Uygulaması\r\nMayaAcademia © 2020  - Tüm Hakları Saklıd" +
-    "ır.";
+            this.gunaLabel4.Text = "MayaAcademia Çoklu Dikkat Uygulaması\r\nMayaAcademia © 2020  - Tüm Hakları Saklıdır" +
+    ".";
             this.gunaLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer_hidetime
@@ -843,7 +843,7 @@
             this.panel_process.BackColor = System.Drawing.Color.Transparent;
             this.panel_process.Controls.Add(this.lbl_process);
             this.panel_process.Controls.Add(this.lbl_process2);
-            this.panel_process.Location = new System.Drawing.Point(270, 240);
+            this.panel_process.Location = new System.Drawing.Point(250, 230);
             this.panel_process.Name = "panel_process";
             this.panel_process.Size = new System.Drawing.Size(780, 200);
             this.panel_process.TabIndex = 62;
@@ -911,7 +911,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MultipleProcessing";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Maya Academia - Çoklu İşlem";
+            this.Text = "MayaClient - Çoklu İşlem Uygulaması";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.cokluislem_Load);
             this.gunaPanel1.ResumeLayout(false);

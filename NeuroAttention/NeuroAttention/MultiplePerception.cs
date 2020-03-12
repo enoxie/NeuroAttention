@@ -26,6 +26,12 @@ namespace NeuroAttention
 
         private void checkbox_shape1_Click(object sender, EventArgs e)
         {
+            if(checkbox_shape2.Checked==false || checkbox_shape3.Checked == false || checkbox_shape4.Checked == false)
+            {
+                checkbox_shape1.Checked = true;
+            }
+            
+           
             checkbox_shape2.Checked = false;
             checkbox_shape3.Checked = false;
             checkbox_shape4.Checked = false;
@@ -33,6 +39,11 @@ namespace NeuroAttention
 
         private void checkbox_shape2_Click(object sender, EventArgs e)
         {
+            if (checkbox_shape1.Checked == false || checkbox_shape3.Checked == false || checkbox_shape4.Checked == false)
+            {
+                checkbox_shape2.Checked = true;
+            }
+
             checkbox_shape1.Checked = false;
             checkbox_shape3.Checked = false;
             checkbox_shape4.Checked = false;
@@ -40,6 +51,11 @@ namespace NeuroAttention
 
         private void checkbox_shape3_Click(object sender, EventArgs e)
         {
+            if (checkbox_shape1.Checked == false || checkbox_shape2.Checked == false || checkbox_shape4.Checked == false)
+            {
+                checkbox_shape3.Checked = true;
+            }
+
             checkbox_shape1.Checked = false;
             checkbox_shape2.Checked = false;
             checkbox_shape4.Checked = false;
@@ -47,6 +63,11 @@ namespace NeuroAttention
 
         private void checkbox_shape4_Click(object sender, EventArgs e)
         {
+            if (checkbox_shape1.Checked == false || checkbox_shape2.Checked == false || checkbox_shape3.Checked == false)
+            {
+                checkbox_shape4.Checked = true;
+            }
+
             checkbox_shape1.Checked = false;
             checkbox_shape2.Checked = false;
             checkbox_shape3.Checked = false;
@@ -1037,6 +1058,8 @@ namespace NeuroAttention
 
         private void btn_start_Click(object sender, EventArgs e)
         {
+
+
             if (numeric_numberoflines.Value == 0 || numeric_numberofcolumns.Value == 0 || checkbox_shape1.Checked==false && checkbox_shape2.Checked == false && checkbox_shape3.Checked == false && checkbox_shape4.Checked == false)
             {
                 MessageBox.Show("Ayarları doğru şekilde yapınız.");
@@ -1050,39 +1073,50 @@ namespace NeuroAttention
 
             }
 
-
-            else if (checkbox_showhide.Checked == true)
+            if (bunifuCustomDataGrid1.Visible == true)
             {
-                randomShape();
-                timer_screentime.Interval = (int)numeric_screentime.Value;
-                timer_hidetime.Interval = (int)numeric_screentime.Value;
-                timer_hidetime.Start();
-                lbl_shape.Visible = true;
-                btn_stop.Visible = true;
-                btn_start.Visible = false;
-
-
+                MessageBox.Show("Sonuç tablosunu kapatmadan işlem yapamazsınız.");
             }
 
             else
             {
-                randomShape();
-                timer_screentime.Interval = (int)numeric_screentime.Value;
-                timer_screentime.Start();
-                lbl_shape.Visible = true;
-                btn_stop.Visible = true;
-                btn_start.Visible = false;
+                 if (checkbox_showhide.Checked == true)
+                {
+                    randomShape();
+                    timer_screentime.Interval = (int)numeric_screentime.Value;
+                    timer_hidetime.Interval = (int)numeric_screentime.Value;
+                    timer_hidetime.Start();
+                    lbl_shape.Visible = true;
+                    btn_stop.Visible = true;
+                    btn_start.Visible = false;
 
+
+                }
+
+                else
+                {
+                    randomShape();
+                    timer_screentime.Interval = (int)numeric_screentime.Value;
+                    timer_screentime.Start();
+                    lbl_shape.Visible = true;
+                    btn_stop.Visible = true;
+                    btn_start.Visible = false;
+
+                }
             }
 
+           
 
-
+           
 
         }
 
         private void btn_stop_Click(object sender, EventArgs e)
         {
-
+            if (bunifuCustomDataGrid1.Visible == true)
+            {
+                MessageBox.Show("Sonuç tablosunu kapatmadan işlem yapamazsınız.");
+            }
             if (btn_start.Visible == false)
             {
                 btn_stop.Visible = false;
