@@ -33,7 +33,7 @@
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.gunaGroupBox2 = new Guna.UI.WinForms.GunaGroupBox();
             this.gunaGroupBox3 = new Guna.UI.WinForms.GunaGroupBox();
-            this.checkbox_gostergizle = new Guna.UI.WinForms.GunaCheckBox();
+            this.checkbox_showhide = new Guna.UI.WinForms.GunaCheckBox();
             this.checkbox_mustasigntask = new Guna.UI.WinForms.GunaCheckBox();
             this.btn_stop = new Guna.UI.WinForms.GunaTileButton();
             this.btn_start = new Guna.UI.WinForms.GunaTileButton();
@@ -43,7 +43,7 @@
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.numeric_numberoftransactions = new Guna.UI.WinForms.GunaNumeric();
             this.gbox_normal = new Guna.UI.WinForms.GunaGroupBox();
-            this.gunaCheckBox2 = new Guna.UI.WinForms.GunaCheckBox();
+            this.checkbox_showresult = new Guna.UI.WinForms.GunaCheckBox();
             this.numeric_screentime = new Guna.UI.WinForms.GunaNumeric();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
@@ -60,8 +60,12 @@
             this.lbl_number2result = new Guna.UI.WinForms.GunaLabel();
             this.lbl_number3result = new Guna.UI.WinForms.GunaLabel();
             this.panel_results = new Guna.UI.WinForms.GunaPanel();
-            this.lbl_resulttable = new Guna.UI.WinForms.GunaLabel();
+            this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();
+            this.panel_bottom2 = new Guna.UI.WinForms.GunaPanel();
+            this.panel_bottom = new Guna.UI.WinForms.GunaPanel();
             this.btn_resultok = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.panel_top = new Guna.UI.WinForms.GunaPanel();
+            this.lbl_resulttable = new Guna.UI.WinForms.GunaLabel();
             this.lbl_number3sum = new Guna.UI.WinForms.GunaLabel();
             this.lbl_number2sum = new Guna.UI.WinForms.GunaLabel();
             this.lbl_number1sum = new Guna.UI.WinForms.GunaLabel();
@@ -69,10 +73,6 @@
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaVScrollBar1 = new Guna.UI.WinForms.GunaVScrollBar();
-            this.panel_top = new Guna.UI.WinForms.GunaPanel();
-            this.panel_bottom = new Guna.UI.WinForms.GunaPanel();
-            this.panel_bottom2 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();
             this.gunaPanel1.SuspendLayout();
             this.gunaGroupBox2.SuspendLayout();
             this.gunaGroupBox3.SuspendLayout();
@@ -80,9 +80,9 @@
             this.gbox_normal.SuspendLayout();
             this.panel_process.SuspendLayout();
             this.panel_results.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
-            this.panel_top.SuspendLayout();
             this.panel_bottom.SuspendLayout();
+            this.panel_top.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaPanel1
@@ -132,7 +132,7 @@
             this.gunaGroupBox3.BaseColor = System.Drawing.Color.White;
             this.gunaGroupBox3.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox3.BorderSize = 1;
-            this.gunaGroupBox3.Controls.Add(this.checkbox_gostergizle);
+            this.gunaGroupBox3.Controls.Add(this.checkbox_showhide);
             this.gunaGroupBox3.Controls.Add(this.checkbox_mustasigntask);
             this.gunaGroupBox3.LineColor = System.Drawing.Color.Transparent;
             this.gunaGroupBox3.Location = new System.Drawing.Point(400, 90);
@@ -141,21 +141,21 @@
             this.gunaGroupBox3.TabIndex = 58;
             this.gunaGroupBox3.TextLocation = new System.Drawing.Point(10, 8);
             // 
-            // checkbox_gostergizle
+            // checkbox_showhide
             // 
-            this.checkbox_gostergizle.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.checkbox_gostergizle.BaseColor = System.Drawing.Color.White;
-            this.checkbox_gostergizle.Checked = true;
-            this.checkbox_gostergizle.CheckedOffColor = System.Drawing.Color.Gray;
-            this.checkbox_gostergizle.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.checkbox_gostergizle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkbox_gostergizle.FillColor = System.Drawing.Color.White;
-            this.checkbox_gostergizle.Font = new System.Drawing.Font("Infoma Light", 10F);
-            this.checkbox_gostergizle.Location = new System.Drawing.Point(5, 5);
-            this.checkbox_gostergizle.Name = "checkbox_gostergizle";
-            this.checkbox_gostergizle.Size = new System.Drawing.Size(106, 20);
-            this.checkbox_gostergizle.TabIndex = 57;
-            this.checkbox_gostergizle.Text = "Göster/Gizle";
+            this.checkbox_showhide.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.checkbox_showhide.BaseColor = System.Drawing.Color.White;
+            this.checkbox_showhide.Checked = true;
+            this.checkbox_showhide.CheckedOffColor = System.Drawing.Color.Gray;
+            this.checkbox_showhide.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.checkbox_showhide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkbox_showhide.FillColor = System.Drawing.Color.White;
+            this.checkbox_showhide.Font = new System.Drawing.Font("Infoma Light", 10F);
+            this.checkbox_showhide.Location = new System.Drawing.Point(5, 5);
+            this.checkbox_showhide.Name = "checkbox_showhide";
+            this.checkbox_showhide.Size = new System.Drawing.Size(106, 20);
+            this.checkbox_showhide.TabIndex = 57;
+            this.checkbox_showhide.Text = "Göster/Gizle";
             // 
             // checkbox_mustasigntask
             // 
@@ -315,7 +315,7 @@
             this.gbox_normal.BaseColor = System.Drawing.Color.White;
             this.gbox_normal.BorderColor = System.Drawing.Color.Gainsboro;
             this.gbox_normal.BorderSize = 1;
-            this.gbox_normal.Controls.Add(this.gunaCheckBox2);
+            this.gbox_normal.Controls.Add(this.checkbox_showresult);
             this.gbox_normal.LineColor = System.Drawing.Color.Gainsboro;
             this.gbox_normal.LineTop = 24;
             this.gbox_normal.Location = new System.Drawing.Point(400, 30);
@@ -325,21 +325,21 @@
             this.gbox_normal.Text = "Raporlama Seçenekleri";
             this.gbox_normal.TextLocation = new System.Drawing.Point(6, 6);
             // 
-            // gunaCheckBox2
+            // checkbox_showresult
             // 
-            this.gunaCheckBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.gunaCheckBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox2.Checked = true;
-            this.gunaCheckBox2.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaCheckBox2.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox2.Font = new System.Drawing.Font("Infoma Light", 10F);
-            this.gunaCheckBox2.Location = new System.Drawing.Point(5, 30);
-            this.gunaCheckBox2.Name = "gunaCheckBox2";
-            this.gunaCheckBox2.Size = new System.Drawing.Size(110, 20);
-            this.gunaCheckBox2.TabIndex = 58;
-            this.gunaCheckBox2.Text = "Sonuç Göster";
+            this.checkbox_showresult.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.checkbox_showresult.BaseColor = System.Drawing.Color.White;
+            this.checkbox_showresult.Checked = true;
+            this.checkbox_showresult.CheckedOffColor = System.Drawing.Color.Gray;
+            this.checkbox_showresult.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.checkbox_showresult.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkbox_showresult.FillColor = System.Drawing.Color.White;
+            this.checkbox_showresult.Font = new System.Drawing.Font("Infoma Light", 10F);
+            this.checkbox_showresult.Location = new System.Drawing.Point(5, 30);
+            this.checkbox_showresult.Name = "checkbox_showresult";
+            this.checkbox_showresult.Size = new System.Drawing.Size(110, 20);
+            this.checkbox_showresult.TabIndex = 58;
+            this.checkbox_showresult.Text = "Sonuç Göster";
             // 
             // numeric_screentime
             // 
@@ -463,6 +463,7 @@
             this.btn_logout.TabIndex = 52;
             this.btn_logout.Text = "UYGULAMAYI KAPAT";
             this.btn_logout.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
             // panel_process
             // 
@@ -553,21 +554,36 @@
             this.panel_results.Controls.Add(this.lbl_number3result);
             this.panel_results.Location = new System.Drawing.Point(340, 250);
             this.panel_results.Name = "panel_results";
-            this.panel_results.Size = new System.Drawing.Size(600, 450);
+            this.panel_results.Size = new System.Drawing.Size(600, 350);
             this.panel_results.TabIndex = 67;
             this.panel_results.Visible = false;
             // 
-            // lbl_resulttable
+            // gunaSeparator1
             // 
-            this.lbl_resulttable.AutoSize = true;
-            this.lbl_resulttable.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_resulttable.Font = new System.Drawing.Font("Infoma Light", 20F);
-            this.lbl_resulttable.ForeColor = System.Drawing.Color.Black;
-            this.lbl_resulttable.Location = new System.Drawing.Point(200, 10);
-            this.lbl_resulttable.Name = "lbl_resulttable";
-            this.lbl_resulttable.Size = new System.Drawing.Size(175, 27);
-            this.lbl_resulttable.TabIndex = 73;
-            this.lbl_resulttable.Text = "Sonuç Tablosu";
+            this.gunaSeparator1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gunaSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaSeparator1.LineColor = System.Drawing.Color.Silver;
+            this.gunaSeparator1.Location = new System.Drawing.Point(70, 215);
+            this.gunaSeparator1.Name = "gunaSeparator1";
+            this.gunaSeparator1.Size = new System.Drawing.Size(450, 10);
+            this.gunaSeparator1.TabIndex = 75;
+            // 
+            // panel_bottom2
+            // 
+            this.panel_bottom2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_bottom2.Location = new System.Drawing.Point(0, 254);
+            this.panel_bottom2.Name = "panel_bottom2";
+            this.panel_bottom2.Size = new System.Drawing.Size(598, 47);
+            this.panel_bottom2.TabIndex = 74;
+            // 
+            // panel_bottom
+            // 
+            this.panel_bottom.Controls.Add(this.btn_resultok);
+            this.panel_bottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_bottom.Location = new System.Drawing.Point(0, 301);
+            this.panel_bottom.Name = "panel_bottom";
+            this.panel_bottom.Size = new System.Drawing.Size(598, 47);
+            this.panel_bottom.TabIndex = 73;
             // 
             // btn_resultok
             // 
@@ -584,7 +600,7 @@
             this.btn_resultok.CheckedLineColor = System.Drawing.Color.DimGray;
             this.btn_resultok.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_resultok.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_resultok.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_resultok.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btn_resultok.FocusedColor = System.Drawing.Color.Empty;
             this.btn_resultok.Font = new System.Drawing.Font("Infoma Light", 20F);
             this.btn_resultok.ForeColor = System.Drawing.Color.Black;
@@ -592,7 +608,7 @@
             this.btn_resultok.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_resultok.LineBottom = 4;
             this.btn_resultok.LineColor = System.Drawing.Color.Transparent;
-            this.btn_resultok.Location = new System.Drawing.Point(483, 0);
+            this.btn_resultok.Location = new System.Drawing.Point(0, 0);
             this.btn_resultok.Name = "btn_resultok";
             this.btn_resultok.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.btn_resultok.OnHoverBorderColor = System.Drawing.Color.White;
@@ -601,11 +617,32 @@
             this.btn_resultok.OnHoverLineColor = System.Drawing.Color.Empty;
             this.btn_resultok.OnPressedColor = System.Drawing.Color.Black;
             this.btn_resultok.Radius = 10;
-            this.btn_resultok.Size = new System.Drawing.Size(115, 47);
+            this.btn_resultok.Size = new System.Drawing.Size(598, 47);
             this.btn_resultok.TabIndex = 72;
             this.btn_resultok.Text = "KAPAT";
             this.btn_resultok.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_resultok.Click += new System.EventHandler(this.btn_resultok_Click);
+            // 
+            // panel_top
+            // 
+            this.panel_top.Controls.Add(this.lbl_resulttable);
+            this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_top.Location = new System.Drawing.Point(0, 0);
+            this.panel_top.Name = "panel_top";
+            this.panel_top.Size = new System.Drawing.Size(598, 47);
+            this.panel_top.TabIndex = 72;
+            // 
+            // lbl_resulttable
+            // 
+            this.lbl_resulttable.AutoSize = true;
+            this.lbl_resulttable.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_resulttable.Font = new System.Drawing.Font("Infoma Light", 20F);
+            this.lbl_resulttable.ForeColor = System.Drawing.Color.Black;
+            this.lbl_resulttable.Location = new System.Drawing.Point(200, 10);
+            this.lbl_resulttable.Name = "lbl_resulttable";
+            this.lbl_resulttable.Size = new System.Drawing.Size(175, 27);
+            this.lbl_resulttable.TabIndex = 73;
+            this.lbl_resulttable.Text = "Sonuç Tablosu";
             // 
             // lbl_number3sum
             // 
@@ -688,40 +725,6 @@
             this.gunaVScrollBar1.ThumbPressedColor = System.Drawing.Color.DarkGray;
             this.gunaVScrollBar1.Visible = false;
             // 
-            // panel_top
-            // 
-            this.panel_top.Controls.Add(this.lbl_resulttable);
-            this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_top.Location = new System.Drawing.Point(0, 0);
-            this.panel_top.Name = "panel_top";
-            this.panel_top.Size = new System.Drawing.Size(598, 47);
-            this.panel_top.TabIndex = 72;
-            // 
-            // panel_bottom
-            // 
-            this.panel_bottom.Controls.Add(this.btn_resultok);
-            this.panel_bottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_bottom.Location = new System.Drawing.Point(0, 401);
-            this.panel_bottom.Name = "panel_bottom";
-            this.panel_bottom.Size = new System.Drawing.Size(598, 47);
-            this.panel_bottom.TabIndex = 73;
-            // 
-            // panel_bottom2
-            // 
-            this.panel_bottom2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_bottom2.Location = new System.Drawing.Point(0, 354);
-            this.panel_bottom2.Name = "panel_bottom2";
-            this.panel_bottom2.Size = new System.Drawing.Size(598, 47);
-            this.panel_bottom2.TabIndex = 74;
-            // 
-            // gunaSeparator1
-            // 
-            this.gunaSeparator1.LineColor = System.Drawing.Color.Silver;
-            this.gunaSeparator1.Location = new System.Drawing.Point(22, 274);
-            this.gunaSeparator1.Name = "gunaSeparator1";
-            this.gunaSeparator1.Size = new System.Drawing.Size(555, 10);
-            this.gunaSeparator1.TabIndex = 75;
-            // 
             // FunctioningMemory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -752,10 +755,10 @@
             this.panel_process.ResumeLayout(false);
             this.panel_results.ResumeLayout(false);
             this.panel_results.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
+            this.panel_bottom.ResumeLayout(false);
             this.panel_top.ResumeLayout(false);
             this.panel_top.PerformLayout();
-            this.panel_bottom.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -766,7 +769,7 @@
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI.WinForms.GunaGroupBox gunaGroupBox2;
         private Guna.UI.WinForms.GunaGroupBox gunaGroupBox3;
-        private Guna.UI.WinForms.GunaCheckBox checkbox_gostergizle;
+        private Guna.UI.WinForms.GunaCheckBox checkbox_showhide;
         private Guna.UI.WinForms.GunaCheckBox checkbox_mustasigntask;
         private Guna.UI.WinForms.GunaTileButton btn_stop;
         private Guna.UI.WinForms.GunaTileButton btn_start;
@@ -776,7 +779,7 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaNumeric numeric_numberoftransactions;
         private Guna.UI.WinForms.GunaGroupBox gbox_normal;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox2;
+        private Guna.UI.WinForms.GunaCheckBox checkbox_showresult;
         private Guna.UI.WinForms.GunaNumeric numeric_screentime;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
