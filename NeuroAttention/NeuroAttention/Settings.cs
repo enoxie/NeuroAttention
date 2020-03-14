@@ -157,9 +157,10 @@ namespace NeuroAttention
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             Login login = new Login();
             login.Show();
+            this.Hide();
         }
 
         private void cbox_language_SelectionChangeCommitted(object sender, EventArgs e)

@@ -311,10 +311,10 @@
             // 
             // gunaLabel2
             // 
-            this.gunaLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gunaLabel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Infoma Light", 10F);
-            this.gunaLabel2.Location = new System.Drawing.Point(19, 110);
+            this.gunaLabel2.Location = new System.Drawing.Point(20, 110);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(74, 14);
             this.gunaLabel2.TabIndex = 4;
@@ -344,7 +344,7 @@
             this.numeric_numberoftransactions.ButtonForeColor = System.Drawing.Color.White;
             this.numeric_numberoftransactions.Font = new System.Drawing.Font("Infoma Light", 10F);
             this.numeric_numberoftransactions.ForeColor = System.Drawing.Color.Black;
-            this.numeric_numberoftransactions.Location = new System.Drawing.Point(100, 100);
+            this.numeric_numberoftransactions.Location = new System.Drawing.Point(105, 100);
             this.numeric_numberoftransactions.Maximum = ((long)(9999999));
             this.numeric_numberoftransactions.Minimum = ((long)(0));
             this.numeric_numberoftransactions.Name = "numeric_numberoftransactions";
@@ -437,7 +437,7 @@
             this.numeric_screentime.ButtonForeColor = System.Drawing.Color.White;
             this.numeric_screentime.Font = new System.Drawing.Font("Infoma Light", 10F);
             this.numeric_screentime.ForeColor = System.Drawing.Color.Black;
-            this.numeric_screentime.Location = new System.Drawing.Point(100, 30);
+            this.numeric_screentime.Location = new System.Drawing.Point(105, 30);
             this.numeric_screentime.Maximum = ((long)(9999999));
             this.numeric_screentime.Minimum = ((long)(0));
             this.numeric_screentime.Name = "numeric_screentime";
@@ -448,7 +448,7 @@
             // 
             // gunaLabel1
             // 
-            this.gunaLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gunaLabel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Infoma Light", 10F);
             this.gunaLabel1.Location = new System.Drawing.Point(20, 75);
@@ -477,7 +477,7 @@
             this.gunaLabel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Infoma Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.Location = new System.Drawing.Point(195, 40);
+            this.gunaLabel5.Location = new System.Drawing.Point(200, 40);
             this.gunaLabel5.Name = "gunaLabel5";
             this.gunaLabel5.Size = new System.Drawing.Size(56, 12);
             this.gunaLabel5.TabIndex = 10;
@@ -507,7 +507,7 @@
             this.numeric_numberrange1.ButtonForeColor = System.Drawing.Color.White;
             this.numeric_numberrange1.Font = new System.Drawing.Font("Infoma Light", 10F);
             this.numeric_numberrange1.ForeColor = System.Drawing.Color.Black;
-            this.numeric_numberrange1.Location = new System.Drawing.Point(100, 65);
+            this.numeric_numberrange1.Location = new System.Drawing.Point(105, 65);
             this.numeric_numberrange1.Maximum = ((long)(9999999));
             this.numeric_numberrange1.Minimum = ((long)(1));
             this.numeric_numberrange1.Name = "numeric_numberrange1";
@@ -533,7 +533,7 @@
             // 
             // lbl_screentime
             // 
-            this.lbl_screentime.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_screentime.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbl_screentime.AutoSize = true;
             this.lbl_screentime.Font = new System.Drawing.Font("Infoma Light", 10F);
             this.lbl_screentime.Location = new System.Drawing.Point(15, 40);
@@ -551,7 +551,7 @@
             this.numeric_numberrange2.ButtonForeColor = System.Drawing.Color.White;
             this.numeric_numberrange2.Font = new System.Drawing.Font("Infoma Light", 10F);
             this.numeric_numberrange2.ForeColor = System.Drawing.Color.Black;
-            this.numeric_numberrange2.Location = new System.Drawing.Point(195, 65);
+            this.numeric_numberrange2.Location = new System.Drawing.Point(200, 65);
             this.numeric_numberrange2.Maximum = ((long)(9999999));
             this.numeric_numberrange2.Minimum = ((long)(1));
             this.numeric_numberrange2.Name = "numeric_numberrange2";
@@ -909,6 +909,7 @@
             this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.gunaPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MultipleProcessing";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MayaClient - Çoklu İşlem Uygulaması";

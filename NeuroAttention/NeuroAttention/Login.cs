@@ -830,6 +830,7 @@ namespace NeuroAttention
             
             if (panel_forgotpassword.Visible == false)
             {
+                this.Text = "MayaAcademia - Şifremi Unuttum";
                 timer_btnforgotpassword.Start();
                 if (lbl_accessdenied.Visible == true)
                     lbl_accessdenied.Visible = false;
@@ -867,7 +868,7 @@ namespace NeuroAttention
 
         private void btn_backtologin_Click(object sender, EventArgs e)
         {
-
+            this.Text = "MayaAcademia Giriş Paneli";
             timer_backtologin.Start();
             pbox_logo.Visible = false;
             panel_forgotpassword.Visible = false;

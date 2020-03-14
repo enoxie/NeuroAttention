@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MayaUpdaterDownloadForm));
             this.gunaPanel3 = new Guna.UI.WinForms.GunaPanel();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnClose = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaProgressBar1 = new Guna.UI.WinForms.GunaProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.lblDownloading = new System.Windows.Forms.Label();
             this.lblProgress = new System.Windows.Forms.Label();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.gunaPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +59,16 @@
             this.gunaPanel3.Name = "gunaPanel3";
             this.gunaPanel3.Size = new System.Drawing.Size(400, 500);
             this.gunaPanel3.TabIndex = 20;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Infoma Line", 15F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(18, 241);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(346, 49);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "MayaUpdater uzak sunucudan dosyaları indiriyor.";
             // 
             // btnClose
             // 
@@ -149,17 +159,7 @@
             this.gunaPictureBox1.TabIndex = 11;
             this.gunaPictureBox1.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Infoma Line", 15F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(18, 241);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(346, 49);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "MayaUpdater uzak sunucudan dosyaları indiriyor.";
-            // 
-            // SharpUpdateDownloadForm
+            // MayaUpdaterDownloadForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -169,9 +169,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "SharpUpdateDownloadForm";
+            this.Name = "MayaUpdaterDownloadForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Downloading Update";
+            this.Text = "MayaUpdater - Yazılım Güncellemesi";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SharpUpdateDownloadForm_FormClosed);
             this.gunaPanel3.ResumeLayout(false);
             this.gunaPanel3.PerformLayout();

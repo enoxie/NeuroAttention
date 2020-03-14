@@ -193,9 +193,10 @@
             this.ClientSize = new System.Drawing.Size(400, 500);
             this.Controls.Add(this.gunaPanel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NetworkStatusFailed";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MayaClient ";
+            this.Text = "MayaClient - Sunucuyla bağlantı kurulamadı";
             this.Load += new System.EventHandler(this.NetworkStatusFailed_Load);
             this.gunaPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();

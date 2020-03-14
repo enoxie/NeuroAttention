@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Avalonia.0.9.4\build\Avalonia.props" Condition="Exists('..\packages\Avalonia.0.9.4\build\Avalonia.props')" />
   <Import Project="..\packages\Avalonia.0.9.3\build\Avalonia.props" Condition="Exists('..\packages\Avalonia.0.9.3\build\Avalonia.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -8,7 +9,7 @@
     <ProjectGuid>{FE773B25-6F81-4C4E-8C15-1F8C47AF5C2E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>NeuroAttention</RootNamespace>
-    <AssemblyName>NeuroAttention</AssemblyName>
+    <AssemblyName>MayaAcademia</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -16,7 +17,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
+    <Install>false</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
@@ -25,9 +26,15 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>http://www.enesbilgi.com</SupportUrl>
+    <TargetCulture>tr-TR</TargetCulture>
+    <ProductName>MayaAcademia</ProductName>
+    <PublisherName>MayaAcademia</PublisherName>
+    <AutorunEnabled>true</AutorunEnabled>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -50,7 +57,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>ma_Ch7_icon.ico</ApplicationIcon>
+    <ApplicationIcon>MayaAcademia.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D4273F9C764F18BBBBDF7BD57CE89D8561B6B401</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>NeuroAttention_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52">
@@ -66,9 +91,11 @@
     <Reference Include="System">
       <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll</HintPath>
     </Reference>
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -273,7 +300,9 @@
     <EmbeddedResource Include="VersionLogin.resx">
       <DependentUpon>VersionLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="NeuroAttention_TemporaryKey.pfx" />
     <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -307,6 +336,7 @@
     <None Include="source\appstore\appstore_tr.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MayaAcademia.ico" />
     <Content Include="ma_Ch7_icon.ico" />
     <Content Include="source\appstore\appstore_de.png" />
     <Content Include="source\appstore\appstore_en.png" />
@@ -330,6 +360,9 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Avalonia.0.9.3\build\Avalonia.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Avalonia.0.9.3\build\Avalonia.targets'))" />
     <Error Condition="!Exists('..\packages\Avalonia.0.9.3\build\Avalonia.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Avalonia.0.9.3\build\Avalonia.props'))" />
+    <Error Condition="!Exists('..\packages\Avalonia.0.9.4\build\Avalonia.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Avalonia.0.9.4\build\Avalonia.props'))" />
+    <Error Condition="!Exists('..\packages\Avalonia.0.9.4\build\Avalonia.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Avalonia.0.9.4\build\Avalonia.targets'))" />
   </Target>
   <Import Project="..\packages\Avalonia.0.9.3\build\Avalonia.targets" Condition="Exists('..\packages\Avalonia.0.9.3\build\Avalonia.targets')" />
+  <Import Project="..\packages\Avalonia.0.9.4\build\Avalonia.targets" Condition="Exists('..\packages\Avalonia.0.9.4\build\Avalonia.targets')" />
 </Project>

@@ -5,10 +5,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MayaUpdate")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("MayaAcademia Güncelleme Uygulaması")]
+[assembly: AssemblyDescription("MayaAcademia Yazılım Güncellemesi")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("MayaAcademia")]
 [assembly: AssemblyProduct("MayaUpdater")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
