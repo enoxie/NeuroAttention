@@ -1,6 +1,6 @@
 ﻿namespace NeuroAttention
 {
-    partial class loadingscreen
+    partial class LoadingScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loadingscreen));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoadingScreen));
             this.label_loading = new System.Windows.Forms.Label();
             this.label_gelistirici = new System.Windows.Forms.Label();
             this.bunifuProgressBar1 = new ns1.BunifuProgressBar();

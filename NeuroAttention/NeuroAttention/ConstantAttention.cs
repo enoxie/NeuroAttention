@@ -17,8 +17,15 @@ namespace NeuroAttention
             InitializeComponent();
 
         }
-
-
+        public int trackChanged;
+        public WMPLib.WindowsMediaPlayer muzikcalar = new WMPLib.WindowsMediaPlayer();
+        public string[] musicArray = new string[3];
+        public string[] musicinfoArray = new string[3];
+        public string[] musictitleArray = new string[3];
+        public int musicid = 0;
+        public bool musicStarted = false;
+        public bool musicpaused = false;
+        public int playlistmode = 0;
         public int number1, number2,processnumber,rndoperators;
         public string operators;
         Random rndmath = new Random();
@@ -1202,7 +1209,15 @@ namespace NeuroAttention
 
         private void ConstantAttention_Load(object sender, EventArgs e)
         {
-            
+            musicArray[0] = @"https://enesbilgi.com/audio/1.mp3";
+            musicArray[1] = @"https://enesbilgi.com/audio/2.mp3";
+            musicArray[2] = @"https://enesbilgi.com/audio/3.mp3";
+            musicinfoArray[0] = "Canbay && Wolker";
+            musicinfoArray[1] = "✵ТГК";
+            musicinfoArray[2] = "Acid Arab";
+            musictitleArray[0] = "Fersah (Official Video)";
+            musictitleArray[1] = "Гелик 2018✵ Gelik✵";
+            musictitleArray[2] = "Stil";
         }
 
        
@@ -1254,11 +1269,210 @@ namespace NeuroAttention
             timer_hidetime.Stop();
         }
 
-     
+        private void btn_play_Click(object sender, EventArgs e)
+        {
+            
+            if (musicStarted == false)
+            {
+               // lbl_currentduration.Visible = true;
+              //  lbl_songduration.Visible = true;
+                timer_musicinfo.Interval = 50;
+                timer_musicinfo.Start();
+                muzikcalar.URL = musicArray[musicid];
+                muzikcalar.controls.play();
+                musicStarted = true;
+                lbl_songtitle.Text = musictitleArray[musicid];
+                lbl_songinfo.Text = musicinfoArray[musicid];
+                lbl_songinfo.Location = new Point(lbl_songtitle.Location.X + lbl_songtitle.Width, 8);
+                lbl_songtitle.Visible = true;
+                lbl_songinfo.Visible = true;
+                btn_pause.Visible = true;
+               
+            }
+
+            else if(musicpaused == true)
+            {
+                muzikcalar.controls.play();
+                btn_pause.Visible = true;
+                timer_musicinfo.Start();
+                
+            }
+
+            else
+            {
+
+            }
+            
+        }
+        private void btn_pause_Click(object sender, EventArgs e)
+        {
+            btn_pause.Visible = false;
+            btn_play.Visible = true;
+            timer_musicinfo.Stop();
+            muzikcalar.controls.pause();
+            musicpaused = true;
+        }
+
+        private void btn_volumeon_Click(object sender, EventArgs e)
+        {
+            trackChanged = trackbar_volume.Value;
+            trackbar_volume.Value = 0;
+            btn_volumeoff.Visible = true;
+            btn_volumeon.Visible = false;
+            muzikcalar.settings.volume = 0;
+        }
+
+        private void btn_volumeoff_Click(object sender, EventArgs e)
+        {
+            btn_volumeoff.Visible = false;
+            btn_volumeon.Visible = true;
+            trackbar_volume.Value = trackChanged;
+            muzikcalar.settings.volume = trackChanged;
+        }
 
        
-        private void btn_back_Click(object sender, EventArgs e)
+
+        private void btn_next_Click(object sender, EventArgs e)
         {
+
+            if (musicStarted == false)
+            {
+                
+
+            }
+            else
+            {
+                if (musicArray.Length - 1 > musicid)
+                {
+                    musicid += 1;
+                }
+                muzikcalar.URL = musicArray[musicid];
+                muzikcalar.controls.play();
+                musicStarted = true;
+
+                lbl_songtitle.Text = musictitleArray[musicid];
+                lbl_songinfo.Text = musicinfoArray[musicid];
+
+                lbl_songtitle.Visible = true;
+                lbl_songinfo.Visible = true;
+                btn_pause.Visible = true;
+            }
+
+           
+        }
+
+        private void trackbar_volume_ValueChanged(object sender, EventArgs e)
+        {
+            muzikcalar.settings.volume = trackbar_volume.Value;
+            if(trackbar_volume.Value != 0)
+            {
+                
+                btn_volumeon.Visible = true;
+                btn_volumeoff.Visible = false;
+            }
+
+            if (trackbar_volume.Value > 0 & trackbar_volume.Value < 35)
+            {
+                btn_volumeon.BackgroundImage = NeuroAttention.Properties.Resources.icons8_voicelow_100;
+            }
+            else if (trackbar_volume.Value > 35)
+            {
+                btn_volumeon.BackgroundImage = NeuroAttention.Properties.Resources.icons8_voice_100;
+            }
+            else
+            {
+                btn_volumeon.Visible = false;
+                btn_volumeoff.Visible = true;
+            }
+        }
+
+        private void btn_previous_Click(object sender, EventArgs e)
+        {
+            if (musicStarted == false)
+            {
+                
+            }
+
+            else
+            {
+                if (musicArray.Length - musicArray.Length < musicid)
+                {
+                    musicid -= 1;
+                }
+                muzikcalar.URL = musicArray[musicid];
+                muzikcalar.controls.play();
+                musicStarted = true;
+                timer_musicinfo.Start();
+                lbl_songtitle.Text = musictitleArray[musicid];
+                lbl_songinfo.Text = musicinfoArray[musicid];
+                lbl_songtitle.Visible = true;
+                lbl_songinfo.Visible = true;
+                btn_pause.Visible = true;
+            }
+
+           
+        }
+
+        private void timer_musicinfo_Tick(object sender, EventArgs e)
+        {
+          
+            lbl_songtitle.Location = new Point(lbl_songtitle.Location.X - 2, 9);
+            lbl_songinfo.Location = new Point(lbl_songinfo.Location.X - 2, 9);
+            if (lbl_songtitle.Location.X < -lbl_songtitle.Width)
+            {
+                lbl_songtitle.Location = new Point(250, 20);
+            }
+            if (lbl_songinfo.Location.X < -lbl_songinfo.Width)
+            {
+                lbl_songinfo.Location = new Point(lbl_songtitle.Location.X + lbl_songtitle.Width, 20);
+            }
+        }
+
+        private void timer_playlist_Tick(object sender, EventArgs e)
+        {
+            
+
+            if(gunaPanel_bottom.Height != 320)
+            {
+                gunaPanel_bottom.Location = new Point(gunaPanel_bottom.Location.X, gunaPanel_bottom.Location.Y - 10);
+                gunaPanel_bottom.Height += 10;
+                gunaPanel_playlistinfo.Location = new Point(gunaPanel_playlistinfo.Location.X, gunaPanel_playlistinfo.Location.Y - 5);
+             
+            }
+            else
+            {
+                playlistmode = 1;
+                timer_playlist.Stop();
+            }
+            
+        }
+
+        private void timer_playlistreverse_Tick(object sender, EventArgs e)
+        {
+            if (gunaPanel_bottom.Height != 130)
+            {
+                gunaPanel_bottom.Location = new Point(gunaPanel_bottom.Location.X, gunaPanel_bottom.Location.Y + 10);
+                gunaPanel_bottom.Height -= 10;
+                gunaPanel_playlistinfo.Location = new Point(gunaPanel_playlistinfo.Location.X, gunaPanel_playlistinfo.Location.Y + 5);
+
+            }
+            else
+            {
+                playlistmode = 0;
+                timer_playlistreverse.Stop();
+            }
+        }
+
+        private void btn_playlist_Click(object sender, EventArgs e)
+        {
+            if (playlistmode == 0)
+            {
+                timer_playlist.Start();
+            }
+            else
+            {
+                timer_playlistreverse.Start();
+            }
            
         }
 
@@ -1267,6 +1481,7 @@ namespace NeuroAttention
             this.Hide();
             Dashboard dashboard = new Dashboard();
             dashboard.Show();
+            muzikcalar.controls.stop();
         }
 
         private void btn_stop_Click(object sender, EventArgs e)

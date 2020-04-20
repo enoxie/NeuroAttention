@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace NeuroAttention
 {
-    public partial class loadingscreen : Form
+    public partial class LoadingScreen : Form
     {
         Timer timer1 = new Timer();
         Timer timer2 = new Timer();
@@ -73,7 +73,7 @@ namespace NeuroAttention
 
 
 
-        public loadingscreen()
+        public LoadingScreen()
         {
             InitializeComponent();
             defaul();

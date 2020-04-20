@@ -8,6 +8,7 @@ namespace NeuroAttention
 {
     static class Program
     {
+        
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +17,7 @@ namespace NeuroAttention
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NetworkStatus());
+            Application.Run(new Login());
         }
     }
 }

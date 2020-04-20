@@ -41,7 +41,7 @@
             this.gunaPanel_left = new Guna.UI.WinForms.GunaPanel();
             this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();
             this.btn_checkupdate = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.copyrights = new NeuroAttention.copyrights();
+            this.copyrights = new NeuroAttention.Copyrights();
             this.pbox_logo = new Guna.UI.WinForms.GunaPictureBox();
             this.lbl_title = new Guna.UI.WinForms.GunaLabel();
             this.btn_kullanimsozlesmesi = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -483,7 +483,7 @@
         private Guna.UI.WinForms.GunaLabel lbl_settings;
         private Guna.UI.WinForms.GunaLabel lbl_title;
         private Guna.UI.WinForms.GunaPictureBox pbox_logo;
-        private copyrights copyrights;
+        private Copyrights copyrights;
         private Guna.UI.WinForms.GunaAdvenceButton btn_checkupdate;
         private Guna.UI.WinForms.GunaSeparator gunaSeparator1;
     }

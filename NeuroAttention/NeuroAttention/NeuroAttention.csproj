@@ -110,6 +110,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="License.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="License.Designer.cs">
+      <DependentUpon>License.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LicenseLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LicenseLogin.Designer.cs">
+      <DependentUpon>LicenseLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="MultiplePerception.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,11 +134,11 @@
     <Compile Include="MultipleProcessing.Designer.cs">
       <DependentUpon>MultipleProcessing.cs</DependentUpon>
     </Compile>
-    <Compile Include="copyrights.cs">
+    <Compile Include="Copyrights.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="copyrights.Designer.cs">
-      <DependentUpon>copyrights.cs</DependentUpon>
+    <Compile Include="Copyrights.Designer.cs">
+      <DependentUpon>Copyrights.cs</DependentUpon>
     </Compile>
     <Compile Include="ConstantAttention.cs">
       <SubType>Form</SubType>
@@ -146,23 +158,17 @@
     <Compile Include="ForgotPassword.Designer.cs">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="FunctioningMemory.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FunctioningMemory.Designer.cs">
       <DependentUpon>FunctioningMemory.cs</DependentUpon>
     </Compile>
-    <Compile Include="loadingscreen.cs">
+    <Compile Include="LoadingScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="loadingscreen.Designer.cs">
-      <DependentUpon>loadingscreen.cs</DependentUpon>
+    <Compile Include="LoadingScreen.Designer.cs">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Localization.de-DE.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -232,14 +238,20 @@
     <Compile Include="VersionLogin.Designer.cs">
       <DependentUpon>VersionLogin.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="License.resx">
+      <DependentUpon>License.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="licenselogin.resx">
+      <DependentUpon>LicenseLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MultiplePerception.resx">
       <DependentUpon>MultiplePerception.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MultipleProcessing.resx">
       <DependentUpon>MultipleProcessing.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="copyrights.resx">
-      <DependentUpon>copyrights.cs</DependentUpon>
+    <EmbeddedResource Include="Copyrights.resx">
+      <DependentUpon>Copyrights.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConstantAttention.resx">
       <DependentUpon>ConstantAttention.cs</DependentUpon>
@@ -250,14 +262,11 @@
     <EmbeddedResource Include="ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FunctioningMemory.resx">
       <DependentUpon>FunctioningMemory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="loadingscreen.resx">
-      <DependentUpon>loadingscreen.cs</DependentUpon>
+    <EmbeddedResource Include="LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Localization.de-DE.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -338,6 +347,18 @@
   <ItemGroup>
     <Content Include="MayaAcademia.ico" />
     <Content Include="ma_Ch7_icon.ico" />
+    <None Include="Resources\license gif.gif" />
+    <None Include="Resources\icons8-voicelow-100.png" />
+    <None Include="Resources\icons8-voicedisabled-100.png" />
+    <None Include="Resources\icons8-pause-100.png" />
+    <None Include="Resources\icons8-voice-100.png" />
+    <None Include="Resources\icons8-playlist-100.png" />
+    <None Include="Resources\icons8-skip-to-start-1001.png" />
+    <None Include="Resources\icons8-skip-to-start-100.png" />
+    <None Include="Resources\icons8-play-100.png" />
+    <None Include="Resources\icons8-prev-100.png" />
+    <None Include="Resources\icons8-forward-100.png" />
+    <None Include="Resources\LicenseExpired.png" />
     <Content Include="source\appstore\appstore_de.png" />
     <Content Include="source\appstore\appstore_en.png" />
     <None Include="source\bg-dashboard.jpg" />
@@ -352,6 +373,25 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

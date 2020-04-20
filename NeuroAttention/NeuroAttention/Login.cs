@@ -35,14 +35,24 @@ namespace NeuroAttention
         //
 
         public static string username;
+        public static string pass;
+        public static int license = 1;
         public static string recbyusername
         {
             get { return username; }
             set { username = value; }
         }
+        public static string recbypassword
+        {
+            get { return pass; }
+            set { pass = value; }
+        }
 
-
-        
+        public static int recbylicense
+        {
+            get { return license; }
+            set { license = value; }
+        }
 
         public bool InternetKontrol()
         {
@@ -261,7 +271,9 @@ namespace NeuroAttention
 
         public void login()
         {
-            
+
+            DateTime licensetime;
+            String licenset = "";
             string user = txt_username.Text;
             string pass = txt_password.Text;
             con = new SqlConnection(conString);
@@ -272,24 +284,66 @@ namespace NeuroAttention
             dr = cmd.ExecuteReader();
             if (dr.Read())
             {
-                if (lbl_accessdenied.Visible == true)
-                    lbl_accessdenied.Visible = false;
-                timer_login.Start();
-                pbox_loading.Visible = true;
-                panel_forgotpassword.Visible = false;
-                btn_logindisabled.Visible = false;
-                btn_loginenabled.Visible = false;            
-                lbl_signin.Visible = false;
-                txt_username.Visible = false;
-                txt_password.Visible = false;
-                btn_session.Visible = false;
-                btn_language.Visible = false;
-                btn_languageicon.Visible = false;
-                btn_version.Visible = false;
-                checked_session.Visible = false;
-                btn_register.Visible = false;
-                btn_forgotpassword.Visible = false;
-                pbox_logo.Visible = false;
+                license = (int)dr["k_lisans"];
+                licenset = dr["k_lisanstime"].ToString();
+            
+
+                if (license == 1)
+                {
+
+                    DateTime currentDateTime = DateTime.Now;
+                    DateTime.TryParse(licenset, out licensetime);
+
+                    if (licensetime.Date < currentDateTime.Date)
+                    {
+                        License license = new License();
+                        license.Show();
+                        this.Hide();
+
+                    }
+
+                    else if (licensetime.Date == currentDateTime.Date)
+                    {
+                        License license = new License();
+                        license.Show();
+                        this.Hide();
+                    }
+                    else if (licensetime.Date > currentDateTime.Date)
+                    {
+                        
+                        if (lbl_accessdenied.Visible == true)
+                            lbl_accessdenied.Visible = false;
+                        timer_login.Start();
+                        pbox_loading.Visible = true;
+
+                        panel_forgotpassword.Visible = false;
+                        btn_logindisabled.Visible = false;
+                        btn_loginenabled.Visible = false;
+                        lbl_signin.Visible = false;
+                        txt_username.Visible = false;
+                        txt_password.Visible = false;
+                        btn_session.Visible = false;
+                        btn_language.Visible = false;
+                        btn_languageicon.Visible = false;
+                        btn_version.Visible = false;
+                        checked_session.Visible = false;
+                        btn_register.Visible = false;
+                        btn_forgotpassword.Visible = false;
+                        pbox_logo.Visible = false;
+                    }
+
+                 
+                    
+                }
+             
+                else
+                {
+
+                    License license = new License();
+                    license.Show();
+                    this.Hide();
+
+                }
 
 
             }
@@ -950,6 +1004,7 @@ namespace NeuroAttention
 
             this.Hide();
             username = txt_username.Text;
+            pass = txt_password.Text;
             Dashboard dash = new Dashboard();
             dash.Show();
         }

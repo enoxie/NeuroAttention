@@ -28,7 +28,9 @@ namespace NeuroAttention
         SqlConnection con;
         SqlCommand cmd;
         SqlDataReader dr;
-
+       
+     
+         
         public void userInfo()
         {
 
@@ -137,7 +139,6 @@ namespace NeuroAttention
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            
             userInfo();
             attentionInfo();
             gunaDataGridView1.Rows.Add(3);

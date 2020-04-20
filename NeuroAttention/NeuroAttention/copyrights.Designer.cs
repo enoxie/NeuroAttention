@@ -1,6 +1,6 @@
 ﻿namespace NeuroAttention
 {
-    partial class copyrights
+    partial class Copyrights
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(copyrights));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Copyrights));
             this.gunaVScrollBar1 = new Guna.UI.WinForms.GunaVScrollBar();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace NeuroAttention
 {
-    public partial class copyrights : UserControl
+    public partial class Copyrights : UserControl
     {
-        public copyrights()
+        public Copyrights()
         {
             InitializeComponent();
         }
