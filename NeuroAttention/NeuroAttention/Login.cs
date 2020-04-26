@@ -280,7 +280,8 @@ namespace NeuroAttention
             cmd = new SqlCommand();
             con.Open();
             cmd.Connection = con;
-            cmd.CommandText = "SELECT * FROM users where k_adi='" + user + "' AND k_sifre='" + pass + "'";
+            
+            cmd.CommandText = "SELECT* FROM users WHERE k_adi Collate SQL_Latin1_General_CP1254_CS_AS ='"+user+"' AND k_sifre Collate SQL_Latin1_General_CP1254_CS_AS='"+pass+"'";
             dr = cmd.ExecuteReader();
             if (dr.Read())
             {
