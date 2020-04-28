@@ -115,6 +115,7 @@
             this.pbox_loading = new Guna.UI.WinForms.GunaPictureBox();
             this.lbl_accessdenied = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel_left = new Guna.UI.WinForms.GunaPanel();
+            this.timer_loginlicense = new System.Windows.Forms.Timer(this.components);
             this.gunaPanel_right.SuspendLayout();
             this.gunaPanel_rightattention.SuspendLayout();
             this.gunaPanel_btnattention.SuspendLayout();
@@ -1766,6 +1767,10 @@
             this.gunaPanel_left.TabIndex = 1;
             this.gunaPanel_left.MouseClick += new System.Windows.Forms.MouseEventHandler(this.gunaPanel_leftside_MouseClick);
             // 
+            // timer_loginlicense
+            // 
+            this.timer_loginlicense.Tick += new System.EventHandler(this.timer_loginlicense_Tick);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1895,6 +1900,7 @@
         private Guna.UI.WinForms.GunaLabel lbl_attentiontitle2;
         private Guna.UI.WinForms.GunaLabel lbl_attentiontime2;
         private Guna.UI.WinForms.GunaAdvenceButton btn_moredetails2;
+        private System.Windows.Forms.Timer timer_loginlicense;
     }
 }
 

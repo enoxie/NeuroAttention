@@ -297,9 +297,25 @@ namespace NeuroAttention
 
                     if (licensetime.Date < currentDateTime.Date)
                     {
-                        License license = new License();
-                        license.Show();
-                        this.Hide();
+                        if (lbl_accessdenied.Visible == true)
+                            lbl_accessdenied.Visible = false;
+                        timer_loginlicense.Start();
+                        pbox_loading.Visible = true;
+
+                        panel_forgotpassword.Visible = false;
+                        btn_logindisabled.Visible = false;
+                        btn_loginenabled.Visible = false;
+                        lbl_signin.Visible = false;
+                        txt_username.Visible = false;
+                        txt_password.Visible = false;
+                        btn_session.Visible = false;
+                        btn_language.Visible = false;
+                        btn_languageicon.Visible = false;
+                        btn_version.Visible = false;
+                        checked_session.Visible = false;
+                        btn_register.Visible = false;
+                        btn_forgotpassword.Visible = false;
+                        pbox_logo.Visible = false;
 
                     }
 
@@ -308,6 +324,27 @@ namespace NeuroAttention
                         License license = new License();
                         license.Show();
                         this.Hide();
+
+                        if (lbl_accessdenied.Visible == true)
+                            lbl_accessdenied.Visible = false;
+                        timer_loginlicense.Start();
+                        pbox_loading.Visible = true;
+
+                        panel_forgotpassword.Visible = false;
+                        btn_logindisabled.Visible = false;
+                        btn_loginenabled.Visible = false;
+                        lbl_signin.Visible = false;
+                        txt_username.Visible = false;
+                        txt_password.Visible = false;
+                        btn_session.Visible = false;
+                        btn_language.Visible = false;
+                        btn_languageicon.Visible = false;
+                        btn_version.Visible = false;
+                        checked_session.Visible = false;
+                        btn_register.Visible = false;
+                        btn_forgotpassword.Visible = false;
+                        pbox_logo.Visible = false;
+
                     }
                     else if (licensetime.Date > currentDateTime.Date)
                     {
@@ -340,9 +377,25 @@ namespace NeuroAttention
                 else
                 {
 
-                    License license = new License();
-                    license.Show();
-                    this.Hide();
+                    if (lbl_accessdenied.Visible == true)
+                        lbl_accessdenied.Visible = false;
+                    timer_loginlicense.Start();
+                    pbox_loading.Visible = true;
+
+                    panel_forgotpassword.Visible = false;
+                    btn_logindisabled.Visible = false;
+                    btn_loginenabled.Visible = false;
+                    lbl_signin.Visible = false;
+                    txt_username.Visible = false;
+                    txt_password.Visible = false;
+                    btn_session.Visible = false;
+                    btn_language.Visible = false;
+                    btn_languageicon.Visible = false;
+                    btn_version.Visible = false;
+                    checked_session.Visible = false;
+                    btn_register.Visible = false;
+                    btn_forgotpassword.Visible = false;
+                    pbox_logo.Visible = false;
 
                 }
 
@@ -384,6 +437,7 @@ namespace NeuroAttention
             
             
             timer_login.Interval = 2000;
+            timer_loginlicense.Interval = 2000;
             timer_logindenied.Interval = 1500;
             timer_resetpassword.Interval = 1500;
             timer_resetpassworddenied.Interval = 1500;
@@ -1116,6 +1170,16 @@ namespace NeuroAttention
         private void gunaControlBox_close_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void timer_loginlicense_Tick(object sender, EventArgs e)
+        {
+            timer_loginlicense.Stop();
+            username = txt_username.Text;
+            pass = txt_password.Text;
+            License license = new License();
+            license.Show();
+            this.Hide();
         }
     }
     }

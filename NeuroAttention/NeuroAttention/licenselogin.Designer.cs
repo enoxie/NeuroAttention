@@ -31,12 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LicenseLogin));
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.bunifuMetroTextbox1 = new ns1.BunifuMetroTextbox();
-            this.bunifuMetroTextbox2 = new ns1.BunifuMetroTextbox();
+            this.txt_email = new ns1.BunifuMetroTextbox();
+            this.txt_license = new ns1.BunifuMetroTextbox();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.btn_back = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btn_purchaselicense = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.lbl_licensedenied = new Guna.UI.WinForms.GunaLabel();
             this.SuspendLayout();
             // 
             // gunaLabel1
@@ -63,41 +64,43 @@
             this.gunaLabel2.Text = "E-postanızı ve lisans anahtarınızı aşağıya girin";
             this.gunaLabel2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // bunifuMetroTextbox1
+            // txt_email
             // 
-            this.bunifuMetroTextbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
-            this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(72)))));
-            this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(72)))));
-            this.bunifuMetroTextbox1.BorderThickness = 2;
-            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox1.isPassword = false;
-            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(39, 242);
-            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
-            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(316, 36);
-            this.bunifuMetroTextbox1.TabIndex = 4;
-            this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
+            this.txt_email.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(72)))));
+            this.txt_email.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.txt_email.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(72)))));
+            this.txt_email.BorderThickness = 2;
+            this.txt_email.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_email.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_email.isPassword = false;
+            this.txt_email.Location = new System.Drawing.Point(39, 242);
+            this.txt_email.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(316, 36);
+            this.txt_email.TabIndex = 4;
+            this.txt_email.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_email.OnValueChanged += new System.EventHandler(this.txt_email_OnValueChanged);
             // 
-            // bunifuMetroTextbox2
+            // txt_license
             // 
-            this.bunifuMetroTextbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
-            this.bunifuMetroTextbox2.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(72)))));
-            this.bunifuMetroTextbox2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.bunifuMetroTextbox2.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(72)))));
-            this.bunifuMetroTextbox2.BorderThickness = 2;
-            this.bunifuMetroTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox2.isPassword = false;
-            this.bunifuMetroTextbox2.Location = new System.Drawing.Point(39, 303);
-            this.bunifuMetroTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox2.Name = "bunifuMetroTextbox2";
-            this.bunifuMetroTextbox2.Size = new System.Drawing.Size(316, 36);
-            this.bunifuMetroTextbox2.TabIndex = 5;
-            this.bunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_license.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
+            this.txt_license.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(72)))));
+            this.txt_license.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.txt_license.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(146)))), ((int)(((byte)(72)))));
+            this.txt_license.BorderThickness = 2;
+            this.txt_license.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_license.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_license.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_license.isPassword = false;
+            this.txt_license.Location = new System.Drawing.Point(39, 303);
+            this.txt_license.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_license.Name = "txt_license";
+            this.txt_license.Size = new System.Drawing.Size(316, 36);
+            this.txt_license.TabIndex = 5;
+            this.txt_license.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_license.OnValueChanged += new System.EventHandler(this.txt_license_OnValueChanged);
             // 
             // gunaLabel3
             // 
@@ -195,17 +198,31 @@
             this.btn_purchaselicense.TabIndex = 9;
             this.btn_purchaselicense.Text = "Bir lisans anahtarı satın almak istiyorum";
             // 
+            // lbl_licensedenied
+            // 
+            this.lbl_licensedenied.AutoSize = true;
+            this.lbl_licensedenied.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_licensedenied.ForeColor = System.Drawing.Color.Red;
+            this.lbl_licensedenied.Location = new System.Drawing.Point(94, 404);
+            this.lbl_licensedenied.Name = "lbl_licensedenied";
+            this.lbl_licensedenied.Size = new System.Drawing.Size(172, 17);
+            this.lbl_licensedenied.TabIndex = 10;
+            this.lbl_licensedenied.Text = "Lisans anahtarı onaylanmadı";
+            this.lbl_licensedenied.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbl_licensedenied.Visible = false;
+            // 
             // LicenseLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(405, 500);
+            this.Controls.Add(this.lbl_licensedenied);
             this.Controls.Add(this.btn_purchaselicense);
             this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.gunaLabel3);
-            this.Controls.Add(this.bunifuMetroTextbox2);
-            this.Controls.Add(this.bunifuMetroTextbox1);
+            this.Controls.Add(this.txt_license);
+            this.Controls.Add(this.txt_email);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.btn_back);
@@ -224,10 +241,11 @@
         private Guna.UI.WinForms.GunaAdvenceButton btn_back;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private ns1.BunifuMetroTextbox bunifuMetroTextbox1;
-        private ns1.BunifuMetroTextbox bunifuMetroTextbox2;
+        private ns1.BunifuMetroTextbox txt_email;
+        private ns1.BunifuMetroTextbox txt_license;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaAdvenceButton btn_purchaselicense;
+        private Guna.UI.WinForms.GunaLabel lbl_licensedenied;
     }
 }
