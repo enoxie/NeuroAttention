@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Reflection;
 using System.Globalization;
 using System.Threading;
-using SharpUpdate;
+
 
 namespace NeuroAttention
 {
@@ -93,9 +93,6 @@ namespace NeuroAttention
         {
             get { return this; }
         }
-
-
-
 
 
         public void language(string culture)
@@ -285,8 +282,13 @@ namespace NeuroAttention
 
             if (copyrights.Visible != true)
             {
-                Version versiyon = new Version();
-                versiyon.Show();
+                btn_back.Visible = false;
+                gunaPanel_upper_right.Visible = false;
+                this.BackColor = Color.FromArgb(150, 150, 150);
+                panel_version.BackColor = Color.FromArgb(150, 150, 150);
+                string version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+                lbl_version.Text = "v" + version[0] + version[1] + version[2] + version[3] + version[4].ToString();
+                panel_version.Visible = true;
             }
 
             else
@@ -298,6 +300,24 @@ namespace NeuroAttention
         private void gunaControlBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btn_ok_Click(object sender, EventArgs e)
+        {
+            panel_version.Visible = false;
+            btn_back.Visible = true;
+            gunaPanel_upper_right.Visible = true;
+            this.BackColor = Color.FromArgb(5, 5, 5);
+            panel_version.BackColor = Color.FromArgb(5, 5, 5);
+        }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            panel_version.Visible = false;
+            btn_back.Visible = false;
+            gunaPanel_upper_right.Visible = false;
+            this.BackColor = Color.FromArgb(5, 5, 5);
+            panel_version.BackColor = Color.FromArgb(5, 5, 5);
         }
     }
 }

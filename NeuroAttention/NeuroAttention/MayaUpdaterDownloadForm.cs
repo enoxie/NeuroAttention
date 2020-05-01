@@ -6,7 +6,7 @@ using System.IO;
 using System.Net;
 using System.Windows.Forms;
 
-namespace SharpUpdate
+namespace NeuroAttention
 {
     internal partial class MayaUpdaterDownloadForm : Form
     {
@@ -20,6 +20,7 @@ namespace SharpUpdate
         {
             get { return this.tempFile; }
         }
+
         internal MayaUpdaterDownloadForm(Uri location, string md5, Icon programIcon)
         {
             InitializeComponent();
@@ -47,7 +48,7 @@ namespace SharpUpdate
         private void WebClient_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
         {
             this.gunaProgressBar1.Value = e.ProgressPercentage;
-            this.lblProgress.Text = String.Format("İndirilen boyut: {0} of {1}",FormatBytes(e.BytesReceived, 1, true), FormatBytes(e.TotalBytesToReceive, 1, true));
+            this.lblProgress.Text = String.Format("İndirilen boyut: {0} of {1}", FormatBytes(e.BytesReceived, 1, true), FormatBytes(e.TotalBytesToReceive, 1, true));
         }
 
         private string FormatBytes(long bytes, int decimalPlaces, bool showByteType)
@@ -56,13 +57,13 @@ namespace SharpUpdate
             string formatString = "{0";
             string byteType = "B";
 
-            if(newBytes > 1024 && newBytes < 1048576)
+            if (newBytes > 1024 && newBytes < 1048576)
             {
                 newBytes /= 1024;
                 byteType = "KB";
             }
 
-            else if(newBytes > 1048576 && newBytes < 1073741824)
+            else if (newBytes > 1048576 && newBytes < 1073741824)
             {
                 newBytes /= 1048576;
                 byteType = "MB";
@@ -87,9 +88,10 @@ namespace SharpUpdate
 
             return string.Format(formatString, newBytes);
         }
+
         private void WebClient_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
         {
-            if(e.Error != null)
+            if (e.Error != null)
             {
                 this.DialogResult = DialogResult.No;
                 this.Close();
@@ -142,12 +144,9 @@ namespace SharpUpdate
             }
         }
 
-        
         private void btnClose_Click(object sender, EventArgs e)
         {
-            
             this.Close();
-           
         }
     }
 }

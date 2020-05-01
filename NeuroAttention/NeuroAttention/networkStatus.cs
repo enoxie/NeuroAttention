@@ -54,9 +54,21 @@ namespace NeuroAttention
 
             if (kontrol == true)
             {
-                this.Hide();
-                Login login = new Login();
-                login.Show();
+                if (Settings1.Default.session == true)
+                {
+                    this.Hide();
+                    Dashboard dashb = new Dashboard();
+                    dashb.Show();
+
+                }
+
+                else
+                {
+                    this.Hide();
+                    Login login = new Login();
+                    login.Show();
+                }
+               
 
             }
             else

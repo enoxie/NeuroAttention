@@ -1,6 +1,6 @@
-﻿namespace SharpUpdate
+﻿namespace NeuroAttention
 {
-    partial class UpdateOK
+    partial class MayaUpdaterAcceptForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,27 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateOK));
-            this.lbl_updateinfo = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MayaUpdaterAcceptForm));
             this.gunaPanel3 = new Guna.UI.WinForms.GunaPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbl_currentVersion = new System.Windows.Forms.Label();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
+            this.lbl_updateinfo = new System.Windows.Forms.Label();
             this.lblUpdateAvailable = new System.Windows.Forms.Label();
             this.btnNo = new Guna.UI.WinForms.GunaAdvenceButton();
             this.lblNewVersion = new System.Windows.Forms.Label();
+            this.btnYes = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lbl_updateinfo
-            // 
-            this.lbl_updateinfo.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_updateinfo.Font = new System.Drawing.Font("Museo Sans 100", 15F);
-            this.lbl_updateinfo.ForeColor = System.Drawing.Color.White;
-            this.lbl_updateinfo.Location = new System.Drawing.Point(28, 241);
-            this.lbl_updateinfo.Name = "lbl_updateinfo";
-            this.lbl_updateinfo.Size = new System.Drawing.Size(305, 142);
-            this.lbl_updateinfo.TabIndex = 15;
             // 
             // gunaPanel3
             // 
@@ -57,11 +49,13 @@
             this.gunaPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gunaPanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.gunaPanel3.Controls.Add(this.label1);
+            this.gunaPanel3.Controls.Add(this.lbl_currentVersion);
             this.gunaPanel3.Controls.Add(this.gunaPictureBox1);
             this.gunaPanel3.Controls.Add(this.lbl_updateinfo);
             this.gunaPanel3.Controls.Add(this.lblUpdateAvailable);
             this.gunaPanel3.Controls.Add(this.btnNo);
             this.gunaPanel3.Controls.Add(this.lblNewVersion);
+            this.gunaPanel3.Controls.Add(this.btnYes);
             this.gunaPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaPanel3.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel3.Name = "gunaPanel3";
@@ -80,6 +74,16 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Updater";
             // 
+            // lbl_currentVersion
+            // 
+            this.lbl_currentVersion.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_currentVersion.Font = new System.Drawing.Font("Museo Sans 500", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_currentVersion.ForeColor = System.Drawing.Color.White;
+            this.lbl_currentVersion.Location = new System.Drawing.Point(33, 364);
+            this.lbl_currentVersion.Name = "lbl_currentVersion";
+            this.lbl_currentVersion.Size = new System.Drawing.Size(154, 19);
+            this.lbl_currentVersion.TabIndex = 16;
+            // 
             // gunaPictureBox1
             // 
             this.gunaPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
@@ -92,17 +96,28 @@
             this.gunaPictureBox1.TabIndex = 11;
             this.gunaPictureBox1.TabStop = false;
             // 
+            // lbl_updateinfo
+            // 
+            this.lbl_updateinfo.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_updateinfo.Font = new System.Drawing.Font("Museo Sans 100", 15F);
+            this.lbl_updateinfo.ForeColor = System.Drawing.Color.White;
+            this.lbl_updateinfo.Location = new System.Drawing.Point(28, 241);
+            this.lbl_updateinfo.Name = "lbl_updateinfo";
+            this.lbl_updateinfo.Size = new System.Drawing.Size(305, 142);
+            this.lbl_updateinfo.TabIndex = 15;
+            this.lbl_updateinfo.Text = "Güncelleme hakkında bilgi";
+            // 
             // lblUpdateAvailable
             // 
             this.lblUpdateAvailable.AutoSize = true;
             this.lblUpdateAvailable.BackColor = System.Drawing.Color.Transparent;
             this.lblUpdateAvailable.Font = new System.Drawing.Font("Museo Sans 100", 20F);
             this.lblUpdateAvailable.ForeColor = System.Drawing.Color.White;
-            this.lblUpdateAvailable.Location = new System.Drawing.Point(26, 166);
+            this.lblUpdateAvailable.Location = new System.Drawing.Point(26, 149);
             this.lblUpdateAvailable.Name = "lblUpdateAvailable";
-            this.lblUpdateAvailable.Size = new System.Drawing.Size(294, 32);
+            this.lblUpdateAvailable.Size = new System.Drawing.Size(159, 64);
             this.lblUpdateAvailable.TabIndex = 1;
-            this.lblUpdateAvailable.Text = "Uygulamanız günceldir";
+            this.lblUpdateAvailable.Text = "Yeni Sürüm \r\nMevcut";
             // 
             // btnNo
             // 
@@ -147,18 +162,50 @@
             this.lblNewVersion.Size = new System.Drawing.Size(154, 19);
             this.lblNewVersion.TabIndex = 2;
             // 
-            // UpdateOK
+            // btnYes
+            // 
+            this.btnYes.AnimationHoverSpeed = 0.07F;
+            this.btnYes.AnimationSpeed = 0.03F;
+            this.btnYes.BackColor = System.Drawing.Color.Red;
+            this.btnYes.BaseColor = System.Drawing.Color.Transparent;
+            this.btnYes.BorderColor = System.Drawing.Color.Black;
+            this.btnYes.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnYes.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnYes.CheckedForeColor = System.Drawing.Color.White;
+            this.btnYes.CheckedImage = null;
+            this.btnYes.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnYes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnYes.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnYes.FocusedColor = System.Drawing.Color.Empty;
+            this.btnYes.Font = new System.Drawing.Font("Museo Sans 700", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYes.ForeColor = System.Drawing.Color.White;
+            this.btnYes.Image = null;
+            this.btnYes.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnYes.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnYes.Location = new System.Drawing.Point(32, 418);
+            this.btnYes.Name = "btnYes";
+            this.btnYes.OnHoverBaseColor = System.Drawing.Color.Red;
+            this.btnYes.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnYes.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnYes.OnHoverImage = null;
+            this.btnYes.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnYes.OnPressedColor = System.Drawing.Color.Black;
+            this.btnYes.Size = new System.Drawing.Size(157, 47);
+            this.btnYes.TabIndex = 13;
+            this.btnYes.Text = "GÜNCELLE";
+            this.btnYes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnYes.Click += new System.EventHandler(this.btnYes_Click);
+            // 
+            // MayaUpdaterAcceptForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(400, 500);
             this.Controls.Add(this.gunaPanel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "UpdateOK";
+            this.Name = "MayaUpdaterAcceptForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MayaUpdate - Uygulamanız Güncel";
-            this.Load += new System.EventHandler(this.UpdateOK_Load);
+            this.Text = "MayaUpdaterAcceptForm";
             this.gunaPanel3.ResumeLayout(false);
             this.gunaPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
@@ -168,12 +215,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lbl_updateinfo;
         private Guna.UI.WinForms.GunaPanel gunaPanel3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_currentVersion;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
+        private System.Windows.Forms.Label lbl_updateinfo;
         private System.Windows.Forms.Label lblUpdateAvailable;
         private Guna.UI.WinForms.GunaAdvenceButton btnNo;
         private System.Windows.Forms.Label lblNewVersion;
+        private Guna.UI.WinForms.GunaAdvenceButton btnYes;
     }
 }

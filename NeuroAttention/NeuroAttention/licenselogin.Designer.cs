@@ -37,7 +37,7 @@
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.btn_back = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btn_purchaselicense = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.lbl_licensedenied = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_licenseinfo = new Guna.UI.WinForms.GunaLabel();
             this.SuspendLayout();
             // 
             // gunaLabel1
@@ -73,7 +73,7 @@
             this.txt_email.BorderThickness = 2;
             this.txt_email.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_email.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_email.ForeColor = System.Drawing.Color.White;
             this.txt_email.isPassword = false;
             this.txt_email.Location = new System.Drawing.Point(39, 242);
             this.txt_email.Margin = new System.Windows.Forms.Padding(4);
@@ -92,7 +92,7 @@
             this.txt_license.BorderThickness = 2;
             this.txt_license.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_license.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_license.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_license.ForeColor = System.Drawing.Color.White;
             this.txt_license.isPassword = false;
             this.txt_license.Location = new System.Drawing.Point(39, 303);
             this.txt_license.Margin = new System.Windows.Forms.Padding(4);
@@ -198,18 +198,18 @@
             this.btn_purchaselicense.TabIndex = 9;
             this.btn_purchaselicense.Text = "Bir lisans anahtarı satın almak istiyorum";
             // 
-            // lbl_licensedenied
+            // lbl_licenseinfo
             // 
-            this.lbl_licensedenied.AutoSize = true;
-            this.lbl_licensedenied.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_licensedenied.ForeColor = System.Drawing.Color.Red;
-            this.lbl_licensedenied.Location = new System.Drawing.Point(94, 404);
-            this.lbl_licensedenied.Name = "lbl_licensedenied";
-            this.lbl_licensedenied.Size = new System.Drawing.Size(172, 17);
-            this.lbl_licensedenied.TabIndex = 10;
-            this.lbl_licensedenied.Text = "Lisans anahtarı onaylanmadı";
-            this.lbl_licensedenied.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lbl_licensedenied.Visible = false;
+            this.lbl_licenseinfo.AutoSize = true;
+            this.lbl_licenseinfo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_licenseinfo.ForeColor = System.Drawing.Color.Red;
+            this.lbl_licenseinfo.Location = new System.Drawing.Point(104, 410);
+            this.lbl_licenseinfo.Name = "lbl_licenseinfo";
+            this.lbl_licenseinfo.Size = new System.Drawing.Size(76, 17);
+            this.lbl_licenseinfo.TabIndex = 10;
+            this.lbl_licenseinfo.Text = "License info";
+            this.lbl_licenseinfo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbl_licenseinfo.Visible = false;
             // 
             // LicenseLogin
             // 
@@ -217,7 +217,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(405, 500);
-            this.Controls.Add(this.lbl_licensedenied);
+            this.Controls.Add(this.lbl_licenseinfo);
             this.Controls.Add(this.btn_purchaselicense);
             this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.gunaLabel3);
@@ -246,6 +246,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaAdvenceButton btn_purchaselicense;
-        private Guna.UI.WinForms.GunaLabel lbl_licensedenied;
+        private Guna.UI.WinForms.GunaLabel lbl_licenseinfo;
     }
 }

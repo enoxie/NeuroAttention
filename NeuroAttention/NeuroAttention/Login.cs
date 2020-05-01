@@ -434,7 +434,7 @@ namespace NeuroAttention
         private void Login_Load(object sender, EventArgs e)
         {
             
-            
+           
             
             timer_login.Interval = 2000;
             timer_loginlicense.Interval = 2000;
@@ -1058,8 +1058,22 @@ namespace NeuroAttention
             timer_login.Stop();
 
             this.Hide();
+            Settings1.Default.username = txt_username.Text;
+            Settings1.Default.Save();
             username = txt_username.Text;
             pass = txt_password.Text;
+            
+            if (checked_session.Checked)
+            {
+                
+                Settings1.Default.session = true;
+                Settings1.Default.Save();
+            }
+            else
+            {
+                Settings1.Default.session = false;
+                Settings1.Default.Save();
+            }
             Dashboard dash = new Dashboard();
             dash.Show();
         }

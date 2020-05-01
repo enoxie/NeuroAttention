@@ -39,7 +39,7 @@ namespace NeuroAttention
             con.Open();
             string username1 = "";
             cmd.Connection = con;
-            cmd.CommandText = "SELECT personName FROM person where personid=(SELECT k_id FROM users where k_adi='" + Login.recbyusername + "')";
+            cmd.CommandText = "SELECT personName FROM person where personid=(SELECT k_id FROM users where k_adi='" + Settings1.Default.username + "')";
             dr = cmd.ExecuteReader();
             if (dr.Read())
             {
@@ -229,7 +229,8 @@ namespace NeuroAttention
 
         private void btn_logoutyes_Click(object sender, EventArgs e)
         {
-
+            Settings1.Default.session = false;
+            Settings1.Default.Save();
             Login login = new Login();
             login.Show();
             this.Hide();

@@ -19,9 +19,7 @@ namespace NeuroAttention
         }
         SqlConnection con;
         SqlCommand cmd;
-        SqlCommand cmd2;
         SqlDataReader dr;
-        SqlDataReader dr2;
         /* Database Connection */
         public string conString = ("Data Source = 94.73.146.4; Initial Catalog = db60B; User Id = user60B; Password = PIuc71A0MQmp62Y;");
         //
@@ -52,14 +50,17 @@ namespace NeuroAttention
             
             if (licenseaccess == 1)
             {
-                lbl_licensedenied.ForeColor = Color.Green;
-               
+                lbl_licenseinfo.ForeColor = Color.Green;
+                lbl_licenseinfo.Text = "Lisans anahtarı onaylandı";
+
+
             }
 
             else
             {
-                lbl_licensedenied.ForeColor = Color.Red;
-                lbl_licensedenied.Visible = true;
+                lbl_licenseinfo.ForeColor = Color.Red;
+                lbl_licenseinfo.Visible = true;
+                lbl_licenseinfo.Text = "Lisans anahtarı onaylanmadı";
             }
 
 

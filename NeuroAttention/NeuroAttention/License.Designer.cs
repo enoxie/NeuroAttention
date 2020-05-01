@@ -32,11 +32,11 @@
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.lbl_licensetime = new Guna.UI.WinForms.GunaLabel();
             this.lbl_licenseinfo = new Guna.UI.WinForms.GunaLabel();
-            this.btn_enterlicense = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPanel_top = new Guna.UI.WinForms.GunaPanel();
-            this.pbox_license = new Guna.UI.WinForms.GunaPictureBox();
             this.lbl_info = new Guna.UI.WinForms.GunaLabel();
             this.lbl_company = new Guna.UI.WinForms.GunaLabel();
+            this.btn_enterlicense = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.pbox_license = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaPanel1.SuspendLayout();
             this.gunaPanel_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_license)).BeginInit();
@@ -77,6 +77,44 @@
             this.lbl_licenseinfo.TabIndex = 2;
             this.lbl_licenseinfo.Text = "Tarihinde Sona Eriyor!";
             // 
+            // gunaPanel_top
+            // 
+            this.gunaPanel_top.BackColor = System.Drawing.Color.Black;
+            this.gunaPanel_top.Controls.Add(this.pbox_license);
+            this.gunaPanel_top.Controls.Add(this.lbl_info);
+            this.gunaPanel_top.Controls.Add(this.lbl_company);
+            this.gunaPanel_top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaPanel_top.Location = new System.Drawing.Point(0, 0);
+            this.gunaPanel_top.Name = "gunaPanel_top";
+            this.gunaPanel_top.Size = new System.Drawing.Size(405, 250);
+            this.gunaPanel_top.TabIndex = 0;
+            // 
+            // lbl_info
+            // 
+            this.lbl_info.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_info.AutoSize = true;
+            this.lbl_info.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_info.Font = new System.Drawing.Font("Infoma Light", 14.25F);
+            this.lbl_info.ForeColor = System.Drawing.Color.White;
+            this.lbl_info.Location = new System.Drawing.Point(97, 201);
+            this.lbl_info.Name = "lbl_info";
+            this.lbl_info.Size = new System.Drawing.Size(207, 19);
+            this.lbl_info.TabIndex = 1;
+            this.lbl_info.Text = "30 Günlük Deneme Kaldı";
+            // 
+            // lbl_company
+            // 
+            this.lbl_company.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_company.AutoSize = true;
+            this.lbl_company.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_company.Font = new System.Drawing.Font("Infoma Light", 10F);
+            this.lbl_company.ForeColor = System.Drawing.Color.White;
+            this.lbl_company.Location = new System.Drawing.Point(147, 177);
+            this.lbl_company.Name = "lbl_company";
+            this.lbl_company.Size = new System.Drawing.Size(98, 14);
+            this.lbl_company.TabIndex = 0;
+            this.lbl_company.Text = "MayaAcademia";
+            // 
             // btn_enterlicense
             // 
             this.btn_enterlicense.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -110,54 +148,17 @@
             this.btn_enterlicense.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_enterlicense.Click += new System.EventHandler(this.btn_enterlicense_Click);
             // 
-            // gunaPanel_top
-            // 
-            this.gunaPanel_top.BackColor = System.Drawing.Color.Black;
-            this.gunaPanel_top.Controls.Add(this.pbox_license);
-            this.gunaPanel_top.Controls.Add(this.lbl_info);
-            this.gunaPanel_top.Controls.Add(this.lbl_company);
-            this.gunaPanel_top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaPanel_top.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel_top.Name = "gunaPanel_top";
-            this.gunaPanel_top.Size = new System.Drawing.Size(405, 250);
-            this.gunaPanel_top.TabIndex = 0;
-            // 
             // pbox_license
             // 
             this.pbox_license.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pbox_license.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbox_license.BaseColor = System.Drawing.Color.White;
+            this.pbox_license.Image = global::NeuroAttention.Properties.Resources.license_gif;
             this.pbox_license.Location = new System.Drawing.Point(100, 12);
             this.pbox_license.Name = "pbox_license";
             this.pbox_license.Size = new System.Drawing.Size(200, 150);
             this.pbox_license.TabIndex = 2;
             this.pbox_license.TabStop = false;
-            // 
-            // lbl_info
-            // 
-            this.lbl_info.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_info.AutoSize = true;
-            this.lbl_info.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_info.Font = new System.Drawing.Font("Infoma Light", 14.25F);
-            this.lbl_info.ForeColor = System.Drawing.Color.White;
-            this.lbl_info.Location = new System.Drawing.Point(97, 201);
-            this.lbl_info.Name = "lbl_info";
-            this.lbl_info.Size = new System.Drawing.Size(207, 19);
-            this.lbl_info.TabIndex = 1;
-            this.lbl_info.Text = "30 Günlük Deneme Kaldı";
-            // 
-            // lbl_company
-            // 
-            this.lbl_company.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_company.AutoSize = true;
-            this.lbl_company.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_company.Font = new System.Drawing.Font("Infoma Light", 10F);
-            this.lbl_company.ForeColor = System.Drawing.Color.White;
-            this.lbl_company.Location = new System.Drawing.Point(147, 177);
-            this.lbl_company.Name = "lbl_company";
-            this.lbl_company.Size = new System.Drawing.Size(98, 14);
-            this.lbl_company.TabIndex = 0;
-            this.lbl_company.Text = "MayaAcademia";
             // 
             // License
             // 

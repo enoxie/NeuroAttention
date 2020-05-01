@@ -283,6 +283,26 @@ namespace NeuroAttention.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LicenseExpired {
+            get {
+                object obj = ResourceManager.GetObject("LicenseExpired", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maya_antrasit {
+            get {
+                object obj = ResourceManager.GetObject("maya-antrasit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Rolling_1s_200px {
             get {
                 object obj = ResourceManager.GetObject("Rolling-1s-200px", resourceCulture);
@@ -293,7 +313,7 @@ namespace NeuroAttention.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LicenseExpired {
+        internal static System.Drawing.Bitmap Untitled12 {
             get {
                 object obj = ResourceManager.GetObject("Untitled12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

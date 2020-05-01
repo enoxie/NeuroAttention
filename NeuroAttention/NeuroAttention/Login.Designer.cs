@@ -1280,9 +1280,9 @@
             // 
             // pbox_logo
             // 
-            this.pbox_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbox_logo.BackgroundImage = global::NeuroAttention.Properties.Resources.maya_antrasit;
+            this.pbox_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbox_logo.BaseColor = System.Drawing.Color.White;
-            this.pbox_logo.Image = ((System.Drawing.Image)(resources.GetObject("pbox_logo.Image")));
             this.pbox_logo.Location = new System.Drawing.Point(36, 61);
             this.pbox_logo.Name = "pbox_logo";
             this.pbox_logo.Size = new System.Drawing.Size(180, 130);

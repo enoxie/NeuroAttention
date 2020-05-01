@@ -17,6 +17,8 @@ namespace NeuroAttention
             InitializeComponent();
 
         }
+
+        
         public int trackChanged;
         public WMPLib.WindowsMediaPlayer muzikcalar = new WMPLib.WindowsMediaPlayer();
         public string[] musicArray = new string[3];
@@ -26,10 +28,12 @@ namespace NeuroAttention
         public bool musicStarted = false;
         public bool musicpaused = false;
         public int playlistmode = 0;
-        public int number1, number2,processnumber,rndoperators;
+        public int number1, number2, processnumber, rndoperators;
         public string operators;
         Random rndmath = new Random();
         Random rnd = new Random();
+        
+
         public void randomNumberGenerator()
         {
             int numeric1 = (int)numeric_numberrange1.Value;
@@ -846,20 +850,42 @@ namespace NeuroAttention
                     {
                         lbl_mustassignoperator.ForeColor = Color.Yellow;
 
-                        if (number1 < number2)
-                        {
+                        
+                            if (number1 < number2)
+                            {
+                                if (number2 % number1 == 0)
+                                {
+                                    lbl_mustassignnumber1.Text = number2.ToString();
+                                    lbl_mustassignnumber2.Text = number1.ToString();
+                                }
 
-                            lbl_mustassignnumber1.Text = number2.ToString();
-                            lbl_mustassignnumber2.Text = number1.ToString();
+                                else
+                                {
+                                    lbl_mustassignnumber1.Text = number2.ToString();
+                                    lbl_mustassignnumber2.Text = number2.ToString();
+                                }
 
-                        }
+                            }
 
-                        else
-                        {
-                            lbl_mustassignnumber1.Text = number1.ToString();
-                            lbl_mustassignnumber2.Text = number2.ToString();
-                        }
+                            else
+                            {
 
+                                if (number1 % number2 == 0)
+                                {
+                                    lbl_mustassignnumber1.Text = number1.ToString();
+                                    lbl_mustassignnumber2.Text = number2.ToString();
+                                }
+
+                                else
+                                {
+
+                                    lbl_mustassignnumber1.Text = number1.ToString();
+                                    lbl_mustassignnumber2.Text = number1.ToString();
+                                }
+
+                            }
+                        
+                      
                         break;
                     }
 
@@ -922,8 +948,43 @@ namespace NeuroAttention
                         else if (rndoperators == 2)
                             lbl_mustassignoperator.ForeColor = Color.Yellow;
 
+                        if (rndoperators == 2)
+                        {
+                            if (number1 < number2)
+                            {
+                                if (number2 % number1 == 0)
+                                {
+                                    lbl_mustassignnumber1.Text = number2.ToString();
+                                    lbl_mustassignnumber2.Text = number1.ToString();
+                                }
 
-                        if (number1 < number2)
+                                else
+                                {
+                                    lbl_mustassignnumber1.Text = number2.ToString();
+                                    lbl_mustassignnumber2.Text = number2.ToString();
+                                }
+
+                            }
+
+                            else
+                            {
+
+                                if (number1 % number2 == 0)
+                                {
+                                    lbl_mustassignnumber1.Text = number1.ToString();
+                                    lbl_mustassignnumber2.Text = number2.ToString();
+                                }
+
+                                else
+                                {
+
+                                    lbl_mustassignnumber1.Text = number1.ToString();
+                                    lbl_mustassignnumber2.Text = number1.ToString();
+                                }
+
+                            }
+                        }
+                        else if (number1 < number2)
                         {
                             lbl_mustassignnumber1.Text = number2.ToString();
                             lbl_mustassignnumber2.Text = number1.ToString();
@@ -934,6 +995,8 @@ namespace NeuroAttention
                             lbl_mustassignnumber1.Text = number1.ToString();
                             lbl_mustassignnumber2.Text = number2.ToString();
                         }
+
+                       
                         break;
                     }
                 case 11:
@@ -947,7 +1010,43 @@ namespace NeuroAttention
                             lbl_mustassignoperator.ForeColor = Color.Yellow;
 
 
-                        if (number1 < number2)
+                        if (rndoperators == 2)
+                        {
+                            if (number1 < number2)
+                            {
+                                if (number2 % number1 == 0)
+                                {
+                                    lbl_mustassignnumber1.Text = number2.ToString();
+                                    lbl_mustassignnumber2.Text = number1.ToString();
+                                }
+
+                                else
+                                {
+                                    lbl_mustassignnumber1.Text = number2.ToString();
+                                    lbl_mustassignnumber2.Text = number2.ToString();
+                                }
+
+                            }
+
+                            else
+                            {
+
+                                if (number1 % number2 == 0)
+                                {
+                                    lbl_mustassignnumber1.Text = number1.ToString();
+                                    lbl_mustassignnumber2.Text = number2.ToString();
+                                }
+
+                                else
+                                {
+
+                                    lbl_mustassignnumber1.Text = number1.ToString();
+                                    lbl_mustassignnumber2.Text = number1.ToString();
+                                }
+
+                            }
+                        }
+                        else if (number1 < number2)
                         {
                             lbl_mustassignnumber1.Text = number2.ToString();
                             lbl_mustassignnumber2.Text = number1.ToString();
@@ -958,6 +1057,7 @@ namespace NeuroAttention
                             lbl_mustassignnumber1.Text = number1.ToString();
                             lbl_mustassignnumber2.Text = number2.ToString();
                         }
+
 
                         break;
                     }
@@ -972,7 +1072,43 @@ namespace NeuroAttention
                             lbl_mustassignoperator.ForeColor = Color.Yellow;
 
 
-                        if (number1 < number2)
+                        if (rndoperators == 2)
+                        {
+                            if (number1 < number2)
+                            {
+                                if (number2 % number1 == 0)
+                                {
+                                    lbl_mustassignnumber1.Text = number2.ToString();
+                                    lbl_mustassignnumber2.Text = number1.ToString();
+                                }
+
+                                else
+                                {
+                                    lbl_mustassignnumber1.Text = number2.ToString();
+                                    lbl_mustassignnumber2.Text = number2.ToString();
+                                }
+
+                            }
+
+                            else
+                            {
+
+                                if (number1 % number2 == 0)
+                                {
+                                    lbl_mustassignnumber1.Text = number1.ToString();
+                                    lbl_mustassignnumber2.Text = number2.ToString();
+                                }
+
+                                else
+                                {
+
+                                    lbl_mustassignnumber1.Text = number1.ToString();
+                                    lbl_mustassignnumber2.Text = number1.ToString();
+                                }
+
+                            }
+                        }
+                        else if (number1 < number2)
                         {
                             lbl_mustassignnumber1.Text = number2.ToString();
                             lbl_mustassignnumber2.Text = number1.ToString();
@@ -983,6 +1119,7 @@ namespace NeuroAttention
                             lbl_mustassignnumber1.Text = number1.ToString();
                             lbl_mustassignnumber2.Text = number2.ToString();
                         }
+
                         break;
                     }
                 case 13:
@@ -998,8 +1135,43 @@ namespace NeuroAttention
                         else if (rndoperators == 3)
                             lbl_mustassignoperator.ForeColor = Color.Yellow;
 
+                        if (rndoperators == 3)
+                        {
+                            if (number1 < number2)
+                            {
+                                if (number2 % number1 == 0)
+                                {
+                                    lbl_mustassignnumber1.Text = number2.ToString();
+                                    lbl_mustassignnumber2.Text = number1.ToString();
+                                }
 
-                        if (number1 < number2)
+                                else
+                                {
+                                    lbl_mustassignnumber1.Text = number2.ToString();
+                                    lbl_mustassignnumber2.Text = number2.ToString();
+                                }
+
+                            }
+
+                            else
+                            {
+
+                                if (number1 % number2 == 0)
+                                {
+                                    lbl_mustassignnumber1.Text = number1.ToString();
+                                    lbl_mustassignnumber2.Text = number2.ToString();
+                                }
+
+                                else
+                                {
+
+                                    lbl_mustassignnumber1.Text = number1.ToString();
+                                    lbl_mustassignnumber2.Text = number1.ToString();
+                                }
+
+                            }
+                        }
+                        else if (number1 < number2)
                         {
                             lbl_mustassignnumber1.Text = number2.ToString();
                             lbl_mustassignnumber2.Text = number1.ToString();
@@ -1010,6 +1182,7 @@ namespace NeuroAttention
                             lbl_mustassignnumber1.Text = number1.ToString();
                             lbl_mustassignnumber2.Text = number2.ToString();
                         }
+
 
                         break;
                     }
@@ -1027,7 +1200,43 @@ namespace NeuroAttention
                             lbl_mustassignoperator.ForeColor = Color.Yellow;
 
 
-                        if (number1 < number2)
+                        if (rndoperators == 3)
+                        {
+                            if (number1 < number2)
+                            {
+                                if (number2 % number1 == 0)
+                                {
+                                    lbl_mustassignnumber1.Text = number2.ToString();
+                                    lbl_mustassignnumber2.Text = number1.ToString();
+                                }
+
+                                else
+                                {
+                                    lbl_mustassignnumber1.Text = number2.ToString();
+                                    lbl_mustassignnumber2.Text = number2.ToString();
+                                }
+
+                            }
+
+                            else
+                            {
+
+                                if (number1 % number2 == 0)
+                                {
+                                    lbl_mustassignnumber1.Text = number1.ToString();
+                                    lbl_mustassignnumber2.Text = number2.ToString();
+                                }
+
+                                else
+                                {
+
+                                    lbl_mustassignnumber1.Text = number1.ToString();
+                                    lbl_mustassignnumber2.Text = number1.ToString();
+                                }
+
+                            }
+                        }
+                        else if (number1 < number2)
                         {
                             lbl_mustassignnumber1.Text = number2.ToString();
                             lbl_mustassignnumber2.Text = number1.ToString();
@@ -1038,6 +1247,7 @@ namespace NeuroAttention
                             lbl_mustassignnumber1.Text = number1.ToString();
                             lbl_mustassignnumber2.Text = number2.ToString();
                         }
+
                         break;
                     }
                 case 15:
@@ -1054,7 +1264,43 @@ namespace NeuroAttention
                             lbl_mustassignoperator.ForeColor = Color.Yellow;
 
 
-                        if (number1 < number2)
+                        if (rndoperators == 3)
+                        {
+                            if (number1 < number2)
+                            {
+                                if (number2 % number1 == 0)
+                                {
+                                    lbl_mustassignnumber1.Text = number2.ToString();
+                                    lbl_mustassignnumber2.Text = number1.ToString();
+                                }
+
+                                else
+                                {
+                                    lbl_mustassignnumber1.Text = number2.ToString();
+                                    lbl_mustassignnumber2.Text = number2.ToString();
+                                }
+
+                            }
+
+                            else
+                            {
+
+                                if (number1 % number2 == 0)
+                                {
+                                    lbl_mustassignnumber1.Text = number1.ToString();
+                                    lbl_mustassignnumber2.Text = number2.ToString();
+                                }
+
+                                else
+                                {
+
+                                    lbl_mustassignnumber1.Text = number1.ToString();
+                                    lbl_mustassignnumber2.Text = number1.ToString();
+                                }
+
+                            }
+                        }
+                        else if (number1 < number2)
                         {
                             lbl_mustassignnumber1.Text = number2.ToString();
                             lbl_mustassignnumber2.Text = number1.ToString();
@@ -1065,6 +1311,7 @@ namespace NeuroAttention
                             lbl_mustassignnumber1.Text = number1.ToString();
                             lbl_mustassignnumber2.Text = number2.ToString();
                         }
+
                         break;
                     }
             }
@@ -1095,9 +1342,42 @@ namespace NeuroAttention
             
            else if (checkbox_mustasigntask.Checked==true)
             {
+                int color = rnd.Next(1, 5);
+                if(color == 1)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 2)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 3)
+                {
+                    Settings1.Default.color1 = Color.Blue;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                btn_color1.BaseColor = Settings1.Default.color1;
+                btn_color1.OnHoverBaseColor = Settings1.Default.color1;
+                btn_color2.BaseColor = Settings1.Default.color2;
+                btn_color2.OnHoverBaseColor = Settings1.Default.color2;
+                btn_color3.BaseColor = Settings1.Default.color3;
+                btn_color3.OnHoverBaseColor = Settings1.Default.color3;
+                btn_color4.BaseColor = Settings1.Default.color4;
+                btn_color4.OnHoverBaseColor = Settings1.Default.color4;
                 panel_colortable.Visible = true;
                
-
             }
 
             else if (checkbox_gostergizle.Checked == true)

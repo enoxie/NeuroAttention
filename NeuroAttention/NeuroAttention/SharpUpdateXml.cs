@@ -2,7 +2,7 @@
 using System.Net;
 using System.Xml;
 
-namespace SharpUpdate
+namespace NeuroAttention
 {
     internal class MayaUpdateXml
     {

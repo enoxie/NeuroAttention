@@ -110,6 +110,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Hasher.cs" />
+    <Compile Include="ISharpUpdatable.cs" />
     <Compile Include="License.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +123,19 @@
     </Compile>
     <Compile Include="LicenseLogin.Designer.cs">
       <DependentUpon>LicenseLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MayaUpdater.cs" />
+    <Compile Include="MayaUpdaterAcceptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MayaUpdaterAcceptForm.Designer.cs">
+      <DependentUpon>MayaUpdaterAcceptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MayaUpdaterDownloadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MayaUpdaterDownloadForm.Designer.cs">
+      <DependentUpon>MayaUpdaterDownloadForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MultiplePerception.cs">
       <SubType>Form</SubType>
@@ -226,23 +241,24 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings1.settings</DependentUpon>
     </Compile>
-    <Compile Include="Version.cs">
+    <Compile Include="SharpUpdateXml.cs" />
+    <Compile Include="UpdateOK.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Version.Designer.cs">
-      <DependentUpon>Version.cs</DependentUpon>
-    </Compile>
-    <Compile Include="VersionLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="VersionLogin.Designer.cs">
-      <DependentUpon>VersionLogin.cs</DependentUpon>
+    <Compile Include="UpdateOK.Designer.cs">
+      <DependentUpon>UpdateOK.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="License.resx">
       <DependentUpon>License.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="licenselogin.resx">
       <DependentUpon>LicenseLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MayaUpdaterAcceptForm.resx">
+      <DependentUpon>MayaUpdaterAcceptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MayaUpdaterDownloadForm.resx">
+      <DependentUpon>MayaUpdaterDownloadForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MultiplePerception.resx">
       <DependentUpon>MultiplePerception.cs</DependentUpon>
@@ -303,11 +319,8 @@
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Version.resx">
-      <DependentUpon>Version.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VersionLogin.resx">
-      <DependentUpon>VersionLogin.cs</DependentUpon>
+    <EmbeddedResource Include="UpdateOK.resx">
+      <DependentUpon>UpdateOK.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="NeuroAttention_TemporaryKey.pfx" />
     <None Include="packages.config" />
@@ -330,12 +343,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SharpUpdate\MayaUpdater.csproj">
-      <Project>{200fb6f3-7977-4557-a6b8-d52dbf24713c}</Project>
-      <Name>MayaUpdater</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\giphy.gif" />
   </ItemGroup>
   <ItemGroup>
@@ -347,6 +354,7 @@
   <ItemGroup>
     <Content Include="MayaAcademia.ico" />
     <Content Include="ma_Ch7_icon.ico" />
+    <None Include="source\logo\maya-antrasit.png" />
     <None Include="Resources\license gif.gif" />
     <None Include="Resources\icons8-voicelow-100.png" />
     <None Include="Resources\icons8-voicedisabled-100.png" />

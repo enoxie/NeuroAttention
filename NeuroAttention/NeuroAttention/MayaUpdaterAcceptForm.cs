@@ -1,19 +1,29 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SharpUpdate
+namespace NeuroAttention
 {
-    internal partial class SharpUpdateAcceptForm : Form
+    internal partial class MayaUpdaterAcceptForm : Form
     {
 
         private ISharpUpdatable applicationInfo;
-        private SharpUpdateXml updateInfo;
-        private SharpUpdateInfoForm updateInfoForm;
-        
-    
+        private MayaUpdateXml updateInfo;
+        //private MayaUpdaterInfoForm updateInfoForm;
 
 
-        internal SharpUpdateAcceptForm(ISharpUpdatable applicationInfo, SharpUpdateXml updateInfo)
+        public MayaUpdaterAcceptForm()
+        {
+            InitializeComponent();
+        }
+
+        internal MayaUpdaterAcceptForm(ISharpUpdatable applicationInfo, MayaUpdateXml updateInfo)
         {
             InitializeComponent();
 
@@ -22,11 +32,11 @@ namespace SharpUpdate
 
             this.Text = "MayaUpdater" + " - Güncelleme Mevcut";
 
-          
+
 
             this.lblNewVersion.Text = string.Format("Yeni Sürüm: {0}", this.updateInfo.Version.ToString());
 
-           
+
 
             this.lbl_currentVersion.Text = String.Format("Eski Sürüm: {0}\nUpdate Version : {1}", applicationInfo.ApplicationAssembly.GetName().Version.ToString(),
                 updateInfo.Version.ToString());
@@ -44,20 +54,9 @@ namespace SharpUpdate
         private void btnNo_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.No;
-            this.Close();
-            Application.Restart();
-            
-            
+            this.Hide();
+            Settings settings = new Settings();
+            settings.Show();
         }
-
-        private void btnDetails_Click(object sender, EventArgs e)
-        {
-            if (this.updateInfoForm == null)
-                this.updateInfoForm = new SharpUpdateInfoForm(this.applicationInfo, this.updateInfo);
-
-            this.updateInfoForm.ShowDialog(this);
-        }
-
-      
     }
 }

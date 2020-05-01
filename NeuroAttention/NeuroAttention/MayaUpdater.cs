@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 
-namespace SharpUpdate
+namespace NeuroAttention
 {
     public class MayaUpdater
     {
@@ -45,7 +45,7 @@ namespace SharpUpdate
             {
                 MayaUpdateXml update = (MayaUpdateXml)e.Result;
 
-                if(update != null && update.IsNewerThan(this.applicationInfo.ApplicationAssembly.GetName().Version))
+                if (update != null && update.IsNewerThan(this.applicationInfo.ApplicationAssembly.GetName().Version))
                 {
                     if (new MayaUpdaterAcceptForm(this.applicationInfo, update).ShowDialog(this.applicationInfo.Context) == DialogResult.Yes)
                         this.DownloadUpdate(update);
@@ -56,11 +56,11 @@ namespace SharpUpdate
 
                     UpdateOK updateok = new UpdateOK();
                     updateok.Show();
-   
+
                 }
 
             }
-            
+
         }
 
         private void DownloadUpdate(MayaUpdateXml update)
@@ -87,7 +87,7 @@ namespace SharpUpdate
             else
             {
                 MessageBox.Show("Güncelleme indirilirken bir sorun oluştu. \nLütfen daha sonra tekrar deneyiniz.", "MayaUpdater - Güncelleme Hatası", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
+
             }
         }
 

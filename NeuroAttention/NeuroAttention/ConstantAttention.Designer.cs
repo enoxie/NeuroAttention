@@ -58,10 +58,10 @@
             this.lbl_mustassignoperator = new Guna.UI.WinForms.GunaLabel();
             this.lbl_mustassignnumber1 = new Guna.UI.WinForms.GunaLabel();
             this.lbl_mustassignnumber2 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaCircleButton4 = new Guna.UI.WinForms.GunaCircleButton();
-            this.gunaCircleButton3 = new Guna.UI.WinForms.GunaCircleButton();
-            this.gunaCircleButton2 = new Guna.UI.WinForms.GunaCircleButton();
-            this.gunaCircleButton1 = new Guna.UI.WinForms.GunaCircleButton();
+            this.btn_color4 = new Guna.UI.WinForms.GunaCircleButton();
+            this.btn_color3 = new Guna.UI.WinForms.GunaCircleButton();
+            this.btn_color2 = new Guna.UI.WinForms.GunaCircleButton();
+            this.btn_color1 = new Guna.UI.WinForms.GunaCircleButton();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.panel_colortable = new ns1.BunifuCards();
             this.btn_colortableok = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -555,101 +555,101 @@
             this.lbl_mustassignnumber2.TabIndex = 45;
             this.lbl_mustassignnumber2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // gunaCircleButton4
+            // btn_color4
             // 
-            this.gunaCircleButton4.AnimationHoverSpeed = 0.07F;
-            this.gunaCircleButton4.AnimationSpeed = 0.03F;
-            this.gunaCircleButton4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton4.BaseColor = System.Drawing.Color.Yellow;
-            this.gunaCircleButton4.BorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton4.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaCircleButton4.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton4.Font = new System.Drawing.Font("Infoma Light", 19F);
-            this.gunaCircleButton4.ForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton4.Image = null;
-            this.gunaCircleButton4.ImageSize = new System.Drawing.Size(52, 52);
-            this.gunaCircleButton4.Location = new System.Drawing.Point(180, 44);
-            this.gunaCircleButton4.Name = "gunaCircleButton4";
-            this.gunaCircleButton4.OnHoverBaseColor = System.Drawing.Color.Yellow;
-            this.gunaCircleButton4.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton4.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton4.OnHoverImage = null;
-            this.gunaCircleButton4.OnPressedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton4.Size = new System.Drawing.Size(40, 40);
-            this.gunaCircleButton4.TabIndex = 4;
-            this.gunaCircleButton4.Text = "÷";
+            this.btn_color4.AnimationHoverSpeed = 0.07F;
+            this.btn_color4.AnimationSpeed = 0.03F;
+            this.btn_color4.BackColor = System.Drawing.Color.Transparent;
+            this.btn_color4.BaseColor = System.Drawing.Color.Yellow;
+            this.btn_color4.BorderColor = System.Drawing.Color.Black;
+            this.btn_color4.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_color4.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_color4.Font = new System.Drawing.Font("Infoma Light", 19F);
+            this.btn_color4.ForeColor = System.Drawing.Color.White;
+            this.btn_color4.Image = null;
+            this.btn_color4.ImageSize = new System.Drawing.Size(52, 52);
+            this.btn_color4.Location = new System.Drawing.Point(180, 44);
+            this.btn_color4.Name = "btn_color4";
+            this.btn_color4.OnHoverBaseColor = System.Drawing.Color.Empty;
+            this.btn_color4.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_color4.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_color4.OnHoverImage = null;
+            this.btn_color4.OnPressedColor = System.Drawing.Color.Empty;
+            this.btn_color4.Size = new System.Drawing.Size(40, 40);
+            this.btn_color4.TabIndex = 4;
+            this.btn_color4.Text = "÷";
             // 
-            // gunaCircleButton3
+            // btn_color3
             // 
-            this.gunaCircleButton3.AnimationHoverSpeed = 0.07F;
-            this.gunaCircleButton3.AnimationSpeed = 0.03F;
-            this.gunaCircleButton3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton3.BaseColor = System.Drawing.Color.Red;
-            this.gunaCircleButton3.BorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaCircleButton3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton3.Font = new System.Drawing.Font("Infoma Light", 19F);
-            this.gunaCircleButton3.ForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton3.Image = null;
-            this.gunaCircleButton3.ImageSize = new System.Drawing.Size(52, 52);
-            this.gunaCircleButton3.Location = new System.Drawing.Point(134, 44);
-            this.gunaCircleButton3.Name = "gunaCircleButton3";
-            this.gunaCircleButton3.OnHoverBaseColor = System.Drawing.Color.Red;
-            this.gunaCircleButton3.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton3.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton3.OnHoverImage = null;
-            this.gunaCircleButton3.OnPressedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton3.Size = new System.Drawing.Size(40, 40);
-            this.gunaCircleButton3.TabIndex = 3;
-            this.gunaCircleButton3.Text = "x";
+            this.btn_color3.AnimationHoverSpeed = 0.07F;
+            this.btn_color3.AnimationSpeed = 0.03F;
+            this.btn_color3.BackColor = System.Drawing.Color.Transparent;
+            this.btn_color3.BaseColor = System.Drawing.Color.Red;
+            this.btn_color3.BorderColor = System.Drawing.Color.Black;
+            this.btn_color3.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_color3.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_color3.Font = new System.Drawing.Font("Infoma Light", 19F);
+            this.btn_color3.ForeColor = System.Drawing.Color.White;
+            this.btn_color3.Image = null;
+            this.btn_color3.ImageSize = new System.Drawing.Size(52, 52);
+            this.btn_color3.Location = new System.Drawing.Point(134, 44);
+            this.btn_color3.Name = "btn_color3";
+            this.btn_color3.OnHoverBaseColor = System.Drawing.Color.Empty;
+            this.btn_color3.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_color3.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_color3.OnHoverImage = null;
+            this.btn_color3.OnPressedColor = System.Drawing.Color.Empty;
+            this.btn_color3.Size = new System.Drawing.Size(40, 40);
+            this.btn_color3.TabIndex = 3;
+            this.btn_color3.Text = "x";
             // 
-            // gunaCircleButton2
+            // btn_color2
             // 
-            this.gunaCircleButton2.AnimationHoverSpeed = 0.07F;
-            this.gunaCircleButton2.AnimationSpeed = 0.03F;
-            this.gunaCircleButton2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton2.BaseColor = System.Drawing.Color.DarkGreen;
-            this.gunaCircleButton2.BorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaCircleButton2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton2.Font = new System.Drawing.Font("Infoma Light", 19F);
-            this.gunaCircleButton2.ForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton2.Image = null;
-            this.gunaCircleButton2.ImageSize = new System.Drawing.Size(52, 52);
-            this.gunaCircleButton2.Location = new System.Drawing.Point(92, 44);
-            this.gunaCircleButton2.Name = "gunaCircleButton2";
-            this.gunaCircleButton2.OnHoverBaseColor = System.Drawing.Color.DarkGreen;
-            this.gunaCircleButton2.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton2.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton2.OnHoverImage = null;
-            this.gunaCircleButton2.OnPressedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton2.Size = new System.Drawing.Size(40, 40);
-            this.gunaCircleButton2.TabIndex = 2;
-            this.gunaCircleButton2.Text = "-";
+            this.btn_color2.AnimationHoverSpeed = 0.07F;
+            this.btn_color2.AnimationSpeed = 0.03F;
+            this.btn_color2.BackColor = System.Drawing.Color.Transparent;
+            this.btn_color2.BaseColor = System.Drawing.Color.DarkGreen;
+            this.btn_color2.BorderColor = System.Drawing.Color.Black;
+            this.btn_color2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_color2.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_color2.Font = new System.Drawing.Font("Infoma Light", 19F);
+            this.btn_color2.ForeColor = System.Drawing.Color.White;
+            this.btn_color2.Image = null;
+            this.btn_color2.ImageSize = new System.Drawing.Size(52, 52);
+            this.btn_color2.Location = new System.Drawing.Point(92, 44);
+            this.btn_color2.Name = "btn_color2";
+            this.btn_color2.OnHoverBaseColor = System.Drawing.Color.Empty;
+            this.btn_color2.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_color2.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_color2.OnHoverImage = null;
+            this.btn_color2.OnPressedColor = System.Drawing.Color.Empty;
+            this.btn_color2.Size = new System.Drawing.Size(40, 40);
+            this.btn_color2.TabIndex = 2;
+            this.btn_color2.Text = "-";
             // 
-            // gunaCircleButton1
+            // btn_color1
             // 
-            this.gunaCircleButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaCircleButton1.AnimationSpeed = 0.03F;
-            this.gunaCircleButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton1.BaseColor = System.Drawing.Color.Blue;
-            this.gunaCircleButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaCircleButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton1.Font = new System.Drawing.Font("Infoma Light", 19F);
-            this.gunaCircleButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton1.Image = null;
-            this.gunaCircleButton1.ImageSize = new System.Drawing.Size(52, 52);
-            this.gunaCircleButton1.Location = new System.Drawing.Point(46, 44);
-            this.gunaCircleButton1.Name = "gunaCircleButton1";
-            this.gunaCircleButton1.OnHoverBaseColor = System.Drawing.Color.Blue;
-            this.gunaCircleButton1.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton1.OnHoverImage = null;
-            this.gunaCircleButton1.OnPressedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton1.Size = new System.Drawing.Size(40, 40);
-            this.gunaCircleButton1.TabIndex = 1;
-            this.gunaCircleButton1.Text = "+";
+            this.btn_color1.AnimationHoverSpeed = 0.07F;
+            this.btn_color1.AnimationSpeed = 0.03F;
+            this.btn_color1.BackColor = System.Drawing.Color.Transparent;
+            this.btn_color1.BaseColor = System.Drawing.Color.Blue;
+            this.btn_color1.BorderColor = System.Drawing.Color.Black;
+            this.btn_color1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_color1.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_color1.Font = new System.Drawing.Font("Infoma Light", 19F);
+            this.btn_color1.ForeColor = System.Drawing.Color.White;
+            this.btn_color1.Image = null;
+            this.btn_color1.ImageSize = new System.Drawing.Size(52, 52);
+            this.btn_color1.Location = new System.Drawing.Point(46, 44);
+            this.btn_color1.Name = "btn_color1";
+            this.btn_color1.OnHoverBaseColor = System.Drawing.Color.Empty;
+            this.btn_color1.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_color1.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_color1.OnHoverImage = null;
+            this.btn_color1.OnPressedColor = System.Drawing.Color.Empty;
+            this.btn_color1.Size = new System.Drawing.Size(40, 40);
+            this.btn_color1.TabIndex = 1;
+            this.btn_color1.Text = "+";
             // 
             // gunaLabel6
             // 
@@ -670,10 +670,10 @@
             this.panel_colortable.color = System.Drawing.Color.Tomato;
             this.panel_colortable.Controls.Add(this.btn_colortableok);
             this.panel_colortable.Controls.Add(this.gunaLabel6);
-            this.panel_colortable.Controls.Add(this.gunaCircleButton4);
-            this.panel_colortable.Controls.Add(this.gunaCircleButton3);
-            this.panel_colortable.Controls.Add(this.gunaCircleButton2);
-            this.panel_colortable.Controls.Add(this.gunaCircleButton1);
+            this.panel_colortable.Controls.Add(this.btn_color4);
+            this.panel_colortable.Controls.Add(this.btn_color3);
+            this.panel_colortable.Controls.Add(this.btn_color2);
+            this.panel_colortable.Controls.Add(this.btn_color1);
             this.panel_colortable.LeftSahddow = false;
             this.panel_colortable.Location = new System.Drawing.Point(500, 300);
             this.panel_colortable.Name = "panel_colortable";
@@ -745,10 +745,10 @@
             this.gunaLabel4.Font = new System.Drawing.Font("Infoma Light", 9F);
             this.gunaLabel4.Location = new System.Drawing.Point(520, 680);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(242, 24);
+            this.gunaLabel4.Size = new System.Drawing.Size(241, 24);
             this.gunaLabel4.TabIndex = 63;
             this.gunaLabel4.Text = "MayaAcademia Sürekli Dikkat Uygulaması\r\nMayaAcademia © 2020  - Tüm Hakları Saklıd" +
-    "ır.";
+    "ır";
             this.gunaLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // gunaPanel_bottom
@@ -1081,10 +1081,10 @@
         private Guna.UI.WinForms.GunaLabel lbl_mustassignoperator;
         private Guna.UI.WinForms.GunaLabel lbl_mustassignnumber1;
         private Guna.UI.WinForms.GunaLabel lbl_mustassignnumber2;
-        private Guna.UI.WinForms.GunaCircleButton gunaCircleButton4;
-        private Guna.UI.WinForms.GunaCircleButton gunaCircleButton3;
-        private Guna.UI.WinForms.GunaCircleButton gunaCircleButton2;
-        private Guna.UI.WinForms.GunaCircleButton gunaCircleButton1;
+        private Guna.UI.WinForms.GunaCircleButton btn_color4;
+        private Guna.UI.WinForms.GunaCircleButton btn_color3;
+        private Guna.UI.WinForms.GunaCircleButton btn_color2;
+        private Guna.UI.WinForms.GunaCircleButton btn_color1;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private ns1.BunifuCards panel_colortable;
         private Guna.UI.WinForms.GunaAdvenceButton btn_colortableok;

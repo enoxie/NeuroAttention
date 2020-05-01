@@ -1,4 +1,4 @@
-﻿namespace SharpUpdate
+﻿namespace NeuroAttention
 {
     partial class MayaUpdaterDownloadForm
     {
@@ -58,7 +58,7 @@
             this.gunaPanel3.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel3.Name = "gunaPanel3";
             this.gunaPanel3.Size = new System.Drawing.Size(400, 500);
-            this.gunaPanel3.TabIndex = 20;
+            this.gunaPanel3.TabIndex = 21;
             // 
             // label2
             // 
@@ -165,14 +165,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(400, 500);
             this.Controls.Add(this.gunaPanel3);
-            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "MayaUpdaterDownloadForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "MayaUpdater - Yazılım Güncellemesi";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SharpUpdateDownloadForm_FormClosed);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "MayaUpdaterDownloadForm";
             this.gunaPanel3.ResumeLayout(false);
             this.gunaPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
@@ -183,12 +179,12 @@
         #endregion
 
         private Guna.UI.WinForms.GunaPanel gunaPanel3;
+        private System.Windows.Forms.Label label2;
+        private Guna.UI.WinForms.GunaAdvenceButton btnClose;
+        private Guna.UI.WinForms.GunaProgressBar gunaProgressBar1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblDownloading;
         private System.Windows.Forms.Label lblProgress;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
-        private Guna.UI.WinForms.GunaProgressBar gunaProgressBar1;
-        private Guna.UI.WinForms.GunaAdvenceButton btnClose;
-        private System.Windows.Forms.Label label2;
     }
 }
