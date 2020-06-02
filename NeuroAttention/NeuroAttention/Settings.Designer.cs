@@ -39,8 +39,16 @@
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
             this.btn_back = new Guna.UI.WinForms.GunaTileButton();
             this.gunaPanel_left = new Guna.UI.WinForms.GunaPanel();
+            this.panel_version = new Guna.UI.WinForms.GunaPanel();
+            this.panel_infoversion = new Guna.UI.WinForms.GunaPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_close = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btn_ok = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.lbl_version = new System.Windows.Forms.Label();
             this.gunaSeparator = new Guna.UI.WinForms.GunaSeparator();
             this.btn_checkupdate = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.copyrights = new NeuroAttention.Copyrights();
             this.pbox_logo = new Guna.UI.WinForms.GunaPictureBox();
             this.lbl_title = new Guna.UI.WinForms.GunaLabel();
             this.btn_kullanimsozlesmesi = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -50,19 +58,11 @@
             this.lbl_applanguage = new Guna.UI.WinForms.GunaLabel();
             this.lbl_currentversion = new Guna.UI.WinForms.GunaLabel();
             this.lbl_settings = new Guna.UI.WinForms.GunaLabel();
-            this.panel_infoversion = new Guna.UI.WinForms.GunaPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btn_close = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btn_ok = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.lbl_version = new System.Windows.Forms.Label();
-            this.copyrights = new NeuroAttention.Copyrights();
-            this.panel_version = new Guna.UI.WinForms.GunaPanel();
             this.gunaPanel_upper_right.SuspendLayout();
             this.gunaPanel_left.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_logo)).BeginInit();
-            this.panel_infoversion.SuspendLayout();
             this.panel_version.SuspendLayout();
+            this.panel_infoversion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_logo)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaDragControl1
@@ -219,6 +219,132 @@
             this.gunaPanel_left.Size = new System.Drawing.Size(1080, 720);
             this.gunaPanel_left.TabIndex = 0;
             // 
+            // panel_version
+            // 
+            this.panel_version.BackColor = System.Drawing.Color.Transparent;
+            this.panel_version.Controls.Add(this.panel_infoversion);
+            this.panel_version.Location = new System.Drawing.Point(0, 0);
+            this.panel_version.Name = "panel_version";
+            this.panel_version.Size = new System.Drawing.Size(1280, 720);
+            this.panel_version.TabIndex = 33;
+            this.panel_version.Visible = false;
+            // 
+            // panel_infoversion
+            // 
+            this.panel_infoversion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_infoversion.BackgroundImage")));
+            this.panel_infoversion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel_infoversion.Controls.Add(this.label2);
+            this.panel_infoversion.Controls.Add(this.label1);
+            this.panel_infoversion.Controls.Add(this.btn_close);
+            this.panel_infoversion.Controls.Add(this.btn_ok);
+            this.panel_infoversion.Controls.Add(this.lbl_version);
+            this.panel_infoversion.Location = new System.Drawing.Point(416, 195);
+            this.panel_infoversion.Name = "panel_infoversion";
+            this.panel_infoversion.Size = new System.Drawing.Size(480, 350);
+            this.panel_infoversion.TabIndex = 32;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Museo Sans 100", 20F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(50, 153);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(172, 32);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "UX: 6346457";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Museo Sans 100", 20F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(50, 121);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(246, 32);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Foundation: 23526";
+            // 
+            // btn_close
+            // 
+            this.btn_close.AnimationHoverSpeed = 0.07F;
+            this.btn_close.AnimationSpeed = 0.03F;
+            this.btn_close.BackColor = System.Drawing.Color.Transparent;
+            this.btn_close.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_close.BorderColor = System.Drawing.Color.Black;
+            this.btn_close.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_close.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_close.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_close.CheckedImage = null;
+            this.btn_close.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_close.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_close.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_close.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_close.ForeColor = System.Drawing.Color.White;
+            this.btn_close.Image = null;
+            this.btn_close.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_close.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_close.Location = new System.Drawing.Point(439, 17);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_close.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_close.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_close.OnHoverImage = null;
+            this.btn_close.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_close.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_close.Size = new System.Drawing.Size(25, 25);
+            this.btn_close.TabIndex = 16;
+            this.btn_close.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            // 
+            // btn_ok
+            // 
+            this.btn_ok.AnimationHoverSpeed = 0.07F;
+            this.btn_ok.AnimationSpeed = 0.03F;
+            this.btn_ok.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ok.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_ok.BorderColor = System.Drawing.Color.Black;
+            this.btn_ok.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_ok.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_ok.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_ok.CheckedImage = null;
+            this.btn_ok.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_ok.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ok.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_ok.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_ok.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_ok.ForeColor = System.Drawing.Color.White;
+            this.btn_ok.Image = null;
+            this.btn_ok.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_ok.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_ok.Location = new System.Drawing.Point(50, 248);
+            this.btn_ok.Name = "btn_ok";
+            this.btn_ok.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_ok.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_ok.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_ok.OnHoverImage = null;
+            this.btn_ok.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_ok.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_ok.Size = new System.Drawing.Size(218, 50);
+            this.btn_ok.TabIndex = 15;
+            this.btn_ok.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);
+            // 
+            // lbl_version
+            // 
+            this.lbl_version.AutoSize = true;
+            this.lbl_version.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_version.Font = new System.Drawing.Font("Museo Sans 100", 20F);
+            this.lbl_version.ForeColor = System.Drawing.Color.White;
+            this.lbl_version.Location = new System.Drawing.Point(50, 53);
+            this.lbl_version.Name = "lbl_version";
+            this.lbl_version.Size = new System.Drawing.Size(102, 32);
+            this.lbl_version.TabIndex = 2;
+            this.lbl_version.Text = "Sürüm ";
+            // 
             // gunaSeparator
             // 
             this.gunaSeparator.LineColor = System.Drawing.Color.Silver;
@@ -262,6 +388,15 @@
             this.btn_checkupdate.Text = "YAZILIM GÜNCELLEMESİ";
             this.btn_checkupdate.TextOffsetX = -10;
             this.btn_checkupdate.Click += new System.EventHandler(this.btn_checkupdate_Click);
+            // 
+            // copyrights
+            // 
+            this.copyrights.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.copyrights.Location = new System.Drawing.Point(488, 137);
+            this.copyrights.Name = "copyrights";
+            this.copyrights.Size = new System.Drawing.Size(535, 550);
+            this.copyrights.TabIndex = 29;
+            this.copyrights.Visible = false;
             // 
             // pbox_logo
             // 
@@ -443,141 +578,6 @@
             this.lbl_settings.TabIndex = 18;
             this.lbl_settings.Text = "AYARLAR";
             // 
-            // panel_infoversion
-            // 
-            this.panel_infoversion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_infoversion.BackgroundImage")));
-            this.panel_infoversion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel_infoversion.Controls.Add(this.label2);
-            this.panel_infoversion.Controls.Add(this.label1);
-            this.panel_infoversion.Controls.Add(this.btn_close);
-            this.panel_infoversion.Controls.Add(this.btn_ok);
-            this.panel_infoversion.Controls.Add(this.lbl_version);
-            this.panel_infoversion.Location = new System.Drawing.Point(416, 195);
-            this.panel_infoversion.Name = "panel_infoversion";
-            this.panel_infoversion.Size = new System.Drawing.Size(480, 350);
-            this.panel_infoversion.TabIndex = 32;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Museo Sans 100", 20F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(50, 153);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(172, 32);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "UX: 6346457";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Museo Sans 100", 20F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(50, 121);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(246, 32);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Foundation: 23526";
-            // 
-            // btn_close
-            // 
-            this.btn_close.AnimationHoverSpeed = 0.07F;
-            this.btn_close.AnimationSpeed = 0.03F;
-            this.btn_close.BackColor = System.Drawing.Color.Transparent;
-            this.btn_close.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_close.BorderColor = System.Drawing.Color.Black;
-            this.btn_close.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btn_close.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btn_close.CheckedForeColor = System.Drawing.Color.White;
-            this.btn_close.CheckedImage = null;
-            this.btn_close.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btn_close.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_close.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_close.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_close.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_close.ForeColor = System.Drawing.Color.White;
-            this.btn_close.Image = null;
-            this.btn_close.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_close.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_close.Location = new System.Drawing.Point(439, 17);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.btn_close.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_close.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_close.OnHoverImage = null;
-            this.btn_close.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_close.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_close.Size = new System.Drawing.Size(25, 25);
-            this.btn_close.TabIndex = 16;
-            this.btn_close.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
-            // 
-            // btn_ok
-            // 
-            this.btn_ok.AnimationHoverSpeed = 0.07F;
-            this.btn_ok.AnimationSpeed = 0.03F;
-            this.btn_ok.BackColor = System.Drawing.Color.Transparent;
-            this.btn_ok.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_ok.BorderColor = System.Drawing.Color.Black;
-            this.btn_ok.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btn_ok.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btn_ok.CheckedForeColor = System.Drawing.Color.White;
-            this.btn_ok.CheckedImage = null;
-            this.btn_ok.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btn_ok.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ok.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_ok.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_ok.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_ok.ForeColor = System.Drawing.Color.White;
-            this.btn_ok.Image = null;
-            this.btn_ok.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_ok.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_ok.Location = new System.Drawing.Point(50, 248);
-            this.btn_ok.Name = "btn_ok";
-            this.btn_ok.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.btn_ok.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_ok.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_ok.OnHoverImage = null;
-            this.btn_ok.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_ok.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_ok.Size = new System.Drawing.Size(218, 50);
-            this.btn_ok.TabIndex = 15;
-            this.btn_ok.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);
-            // 
-            // lbl_version
-            // 
-            this.lbl_version.AutoSize = true;
-            this.lbl_version.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_version.Font = new System.Drawing.Font("Museo Sans 100", 20F);
-            this.lbl_version.ForeColor = System.Drawing.Color.White;
-            this.lbl_version.Location = new System.Drawing.Point(50, 53);
-            this.lbl_version.Name = "lbl_version";
-            this.lbl_version.Size = new System.Drawing.Size(102, 32);
-            this.lbl_version.TabIndex = 2;
-            this.lbl_version.Text = "Sürüm ";
-            // 
-            // copyrights
-            // 
-            this.copyrights.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.copyrights.Location = new System.Drawing.Point(488, 137);
-            this.copyrights.Name = "copyrights";
-            this.copyrights.Size = new System.Drawing.Size(535, 550);
-            this.copyrights.TabIndex = 29;
-            this.copyrights.Visible = false;
-            // 
-            // panel_version
-            // 
-            this.panel_version.BackColor = System.Drawing.Color.Transparent;
-            this.panel_version.Controls.Add(this.panel_infoversion);
-            this.panel_version.Location = new System.Drawing.Point(0, 0);
-            this.panel_version.Name = "panel_version";
-            this.panel_version.Size = new System.Drawing.Size(1280, 720);
-            this.panel_version.TabIndex = 33;
-            this.panel_version.Visible = false;
-            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -596,10 +596,10 @@
             this.gunaPanel_upper_right.ResumeLayout(false);
             this.gunaPanel_left.ResumeLayout(false);
             this.gunaPanel_left.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbox_logo)).EndInit();
+            this.panel_version.ResumeLayout(false);
             this.panel_infoversion.ResumeLayout(false);
             this.panel_infoversion.PerformLayout();
-            this.panel_version.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_logo)).EndInit();
             this.ResumeLayout(false);
 
         }

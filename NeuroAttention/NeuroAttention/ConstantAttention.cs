@@ -1492,12 +1492,12 @@ namespace NeuroAttention
             musicArray[0] = @"https://enesbilgi.com/audio/1.mp3";
             musicArray[1] = @"https://enesbilgi.com/audio/2.mp3";
             musicArray[2] = @"https://enesbilgi.com/audio/3.mp3";
-            musicinfoArray[0] = "Canbay && Wolker";
-            musicinfoArray[1] = "✵ТГК";
-            musicinfoArray[2] = "Acid Arab";
-            musictitleArray[0] = "Fersah (Official Video)";
-            musictitleArray[1] = "Гелик 2018✵ Gelik✵";
-            musictitleArray[2] = "Stil";
+            musicinfoArray[0] = "Legend of the Eagle Bearer";
+            musicinfoArray[1] = "Season Two Main Theme";
+            musicinfoArray[2] = "Azura's Coast";
+            musictitleArray[0] = "Assassin's Creed Odyssey";
+            musictitleArray[1] = "The Walking Dead";
+            musictitleArray[2] = "Brad Derrick";
         }
 
        

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LicenseLogin));
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
@@ -35,9 +36,10 @@
             this.txt_license = new ns1.BunifuMetroTextbox();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.btn_back = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btn_purchaselicense = new Guna.UI.WinForms.GunaAdvenceButton();
             this.lbl_licenseinfo = new Guna.UI.WinForms.GunaLabel();
+            this.timer_license = new System.Windows.Forms.Timer(this.components);
+            this.btn_purchaselicense = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btn_back = new Guna.UI.WinForms.GunaAdvenceButton();
             this.SuspendLayout();
             // 
             // gunaLabel1
@@ -126,40 +128,22 @@
             this.gunaLabel4.Text = "Lisans Anahtarı:";
             this.gunaLabel4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // btn_back
+            // lbl_licenseinfo
             // 
-            this.btn_back.AnimationHoverSpeed = 0.07F;
-            this.btn_back.AnimationSpeed = 0.03F;
-            this.btn_back.BackColor = System.Drawing.Color.Transparent;
-            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_back.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_back.BorderColor = System.Drawing.Color.Black;
-            this.btn_back.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btn_back.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btn_back.CheckedForeColor = System.Drawing.Color.White;
-            this.btn_back.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btn_back.CheckedImage")));
-            this.btn_back.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btn_back.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_back.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_back.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_back.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_back.ForeColor = System.Drawing.Color.White;
-            this.btn_back.Image = global::NeuroAttention.Properties.Resources.licenseback;
-            this.btn_back.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_back.ImageSize = new System.Drawing.Size(35, 35);
-            this.btn_back.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_back.Location = new System.Drawing.Point(28, 99);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.btn_back.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_back.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_back.OnHoverImage = global::NeuroAttention.Properties.Resources.licenseback2;
-            this.btn_back.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_back.OnPressedColor = System.Drawing.Color.Empty;
-            this.btn_back.Radius = 15;
-            this.btn_back.Size = new System.Drawing.Size(42, 42);
-            this.btn_back.TabIndex = 0;
-            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            this.lbl_licenseinfo.AutoSize = true;
+            this.lbl_licenseinfo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_licenseinfo.ForeColor = System.Drawing.Color.Red;
+            this.lbl_licenseinfo.Location = new System.Drawing.Point(104, 410);
+            this.lbl_licenseinfo.Name = "lbl_licenseinfo";
+            this.lbl_licenseinfo.Size = new System.Drawing.Size(76, 17);
+            this.lbl_licenseinfo.TabIndex = 10;
+            this.lbl_licenseinfo.Text = "License info";
+            this.lbl_licenseinfo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbl_licenseinfo.Visible = false;
+            // 
+            // timer_license
+            // 
+            this.timer_license.Tick += new System.EventHandler(this.timer_license_Tick);
             // 
             // btn_purchaselicense
             // 
@@ -198,18 +182,40 @@
             this.btn_purchaselicense.TabIndex = 9;
             this.btn_purchaselicense.Text = "Bir lisans anahtarı satın almak istiyorum";
             // 
-            // lbl_licenseinfo
+            // btn_back
             // 
-            this.lbl_licenseinfo.AutoSize = true;
-            this.lbl_licenseinfo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_licenseinfo.ForeColor = System.Drawing.Color.Red;
-            this.lbl_licenseinfo.Location = new System.Drawing.Point(104, 410);
-            this.lbl_licenseinfo.Name = "lbl_licenseinfo";
-            this.lbl_licenseinfo.Size = new System.Drawing.Size(76, 17);
-            this.lbl_licenseinfo.TabIndex = 10;
-            this.lbl_licenseinfo.Text = "License info";
-            this.lbl_licenseinfo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lbl_licenseinfo.Visible = false;
+            this.btn_back.AnimationHoverSpeed = 0.07F;
+            this.btn_back.AnimationSpeed = 0.03F;
+            this.btn_back.BackColor = System.Drawing.Color.Transparent;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_back.BorderColor = System.Drawing.Color.Black;
+            this.btn_back.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_back.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_back.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_back.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btn_back.CheckedImage")));
+            this.btn_back.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_back.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_back.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_back.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_back.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_back.ForeColor = System.Drawing.Color.White;
+            this.btn_back.Image = global::NeuroAttention.Properties.Resources.licenseback;
+            this.btn_back.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_back.ImageSize = new System.Drawing.Size(35, 35);
+            this.btn_back.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_back.Location = new System.Drawing.Point(28, 99);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_back.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_back.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_back.OnHoverImage = global::NeuroAttention.Properties.Resources.licenseback2;
+            this.btn_back.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_back.OnPressedColor = System.Drawing.Color.Empty;
+            this.btn_back.Radius = 15;
+            this.btn_back.Size = new System.Drawing.Size(42, 42);
+            this.btn_back.TabIndex = 0;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // LicenseLogin
             // 
@@ -247,5 +253,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaAdvenceButton btn_purchaselicense;
         private Guna.UI.WinForms.GunaLabel lbl_licenseinfo;
+        private System.Windows.Forms.Timer timer_license;
     }
 }

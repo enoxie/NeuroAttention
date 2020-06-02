@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuroAttention", "NeuroAtte
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MayaInstaller", "MayaInstaller\MayaInstaller.vdproj", "{3CDE04E7-00F6-434F-B5E7-08D10193D59E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicenseServices", "LicenseServices\LicenseServices.csproj", "{E995DE00-FE17-4A1A-9E1F-02B67A3E32EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{FE773B25-6F81-4C4E-8C15-1F8C47AF5C2E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3CDE04E7-00F6-434F-B5E7-08D10193D59E}.Debug|Any CPU.ActiveCfg = Debug
 		{3CDE04E7-00F6-434F-B5E7-08D10193D59E}.Release|Any CPU.ActiveCfg = Release
+		{E995DE00-FE17-4A1A-9E1F-02B67A3E32EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E995DE00-FE17-4A1A-9E1F-02B67A3E32EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E995DE00-FE17-4A1A-9E1F-02B67A3E32EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E995DE00-FE17-4A1A-9E1F-02B67A3E32EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

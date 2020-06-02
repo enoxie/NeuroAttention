@@ -66,11 +66,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.label1.Font = new System.Drawing.Font("Museo Sans 100", 20F);
+            this.label1.Font = new System.Drawing.Font("Roboto Condensed Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(97, 40);
+            this.label1.Location = new System.Drawing.Point(97, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 32);
+            this.label1.Size = new System.Drawing.Size(97, 35);
             this.label1.TabIndex = 17;
             this.label1.Text = "Updater";
             // 
@@ -99,7 +99,7 @@
             // lbl_updateinfo
             // 
             this.lbl_updateinfo.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_updateinfo.Font = new System.Drawing.Font("Museo Sans 100", 15F);
+            this.lbl_updateinfo.Font = new System.Drawing.Font("Roboto Condensed Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_updateinfo.ForeColor = System.Drawing.Color.White;
             this.lbl_updateinfo.Location = new System.Drawing.Point(28, 241);
             this.lbl_updateinfo.Name = "lbl_updateinfo";
@@ -111,11 +111,11 @@
             // 
             this.lblUpdateAvailable.AutoSize = true;
             this.lblUpdateAvailable.BackColor = System.Drawing.Color.Transparent;
-            this.lblUpdateAvailable.Font = new System.Drawing.Font("Museo Sans 100", 20F);
+            this.lblUpdateAvailable.Font = new System.Drawing.Font("Roboto Condensed Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUpdateAvailable.ForeColor = System.Drawing.Color.White;
-            this.lblUpdateAvailable.Location = new System.Drawing.Point(26, 149);
+            this.lblUpdateAvailable.Location = new System.Drawing.Point(26, 147);
             this.lblUpdateAvailable.Name = "lblUpdateAvailable";
-            this.lblUpdateAvailable.Size = new System.Drawing.Size(159, 64);
+            this.lblUpdateAvailable.Size = new System.Drawing.Size(140, 70);
             this.lblUpdateAvailable.TabIndex = 1;
             this.lblUpdateAvailable.Text = "Yeni Sürüm \r\nMevcut";
             // 

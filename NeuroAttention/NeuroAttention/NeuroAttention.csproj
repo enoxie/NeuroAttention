@@ -334,10 +334,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Settings1.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -349,11 +345,16 @@
     <None Include="Resources\Rolling-1s-200px.gif" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Settings1.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
     <None Include="source\appstore\appstore_tr.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="MayaAcademia.ico" />
     <Content Include="ma_Ch7_icon.ico" />
+    <None Include="source\license loading.gif" />
     <None Include="source\logo\maya-antrasit.png" />
     <None Include="Resources\license gif.gif" />
     <None Include="Resources\icons8-voicelow-100.png" />
@@ -371,6 +372,7 @@
     <Content Include="source\appstore\appstore_en.png" />
     <None Include="source\bg-dashboard.jpg" />
     <None Include="source\bg-dashboard.png" />
+    <None Include="source\bg-updater.png" />
     <Content Include="source\googleplay\googleplay_de.png" />
     <Content Include="source\googleplay\googleplay_tr.png" />
     <Content Include="source\googleplay\googleplay_en.png" />

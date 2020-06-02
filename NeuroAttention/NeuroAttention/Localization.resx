@@ -187,4 +187,7 @@
   <data name="txt_username" xml:space="preserve">
     <value>KULLANICI ADI</value>
   </data>
+  <data name="btn_checkupdate" xml:space="preserve">
+    <value>YAZILIM GÜNCELLEMESİ</value>
+  </data>
 </root>

@@ -105,8 +105,8 @@ namespace NeuroAttention
             lbl_currentversion.Text = Localization.lbl_currentversion;
             lbl_applanguage.Text = Localization.lbl_applanguage;
             btn_kullanimsozlesmesi.Text = Localization.btn_kullanimsozlesmesi;
+            btn_checkupdate.Text = Localization.btn_checkupdate;
             
-           
         }
 
 

@@ -100,6 +100,15 @@ namespace NeuroAttention {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to YAZILIM GÜNCELLEMESİ.
+        /// </summary>
+        internal static string btn_checkupdate {
+            get {
+                return ResourceManager.GetString("btn_checkupdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Oturum açamıyor musun?.
         /// </summary>
         internal static string btn_forgotpassword {

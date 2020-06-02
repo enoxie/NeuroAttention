@@ -30,28 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaPanel_right = new Guna.UI.WinForms.GunaPanel();
             this.btn_settings = new Guna.UI.WinForms.GunaTileButton();
             this.gunaPanel_rightattention = new Guna.UI.WinForms.GunaPanel();
             this.gunaPanel_btnattention = new Guna.UI.WinForms.GunaPanel();
             this.dgw_attention = new Guna.UI.WinForms.GunaDataGridView();
-            this.btn_attention = new Guna.UI.WinForms.GunaTileButton();
+            this.btn_announcement = new Guna.UI.WinForms.GunaTileButton();
             this.gunaPanel_attention = new Guna.UI.WinForms.GunaElipsePanel();
-            this.attention2 = new Guna.UI.WinForms.GunaPanel();
+            this.usercontrol_announcement = new Guna.UI.WinForms.GunaPanel();
+            this.usercontrol_announcement2 = new Guna.UI.WinForms.GunaPanel();
             this.gunaSeparator2 = new Guna.UI.WinForms.GunaSeparator();
-            this.lbl_attentionmessage2 = new Guna.UI.WinForms.GunaLabel();
-            this.lbl_attentiontitle2 = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_announcement2 = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_announcementtitle2 = new Guna.UI.WinForms.GunaLabel();
             this.btn_moredetails2 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.lbl_attentiontime2 = new Guna.UI.WinForms.GunaLabel();
-            this.usercontrol_attention = new Guna.UI.WinForms.GunaPanel();
+            this.lbl_announcementtime2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaSeparator = new Guna.UI.WinForms.GunaSeparator();
-            this.lbl_attentionmsg = new Guna.UI.WinForms.GunaLabel();
-            this.lbl_attentiontitle = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_announcement = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_announcementtitle = new Guna.UI.WinForms.GunaLabel();
             this.btn_moredetails = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.lbl_attentiontime = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_announcementtime = new Guna.UI.WinForms.GunaLabel();
             this.btn_appstore = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btn_googleplay = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPanel_rightupper = new Guna.UI.WinForms.GunaPanel();
@@ -121,8 +121,8 @@
             this.gunaPanel_btnattention.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgw_attention)).BeginInit();
             this.gunaPanel_attention.SuspendLayout();
-            this.attention2.SuspendLayout();
-            this.usercontrol_attention.SuspendLayout();
+            this.usercontrol_announcement.SuspendLayout();
+            this.usercontrol_announcement2.SuspendLayout();
             this.gunaPanel_rightupper.SuspendLayout();
             this.panel_forgotpassword.SuspendLayout();
             this.gunaPanel_leftupper.SuspendLayout();
@@ -195,7 +195,7 @@
             // gunaPanel_btnattention
             // 
             this.gunaPanel_btnattention.Controls.Add(this.dgw_attention);
-            this.gunaPanel_btnattention.Controls.Add(this.btn_attention);
+            this.gunaPanel_btnattention.Controls.Add(this.btn_announcement);
             this.gunaPanel_btnattention.Dock = System.Windows.Forms.DockStyle.Left;
             this.gunaPanel_btnattention.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel_btnattention.Name = "gunaPanel_btnattention";
@@ -204,30 +204,30 @@
             // 
             // dgw_attention
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgw_attention.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgw_attention.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgw_attention.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgw_attention.BackgroundColor = System.Drawing.Color.White;
             this.dgw_attention.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgw_attention.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgw_attention.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgw_attention.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgw_attention.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgw_attention.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgw_attention.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgw_attention.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgw_attention.EnableHeadersVisualStyles = false;
             this.dgw_attention.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgw_attention.Location = new System.Drawing.Point(29, 70);
@@ -260,41 +260,40 @@
             this.dgw_attention.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgw_attention.Visible = false;
             // 
-            // btn_attention
+            // btn_announcement
             // 
-            this.btn_attention.Animated = true;
-            this.btn_attention.AnimationHoverSpeed = 0.07F;
-            this.btn_attention.AnimationSpeed = 0.03F;
-            this.btn_attention.BackColor = System.Drawing.Color.Transparent;
-            this.btn_attention.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_attention.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_attention.BorderColor = System.Drawing.Color.Black;
-            this.btn_attention.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_attention.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_attention.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_attention.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
-            this.btn_attention.ForeColor = System.Drawing.Color.White;
-            this.btn_attention.Image = ((System.Drawing.Image)(resources.GetObject("btn_attention.Image")));
-            this.btn_attention.ImageSize = new System.Drawing.Size(64, 64);
-            this.btn_attention.Location = new System.Drawing.Point(0, 0);
-            this.btn_attention.Name = "btn_attention";
-            this.btn_attention.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.btn_attention.OnHoverBorderColor = System.Drawing.Color.White;
-            this.btn_attention.OnHoverForeColor = System.Drawing.Color.Empty;
-            this.btn_attention.OnHoverImage = null;
-            this.btn_attention.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_attention.Radius = 20;
-            this.btn_attention.Size = new System.Drawing.Size(98, 64);
-            this.btn_attention.TabIndex = 17;
-            this.btn_attention.MouseLeave += new System.EventHandler(this.gunaTileButton1_MouseLeave);
-            this.btn_attention.MouseHover += new System.EventHandler(this.gunaTileButton1_MouseHover);
+            this.btn_announcement.Animated = true;
+            this.btn_announcement.AnimationHoverSpeed = 0.07F;
+            this.btn_announcement.AnimationSpeed = 0.03F;
+            this.btn_announcement.BackColor = System.Drawing.Color.Transparent;
+            this.btn_announcement.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_announcement.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_announcement.BorderColor = System.Drawing.Color.Black;
+            this.btn_announcement.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_announcement.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_announcement.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_announcement.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
+            this.btn_announcement.ForeColor = System.Drawing.Color.White;
+            this.btn_announcement.Image = ((System.Drawing.Image)(resources.GetObject("btn_announcement.Image")));
+            this.btn_announcement.ImageSize = new System.Drawing.Size(64, 64);
+            this.btn_announcement.Location = new System.Drawing.Point(0, 0);
+            this.btn_announcement.Name = "btn_announcement";
+            this.btn_announcement.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_announcement.OnHoverBorderColor = System.Drawing.Color.White;
+            this.btn_announcement.OnHoverForeColor = System.Drawing.Color.Empty;
+            this.btn_announcement.OnHoverImage = null;
+            this.btn_announcement.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_announcement.Radius = 20;
+            this.btn_announcement.Size = new System.Drawing.Size(98, 64);
+            this.btn_announcement.TabIndex = 17;
+            this.btn_announcement.MouseLeave += new System.EventHandler(this.gunaTileButton1_MouseLeave);
+            this.btn_announcement.MouseHover += new System.EventHandler(this.gunaTileButton1_MouseHover);
             // 
             // gunaPanel_attention
             // 
             this.gunaPanel_attention.BackColor = System.Drawing.Color.Transparent;
             this.gunaPanel_attention.BaseColor = System.Drawing.Color.White;
-            this.gunaPanel_attention.Controls.Add(this.attention2);
-            this.gunaPanel_attention.Controls.Add(this.usercontrol_attention);
+            this.gunaPanel_attention.Controls.Add(this.usercontrol_announcement);
             this.gunaPanel_attention.Location = new System.Drawing.Point(104, 0);
             this.gunaPanel_attention.Name = "gunaPanel_attention";
             this.gunaPanel_attention.Radius = 10;
@@ -302,18 +301,31 @@
             this.gunaPanel_attention.TabIndex = 19;
             this.gunaPanel_attention.Visible = false;
             // 
-            // attention2
+            // usercontrol_announcement
             // 
-            this.attention2.Controls.Add(this.gunaSeparator2);
-            this.attention2.Controls.Add(this.lbl_attentionmessage2);
-            this.attention2.Controls.Add(this.lbl_attentiontitle2);
-            this.attention2.Controls.Add(this.btn_moredetails2);
-            this.attention2.Controls.Add(this.lbl_attentiontime2);
-            this.attention2.Location = new System.Drawing.Point(15, 6);
-            this.attention2.Name = "attention2";
-            this.attention2.Size = new System.Drawing.Size(316, 183);
-            this.attention2.TabIndex = 23;
-            this.attention2.Visible = false;
+            this.usercontrol_announcement.Controls.Add(this.usercontrol_announcement2);
+            this.usercontrol_announcement.Controls.Add(this.gunaSeparator);
+            this.usercontrol_announcement.Controls.Add(this.lbl_announcement);
+            this.usercontrol_announcement.Controls.Add(this.lbl_announcementtitle);
+            this.usercontrol_announcement.Controls.Add(this.btn_moredetails);
+            this.usercontrol_announcement.Controls.Add(this.lbl_announcementtime);
+            this.usercontrol_announcement.Location = new System.Drawing.Point(15, 6);
+            this.usercontrol_announcement.Name = "usercontrol_announcement";
+            this.usercontrol_announcement.Size = new System.Drawing.Size(316, 183);
+            this.usercontrol_announcement.TabIndex = 22;
+            // 
+            // usercontrol_announcement2
+            // 
+            this.usercontrol_announcement2.Controls.Add(this.gunaSeparator2);
+            this.usercontrol_announcement2.Controls.Add(this.lbl_announcement2);
+            this.usercontrol_announcement2.Controls.Add(this.lbl_announcementtitle2);
+            this.usercontrol_announcement2.Controls.Add(this.btn_moredetails2);
+            this.usercontrol_announcement2.Controls.Add(this.lbl_announcementtime2);
+            this.usercontrol_announcement2.Location = new System.Drawing.Point(0, 0);
+            this.usercontrol_announcement2.Name = "usercontrol_announcement2";
+            this.usercontrol_announcement2.Size = new System.Drawing.Size(316, 183);
+            this.usercontrol_announcement2.TabIndex = 23;
+            this.usercontrol_announcement2.Visible = false;
             // 
             // gunaSeparator2
             // 
@@ -323,24 +335,24 @@
             this.gunaSeparator2.Size = new System.Drawing.Size(304, 10);
             this.gunaSeparator2.TabIndex = 11;
             // 
-            // lbl_attentionmessage2
+            // lbl_announcement2
             // 
-            this.lbl_attentionmessage2.Font = new System.Drawing.Font("Museo Sans 500", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_attentionmessage2.Location = new System.Drawing.Point(3, 63);
-            this.lbl_attentionmessage2.Name = "lbl_attentionmessage2";
-            this.lbl_attentionmessage2.Size = new System.Drawing.Size(308, 74);
-            this.lbl_attentionmessage2.TabIndex = 10;
-            this.lbl_attentionmessage2.Text = "Attention message details.";
+            this.lbl_announcement2.Font = new System.Drawing.Font("Museo Sans 500", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_announcement2.Location = new System.Drawing.Point(3, 63);
+            this.lbl_announcement2.Name = "lbl_announcement2";
+            this.lbl_announcement2.Size = new System.Drawing.Size(308, 74);
+            this.lbl_announcement2.TabIndex = 10;
+            this.lbl_announcement2.Text = "Announcement message details.";
             // 
-            // lbl_attentiontitle2
+            // lbl_announcementtitle2
             // 
-            this.lbl_attentiontitle2.AutoSize = true;
-            this.lbl_attentiontitle2.Font = new System.Drawing.Font("Museo Sans 300", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_attentiontitle2.Location = new System.Drawing.Point(2, 6);
-            this.lbl_attentiontitle2.Name = "lbl_attentiontitle2";
-            this.lbl_attentiontitle2.Size = new System.Drawing.Size(219, 25);
-            this.lbl_attentiontitle2.TabIndex = 8;
-            this.lbl_attentiontitle2.Text = "Attention Screen Title";
+            this.lbl_announcementtitle2.AutoSize = true;
+            this.lbl_announcementtitle2.Font = new System.Drawing.Font("Museo Sans 300", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_announcementtitle2.Location = new System.Drawing.Point(2, 6);
+            this.lbl_announcementtitle2.Name = "lbl_announcementtitle2";
+            this.lbl_announcementtitle2.Size = new System.Drawing.Size(279, 25);
+            this.lbl_announcementtitle2.TabIndex = 8;
+            this.lbl_announcementtitle2.Text = "Announcement Screen Title";
             // 
             // btn_moredetails2
             // 
@@ -373,30 +385,18 @@
             this.btn_moredetails2.OnPressedDepth = 0;
             this.btn_moredetails2.Size = new System.Drawing.Size(99, 20);
             this.btn_moredetails2.TabIndex = 7;
-            this.btn_moredetails2.Text = "Daha fazla ayrıntı";
+            this.btn_moredetails2.Text = "More details";
             this.btn_moredetails2.TextOffsetX = -10;
             // 
-            // lbl_attentiontime2
+            // lbl_announcementtime2
             // 
-            this.lbl_attentiontime2.AutoSize = true;
-            this.lbl_attentiontime2.Font = new System.Drawing.Font("Museo Sans 300", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_attentiontime2.Location = new System.Drawing.Point(4, 46);
-            this.lbl_attentiontime2.Name = "lbl_attentiontime2";
-            this.lbl_attentiontime2.Size = new System.Drawing.Size(118, 13);
-            this.lbl_attentiontime2.TabIndex = 9;
-            this.lbl_attentiontime2.Text = "1/15/2020, 5:20:15 AM";
-            // 
-            // usercontrol_attention
-            // 
-            this.usercontrol_attention.Controls.Add(this.gunaSeparator);
-            this.usercontrol_attention.Controls.Add(this.lbl_attentionmsg);
-            this.usercontrol_attention.Controls.Add(this.lbl_attentiontitle);
-            this.usercontrol_attention.Controls.Add(this.btn_moredetails);
-            this.usercontrol_attention.Controls.Add(this.lbl_attentiontime);
-            this.usercontrol_attention.Location = new System.Drawing.Point(15, 6);
-            this.usercontrol_attention.Name = "usercontrol_attention";
-            this.usercontrol_attention.Size = new System.Drawing.Size(316, 183);
-            this.usercontrol_attention.TabIndex = 22;
+            this.lbl_announcementtime2.AutoSize = true;
+            this.lbl_announcementtime2.Font = new System.Drawing.Font("Museo Sans 300", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_announcementtime2.Location = new System.Drawing.Point(4, 46);
+            this.lbl_announcementtime2.Name = "lbl_announcementtime2";
+            this.lbl_announcementtime2.Size = new System.Drawing.Size(118, 13);
+            this.lbl_announcementtime2.TabIndex = 9;
+            this.lbl_announcementtime2.Text = "1/15/2020, 5:20:15 AM";
             // 
             // gunaSeparator
             // 
@@ -406,24 +406,24 @@
             this.gunaSeparator.Size = new System.Drawing.Size(304, 10);
             this.gunaSeparator.TabIndex = 11;
             // 
-            // lbl_attentionmsg
+            // lbl_announcement
             // 
-            this.lbl_attentionmsg.Font = new System.Drawing.Font("Museo Sans 500", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_attentionmsg.Location = new System.Drawing.Point(3, 63);
-            this.lbl_attentionmsg.Name = "lbl_attentionmsg";
-            this.lbl_attentionmsg.Size = new System.Drawing.Size(308, 74);
-            this.lbl_attentionmsg.TabIndex = 10;
-            this.lbl_attentionmsg.Text = "Attention message details.";
+            this.lbl_announcement.Font = new System.Drawing.Font("Museo Sans 500", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_announcement.Location = new System.Drawing.Point(3, 63);
+            this.lbl_announcement.Name = "lbl_announcement";
+            this.lbl_announcement.Size = new System.Drawing.Size(308, 74);
+            this.lbl_announcement.TabIndex = 10;
+            this.lbl_announcement.Text = "Announcement message details.";
             // 
-            // lbl_attentiontitle
+            // lbl_announcementtitle
             // 
-            this.lbl_attentiontitle.AutoSize = true;
-            this.lbl_attentiontitle.Font = new System.Drawing.Font("Museo Sans 300", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_attentiontitle.Location = new System.Drawing.Point(2, 6);
-            this.lbl_attentiontitle.Name = "lbl_attentiontitle";
-            this.lbl_attentiontitle.Size = new System.Drawing.Size(219, 25);
-            this.lbl_attentiontitle.TabIndex = 8;
-            this.lbl_attentiontitle.Text = "Attention Screen Title";
+            this.lbl_announcementtitle.AutoSize = true;
+            this.lbl_announcementtitle.Font = new System.Drawing.Font("Museo Sans 300", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_announcementtitle.Location = new System.Drawing.Point(2, 6);
+            this.lbl_announcementtitle.Name = "lbl_announcementtitle";
+            this.lbl_announcementtitle.Size = new System.Drawing.Size(219, 25);
+            this.lbl_announcementtitle.TabIndex = 8;
+            this.lbl_announcementtitle.Text = "Attention Screen Title";
             // 
             // btn_moredetails
             // 
@@ -456,18 +456,18 @@
             this.btn_moredetails.OnPressedDepth = 0;
             this.btn_moredetails.Size = new System.Drawing.Size(99, 20);
             this.btn_moredetails.TabIndex = 7;
-            this.btn_moredetails.Text = "Daha fazla ayrıntı";
+            this.btn_moredetails.Text = "More details";
             this.btn_moredetails.TextOffsetX = -10;
             // 
-            // lbl_attentiontime
+            // lbl_announcementtime
             // 
-            this.lbl_attentiontime.AutoSize = true;
-            this.lbl_attentiontime.Font = new System.Drawing.Font("Museo Sans 300", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_attentiontime.Location = new System.Drawing.Point(4, 46);
-            this.lbl_attentiontime.Name = "lbl_attentiontime";
-            this.lbl_attentiontime.Size = new System.Drawing.Size(118, 13);
-            this.lbl_attentiontime.TabIndex = 9;
-            this.lbl_attentiontime.Text = "1/15/2020, 5:20:15 AM";
+            this.lbl_announcementtime.AutoSize = true;
+            this.lbl_announcementtime.Font = new System.Drawing.Font("Museo Sans 300", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_announcementtime.Location = new System.Drawing.Point(4, 46);
+            this.lbl_announcementtime.Name = "lbl_announcementtime";
+            this.lbl_announcementtime.Size = new System.Drawing.Size(118, 13);
+            this.lbl_announcementtime.TabIndex = 9;
+            this.lbl_announcementtime.Text = "1/15/2020, 5:20:15 AM";
             // 
             // btn_appstore
             // 
@@ -1792,10 +1792,10 @@
             this.gunaPanel_btnattention.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgw_attention)).EndInit();
             this.gunaPanel_attention.ResumeLayout(false);
-            this.attention2.ResumeLayout(false);
-            this.attention2.PerformLayout();
-            this.usercontrol_attention.ResumeLayout(false);
-            this.usercontrol_attention.PerformLayout();
+            this.usercontrol_announcement.ResumeLayout(false);
+            this.usercontrol_announcement.PerformLayout();
+            this.usercontrol_announcement2.ResumeLayout(false);
+            this.usercontrol_announcement2.PerformLayout();
             this.gunaPanel_rightupper.ResumeLayout(false);
             this.panel_forgotpassword.ResumeLayout(false);
             this.panel_forgotpassword.PerformLayout();
@@ -1836,14 +1836,14 @@
         private System.Windows.Forms.Timer timer_backtologin;
         private Guna.UI.WinForms.GunaPanel gunaPanel_rightattention;
         private Guna.UI.WinForms.GunaPanel gunaPanel_btnattention;
-        private Guna.UI.WinForms.GunaTileButton btn_attention;
+        private Guna.UI.WinForms.GunaTileButton btn_announcement;
         private Guna.UI.WinForms.GunaElipsePanel gunaPanel_attention;
-        private Guna.UI.WinForms.GunaPanel usercontrol_attention;
+        private Guna.UI.WinForms.GunaPanel usercontrol_announcement;
         private Guna.UI.WinForms.GunaSeparator gunaSeparator;
-        private Guna.UI.WinForms.GunaLabel lbl_attentionmsg;
-        private Guna.UI.WinForms.GunaLabel lbl_attentiontitle;
+        private Guna.UI.WinForms.GunaLabel lbl_announcement;
+        private Guna.UI.WinForms.GunaLabel lbl_announcementtitle;
         private Guna.UI.WinForms.GunaAdvenceButton btn_moredetails;
-        private Guna.UI.WinForms.GunaLabel lbl_attentiontime;
+        private Guna.UI.WinForms.GunaLabel lbl_announcementtime;
         private Guna.UI.WinForms.GunaPanel gunaPanel_leftupper;
         private Guna.UI.WinForms.GunaPanel gunaPanel8;
         private Guna.UI.WinForms.GunaTileButton gunaTileButton3;
@@ -1894,11 +1894,11 @@
         private Guna.UI.WinForms.GunaTextBox txt_fusername;
         private Guna.UI.WinForms.GunaLabel lbl_infotitle;
         private Guna.UI.WinForms.GunaDataGridView dgw_attention;
-        private Guna.UI.WinForms.GunaPanel attention2;
+        private Guna.UI.WinForms.GunaPanel usercontrol_announcement2;
         private Guna.UI.WinForms.GunaSeparator gunaSeparator2;
-        private Guna.UI.WinForms.GunaLabel lbl_attentionmessage2;
-        private Guna.UI.WinForms.GunaLabel lbl_attentiontitle2;
-        private Guna.UI.WinForms.GunaLabel lbl_attentiontime2;
+        private Guna.UI.WinForms.GunaLabel lbl_announcement2;
+        private Guna.UI.WinForms.GunaLabel lbl_announcementtitle2;
+        private Guna.UI.WinForms.GunaLabel lbl_announcementtime2;
         private Guna.UI.WinForms.GunaAdvenceButton btn_moredetails2;
         private System.Windows.Forms.Timer timer_loginlicense;
     }

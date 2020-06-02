@@ -285,8 +285,8 @@ namespace NeuroAttention
             dr = cmd.ExecuteReader();
             if (dr.Read())
             {
-                license = (int)dr["k_lisans"];
-                licenset = dr["k_lisanstime"].ToString();
+                license = (int)dr["k_licenseaccess"];
+                licenset = dr["k_licenseexpirydate"].ToString();
             
 
                 if (license == 1)
@@ -301,7 +301,7 @@ namespace NeuroAttention
                             lbl_accessdenied.Visible = false;
                         timer_loginlicense.Start();
                         pbox_loading.Visible = true;
-
+                        panel_language.Visible = false;
                         panel_forgotpassword.Visible = false;
                         btn_logindisabled.Visible = false;
                         btn_loginenabled.Visible = false;
@@ -329,7 +329,7 @@ namespace NeuroAttention
                             lbl_accessdenied.Visible = false;
                         timer_loginlicense.Start();
                         pbox_loading.Visible = true;
-
+                        panel_language.Visible = false;
                         panel_forgotpassword.Visible = false;
                         btn_logindisabled.Visible = false;
                         btn_loginenabled.Visible = false;
@@ -353,7 +353,7 @@ namespace NeuroAttention
                             lbl_accessdenied.Visible = false;
                         timer_login.Start();
                         pbox_loading.Visible = true;
-
+                        panel_language.Visible = false;
                         panel_forgotpassword.Visible = false;
                         btn_logindisabled.Visible = false;
                         btn_loginenabled.Visible = false;
@@ -381,7 +381,7 @@ namespace NeuroAttention
                         lbl_accessdenied.Visible = false;
                     timer_loginlicense.Start();
                     pbox_loading.Visible = true;
-
+                    panel_language.Visible = false;
                     panel_forgotpassword.Visible = false;
                     btn_logindisabled.Visible = false;
                     btn_loginenabled.Visible = false;
@@ -410,6 +410,7 @@ namespace NeuroAttention
                     lbl_accessdenied.Visible = false;
                 timer_logindenied.Start();
                 pbox_loading.Visible = true;
+                panel_language.Visible = false;
                 panel_forgotpassword.Visible = false;
                 btn_logindisabled.Visible = false;
                 btn_loginenabled.Visible = false;
@@ -470,21 +471,21 @@ namespace NeuroAttention
 
                     gunaPanel_attention.Size = new Size(360, 350);
                     
-                    attention2.Location = new Point(20, 135);
+                    usercontrol_announcement2.Location = new Point(20, 135);
                     gunaSeparator.Location = new Point(6, 120);
                     btn_moredetails.Location = new Point(6, 300);
-                    attention2.Show();
-                    lbl_attentiontitle.Text = dgw_attention.Rows[0].Cells[1].Value.ToString();
-                    lbl_attentiontime.Text = dgw_attention.Rows[0].Cells[2].Value.ToString();
-                    lbl_attentionmsg.Text = dgw_attention.Rows[0].Cells[3].Value.ToString();
-                    lbl_attentiontitle2.Text = dgw_attention.Rows[1].Cells[1].Value.ToString();
-                    lbl_attentiontime2.Text= dgw_attention.Rows[1].Cells[2].Value.ToString();
-                    lbl_attentionmessage2.Text= dgw_attention.Rows[1].Cells[3].Value.ToString();
+                    usercontrol_announcement2.Show();
+                    lbl_announcementtitle.Text = dgw_attention.Rows[0].Cells[1].Value.ToString();
+                    lbl_announcementtime.Text = dgw_attention.Rows[0].Cells[2].Value.ToString();
+                    lbl_announcement.Text = dgw_attention.Rows[0].Cells[3].Value.ToString();
+                    lbl_announcementtitle2.Text = dgw_attention.Rows[1].Cells[1].Value.ToString();
+                    lbl_announcementtime2.Text= dgw_attention.Rows[1].Cells[2].Value.ToString();
+                    lbl_announcement2.Text= dgw_attention.Rows[1].Cells[3].Value.ToString();
 
                 }
-                lbl_attentiontitle.Text = dgw_attention.Rows[0].Cells[1].Value.ToString();
-                lbl_attentiontime.Text = dgw_attention.Rows[0].Cells[2].Value.ToString();
-                lbl_attentionmsg.Text = dgw_attention.Rows[0].Cells[3].Value.ToString();
+                lbl_announcementtitle.Text = dgw_attention.Rows[0].Cells[1].Value.ToString();
+                lbl_announcementtime.Text = dgw_attention.Rows[0].Cells[2].Value.ToString();
+                lbl_announcement.Text = dgw_attention.Rows[0].Cells[3].Value.ToString();
 
             }
             
@@ -514,9 +515,9 @@ namespace NeuroAttention
                 dr.Close();
                 con.Close();
 
-                lbl_attentiontitle.Text = attentiontitle;
-                lbl_attentiontime.Text = attentiontime;
-                lbl_attentionmsg.Text = attentionmessage;
+                lbl_announcementtitle.Text = attentiontitle;
+                lbl_announcementtime.Text = attentiontime;
+                lbl_announcement.Text = attentionmessage;
             }
 
             else if(dil == "de-DE")
@@ -1065,7 +1066,7 @@ namespace NeuroAttention
             
             if (checked_session.Checked)
             {
-                
+
                 Settings1.Default.session = true;
                 Settings1.Default.Save();
             }

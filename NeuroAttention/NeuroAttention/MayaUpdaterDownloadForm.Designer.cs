@@ -62,11 +62,11 @@
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Infoma Line", 15F);
+            this.label2.Font = new System.Drawing.Font("Roboto Condensed Light", 15F);
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(18, 241);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(346, 49);
+            this.label2.Size = new System.Drawing.Size(346, 62);
             this.label2.TabIndex = 22;
             this.label2.Text = "MayaUpdater uzak sunucudan dosyaları indiriyor.";
             // 
@@ -85,7 +85,7 @@
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnClose.FocusedColor = System.Drawing.Color.Empty;
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClose.Font = new System.Drawing.Font("Roboto Condensed Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Image = null;
             this.btnClose.ImageSize = new System.Drawing.Size(20, 20);
@@ -119,22 +119,22 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.label1.Font = new System.Drawing.Font("Museo Sans 100", 20F);
+            this.label1.Font = new System.Drawing.Font("Roboto Condensed Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(97, 40);
+            this.label1.Location = new System.Drawing.Point(97, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 32);
+            this.label1.Size = new System.Drawing.Size(97, 35);
             this.label1.TabIndex = 17;
             this.label1.Text = "Updater";
             // 
             // lblDownloading
             // 
             this.lblDownloading.AutoSize = true;
-            this.lblDownloading.Font = new System.Drawing.Font("Infoma Line", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDownloading.Font = new System.Drawing.Font("Roboto Condensed Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDownloading.ForeColor = System.Drawing.Color.White;
             this.lblDownloading.Location = new System.Drawing.Point(16, 157);
             this.lblDownloading.Name = "lblDownloading";
-            this.lblDownloading.Size = new System.Drawing.Size(346, 32);
+            this.lblDownloading.Size = new System.Drawing.Size(311, 43);
             this.lblDownloading.TabIndex = 0;
             this.lblDownloading.Text = "Güncelleme İndiriliyor...";
             // 

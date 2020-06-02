@@ -120,6 +120,9 @@
   <data name="btn_appstore" xml:space="preserve">
     <value>Resources.appstore_us</value>
   </data>
+  <data name="btn_checkupdate" xml:space="preserve">
+    <value>SOFTWARE UPDATE</value>
+  </data>
   <data name="btn_forgotpassword" xml:space="preserve">
     <value>Forgot password?</value>
   </data>

@@ -113,6 +113,16 @@ namespace NeuroAttention.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bg_updater {
+            get {
+                object obj = ResourceManager.GetObject("bg-updater", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap giphy {
             get {
                 object obj = ResourceManager.GetObject("giphy", resourceCulture);
@@ -256,6 +266,16 @@ namespace NeuroAttention.Properties {
         internal static System.Drawing.Bitmap license_gif {
             get {
                 object obj = ResourceManager.GetObject("license gif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap license_loading {
+            get {
+                object obj = ResourceManager.GetObject("license loading", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -20,7 +20,6 @@ namespace NeuroAttention
             this.bgWorker.DoWork += new DoWorkEventHandler(BgWorker_DoWork);
             this.bgWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(BgWorker_RunWorkerCompleted);
         }
-
         public void DoUpdate()
         {
             if (!this.bgWorker.IsBusy)
@@ -40,7 +39,6 @@ namespace NeuroAttention
         }
         private void BgWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-
             if (!e.Cancelled)
             {
                 MayaUpdateXml update = (MayaUpdateXml)e.Result;
@@ -53,7 +51,6 @@ namespace NeuroAttention
 
                 else
                 {
-
                     UpdateOK updateok = new UpdateOK();
                     updateok.Show();
 
