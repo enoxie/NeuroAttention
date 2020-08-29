@@ -33,31 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.gunaPanel_right = new Guna.UI.WinForms.GunaPanel();
-            this.btn_settings = new Guna.UI.WinForms.GunaTileButton();
-            this.gunaPanel_rightattention = new Guna.UI.WinForms.GunaPanel();
-            this.gunaPanel_btnattention = new Guna.UI.WinForms.GunaPanel();
-            this.dgw_attention = new Guna.UI.WinForms.GunaDataGridView();
-            this.btn_announcement = new Guna.UI.WinForms.GunaTileButton();
-            this.gunaPanel_attention = new Guna.UI.WinForms.GunaElipsePanel();
-            this.usercontrol_announcement = new Guna.UI.WinForms.GunaPanel();
-            this.usercontrol_announcement2 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaSeparator2 = new Guna.UI.WinForms.GunaSeparator();
-            this.lbl_announcement2 = new Guna.UI.WinForms.GunaLabel();
-            this.lbl_announcementtitle2 = new Guna.UI.WinForms.GunaLabel();
-            this.btn_moredetails2 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.lbl_announcementtime2 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaSeparator = new Guna.UI.WinForms.GunaSeparator();
-            this.lbl_announcement = new Guna.UI.WinForms.GunaLabel();
-            this.lbl_announcementtitle = new Guna.UI.WinForms.GunaLabel();
-            this.btn_moredetails = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.lbl_announcementtime = new Guna.UI.WinForms.GunaLabel();
-            this.btn_appstore = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btn_googleplay = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaPanel_rightupper = new Guna.UI.WinForms.GunaPanel();
-            this.btn_help = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaControlBox_minimize = new Guna.UI.WinForms.GunaControlBox();
-            this.gunaControlBox_close = new Guna.UI.WinForms.GunaControlBox();
             this.panel_forgotpassword = new Guna.UI.WinForms.GunaPanel();
             this.lbl_resetpassinfo = new Guna.UI.WinForms.GunaLabel();
             this.btn_backtologin = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -116,14 +91,31 @@
             this.lbl_accessdenied = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel_left = new Guna.UI.WinForms.GunaPanel();
             this.timer_loginlicense = new System.Windows.Forms.Timer(this.components);
-            this.gunaPanel_right.SuspendLayout();
-            this.gunaPanel_rightattention.SuspendLayout();
-            this.gunaPanel_btnattention.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgw_attention)).BeginInit();
-            this.gunaPanel_attention.SuspendLayout();
-            this.usercontrol_announcement.SuspendLayout();
-            this.usercontrol_announcement2.SuspendLayout();
-            this.gunaPanel_rightupper.SuspendLayout();
+            this.gunaPanel_rightupper = new Guna.UI.WinForms.GunaPanel();
+            this.gunaControlBox_close = new Guna.UI.WinForms.GunaControlBox();
+            this.gunaControlBox_minimize = new Guna.UI.WinForms.GunaControlBox();
+            this.btn_help = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btn_googleplay = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btn_appstore = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaPanel_rightattention = new Guna.UI.WinForms.GunaPanel();
+            this.gunaPanel_attention = new Guna.UI.WinForms.GunaElipsePanel();
+            this.usercontrol_announcement = new Guna.UI.WinForms.GunaPanel();
+            this.lbl_announcementtime = new Guna.UI.WinForms.GunaLabel();
+            this.btn_moredetails = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.lbl_announcementtitle = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_announcement = new Guna.UI.WinForms.GunaLabel();
+            this.gunaSeparator = new Guna.UI.WinForms.GunaSeparator();
+            this.usercontrol_announcement2 = new Guna.UI.WinForms.GunaPanel();
+            this.lbl_announcementtime2 = new Guna.UI.WinForms.GunaLabel();
+            this.btn_moredetails2 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.lbl_announcementtitle2 = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_announcement2 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaSeparator2 = new Guna.UI.WinForms.GunaSeparator();
+            this.gunaPanel_btnattention = new Guna.UI.WinForms.GunaPanel();
+            this.btn_announcement = new Guna.UI.WinForms.GunaTileButton();
+            this.dgw_attention = new Guna.UI.WinForms.GunaDataGridView();
+            this.btn_settings = new Guna.UI.WinForms.GunaTileButton();
+            this.gunaPanel_right = new Guna.UI.WinForms.GunaPanel();
             this.panel_forgotpassword.SuspendLayout();
             this.gunaPanel_leftupper.SuspendLayout();
             this.gunaPanel8.SuspendLayout();
@@ -136,495 +128,15 @@
             this.panel_language.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_loading)).BeginInit();
             this.gunaPanel_left.SuspendLayout();
+            this.gunaPanel_rightupper.SuspendLayout();
+            this.gunaPanel_rightattention.SuspendLayout();
+            this.gunaPanel_attention.SuspendLayout();
+            this.usercontrol_announcement.SuspendLayout();
+            this.usercontrol_announcement2.SuspendLayout();
+            this.gunaPanel_btnattention.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgw_attention)).BeginInit();
+            this.gunaPanel_right.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // gunaPanel_right
-            // 
-            this.gunaPanel_right.BackColor = System.Drawing.Color.Transparent;
-            this.gunaPanel_right.Controls.Add(this.btn_settings);
-            this.gunaPanel_right.Controls.Add(this.gunaPanel_rightattention);
-            this.gunaPanel_right.Controls.Add(this.btn_appstore);
-            this.gunaPanel_right.Controls.Add(this.btn_googleplay);
-            this.gunaPanel_right.Controls.Add(this.gunaPanel_rightupper);
-            this.gunaPanel_right.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPanel_right.Location = new System.Drawing.Point(396, 0);
-            this.gunaPanel_right.Name = "gunaPanel_right";
-            this.gunaPanel_right.Size = new System.Drawing.Size(884, 720);
-            this.gunaPanel_right.TabIndex = 2;
-            // 
-            // btn_settings
-            // 
-            this.btn_settings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_settings.Animated = true;
-            this.btn_settings.AnimationHoverSpeed = 0.07F;
-            this.btn_settings.AnimationSpeed = 0.03F;
-            this.btn_settings.BackColor = System.Drawing.Color.Transparent;
-            this.btn_settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_settings.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(121)))), ((int)(((byte)(123)))));
-            this.btn_settings.BorderColor = System.Drawing.Color.Transparent;
-            this.btn_settings.BorderSize = 2;
-            this.btn_settings.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_settings.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_settings.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_settings.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
-            this.btn_settings.ForeColor = System.Drawing.Color.White;
-            this.btn_settings.Image = ((System.Drawing.Image)(resources.GetObject("btn_settings.Image")));
-            this.btn_settings.ImageSize = new System.Drawing.Size(25, 25);
-            this.btn_settings.Location = new System.Drawing.Point(774, 577);
-            this.btn_settings.Name = "btn_settings";
-            this.btn_settings.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
-            this.btn_settings.OnHoverBorderColor = System.Drawing.Color.Transparent;
-            this.btn_settings.OnHoverForeColor = System.Drawing.Color.Empty;
-            this.btn_settings.OnHoverImage = null;
-            this.btn_settings.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_settings.Radius = 6;
-            this.btn_settings.Size = new System.Drawing.Size(50, 40);
-            this.btn_settings.TabIndex = 21;
-            this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
-            // 
-            // gunaPanel_rightattention
-            // 
-            this.gunaPanel_rightattention.Controls.Add(this.gunaPanel_btnattention);
-            this.gunaPanel_rightattention.Controls.Add(this.gunaPanel_attention);
-            this.gunaPanel_rightattention.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaPanel_rightattention.Location = new System.Drawing.Point(0, 40);
-            this.gunaPanel_rightattention.Name = "gunaPanel_rightattention";
-            this.gunaPanel_rightattention.Size = new System.Drawing.Size(884, 306);
-            this.gunaPanel_rightattention.TabIndex = 20;
-            // 
-            // gunaPanel_btnattention
-            // 
-            this.gunaPanel_btnattention.Controls.Add(this.dgw_attention);
-            this.gunaPanel_btnattention.Controls.Add(this.btn_announcement);
-            this.gunaPanel_btnattention.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gunaPanel_btnattention.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel_btnattention.Name = "gunaPanel_btnattention";
-            this.gunaPanel_btnattention.Size = new System.Drawing.Size(98, 306);
-            this.gunaPanel_btnattention.TabIndex = 20;
-            // 
-            // dgw_attention
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgw_attention.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgw_attention.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgw_attention.BackgroundColor = System.Drawing.Color.White;
-            this.dgw_attention.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgw_attention.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgw_attention.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgw_attention.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgw_attention.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgw_attention.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgw_attention.EnableHeadersVisualStyles = false;
-            this.dgw_attention.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgw_attention.Location = new System.Drawing.Point(29, 70);
-            this.dgw_attention.Name = "dgw_attention";
-            this.dgw_attention.RowHeadersVisible = false;
-            this.dgw_attention.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgw_attention.Size = new System.Drawing.Size(38, 36);
-            this.dgw_attention.TabIndex = 22;
-            this.dgw_attention.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
-            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgw_attention.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgw_attention.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgw_attention.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dgw_attention.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgw_attention.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgw_attention.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgw_attention.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgw_attention.ThemeStyle.HeaderStyle.Height = 4;
-            this.dgw_attention.ThemeStyle.ReadOnly = false;
-            this.dgw_attention.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgw_attention.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgw_attention.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgw_attention.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgw_attention.ThemeStyle.RowsStyle.Height = 22;
-            this.dgw_attention.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgw_attention.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgw_attention.Visible = false;
-            // 
-            // btn_announcement
-            // 
-            this.btn_announcement.Animated = true;
-            this.btn_announcement.AnimationHoverSpeed = 0.07F;
-            this.btn_announcement.AnimationSpeed = 0.03F;
-            this.btn_announcement.BackColor = System.Drawing.Color.Transparent;
-            this.btn_announcement.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_announcement.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_announcement.BorderColor = System.Drawing.Color.Black;
-            this.btn_announcement.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_announcement.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_announcement.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_announcement.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
-            this.btn_announcement.ForeColor = System.Drawing.Color.White;
-            this.btn_announcement.Image = ((System.Drawing.Image)(resources.GetObject("btn_announcement.Image")));
-            this.btn_announcement.ImageSize = new System.Drawing.Size(64, 64);
-            this.btn_announcement.Location = new System.Drawing.Point(0, 0);
-            this.btn_announcement.Name = "btn_announcement";
-            this.btn_announcement.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.btn_announcement.OnHoverBorderColor = System.Drawing.Color.White;
-            this.btn_announcement.OnHoverForeColor = System.Drawing.Color.Empty;
-            this.btn_announcement.OnHoverImage = null;
-            this.btn_announcement.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_announcement.Radius = 20;
-            this.btn_announcement.Size = new System.Drawing.Size(98, 64);
-            this.btn_announcement.TabIndex = 17;
-            this.btn_announcement.MouseLeave += new System.EventHandler(this.gunaTileButton1_MouseLeave);
-            this.btn_announcement.MouseHover += new System.EventHandler(this.gunaTileButton1_MouseHover);
-            // 
-            // gunaPanel_attention
-            // 
-            this.gunaPanel_attention.BackColor = System.Drawing.Color.Transparent;
-            this.gunaPanel_attention.BaseColor = System.Drawing.Color.White;
-            this.gunaPanel_attention.Controls.Add(this.usercontrol_announcement);
-            this.gunaPanel_attention.Location = new System.Drawing.Point(104, 0);
-            this.gunaPanel_attention.Name = "gunaPanel_attention";
-            this.gunaPanel_attention.Radius = 10;
-            this.gunaPanel_attention.Size = new System.Drawing.Size(360, 200);
-            this.gunaPanel_attention.TabIndex = 19;
-            this.gunaPanel_attention.Visible = false;
-            // 
-            // usercontrol_announcement
-            // 
-            this.usercontrol_announcement.Controls.Add(this.usercontrol_announcement2);
-            this.usercontrol_announcement.Controls.Add(this.gunaSeparator);
-            this.usercontrol_announcement.Controls.Add(this.lbl_announcement);
-            this.usercontrol_announcement.Controls.Add(this.lbl_announcementtitle);
-            this.usercontrol_announcement.Controls.Add(this.btn_moredetails);
-            this.usercontrol_announcement.Controls.Add(this.lbl_announcementtime);
-            this.usercontrol_announcement.Location = new System.Drawing.Point(15, 6);
-            this.usercontrol_announcement.Name = "usercontrol_announcement";
-            this.usercontrol_announcement.Size = new System.Drawing.Size(316, 183);
-            this.usercontrol_announcement.TabIndex = 22;
-            // 
-            // usercontrol_announcement2
-            // 
-            this.usercontrol_announcement2.Controls.Add(this.gunaSeparator2);
-            this.usercontrol_announcement2.Controls.Add(this.lbl_announcement2);
-            this.usercontrol_announcement2.Controls.Add(this.lbl_announcementtitle2);
-            this.usercontrol_announcement2.Controls.Add(this.btn_moredetails2);
-            this.usercontrol_announcement2.Controls.Add(this.lbl_announcementtime2);
-            this.usercontrol_announcement2.Location = new System.Drawing.Point(0, 0);
-            this.usercontrol_announcement2.Name = "usercontrol_announcement2";
-            this.usercontrol_announcement2.Size = new System.Drawing.Size(316, 183);
-            this.usercontrol_announcement2.TabIndex = 23;
-            this.usercontrol_announcement2.Visible = false;
-            // 
-            // gunaSeparator2
-            // 
-            this.gunaSeparator2.LineColor = System.Drawing.Color.Silver;
-            this.gunaSeparator2.Location = new System.Drawing.Point(6, 115);
-            this.gunaSeparator2.Name = "gunaSeparator2";
-            this.gunaSeparator2.Size = new System.Drawing.Size(304, 10);
-            this.gunaSeparator2.TabIndex = 11;
-            // 
-            // lbl_announcement2
-            // 
-            this.lbl_announcement2.Font = new System.Drawing.Font("Museo Sans 500", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_announcement2.Location = new System.Drawing.Point(3, 63);
-            this.lbl_announcement2.Name = "lbl_announcement2";
-            this.lbl_announcement2.Size = new System.Drawing.Size(308, 74);
-            this.lbl_announcement2.TabIndex = 10;
-            this.lbl_announcement2.Text = "Announcement message details.";
-            // 
-            // lbl_announcementtitle2
-            // 
-            this.lbl_announcementtitle2.AutoSize = true;
-            this.lbl_announcementtitle2.Font = new System.Drawing.Font("Museo Sans 300", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_announcementtitle2.Location = new System.Drawing.Point(2, 6);
-            this.lbl_announcementtitle2.Name = "lbl_announcementtitle2";
-            this.lbl_announcementtitle2.Size = new System.Drawing.Size(279, 25);
-            this.lbl_announcementtitle2.TabIndex = 8;
-            this.lbl_announcementtitle2.Text = "Announcement Screen Title";
-            // 
-            // btn_moredetails2
-            // 
-            this.btn_moredetails2.Animated = true;
-            this.btn_moredetails2.AnimationHoverSpeed = 0.07F;
-            this.btn_moredetails2.AnimationSpeed = 0.03F;
-            this.btn_moredetails2.BaseColor = System.Drawing.Color.White;
-            this.btn_moredetails2.BorderColor = System.Drawing.Color.Black;
-            this.btn_moredetails2.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btn_moredetails2.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btn_moredetails2.CheckedForeColor = System.Drawing.Color.White;
-            this.btn_moredetails2.CheckedImage = null;
-            this.btn_moredetails2.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btn_moredetails2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_moredetails2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_moredetails2.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_moredetails2.Font = new System.Drawing.Font("Museo Sans 300", 8F);
-            this.btn_moredetails2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
-            this.btn_moredetails2.Image = null;
-            this.btn_moredetails2.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_moredetails2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_moredetails2.Location = new System.Drawing.Point(7, 134);
-            this.btn_moredetails2.Name = "btn_moredetails2";
-            this.btn_moredetails2.OnHoverBaseColor = System.Drawing.Color.White;
-            this.btn_moredetails2.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.btn_moredetails2.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.btn_moredetails2.OnHoverImage = null;
-            this.btn_moredetails2.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.btn_moredetails2.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_moredetails2.OnPressedDepth = 0;
-            this.btn_moredetails2.Size = new System.Drawing.Size(99, 20);
-            this.btn_moredetails2.TabIndex = 7;
-            this.btn_moredetails2.Text = "More details";
-            this.btn_moredetails2.TextOffsetX = -10;
-            // 
-            // lbl_announcementtime2
-            // 
-            this.lbl_announcementtime2.AutoSize = true;
-            this.lbl_announcementtime2.Font = new System.Drawing.Font("Museo Sans 300", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_announcementtime2.Location = new System.Drawing.Point(4, 46);
-            this.lbl_announcementtime2.Name = "lbl_announcementtime2";
-            this.lbl_announcementtime2.Size = new System.Drawing.Size(118, 13);
-            this.lbl_announcementtime2.TabIndex = 9;
-            this.lbl_announcementtime2.Text = "1/15/2020, 5:20:15 AM";
-            // 
-            // gunaSeparator
-            // 
-            this.gunaSeparator.LineColor = System.Drawing.Color.Silver;
-            this.gunaSeparator.Location = new System.Drawing.Point(6, 127);
-            this.gunaSeparator.Name = "gunaSeparator";
-            this.gunaSeparator.Size = new System.Drawing.Size(304, 10);
-            this.gunaSeparator.TabIndex = 11;
-            // 
-            // lbl_announcement
-            // 
-            this.lbl_announcement.Font = new System.Drawing.Font("Museo Sans 500", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_announcement.Location = new System.Drawing.Point(3, 63);
-            this.lbl_announcement.Name = "lbl_announcement";
-            this.lbl_announcement.Size = new System.Drawing.Size(308, 74);
-            this.lbl_announcement.TabIndex = 10;
-            this.lbl_announcement.Text = "Announcement message details.";
-            // 
-            // lbl_announcementtitle
-            // 
-            this.lbl_announcementtitle.AutoSize = true;
-            this.lbl_announcementtitle.Font = new System.Drawing.Font("Museo Sans 300", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_announcementtitle.Location = new System.Drawing.Point(2, 6);
-            this.lbl_announcementtitle.Name = "lbl_announcementtitle";
-            this.lbl_announcementtitle.Size = new System.Drawing.Size(219, 25);
-            this.lbl_announcementtitle.TabIndex = 8;
-            this.lbl_announcementtitle.Text = "Attention Screen Title";
-            // 
-            // btn_moredetails
-            // 
-            this.btn_moredetails.Animated = true;
-            this.btn_moredetails.AnimationHoverSpeed = 0.07F;
-            this.btn_moredetails.AnimationSpeed = 0.03F;
-            this.btn_moredetails.BaseColor = System.Drawing.Color.White;
-            this.btn_moredetails.BorderColor = System.Drawing.Color.Black;
-            this.btn_moredetails.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btn_moredetails.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btn_moredetails.CheckedForeColor = System.Drawing.Color.White;
-            this.btn_moredetails.CheckedImage = null;
-            this.btn_moredetails.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btn_moredetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_moredetails.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_moredetails.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_moredetails.Font = new System.Drawing.Font("Museo Sans 300", 8F);
-            this.btn_moredetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
-            this.btn_moredetails.Image = null;
-            this.btn_moredetails.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_moredetails.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_moredetails.Location = new System.Drawing.Point(7, 143);
-            this.btn_moredetails.Name = "btn_moredetails";
-            this.btn_moredetails.OnHoverBaseColor = System.Drawing.Color.White;
-            this.btn_moredetails.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.btn_moredetails.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.btn_moredetails.OnHoverImage = null;
-            this.btn_moredetails.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.btn_moredetails.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_moredetails.OnPressedDepth = 0;
-            this.btn_moredetails.Size = new System.Drawing.Size(99, 20);
-            this.btn_moredetails.TabIndex = 7;
-            this.btn_moredetails.Text = "More details";
-            this.btn_moredetails.TextOffsetX = -10;
-            // 
-            // lbl_announcementtime
-            // 
-            this.lbl_announcementtime.AutoSize = true;
-            this.lbl_announcementtime.Font = new System.Drawing.Font("Museo Sans 300", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_announcementtime.Location = new System.Drawing.Point(4, 46);
-            this.lbl_announcementtime.Name = "lbl_announcementtime";
-            this.lbl_announcementtime.Size = new System.Drawing.Size(118, 13);
-            this.lbl_announcementtime.TabIndex = 9;
-            this.lbl_announcementtime.Text = "1/15/2020, 5:20:15 AM";
-            // 
-            // btn_appstore
-            // 
-            this.btn_appstore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_appstore.Animated = true;
-            this.btn_appstore.AnimationHoverSpeed = 0.07F;
-            this.btn_appstore.AnimationSpeed = 0.03F;
-            this.btn_appstore.BackColor = System.Drawing.Color.Transparent;
-            this.btn_appstore.BackgroundImage = global::NeuroAttention.Properties.Resources.appstore_tr;
-            this.btn_appstore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_appstore.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_appstore.BorderColor = System.Drawing.Color.Black;
-            this.btn_appstore.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btn_appstore.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btn_appstore.CheckedForeColor = System.Drawing.Color.White;
-            this.btn_appstore.CheckedImage = null;
-            this.btn_appstore.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btn_appstore.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_appstore.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_appstore.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_appstore.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_appstore.ForeColor = System.Drawing.Color.White;
-            this.btn_appstore.Image = null;
-            this.btn_appstore.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_appstore.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_appstore.Location = new System.Drawing.Point(733, 662);
-            this.btn_appstore.Name = "btn_appstore";
-            this.btn_appstore.OnHoverBaseColor = System.Drawing.Color.Empty;
-            this.btn_appstore.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.btn_appstore.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_appstore.OnHoverImage = null;
-            this.btn_appstore.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.btn_appstore.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_appstore.Size = new System.Drawing.Size(129, 40);
-            this.btn_appstore.TabIndex = 11;
-            this.btn_appstore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btn_googleplay
-            // 
-            this.btn_googleplay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_googleplay.Animated = true;
-            this.btn_googleplay.AnimationHoverSpeed = 0.07F;
-            this.btn_googleplay.AnimationSpeed = 0.03F;
-            this.btn_googleplay.BackColor = System.Drawing.Color.Transparent;
-            this.btn_googleplay.BackgroundImage = global::NeuroAttention.Properties.Resources.googleplay_tr;
-            this.btn_googleplay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_googleplay.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_googleplay.BorderColor = System.Drawing.Color.Black;
-            this.btn_googleplay.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btn_googleplay.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btn_googleplay.CheckedForeColor = System.Drawing.Color.White;
-            this.btn_googleplay.CheckedImage = null;
-            this.btn_googleplay.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btn_googleplay.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_googleplay.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_googleplay.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_googleplay.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_googleplay.ForeColor = System.Drawing.Color.White;
-            this.btn_googleplay.Image = null;
-            this.btn_googleplay.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_googleplay.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_googleplay.Location = new System.Drawing.Point(737, 623);
-            this.btn_googleplay.Name = "btn_googleplay";
-            this.btn_googleplay.OnHoverBaseColor = System.Drawing.Color.Empty;
-            this.btn_googleplay.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.btn_googleplay.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_googleplay.OnHoverImage = null;
-            this.btn_googleplay.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.btn_googleplay.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_googleplay.Size = new System.Drawing.Size(120, 50);
-            this.btn_googleplay.TabIndex = 10;
-            this.btn_googleplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // gunaPanel_rightupper
-            // 
-            this.gunaPanel_rightupper.Controls.Add(this.btn_help);
-            this.gunaPanel_rightupper.Controls.Add(this.gunaControlBox_minimize);
-            this.gunaPanel_rightupper.Controls.Add(this.gunaControlBox_close);
-            this.gunaPanel_rightupper.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaPanel_rightupper.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel_rightupper.Name = "gunaPanel_rightupper";
-            this.gunaPanel_rightupper.Size = new System.Drawing.Size(884, 40);
-            this.gunaPanel_rightupper.TabIndex = 2;
-            // 
-            // btn_help
-            // 
-            this.btn_help.Animated = true;
-            this.btn_help.AnimationHoverSpeed = 0.07F;
-            this.btn_help.AnimationSpeed = 0.03F;
-            this.btn_help.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_help.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_help.BorderColor = System.Drawing.Color.Black;
-            this.btn_help.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btn_help.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btn_help.CheckedForeColor = System.Drawing.Color.White;
-            this.btn_help.CheckedImage = null;
-            this.btn_help.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btn_help.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_help.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_help.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_help.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_help.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_help.ForeColor = System.Drawing.Color.White;
-            this.btn_help.Image = null;
-            this.btn_help.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_help.ImageSize = new System.Drawing.Size(15, 15);
-            this.btn_help.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_help.Location = new System.Drawing.Point(734, 0);
-            this.btn_help.Name = "btn_help";
-            this.btn_help.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
-            this.btn_help.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.btn_help.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_help.OnHoverImage = null;
-            this.btn_help.OnHoverLineColor = System.Drawing.Color.Empty;
-            this.btn_help.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_help.Size = new System.Drawing.Size(50, 40);
-            this.btn_help.TabIndex = 5;
-            this.btn_help.Text = "?";
-            this.btn_help.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_help.Click += new System.EventHandler(this.btn_help_Click);
-            // 
-            // gunaControlBox_minimize
-            // 
-            this.gunaControlBox_minimize.Animated = true;
-            this.gunaControlBox_minimize.AnimationHoverSpeed = 0.07F;
-            this.gunaControlBox_minimize.AnimationSpeed = 0.03F;
-            this.gunaControlBox_minimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.gunaControlBox_minimize.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MinimizeBox;
-            this.gunaControlBox_minimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaControlBox_minimize.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gunaControlBox_minimize.IconColor = System.Drawing.Color.White;
-            this.gunaControlBox_minimize.IconSize = 14F;
-            this.gunaControlBox_minimize.Location = new System.Drawing.Point(784, 0);
-            this.gunaControlBox_minimize.Name = "gunaControlBox_minimize";
-            this.gunaControlBox_minimize.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
-            this.gunaControlBox_minimize.OnHoverIconColor = System.Drawing.Color.White;
-            this.gunaControlBox_minimize.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaControlBox_minimize.Size = new System.Drawing.Size(50, 40);
-            this.gunaControlBox_minimize.TabIndex = 6;
-            // 
-            // gunaControlBox_close
-            // 
-            this.gunaControlBox_close.Animated = true;
-            this.gunaControlBox_close.AnimationHoverSpeed = 0.07F;
-            this.gunaControlBox_close.AnimationSpeed = 0.03F;
-            this.gunaControlBox_close.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaControlBox_close.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gunaControlBox_close.IconColor = System.Drawing.Color.White;
-            this.gunaControlBox_close.IconSize = 14F;
-            this.gunaControlBox_close.Location = new System.Drawing.Point(834, 0);
-            this.gunaControlBox_close.Name = "gunaControlBox_close";
-            this.gunaControlBox_close.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(54)))), ((int)(((byte)(57)))));
-            this.gunaControlBox_close.OnHoverIconColor = System.Drawing.Color.White;
-            this.gunaControlBox_close.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaControlBox_close.Size = new System.Drawing.Size(50, 40);
-            this.gunaControlBox_close.TabIndex = 4;
-            this.gunaControlBox_close.Click += new System.EventHandler(this.gunaControlBox_close_Click);
             // 
             // panel_forgotpassword
             // 
@@ -1771,6 +1283,494 @@
             // 
             this.timer_loginlicense.Tick += new System.EventHandler(this.timer_loginlicense_Tick);
             // 
+            // gunaPanel_rightupper
+            // 
+            this.gunaPanel_rightupper.Controls.Add(this.btn_help);
+            this.gunaPanel_rightupper.Controls.Add(this.gunaControlBox_minimize);
+            this.gunaPanel_rightupper.Controls.Add(this.gunaControlBox_close);
+            this.gunaPanel_rightupper.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaPanel_rightupper.Location = new System.Drawing.Point(0, 0);
+            this.gunaPanel_rightupper.Name = "gunaPanel_rightupper";
+            this.gunaPanel_rightupper.Size = new System.Drawing.Size(884, 40);
+            this.gunaPanel_rightupper.TabIndex = 2;
+            // 
+            // gunaControlBox_close
+            // 
+            this.gunaControlBox_close.Animated = true;
+            this.gunaControlBox_close.AnimationHoverSpeed = 0.07F;
+            this.gunaControlBox_close.AnimationSpeed = 0.03F;
+            this.gunaControlBox_close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaControlBox_close.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gunaControlBox_close.IconColor = System.Drawing.Color.White;
+            this.gunaControlBox_close.IconSize = 14F;
+            this.gunaControlBox_close.Location = new System.Drawing.Point(834, 0);
+            this.gunaControlBox_close.Name = "gunaControlBox_close";
+            this.gunaControlBox_close.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(54)))), ((int)(((byte)(57)))));
+            this.gunaControlBox_close.OnHoverIconColor = System.Drawing.Color.White;
+            this.gunaControlBox_close.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaControlBox_close.Size = new System.Drawing.Size(50, 40);
+            this.gunaControlBox_close.TabIndex = 4;
+            this.gunaControlBox_close.Click += new System.EventHandler(this.gunaControlBox_close_Click);
+            // 
+            // gunaControlBox_minimize
+            // 
+            this.gunaControlBox_minimize.Animated = true;
+            this.gunaControlBox_minimize.AnimationHoverSpeed = 0.07F;
+            this.gunaControlBox_minimize.AnimationSpeed = 0.03F;
+            this.gunaControlBox_minimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.gunaControlBox_minimize.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MinimizeBox;
+            this.gunaControlBox_minimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaControlBox_minimize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gunaControlBox_minimize.IconColor = System.Drawing.Color.White;
+            this.gunaControlBox_minimize.IconSize = 14F;
+            this.gunaControlBox_minimize.Location = new System.Drawing.Point(784, 0);
+            this.gunaControlBox_minimize.Name = "gunaControlBox_minimize";
+            this.gunaControlBox_minimize.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
+            this.gunaControlBox_minimize.OnHoverIconColor = System.Drawing.Color.White;
+            this.gunaControlBox_minimize.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaControlBox_minimize.Size = new System.Drawing.Size(50, 40);
+            this.gunaControlBox_minimize.TabIndex = 6;
+            // 
+            // btn_help
+            // 
+            this.btn_help.Animated = true;
+            this.btn_help.AnimationHoverSpeed = 0.07F;
+            this.btn_help.AnimationSpeed = 0.03F;
+            this.btn_help.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_help.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_help.BorderColor = System.Drawing.Color.Black;
+            this.btn_help.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_help.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_help.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_help.CheckedImage = null;
+            this.btn_help.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_help.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_help.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_help.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_help.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_help.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_help.ForeColor = System.Drawing.Color.White;
+            this.btn_help.Image = null;
+            this.btn_help.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_help.ImageSize = new System.Drawing.Size(15, 15);
+            this.btn_help.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_help.Location = new System.Drawing.Point(734, 0);
+            this.btn_help.Name = "btn_help";
+            this.btn_help.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
+            this.btn_help.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_help.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_help.OnHoverImage = null;
+            this.btn_help.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btn_help.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_help.Size = new System.Drawing.Size(50, 40);
+            this.btn_help.TabIndex = 5;
+            this.btn_help.Text = "?";
+            this.btn_help.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_help.Click += new System.EventHandler(this.btn_help_Click);
+            // 
+            // btn_googleplay
+            // 
+            this.btn_googleplay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_googleplay.Animated = true;
+            this.btn_googleplay.AnimationHoverSpeed = 0.07F;
+            this.btn_googleplay.AnimationSpeed = 0.03F;
+            this.btn_googleplay.BackColor = System.Drawing.Color.Transparent;
+            this.btn_googleplay.BackgroundImage = global::NeuroAttention.Properties.Resources.googleplay_tr;
+            this.btn_googleplay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_googleplay.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_googleplay.BorderColor = System.Drawing.Color.Black;
+            this.btn_googleplay.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_googleplay.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_googleplay.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_googleplay.CheckedImage = null;
+            this.btn_googleplay.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_googleplay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_googleplay.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_googleplay.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_googleplay.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_googleplay.ForeColor = System.Drawing.Color.White;
+            this.btn_googleplay.Image = null;
+            this.btn_googleplay.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_googleplay.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_googleplay.Location = new System.Drawing.Point(737, 623);
+            this.btn_googleplay.Name = "btn_googleplay";
+            this.btn_googleplay.OnHoverBaseColor = System.Drawing.Color.Empty;
+            this.btn_googleplay.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_googleplay.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_googleplay.OnHoverImage = null;
+            this.btn_googleplay.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btn_googleplay.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_googleplay.Size = new System.Drawing.Size(120, 50);
+            this.btn_googleplay.TabIndex = 10;
+            this.btn_googleplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btn_appstore
+            // 
+            this.btn_appstore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_appstore.Animated = true;
+            this.btn_appstore.AnimationHoverSpeed = 0.07F;
+            this.btn_appstore.AnimationSpeed = 0.03F;
+            this.btn_appstore.BackColor = System.Drawing.Color.Transparent;
+            this.btn_appstore.BackgroundImage = global::NeuroAttention.Properties.Resources.appstore_tr;
+            this.btn_appstore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_appstore.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_appstore.BorderColor = System.Drawing.Color.Black;
+            this.btn_appstore.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_appstore.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_appstore.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_appstore.CheckedImage = null;
+            this.btn_appstore.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_appstore.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_appstore.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_appstore.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_appstore.Font = new System.Drawing.Font("Infoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_appstore.ForeColor = System.Drawing.Color.White;
+            this.btn_appstore.Image = null;
+            this.btn_appstore.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_appstore.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_appstore.Location = new System.Drawing.Point(733, 662);
+            this.btn_appstore.Name = "btn_appstore";
+            this.btn_appstore.OnHoverBaseColor = System.Drawing.Color.Empty;
+            this.btn_appstore.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_appstore.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_appstore.OnHoverImage = null;
+            this.btn_appstore.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btn_appstore.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_appstore.Size = new System.Drawing.Size(129, 40);
+            this.btn_appstore.TabIndex = 11;
+            this.btn_appstore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // gunaPanel_rightattention
+            // 
+            this.gunaPanel_rightattention.Controls.Add(this.gunaPanel_btnattention);
+            this.gunaPanel_rightattention.Controls.Add(this.gunaPanel_attention);
+            this.gunaPanel_rightattention.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaPanel_rightattention.Location = new System.Drawing.Point(0, 40);
+            this.gunaPanel_rightattention.Name = "gunaPanel_rightattention";
+            this.gunaPanel_rightattention.Size = new System.Drawing.Size(884, 306);
+            this.gunaPanel_rightattention.TabIndex = 20;
+            // 
+            // gunaPanel_attention
+            // 
+            this.gunaPanel_attention.BackColor = System.Drawing.Color.Transparent;
+            this.gunaPanel_attention.BaseColor = System.Drawing.Color.White;
+            this.gunaPanel_attention.Controls.Add(this.usercontrol_announcement);
+            this.gunaPanel_attention.Location = new System.Drawing.Point(104, 0);
+            this.gunaPanel_attention.Name = "gunaPanel_attention";
+            this.gunaPanel_attention.Radius = 10;
+            this.gunaPanel_attention.Size = new System.Drawing.Size(360, 200);
+            this.gunaPanel_attention.TabIndex = 19;
+            this.gunaPanel_attention.Visible = false;
+            // 
+            // usercontrol_announcement
+            // 
+            this.usercontrol_announcement.Controls.Add(this.usercontrol_announcement2);
+            this.usercontrol_announcement.Controls.Add(this.gunaSeparator);
+            this.usercontrol_announcement.Controls.Add(this.lbl_announcement);
+            this.usercontrol_announcement.Controls.Add(this.lbl_announcementtitle);
+            this.usercontrol_announcement.Controls.Add(this.btn_moredetails);
+            this.usercontrol_announcement.Controls.Add(this.lbl_announcementtime);
+            this.usercontrol_announcement.Location = new System.Drawing.Point(15, 6);
+            this.usercontrol_announcement.Name = "usercontrol_announcement";
+            this.usercontrol_announcement.Size = new System.Drawing.Size(316, 183);
+            this.usercontrol_announcement.TabIndex = 22;
+            // 
+            // lbl_announcementtime
+            // 
+            this.lbl_announcementtime.AutoSize = true;
+            this.lbl_announcementtime.Font = new System.Drawing.Font("Museo Sans 300", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_announcementtime.Location = new System.Drawing.Point(4, 46);
+            this.lbl_announcementtime.Name = "lbl_announcementtime";
+            this.lbl_announcementtime.Size = new System.Drawing.Size(118, 13);
+            this.lbl_announcementtime.TabIndex = 9;
+            this.lbl_announcementtime.Text = "1/15/2020, 5:20:15 AM";
+            // 
+            // btn_moredetails
+            // 
+            this.btn_moredetails.Animated = true;
+            this.btn_moredetails.AnimationHoverSpeed = 0.07F;
+            this.btn_moredetails.AnimationSpeed = 0.03F;
+            this.btn_moredetails.BaseColor = System.Drawing.Color.White;
+            this.btn_moredetails.BorderColor = System.Drawing.Color.Black;
+            this.btn_moredetails.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_moredetails.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_moredetails.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_moredetails.CheckedImage = null;
+            this.btn_moredetails.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_moredetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_moredetails.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_moredetails.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_moredetails.Font = new System.Drawing.Font("Museo Sans 300", 8F);
+            this.btn_moredetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
+            this.btn_moredetails.Image = null;
+            this.btn_moredetails.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_moredetails.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_moredetails.Location = new System.Drawing.Point(7, 143);
+            this.btn_moredetails.Name = "btn_moredetails";
+            this.btn_moredetails.OnHoverBaseColor = System.Drawing.Color.White;
+            this.btn_moredetails.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_moredetails.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.btn_moredetails.OnHoverImage = null;
+            this.btn_moredetails.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btn_moredetails.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_moredetails.OnPressedDepth = 0;
+            this.btn_moredetails.Size = new System.Drawing.Size(99, 20);
+            this.btn_moredetails.TabIndex = 7;
+            this.btn_moredetails.Text = "More details";
+            this.btn_moredetails.TextOffsetX = -10;
+            // 
+            // lbl_announcementtitle
+            // 
+            this.lbl_announcementtitle.AutoSize = true;
+            this.lbl_announcementtitle.Font = new System.Drawing.Font("Museo Sans 300", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_announcementtitle.Location = new System.Drawing.Point(2, 6);
+            this.lbl_announcementtitle.Name = "lbl_announcementtitle";
+            this.lbl_announcementtitle.Size = new System.Drawing.Size(219, 25);
+            this.lbl_announcementtitle.TabIndex = 8;
+            this.lbl_announcementtitle.Text = "Attention Screen Title";
+            // 
+            // lbl_announcement
+            // 
+            this.lbl_announcement.Font = new System.Drawing.Font("Museo Sans 500", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_announcement.Location = new System.Drawing.Point(3, 63);
+            this.lbl_announcement.Name = "lbl_announcement";
+            this.lbl_announcement.Size = new System.Drawing.Size(308, 74);
+            this.lbl_announcement.TabIndex = 10;
+            this.lbl_announcement.Text = "Announcement message details.";
+            // 
+            // gunaSeparator
+            // 
+            this.gunaSeparator.LineColor = System.Drawing.Color.Silver;
+            this.gunaSeparator.Location = new System.Drawing.Point(6, 127);
+            this.gunaSeparator.Name = "gunaSeparator";
+            this.gunaSeparator.Size = new System.Drawing.Size(304, 10);
+            this.gunaSeparator.TabIndex = 11;
+            // 
+            // usercontrol_announcement2
+            // 
+            this.usercontrol_announcement2.Controls.Add(this.gunaSeparator2);
+            this.usercontrol_announcement2.Controls.Add(this.lbl_announcement2);
+            this.usercontrol_announcement2.Controls.Add(this.lbl_announcementtitle2);
+            this.usercontrol_announcement2.Controls.Add(this.btn_moredetails2);
+            this.usercontrol_announcement2.Controls.Add(this.lbl_announcementtime2);
+            this.usercontrol_announcement2.Location = new System.Drawing.Point(0, 0);
+            this.usercontrol_announcement2.Name = "usercontrol_announcement2";
+            this.usercontrol_announcement2.Size = new System.Drawing.Size(316, 183);
+            this.usercontrol_announcement2.TabIndex = 23;
+            this.usercontrol_announcement2.Visible = false;
+            // 
+            // lbl_announcementtime2
+            // 
+            this.lbl_announcementtime2.AutoSize = true;
+            this.lbl_announcementtime2.Font = new System.Drawing.Font("Museo Sans 300", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_announcementtime2.Location = new System.Drawing.Point(4, 46);
+            this.lbl_announcementtime2.Name = "lbl_announcementtime2";
+            this.lbl_announcementtime2.Size = new System.Drawing.Size(118, 13);
+            this.lbl_announcementtime2.TabIndex = 9;
+            this.lbl_announcementtime2.Text = "1/15/2020, 5:20:15 AM";
+            // 
+            // btn_moredetails2
+            // 
+            this.btn_moredetails2.Animated = true;
+            this.btn_moredetails2.AnimationHoverSpeed = 0.07F;
+            this.btn_moredetails2.AnimationSpeed = 0.03F;
+            this.btn_moredetails2.BaseColor = System.Drawing.Color.White;
+            this.btn_moredetails2.BorderColor = System.Drawing.Color.Black;
+            this.btn_moredetails2.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_moredetails2.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_moredetails2.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_moredetails2.CheckedImage = null;
+            this.btn_moredetails2.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_moredetails2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_moredetails2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_moredetails2.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_moredetails2.Font = new System.Drawing.Font("Museo Sans 300", 8F);
+            this.btn_moredetails2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(145)))));
+            this.btn_moredetails2.Image = null;
+            this.btn_moredetails2.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_moredetails2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_moredetails2.Location = new System.Drawing.Point(7, 134);
+            this.btn_moredetails2.Name = "btn_moredetails2";
+            this.btn_moredetails2.OnHoverBaseColor = System.Drawing.Color.White;
+            this.btn_moredetails2.OnHoverBorderColor = System.Drawing.Color.Empty;
+            this.btn_moredetails2.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.btn_moredetails2.OnHoverImage = null;
+            this.btn_moredetails2.OnHoverLineColor = System.Drawing.Color.Empty;
+            this.btn_moredetails2.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_moredetails2.OnPressedDepth = 0;
+            this.btn_moredetails2.Size = new System.Drawing.Size(99, 20);
+            this.btn_moredetails2.TabIndex = 7;
+            this.btn_moredetails2.Text = "More details";
+            this.btn_moredetails2.TextOffsetX = -10;
+            // 
+            // lbl_announcementtitle2
+            // 
+            this.lbl_announcementtitle2.AutoSize = true;
+            this.lbl_announcementtitle2.Font = new System.Drawing.Font("Museo Sans 300", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_announcementtitle2.Location = new System.Drawing.Point(2, 6);
+            this.lbl_announcementtitle2.Name = "lbl_announcementtitle2";
+            this.lbl_announcementtitle2.Size = new System.Drawing.Size(279, 25);
+            this.lbl_announcementtitle2.TabIndex = 8;
+            this.lbl_announcementtitle2.Text = "Announcement Screen Title";
+            // 
+            // lbl_announcement2
+            // 
+            this.lbl_announcement2.Font = new System.Drawing.Font("Museo Sans 500", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_announcement2.Location = new System.Drawing.Point(3, 63);
+            this.lbl_announcement2.Name = "lbl_announcement2";
+            this.lbl_announcement2.Size = new System.Drawing.Size(308, 74);
+            this.lbl_announcement2.TabIndex = 10;
+            this.lbl_announcement2.Text = "Announcement message details.";
+            // 
+            // gunaSeparator2
+            // 
+            this.gunaSeparator2.LineColor = System.Drawing.Color.Silver;
+            this.gunaSeparator2.Location = new System.Drawing.Point(6, 115);
+            this.gunaSeparator2.Name = "gunaSeparator2";
+            this.gunaSeparator2.Size = new System.Drawing.Size(304, 10);
+            this.gunaSeparator2.TabIndex = 11;
+            // 
+            // gunaPanel_btnattention
+            // 
+            this.gunaPanel_btnattention.Controls.Add(this.dgw_attention);
+            this.gunaPanel_btnattention.Controls.Add(this.btn_announcement);
+            this.gunaPanel_btnattention.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gunaPanel_btnattention.Location = new System.Drawing.Point(0, 0);
+            this.gunaPanel_btnattention.Name = "gunaPanel_btnattention";
+            this.gunaPanel_btnattention.Size = new System.Drawing.Size(98, 306);
+            this.gunaPanel_btnattention.TabIndex = 20;
+            // 
+            // btn_announcement
+            // 
+            this.btn_announcement.Animated = true;
+            this.btn_announcement.AnimationHoverSpeed = 0.07F;
+            this.btn_announcement.AnimationSpeed = 0.03F;
+            this.btn_announcement.BackColor = System.Drawing.Color.Transparent;
+            this.btn_announcement.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_announcement.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_announcement.BorderColor = System.Drawing.Color.Black;
+            this.btn_announcement.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_announcement.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_announcement.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_announcement.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
+            this.btn_announcement.ForeColor = System.Drawing.Color.White;
+            this.btn_announcement.Image = ((System.Drawing.Image)(resources.GetObject("btn_announcement.Image")));
+            this.btn_announcement.ImageSize = new System.Drawing.Size(64, 64);
+            this.btn_announcement.Location = new System.Drawing.Point(0, 0);
+            this.btn_announcement.Name = "btn_announcement";
+            this.btn_announcement.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_announcement.OnHoverBorderColor = System.Drawing.Color.White;
+            this.btn_announcement.OnHoverForeColor = System.Drawing.Color.Empty;
+            this.btn_announcement.OnHoverImage = null;
+            this.btn_announcement.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_announcement.Radius = 20;
+            this.btn_announcement.Size = new System.Drawing.Size(98, 64);
+            this.btn_announcement.TabIndex = 17;
+            this.btn_announcement.MouseLeave += new System.EventHandler(this.gunaTileButton1_MouseLeave);
+            this.btn_announcement.MouseHover += new System.EventHandler(this.gunaTileButton1_MouseHover);
+            // 
+            // dgw_attention
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgw_attention.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgw_attention.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgw_attention.BackgroundColor = System.Drawing.Color.White;
+            this.dgw_attention.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgw_attention.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgw_attention.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgw_attention.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgw_attention.ColumnHeadersHeight = 4;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgw_attention.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgw_attention.EnableHeadersVisualStyles = false;
+            this.dgw_attention.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgw_attention.Location = new System.Drawing.Point(29, 70);
+            this.dgw_attention.Name = "dgw_attention";
+            this.dgw_attention.RowHeadersVisible = false;
+            this.dgw_attention.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgw_attention.Size = new System.Drawing.Size(38, 36);
+            this.dgw_attention.TabIndex = 22;
+            this.dgw_attention.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgw_attention.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgw_attention.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgw_attention.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgw_attention.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgw_attention.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgw_attention.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgw_attention.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgw_attention.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgw_attention.ThemeStyle.HeaderStyle.Height = 4;
+            this.dgw_attention.ThemeStyle.ReadOnly = false;
+            this.dgw_attention.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgw_attention.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgw_attention.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgw_attention.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgw_attention.ThemeStyle.RowsStyle.Height = 22;
+            this.dgw_attention.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgw_attention.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgw_attention.Visible = false;
+            // 
+            // btn_settings
+            // 
+            this.btn_settings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_settings.Animated = true;
+            this.btn_settings.AnimationHoverSpeed = 0.07F;
+            this.btn_settings.AnimationSpeed = 0.03F;
+            this.btn_settings.BackColor = System.Drawing.Color.Transparent;
+            this.btn_settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_settings.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(121)))), ((int)(((byte)(123)))));
+            this.btn_settings.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_settings.BorderSize = 2;
+            this.btn_settings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_settings.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_settings.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_settings.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
+            this.btn_settings.ForeColor = System.Drawing.Color.White;
+            this.btn_settings.Image = ((System.Drawing.Image)(resources.GetObject("btn_settings.Image")));
+            this.btn_settings.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_settings.Location = new System.Drawing.Point(774, 577);
+            this.btn_settings.Name = "btn_settings";
+            this.btn_settings.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
+            this.btn_settings.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.btn_settings.OnHoverForeColor = System.Drawing.Color.Empty;
+            this.btn_settings.OnHoverImage = null;
+            this.btn_settings.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_settings.Radius = 6;
+            this.btn_settings.Size = new System.Drawing.Size(50, 40);
+            this.btn_settings.TabIndex = 21;
+            this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
+            // 
+            // gunaPanel_right
+            // 
+            this.gunaPanel_right.BackColor = System.Drawing.Color.Transparent;
+            this.gunaPanel_right.Controls.Add(this.btn_settings);
+            this.gunaPanel_right.Controls.Add(this.gunaPanel_rightattention);
+            this.gunaPanel_right.Controls.Add(this.btn_appstore);
+            this.gunaPanel_right.Controls.Add(this.btn_googleplay);
+            this.gunaPanel_right.Controls.Add(this.gunaPanel_rightupper);
+            this.gunaPanel_right.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gunaPanel_right.Location = new System.Drawing.Point(396, 0);
+            this.gunaPanel_right.Name = "gunaPanel_right";
+            this.gunaPanel_right.Size = new System.Drawing.Size(884, 720);
+            this.gunaPanel_right.TabIndex = 2;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1787,16 +1787,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MayaAcademia Giriş Paneli";
             this.Load += new System.EventHandler(this.Login_Load);
-            this.gunaPanel_right.ResumeLayout(false);
-            this.gunaPanel_rightattention.ResumeLayout(false);
-            this.gunaPanel_btnattention.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgw_attention)).EndInit();
-            this.gunaPanel_attention.ResumeLayout(false);
-            this.usercontrol_announcement.ResumeLayout(false);
-            this.usercontrol_announcement.PerformLayout();
-            this.usercontrol_announcement2.ResumeLayout(false);
-            this.usercontrol_announcement2.PerformLayout();
-            this.gunaPanel_rightupper.ResumeLayout(false);
             this.panel_forgotpassword.ResumeLayout(false);
             this.panel_forgotpassword.PerformLayout();
             this.gunaPanel_leftupper.ResumeLayout(false);
@@ -1813,37 +1803,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbox_loading)).EndInit();
             this.gunaPanel_left.ResumeLayout(false);
             this.gunaPanel_left.PerformLayout();
+            this.gunaPanel_rightupper.ResumeLayout(false);
+            this.gunaPanel_rightattention.ResumeLayout(false);
+            this.gunaPanel_attention.ResumeLayout(false);
+            this.usercontrol_announcement.ResumeLayout(false);
+            this.usercontrol_announcement.PerformLayout();
+            this.usercontrol_announcement2.ResumeLayout(false);
+            this.usercontrol_announcement2.PerformLayout();
+            this.gunaPanel_btnattention.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgw_attention)).EndInit();
+            this.gunaPanel_right.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Guna.UI.WinForms.GunaPanel gunaPanel_right;
-        private Guna.UI.WinForms.GunaPanel gunaPanel_rightupper;
-        private Guna.UI.WinForms.GunaControlBox gunaControlBox_minimize;
-        private Guna.UI.WinForms.GunaControlBox gunaControlBox_close;
         private Guna.UI.WinForms.GunaDragControl gunaDragControl1;
         private Guna.UI.WinForms.GunaDragControl gunaDragControl2;
-        private Guna.UI.WinForms.GunaAdvenceButton btn_googleplay;
-        private Guna.UI.WinForms.GunaAdvenceButton btn_appstore;
-        private Guna.UI.WinForms.GunaAdvenceButton btn_help;
-        private Guna.UI.WinForms.GunaTileButton btn_settings;
         private System.Windows.Forms.Timer timer_login;
         private System.Windows.Forms.Timer timer_logindenied;
         private System.Windows.Forms.Timer timer_resetpassword;
         private System.Windows.Forms.Timer timer_resetpassworddenied;
         private System.Windows.Forms.Timer timer_btnforgotpassword;
         private System.Windows.Forms.Timer timer_backtologin;
-        private Guna.UI.WinForms.GunaPanel gunaPanel_rightattention;
-        private Guna.UI.WinForms.GunaPanel gunaPanel_btnattention;
-        private Guna.UI.WinForms.GunaTileButton btn_announcement;
-        private Guna.UI.WinForms.GunaElipsePanel gunaPanel_attention;
-        private Guna.UI.WinForms.GunaPanel usercontrol_announcement;
-        private Guna.UI.WinForms.GunaSeparator gunaSeparator;
-        private Guna.UI.WinForms.GunaLabel lbl_announcement;
-        private Guna.UI.WinForms.GunaLabel lbl_announcementtitle;
-        private Guna.UI.WinForms.GunaAdvenceButton btn_moredetails;
-        private Guna.UI.WinForms.GunaLabel lbl_announcementtime;
         private Guna.UI.WinForms.GunaPanel gunaPanel_leftupper;
         private Guna.UI.WinForms.GunaPanel gunaPanel8;
         private Guna.UI.WinForms.GunaTileButton gunaTileButton3;
@@ -1893,14 +1875,32 @@
         private Guna.UI.WinForms.GunaTileButton btn_disabledlogin;
         private Guna.UI.WinForms.GunaTextBox txt_fusername;
         private Guna.UI.WinForms.GunaLabel lbl_infotitle;
+        private System.Windows.Forms.Timer timer_loginlicense;
+        private Guna.UI.WinForms.GunaPanel gunaPanel_rightupper;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_help;
+        private Guna.UI.WinForms.GunaControlBox gunaControlBox_minimize;
+        private Guna.UI.WinForms.GunaControlBox gunaControlBox_close;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_googleplay;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_appstore;
+        private Guna.UI.WinForms.GunaPanel gunaPanel_rightattention;
+        private Guna.UI.WinForms.GunaPanel gunaPanel_btnattention;
         private Guna.UI.WinForms.GunaDataGridView dgw_attention;
+        private Guna.UI.WinForms.GunaTileButton btn_announcement;
+        private Guna.UI.WinForms.GunaElipsePanel gunaPanel_attention;
+        private Guna.UI.WinForms.GunaPanel usercontrol_announcement;
         private Guna.UI.WinForms.GunaPanel usercontrol_announcement2;
         private Guna.UI.WinForms.GunaSeparator gunaSeparator2;
         private Guna.UI.WinForms.GunaLabel lbl_announcement2;
         private Guna.UI.WinForms.GunaLabel lbl_announcementtitle2;
-        private Guna.UI.WinForms.GunaLabel lbl_announcementtime2;
         private Guna.UI.WinForms.GunaAdvenceButton btn_moredetails2;
-        private System.Windows.Forms.Timer timer_loginlicense;
+        private Guna.UI.WinForms.GunaLabel lbl_announcementtime2;
+        private Guna.UI.WinForms.GunaSeparator gunaSeparator;
+        private Guna.UI.WinForms.GunaLabel lbl_announcement;
+        private Guna.UI.WinForms.GunaLabel lbl_announcementtitle;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_moredetails;
+        private Guna.UI.WinForms.GunaLabel lbl_announcementtime;
+        private Guna.UI.WinForms.GunaTileButton btn_settings;
+        private Guna.UI.WinForms.GunaPanel gunaPanel_right;
     }
 }
 

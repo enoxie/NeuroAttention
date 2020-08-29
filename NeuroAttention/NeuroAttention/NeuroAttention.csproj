@@ -84,8 +84,9 @@
     <Reference Include="ChreneLib">
       <HintPath>..\..\..\SeyahatAcentasi\SeyahatAcentasi\SeyahatAcentasi\source\ChreneLib.dll</HintPath>
     </Reference>
-    <Reference Include="Guna.UI">
-      <HintPath>..\..\..\SeyahatAcentasi\SeyahatAcentasi\SeyahatAcentasi\source\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib\.net 4.0\Guna.UI.dll</HintPath>
+    <Reference Include="Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System">

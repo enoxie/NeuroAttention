@@ -29,39 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.btn_generate = new Guna.UI.WinForms.GunaButton();
             this.txt_gun = new Guna.UI.WinForms.GunaTextBox();
             this.txt_dogrulamakodu = new Guna.UI.WinForms.GunaTextBox();
             this.txt_lisansanahtari = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.btn_generate = new Guna.UI.WinForms.GunaButton();
             this.SuspendLayout();
-            // 
-            // btn_generate
-            // 
-            this.btn_generate.AnimationHoverSpeed = 0.07F;
-            this.btn_generate.AnimationSpeed = 0.03F;
-            this.btn_generate.BackColor = System.Drawing.Color.Transparent;
-            this.btn_generate.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_generate.BorderColor = System.Drawing.Color.Black;
-            this.btn_generate.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_generate.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_generate.Font = new System.Drawing.Font("Museo Sans 100", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_generate.ForeColor = System.Drawing.Color.White;
-            this.btn_generate.Image = null;
-            this.btn_generate.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_generate.Location = new System.Drawing.Point(102, 333);
-            this.btn_generate.Name = "btn_generate";
-            this.btn_generate.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btn_generate.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_generate.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_generate.OnHoverImage = null;
-            this.btn_generate.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_generate.Size = new System.Drawing.Size(138, 41);
-            this.btn_generate.TabIndex = 7;
-            this.btn_generate.Text = "Lisans Oluştur";
-            this.btn_generate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_generate.Click += new System.EventHandler(this.btn_generate_Click);
             // 
             // txt_gun
             // 
@@ -144,6 +118,32 @@
             this.gunaLabel2.TabIndex = 12;
             this.gunaLabel2.Text = "Lisanslama Sistemi";
             // 
+            // btn_generate
+            // 
+            this.btn_generate.AnimationHoverSpeed = 0.07F;
+            this.btn_generate.AnimationSpeed = 0.03F;
+            this.btn_generate.BackColor = System.Drawing.Color.Transparent;
+            this.btn_generate.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_generate.BorderColor = System.Drawing.Color.Black;
+            this.btn_generate.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_generate.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_generate.Font = new System.Drawing.Font("Museo Sans 100", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_generate.ForeColor = System.Drawing.Color.White;
+            this.btn_generate.Image = null;
+            this.btn_generate.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_generate.Location = new System.Drawing.Point(102, 333);
+            this.btn_generate.Name = "btn_generate";
+            this.btn_generate.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btn_generate.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_generate.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_generate.OnHoverImage = null;
+            this.btn_generate.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_generate.Size = new System.Drawing.Size(138, 41);
+            this.btn_generate.TabIndex = 7;
+            this.btn_generate.Text = "Lisans Oluştur";
+            this.btn_generate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_generate.Click += new System.EventHandler(this.btn_generate_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -168,12 +168,12 @@
         }
 
         #endregion
-        private Guna.UI.WinForms.GunaButton btn_generate;
         private Guna.UI.WinForms.GunaTextBox txt_gun;
         private Guna.UI.WinForms.GunaTextBox txt_dogrulamakodu;
         private Guna.UI.WinForms.GunaTextBox txt_lisansanahtari;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaButton btn_generate;
     }
 }
 

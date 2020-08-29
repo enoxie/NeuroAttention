@@ -32,6 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConstantAttention));
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
+            this.btn_numericscreentimeupdown = new Guna.UI.WinForms.GunaButton();
+            this.txt_numericscreentime = new Guna.UI.WinForms.GunaTextBox();
+            this.btn_numericrangeupdown2 = new Guna.UI.WinForms.GunaButton();
+            this.txt_numericrange2 = new Guna.UI.WinForms.GunaTextBox();
+            this.btn_numericrangeupdown1 = new Guna.UI.WinForms.GunaButton();
+            this.txt_numericrange1 = new Guna.UI.WinForms.GunaTextBox();
+            this.btn_numerictimeupdown = new Guna.UI.WinForms.GunaButton();
             this.gunaGroupBox2 = new Guna.UI.WinForms.GunaGroupBox();
             this.checkbox_mustasigntask = new Guna.UI.WinForms.GunaCheckBox();
             this.checkbox_gostergizle = new Guna.UI.WinForms.GunaCheckBox();
@@ -40,16 +47,13 @@
             this.checkbox_impact = new Guna.UI.WinForms.GunaCheckBox();
             this.checkbox_minus = new Guna.UI.WinForms.GunaCheckBox();
             this.checkbox_plus = new Guna.UI.WinForms.GunaCheckBox();
-            this.numeric_screentime = new Guna.UI.WinForms.GunaNumeric();
-            this.numeric_time = new Guna.UI.WinForms.GunaNumeric();
+            this.txt_numerictime = new Guna.UI.WinForms.GunaTextBox();
             this.btn_stop = new Guna.UI.WinForms.GunaTileButton();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.numeric_numberrange2 = new Guna.UI.WinForms.GunaNumeric();
-            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_numericrange = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_screentimems = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_time = new Guna.UI.WinForms.GunaLabel();
             this.btn_start = new Guna.UI.WinForms.GunaTileButton();
-            this.numeric_numberrange1 = new Guna.UI.WinForms.GunaNumeric();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_timesec = new Guna.UI.WinForms.GunaLabel();
             this.lbl_screentime = new Guna.UI.WinForms.GunaLabel();
             this.btn_logout = new Guna.UI.WinForms.GunaAdvenceButton();
             this.lbl_process = new Guna.UI.WinForms.GunaLabel();
@@ -88,6 +92,10 @@
             this.timer_musicinfo = new System.Windows.Forms.Timer(this.components);
             this.timer_playlist = new System.Windows.Forms.Timer(this.components);
             this.timer_playlistreverse = new System.Windows.Forms.Timer(this.components);
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1.SuspendLayout();
             this.gunaGroupBox1.SuspendLayout();
             this.gunaGroupBox2.SuspendLayout();
@@ -120,18 +128,26 @@
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.White;
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox1.BorderSize = 1;
+            this.gunaGroupBox1.Controls.Add(this.gunaLabel5);
+            this.gunaGroupBox1.Controls.Add(this.gunaLabel3);
+            this.gunaGroupBox1.Controls.Add(this.gunaLabel2);
+            this.gunaGroupBox1.Controls.Add(this.gunaLabel1);
+            this.gunaGroupBox1.Controls.Add(this.btn_numericscreentimeupdown);
+            this.gunaGroupBox1.Controls.Add(this.txt_numericscreentime);
+            this.gunaGroupBox1.Controls.Add(this.btn_numericrangeupdown2);
+            this.gunaGroupBox1.Controls.Add(this.txt_numericrange2);
+            this.gunaGroupBox1.Controls.Add(this.btn_numericrangeupdown1);
+            this.gunaGroupBox1.Controls.Add(this.txt_numericrange1);
+            this.gunaGroupBox1.Controls.Add(this.btn_numerictimeupdown);
             this.gunaGroupBox1.Controls.Add(this.gunaGroupBox2);
             this.gunaGroupBox1.Controls.Add(this.gbox_normal);
-            this.gunaGroupBox1.Controls.Add(this.numeric_screentime);
-            this.gunaGroupBox1.Controls.Add(this.numeric_time);
+            this.gunaGroupBox1.Controls.Add(this.txt_numerictime);
             this.gunaGroupBox1.Controls.Add(this.btn_stop);
-            this.gunaGroupBox1.Controls.Add(this.gunaLabel1);
-            this.gunaGroupBox1.Controls.Add(this.numeric_numberrange2);
-            this.gunaGroupBox1.Controls.Add(this.gunaLabel5);
-            this.gunaGroupBox1.Controls.Add(this.gunaLabel2);
+            this.gunaGroupBox1.Controls.Add(this.lbl_numericrange);
+            this.gunaGroupBox1.Controls.Add(this.lbl_screentimems);
+            this.gunaGroupBox1.Controls.Add(this.lbl_time);
             this.gunaGroupBox1.Controls.Add(this.btn_start);
-            this.gunaGroupBox1.Controls.Add(this.numeric_numberrange1);
-            this.gunaGroupBox1.Controls.Add(this.gunaLabel3);
+            this.gunaGroupBox1.Controls.Add(this.lbl_timesec);
             this.gunaGroupBox1.Controls.Add(this.lbl_screentime);
             this.gunaGroupBox1.Font = new System.Drawing.Font("Infoma Light", 10F);
             this.gunaGroupBox1.LineColor = System.Drawing.Color.Gainsboro;
@@ -142,6 +158,160 @@
             this.gunaGroupBox1.TabIndex = 52;
             this.gunaGroupBox1.Text = "Uygulama Ayarları";
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(330, 6);
+            // 
+            // btn_numericscreentimeupdown
+            // 
+            this.btn_numericscreentimeupdown.AnimationHoverSpeed = 0.07F;
+            this.btn_numericscreentimeupdown.AnimationSpeed = 0.03F;
+            this.btn_numericscreentimeupdown.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_numericscreentimeupdown.BorderColor = System.Drawing.Color.Black;
+            this.btn_numericscreentimeupdown.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_numericscreentimeupdown.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_numericscreentimeupdown.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_numericscreentimeupdown.ForeColor = System.Drawing.Color.White;
+            this.btn_numericscreentimeupdown.Image = ((System.Drawing.Image)(resources.GetObject("btn_numericscreentimeupdown.Image")));
+            this.btn_numericscreentimeupdown.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_numericscreentimeupdown.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_numericscreentimeupdown.Location = new System.Drawing.Point(167, 35);
+            this.btn_numericscreentimeupdown.Name = "btn_numericscreentimeupdown";
+            this.btn_numericscreentimeupdown.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_numericscreentimeupdown.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_numericscreentimeupdown.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_numericscreentimeupdown.OnHoverImage = null;
+            this.btn_numericscreentimeupdown.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_numericscreentimeupdown.OnPressedDepth = 0;
+            this.btn_numericscreentimeupdown.Size = new System.Drawing.Size(25, 25);
+            this.btn_numericscreentimeupdown.TabIndex = 74;
+            this.btn_numericscreentimeupdown.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_numericscreentimeupdown_MouseDown);
+            // 
+            // txt_numericscreentime
+            // 
+            this.txt_numericscreentime.BaseColor = System.Drawing.Color.White;
+            this.txt_numericscreentime.BorderColor = System.Drawing.Color.Silver;
+            this.txt_numericscreentime.BorderSize = 1;
+            this.txt_numericscreentime.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_numericscreentime.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_numericscreentime.FocusedBorderColor = System.Drawing.Color.Silver;
+            this.txt_numericscreentime.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_numericscreentime.Font = new System.Drawing.Font("Infoma Light", 10F);
+            this.txt_numericscreentime.Location = new System.Drawing.Point(105, 34);
+            this.txt_numericscreentime.Name = "txt_numericscreentime";
+            this.txt_numericscreentime.PasswordChar = '\0';
+            this.txt_numericscreentime.Size = new System.Drawing.Size(90, 27);
+            this.txt_numericscreentime.TabIndex = 73;
+            this.txt_numericscreentime.Text = "1000";
+            this.txt_numericscreentime.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_numericscreentime_KeyPress);
+            // 
+            // btn_numericrangeupdown2
+            // 
+            this.btn_numericrangeupdown2.AnimationHoverSpeed = 0.07F;
+            this.btn_numericrangeupdown2.AnimationSpeed = 0.03F;
+            this.btn_numericrangeupdown2.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_numericrangeupdown2.BorderColor = System.Drawing.Color.Black;
+            this.btn_numericrangeupdown2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_numericrangeupdown2.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_numericrangeupdown2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_numericrangeupdown2.ForeColor = System.Drawing.Color.White;
+            this.btn_numericrangeupdown2.Image = ((System.Drawing.Image)(resources.GetObject("btn_numericrangeupdown2.Image")));
+            this.btn_numericrangeupdown2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_numericrangeupdown2.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_numericrangeupdown2.Location = new System.Drawing.Point(264, 69);
+            this.btn_numericrangeupdown2.Name = "btn_numericrangeupdown2";
+            this.btn_numericrangeupdown2.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_numericrangeupdown2.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_numericrangeupdown2.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_numericrangeupdown2.OnHoverImage = null;
+            this.btn_numericrangeupdown2.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_numericrangeupdown2.OnPressedDepth = 0;
+            this.btn_numericrangeupdown2.Size = new System.Drawing.Size(25, 25);
+            this.btn_numericrangeupdown2.TabIndex = 72;
+            this.btn_numericrangeupdown2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_numericrangeupdown2_MouseDown);
+            // 
+            // txt_numericrange2
+            // 
+            this.txt_numericrange2.BaseColor = System.Drawing.Color.White;
+            this.txt_numericrange2.BorderColor = System.Drawing.Color.Silver;
+            this.txt_numericrange2.BorderSize = 1;
+            this.txt_numericrange2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_numericrange2.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_numericrange2.FocusedBorderColor = System.Drawing.Color.Silver;
+            this.txt_numericrange2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_numericrange2.Font = new System.Drawing.Font("Infoma Light", 10F);
+            this.txt_numericrange2.Location = new System.Drawing.Point(202, 68);
+            this.txt_numericrange2.Name = "txt_numericrange2";
+            this.txt_numericrange2.PasswordChar = '\0';
+            this.txt_numericrange2.Size = new System.Drawing.Size(90, 27);
+            this.txt_numericrange2.TabIndex = 71;
+            this.txt_numericrange2.Text = "9";
+            this.txt_numericrange2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_numericrange2_KeyPress);
+            // 
+            // btn_numericrangeupdown1
+            // 
+            this.btn_numericrangeupdown1.AnimationHoverSpeed = 0.07F;
+            this.btn_numericrangeupdown1.AnimationSpeed = 0.03F;
+            this.btn_numericrangeupdown1.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_numericrangeupdown1.BorderColor = System.Drawing.Color.Black;
+            this.btn_numericrangeupdown1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_numericrangeupdown1.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_numericrangeupdown1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_numericrangeupdown1.ForeColor = System.Drawing.Color.White;
+            this.btn_numericrangeupdown1.Image = ((System.Drawing.Image)(resources.GetObject("btn_numericrangeupdown1.Image")));
+            this.btn_numericrangeupdown1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_numericrangeupdown1.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_numericrangeupdown1.Location = new System.Drawing.Point(167, 69);
+            this.btn_numericrangeupdown1.Name = "btn_numericrangeupdown1";
+            this.btn_numericrangeupdown1.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_numericrangeupdown1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_numericrangeupdown1.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_numericrangeupdown1.OnHoverImage = null;
+            this.btn_numericrangeupdown1.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_numericrangeupdown1.OnPressedDepth = 0;
+            this.btn_numericrangeupdown1.Size = new System.Drawing.Size(25, 25);
+            this.btn_numericrangeupdown1.TabIndex = 70;
+            this.btn_numericrangeupdown1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_numericrangeupdown1_MouseDown);
+            // 
+            // txt_numericrange1
+            // 
+            this.txt_numericrange1.BaseColor = System.Drawing.Color.White;
+            this.txt_numericrange1.BorderColor = System.Drawing.Color.Silver;
+            this.txt_numericrange1.BorderSize = 1;
+            this.txt_numericrange1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_numericrange1.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_numericrange1.FocusedBorderColor = System.Drawing.Color.Silver;
+            this.txt_numericrange1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_numericrange1.Font = new System.Drawing.Font("Infoma Light", 10F);
+            this.txt_numericrange1.Location = new System.Drawing.Point(105, 68);
+            this.txt_numericrange1.Name = "txt_numericrange1";
+            this.txt_numericrange1.PasswordChar = '\0';
+            this.txt_numericrange1.Size = new System.Drawing.Size(90, 27);
+            this.txt_numericrange1.TabIndex = 69;
+            this.txt_numericrange1.Text = "1";
+            this.txt_numericrange1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_numericrange1_KeyPress);
+            // 
+            // btn_numerictimeupdown
+            // 
+            this.btn_numerictimeupdown.AnimationHoverSpeed = 0.07F;
+            this.btn_numerictimeupdown.AnimationSpeed = 0.03F;
+            this.btn_numerictimeupdown.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_numerictimeupdown.BorderColor = System.Drawing.Color.Black;
+            this.btn_numerictimeupdown.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_numerictimeupdown.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_numerictimeupdown.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_numerictimeupdown.ForeColor = System.Drawing.Color.White;
+            this.btn_numerictimeupdown.Image = ((System.Drawing.Image)(resources.GetObject("btn_numerictimeupdown.Image")));
+            this.btn_numerictimeupdown.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_numerictimeupdown.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_numerictimeupdown.Location = new System.Drawing.Point(167, 102);
+            this.btn_numerictimeupdown.Name = "btn_numerictimeupdown";
+            this.btn_numerictimeupdown.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_numerictimeupdown.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_numerictimeupdown.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_numerictimeupdown.OnHoverImage = null;
+            this.btn_numerictimeupdown.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_numerictimeupdown.OnPressedDepth = 0;
+            this.btn_numerictimeupdown.Size = new System.Drawing.Size(25, 25);
+            this.btn_numerictimeupdown.TabIndex = 68;
+            this.btn_numerictimeupdown.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_numerictimeupdown_MouseDown);
             // 
             // gunaGroupBox2
             // 
@@ -274,41 +444,23 @@
             this.checkbox_plus.TabIndex = 15;
             this.checkbox_plus.Text = "+";
             // 
-            // numeric_screentime
+            // txt_numerictime
             // 
-            this.numeric_screentime.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numeric_screentime.BaseColor = System.Drawing.Color.White;
-            this.numeric_screentime.BorderColor = System.Drawing.Color.Silver;
-            this.numeric_screentime.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.numeric_screentime.ButtonForeColor = System.Drawing.Color.White;
-            this.numeric_screentime.Font = new System.Drawing.Font("Infoma Light", 10F);
-            this.numeric_screentime.ForeColor = System.Drawing.Color.Black;
-            this.numeric_screentime.Location = new System.Drawing.Point(105, 30);
-            this.numeric_screentime.Maximum = ((long)(9999999));
-            this.numeric_screentime.Minimum = ((long)(0));
-            this.numeric_screentime.Name = "numeric_screentime";
-            this.numeric_screentime.Size = new System.Drawing.Size(90, 30);
-            this.numeric_screentime.TabIndex = 41;
-            this.numeric_screentime.Text = "gunaNumeric3";
-            this.numeric_screentime.Value = ((long)(1000));
-            // 
-            // numeric_time
-            // 
-            this.numeric_time.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numeric_time.BaseColor = System.Drawing.Color.White;
-            this.numeric_time.BorderColor = System.Drawing.Color.Silver;
-            this.numeric_time.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.numeric_time.ButtonForeColor = System.Drawing.Color.White;
-            this.numeric_time.Font = new System.Drawing.Font("Infoma Light", 10F);
-            this.numeric_time.ForeColor = System.Drawing.Color.Black;
-            this.numeric_time.Location = new System.Drawing.Point(105, 100);
-            this.numeric_time.Maximum = ((long)(9999999));
-            this.numeric_time.Minimum = ((long)(0));
-            this.numeric_time.Name = "numeric_time";
-            this.numeric_time.Size = new System.Drawing.Size(90, 30);
-            this.numeric_time.TabIndex = 3;
-            this.numeric_time.Text = "gunaNumeric3";
-            this.numeric_time.Value = ((long)(60));
+            this.txt_numerictime.BaseColor = System.Drawing.Color.White;
+            this.txt_numerictime.BorderColor = System.Drawing.Color.Silver;
+            this.txt_numerictime.BorderSize = 1;
+            this.txt_numerictime.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_numerictime.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_numerictime.FocusedBorderColor = System.Drawing.Color.Silver;
+            this.txt_numerictime.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_numerictime.Font = new System.Drawing.Font("Infoma Light", 10F);
+            this.txt_numerictime.Location = new System.Drawing.Point(105, 101);
+            this.txt_numerictime.Name = "txt_numerictime";
+            this.txt_numerictime.PasswordChar = '\0';
+            this.txt_numerictime.Size = new System.Drawing.Size(90, 27);
+            this.txt_numerictime.TabIndex = 57;
+            this.txt_numerictime.Text = "60";
+            this.txt_numerictime.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_numerictime_KeyPress);
             // 
             // btn_stop
             // 
@@ -341,56 +493,38 @@
             this.btn_stop.Visible = false;
             this.btn_stop.Click += new System.EventHandler(this.btn_stop_Click);
             // 
-            // gunaLabel1
+            // lbl_numericrange
             // 
-            this.gunaLabel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Infoma Light", 10F);
-            this.gunaLabel1.Location = new System.Drawing.Point(20, 75);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(73, 14);
-            this.gunaLabel1.TabIndex = 2;
-            this.gunaLabel1.Text = "Sayı Aralığı";
+            this.lbl_numericrange.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbl_numericrange.AutoSize = true;
+            this.lbl_numericrange.Font = new System.Drawing.Font("Infoma Light", 10F);
+            this.lbl_numericrange.Location = new System.Drawing.Point(20, 75);
+            this.lbl_numericrange.Name = "lbl_numericrange";
+            this.lbl_numericrange.Size = new System.Drawing.Size(73, 14);
+            this.lbl_numericrange.TabIndex = 2;
+            this.lbl_numericrange.Text = "Sayı Aralığı";
             // 
-            // numeric_numberrange2
+            // lbl_screentimems
             // 
-            this.numeric_numberrange2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numeric_numberrange2.BaseColor = System.Drawing.Color.White;
-            this.numeric_numberrange2.BorderColor = System.Drawing.Color.Silver;
-            this.numeric_numberrange2.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.numeric_numberrange2.ButtonForeColor = System.Drawing.Color.White;
-            this.numeric_numberrange2.Font = new System.Drawing.Font("Infoma Light", 10F);
-            this.numeric_numberrange2.ForeColor = System.Drawing.Color.Black;
-            this.numeric_numberrange2.Location = new System.Drawing.Point(200, 65);
-            this.numeric_numberrange2.Maximum = ((long)(9999999));
-            this.numeric_numberrange2.Minimum = ((long)(1));
-            this.numeric_numberrange2.Name = "numeric_numberrange2";
-            this.numeric_numberrange2.Size = new System.Drawing.Size(90, 30);
-            this.numeric_numberrange2.TabIndex = 7;
-            this.numeric_numberrange2.Text = "gunaNumeric2";
-            this.numeric_numberrange2.Value = ((long)(9));
+            this.lbl_screentimems.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_screentimems.AutoSize = true;
+            this.lbl_screentimems.Font = new System.Drawing.Font("Infoma Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_screentimems.Location = new System.Drawing.Point(200, 40);
+            this.lbl_screentimems.Name = "lbl_screentimems";
+            this.lbl_screentimems.Size = new System.Drawing.Size(56, 12);
+            this.lbl_screentimems.TabIndex = 10;
+            this.lbl_screentimems.Text = "Milisaniye";
             // 
-            // gunaLabel5
+            // lbl_time
             // 
-            this.gunaLabel5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.Font = new System.Drawing.Font("Infoma Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.Location = new System.Drawing.Point(200, 40);
-            this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(56, 12);
-            this.gunaLabel5.TabIndex = 10;
-            this.gunaLabel5.Text = "Milisaniye";
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Infoma Light", 10F);
-            this.gunaLabel2.Location = new System.Drawing.Point(60, 110);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(34, 14);
-            this.gunaLabel2.TabIndex = 4;
-            this.gunaLabel2.Text = "Süre";
+            this.lbl_time.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbl_time.AutoSize = true;
+            this.lbl_time.Font = new System.Drawing.Font("Infoma Light", 10F);
+            this.lbl_time.Location = new System.Drawing.Point(60, 110);
+            this.lbl_time.Name = "lbl_time";
+            this.lbl_time.Size = new System.Drawing.Size(34, 14);
+            this.lbl_time.TabIndex = 4;
+            this.lbl_time.Text = "Süre";
             // 
             // btn_start
             // 
@@ -422,34 +556,16 @@
             this.btn_start.TabIndex = 38;
             this.btn_start.Click += new System.EventHandler(this.btn_start_Click);
             // 
-            // numeric_numberrange1
+            // lbl_timesec
             // 
-            this.numeric_numberrange1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numeric_numberrange1.BaseColor = System.Drawing.Color.White;
-            this.numeric_numberrange1.BorderColor = System.Drawing.Color.Silver;
-            this.numeric_numberrange1.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.numeric_numberrange1.ButtonForeColor = System.Drawing.Color.White;
-            this.numeric_numberrange1.Font = new System.Drawing.Font("Infoma Light", 10F);
-            this.numeric_numberrange1.ForeColor = System.Drawing.Color.Black;
-            this.numeric_numberrange1.Location = new System.Drawing.Point(105, 65);
-            this.numeric_numberrange1.Maximum = ((long)(9999999));
-            this.numeric_numberrange1.Minimum = ((long)(1));
-            this.numeric_numberrange1.Name = "numeric_numberrange1";
-            this.numeric_numberrange1.Size = new System.Drawing.Size(90, 30);
-            this.numeric_numberrange1.TabIndex = 0;
-            this.numeric_numberrange1.Text = "gunaNumeric1";
-            this.numeric_numberrange1.Value = ((long)(1));
-            // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Infoma Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(200, 110);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(39, 12);
-            this.gunaLabel3.TabIndex = 6;
-            this.gunaLabel3.Text = "Saniye";
+            this.lbl_timesec.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_timesec.AutoSize = true;
+            this.lbl_timesec.Font = new System.Drawing.Font("Infoma Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_timesec.Location = new System.Drawing.Point(200, 110);
+            this.lbl_timesec.Name = "lbl_timesec";
+            this.lbl_timesec.Size = new System.Drawing.Size(39, 12);
+            this.lbl_timesec.TabIndex = 6;
+            this.lbl_timesec.Text = "Saniye";
             // 
             // lbl_screentime
             // 
@@ -494,7 +610,7 @@
             this.btn_logout.OnHoverLineColor = System.Drawing.Color.Empty;
             this.btn_logout.OnPressedColor = System.Drawing.Color.Black;
             this.btn_logout.OnPressedDepth = 0;
-            this.btn_logout.Size = new System.Drawing.Size(120, 30);
+            this.btn_logout.Size = new System.Drawing.Size(120, 27);
             this.btn_logout.TabIndex = 51;
             this.btn_logout.Text = "UYGULAMAYI KAPAT";
             this.btn_logout.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -568,7 +684,7 @@
             this.btn_color4.ForeColor = System.Drawing.Color.White;
             this.btn_color4.Image = null;
             this.btn_color4.ImageSize = new System.Drawing.Size(52, 52);
-            this.btn_color4.Location = new System.Drawing.Point(180, 44);
+            this.btn_color4.Location = new System.Drawing.Point(180, 45);
             this.btn_color4.Name = "btn_color4";
             this.btn_color4.OnHoverBaseColor = System.Drawing.Color.Empty;
             this.btn_color4.OnHoverBorderColor = System.Drawing.Color.Empty;
@@ -592,7 +708,7 @@
             this.btn_color3.ForeColor = System.Drawing.Color.White;
             this.btn_color3.Image = null;
             this.btn_color3.ImageSize = new System.Drawing.Size(52, 52);
-            this.btn_color3.Location = new System.Drawing.Point(134, 44);
+            this.btn_color3.Location = new System.Drawing.Point(135, 45);
             this.btn_color3.Name = "btn_color3";
             this.btn_color3.OnHoverBaseColor = System.Drawing.Color.Empty;
             this.btn_color3.OnHoverBorderColor = System.Drawing.Color.Empty;
@@ -616,7 +732,7 @@
             this.btn_color2.ForeColor = System.Drawing.Color.White;
             this.btn_color2.Image = null;
             this.btn_color2.ImageSize = new System.Drawing.Size(52, 52);
-            this.btn_color2.Location = new System.Drawing.Point(92, 44);
+            this.btn_color2.Location = new System.Drawing.Point(90, 45);
             this.btn_color2.Name = "btn_color2";
             this.btn_color2.OnHoverBaseColor = System.Drawing.Color.Empty;
             this.btn_color2.OnHoverBorderColor = System.Drawing.Color.Empty;
@@ -640,7 +756,7 @@
             this.btn_color1.ForeColor = System.Drawing.Color.White;
             this.btn_color1.Image = null;
             this.btn_color1.ImageSize = new System.Drawing.Size(52, 52);
-            this.btn_color1.Location = new System.Drawing.Point(46, 44);
+            this.btn_color1.Location = new System.Drawing.Point(45, 45);
             this.btn_color1.Name = "btn_color1";
             this.btn_color1.OnHoverBaseColor = System.Drawing.Color.Empty;
             this.btn_color1.OnHoverBorderColor = System.Drawing.Color.Empty;
@@ -675,7 +791,7 @@
             this.panel_colortable.Controls.Add(this.btn_color2);
             this.panel_colortable.Controls.Add(this.btn_color1);
             this.panel_colortable.LeftSahddow = false;
-            this.panel_colortable.Location = new System.Drawing.Point(500, 300);
+            this.panel_colortable.Location = new System.Drawing.Point(1008, 206);
             this.panel_colortable.Name = "panel_colortable";
             this.panel_colortable.RightSahddow = true;
             this.panel_colortable.ShadowDepth = 20;
@@ -1013,6 +1129,50 @@
             this.timer_playlistreverse.Interval = 1;
             this.timer_playlistreverse.Tick += new System.EventHandler(this.timer_playlistreverse_Tick);
             // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Infoma Light", 10F);
+            this.gunaLabel1.Location = new System.Drawing.Point(41, 144);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(53, 14);
+            this.gunaLabel1.TabIndex = 75;
+            this.gunaLabel1.Text = "Profiller";
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Infoma Light", 8F);
+            this.gunaLabel2.Location = new System.Drawing.Point(114, 145);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(65, 11);
+            this.gunaLabel2.TabIndex = 76;
+            this.gunaLabel2.Text = "Hızlı Seçim 1";
+            // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Infoma Light", 8F);
+            this.gunaLabel3.Location = new System.Drawing.Point(200, 145);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(67, 11);
+            this.gunaLabel3.TabIndex = 77;
+            this.gunaLabel3.Text = "Hızlı Seçim 2";
+            // 
+            // gunaLabel5
+            // 
+            this.gunaLabel5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.gunaLabel5.AutoSize = true;
+            this.gunaLabel5.Font = new System.Drawing.Font("Infoma Light", 8F);
+            this.gunaLabel5.Location = new System.Drawing.Point(279, 145);
+            this.gunaLabel5.Name = "gunaLabel5";
+            this.gunaLabel5.Size = new System.Drawing.Size(67, 11);
+            this.gunaLabel5.TabIndex = 78;
+            this.gunaLabel5.Text = "Hızlı Seçim 3";
+            // 
             // ConstantAttention
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1059,14 +1219,11 @@
         #endregion
 
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
-        private Guna.UI.WinForms.GunaNumeric numeric_numberrange1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private Guna.UI.WinForms.GunaNumeric numeric_time;
-        private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI.WinForms.GunaLabel lbl_time;
+        private Guna.UI.WinForms.GunaLabel lbl_numericrange;
+        private Guna.UI.WinForms.GunaLabel lbl_timesec;
         private Guna.UI.WinForms.GunaLabel lbl_screentime;
-        private Guna.UI.WinForms.GunaNumeric numeric_numberrange2;
-        private Guna.UI.WinForms.GunaLabel gunaLabel5;
+        private Guna.UI.WinForms.GunaLabel lbl_screentimems;
         private Guna.UI.WinForms.GunaGroupBox gbox_normal;
         private Guna.UI.WinForms.GunaCheckBox checkbox_compartment;
         private Guna.UI.WinForms.GunaCheckBox checkbox_impact;
@@ -1077,7 +1234,6 @@
         private Guna.UI.WinForms.GunaLabel lbl_process;
         private System.Windows.Forms.Timer timer_time;
         private System.Windows.Forms.Timer timer_screentime;
-        private Guna.UI.WinForms.GunaNumeric numeric_screentime;
         private Guna.UI.WinForms.GunaLabel lbl_mustassignoperator;
         private Guna.UI.WinForms.GunaLabel lbl_mustassignnumber1;
         private Guna.UI.WinForms.GunaLabel lbl_mustassignnumber2;
@@ -1116,5 +1272,17 @@
         private System.Windows.Forms.Timer timer_playlist;
         private System.Windows.Forms.Timer timer_playlistreverse;
         private Guna.UI.WinForms.GunaPanel gunaPanel2;
+        private Guna.UI.WinForms.GunaTextBox txt_numerictime;
+        private Guna.UI.WinForms.GunaButton btn_numerictimeupdown;
+        private Guna.UI.WinForms.GunaButton btn_numericscreentimeupdown;
+        private Guna.UI.WinForms.GunaTextBox txt_numericscreentime;
+        private Guna.UI.WinForms.GunaButton btn_numericrangeupdown2;
+        private Guna.UI.WinForms.GunaTextBox txt_numericrange2;
+        private Guna.UI.WinForms.GunaButton btn_numericrangeupdown1;
+        private Guna.UI.WinForms.GunaTextBox txt_numericrange1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel5;
+        private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
     }
 }

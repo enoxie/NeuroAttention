@@ -29,6 +29,8 @@ namespace NeuroAttention
         SqlCommand cmd;
         SqlDataReader dr;
         public string mail;
+        public int userid;
+        public string name = "";
         public string password;
         /* Database Connection */
         public string conString = ("Data Source = 94.73.146.4; Initial Catalog = db60B; User Id = user60B; Password = PIuc71A0MQmp62Y;");
@@ -276,6 +278,7 @@ namespace NeuroAttention
             String licenset = "";
             string user = txt_username.Text;
             string pass = txt_password.Text;
+            
             con = new SqlConnection(conString);
             cmd = new SqlCommand();
             con.Open();
@@ -287,8 +290,15 @@ namespace NeuroAttention
             {
                 license = (int)dr["k_licenseaccess"];
                 licenset = dr["k_licenseexpirydate"].ToString();
-            
-
+                userid = (int)dr["k_id"];
+                dr.Close();
+                cmd.CommandText = "SELECT* FROM person WHERE personid ='" + userid + "'";
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    name = dr["personName"].ToString()+dr["personSurname"].ToString();
+                }
+                dr.Close();
                 if (license == 1)
                 {
 
@@ -297,8 +307,13 @@ namespace NeuroAttention
 
                     if (licensetime.Date < currentDateTime.Date)
                     {
+                        string logs = "insert into logs(log_user,log_time) values (@user,@time)";
+                        SqlCommand komut = new SqlCommand(logs, con);
+                        komut.Parameters.AddWithValue("@user", name);
+                        komut.Parameters.AddWithValue("@time", DateTime.Now);
+                        komut.ExecuteNonQuery();
                         if (lbl_accessdenied.Visible == true)
-                            lbl_accessdenied.Visible = false;
+                        lbl_accessdenied.Visible = false;
                         timer_loginlicense.Start();
                         pbox_loading.Visible = true;
                         panel_language.Visible = false;
@@ -317,10 +332,18 @@ namespace NeuroAttention
                         btn_forgotpassword.Visible = false;
                         pbox_logo.Visible = false;
 
+
+
+
                     }
 
                     else if (licensetime.Date == currentDateTime.Date)
                     {
+                        string logs = "insert into logs(log_user,log_time) values (@user,@time)";
+                        SqlCommand komut = new SqlCommand(logs, con);
+                        komut.Parameters.AddWithValue("@user", name);
+                        komut.Parameters.AddWithValue("@time", DateTime.Now);
+                        komut.ExecuteNonQuery();
                         License license = new License();
                         license.Show();
                         this.Hide();
@@ -348,7 +371,11 @@ namespace NeuroAttention
                     }
                     else if (licensetime.Date > currentDateTime.Date)
                     {
-                        
+                        string logs = "insert into logs(log_user,log_time) values (@user,@time)";
+                        SqlCommand komut = new SqlCommand(logs, con);
+                        komut.Parameters.AddWithValue("@user", name);
+                        komut.Parameters.AddWithValue("@time", DateTime.Now);
+                        komut.ExecuteNonQuery();
                         if (lbl_accessdenied.Visible == true)
                             lbl_accessdenied.Visible = false;
                         timer_login.Start();
@@ -376,7 +403,12 @@ namespace NeuroAttention
              
                 else
                 {
-
+                    
+                    string logs = "insert into logs(log_user,log_time) values (@user,@time)";
+                    SqlCommand komut = new SqlCommand(logs, con);
+                    komut.Parameters.AddWithValue("@user", name);
+                    komut.Parameters.AddWithValue("@time", DateTime.Now);
+                    komut.ExecuteNonQuery();
                     if (lbl_accessdenied.Visible == true)
                         lbl_accessdenied.Visible = false;
                     timer_loginlicense.Start();
@@ -406,6 +438,7 @@ namespace NeuroAttention
 
             else
             {
+                
                 if (lbl_accessdenied.Visible == true)
                     lbl_accessdenied.Visible = false;
                 timer_logindenied.Start();
@@ -427,6 +460,7 @@ namespace NeuroAttention
                 pbox_logo.Visible = false;
                 
             }
+           
             con.Close();
 
 

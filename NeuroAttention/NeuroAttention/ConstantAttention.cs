@@ -21,9 +21,9 @@ namespace NeuroAttention
         
         public int trackChanged;
         public WMPLib.WindowsMediaPlayer muzikcalar = new WMPLib.WindowsMediaPlayer();
-        public string[] musicArray = new string[3];
-        public string[] musicinfoArray = new string[3];
-        public string[] musictitleArray = new string[3];
+        public string[] musicArray = new string[4];
+        public string[] musicinfoArray = new string[4];
+        public string[] musictitleArray = new string[4];
         public int musicid = 0;
         public bool musicStarted = false;
         public bool musicpaused = false;
@@ -36,10 +36,10 @@ namespace NeuroAttention
 
         public void randomNumberGenerator()
         {
-            int numeric1 = (int)numeric_numberrange1.Value;
-            int numeric2 = (int)numeric_numberrange2.Value;
-            number1 = rnd.Next(numeric1, numeric2);
-            number2 = rnd.Next(numeric1, numeric2);
+            int numeric1 = int.Parse(txt_numericrange1.Text);
+            int numeric2 = int.Parse(txt_numericrange2.Text);
+            number1 = rnd.Next(numeric1, numeric2+1);
+            number2 = rnd.Next(numeric1, numeric2+1);
         }
 
         public void processNumber()
@@ -657,8 +657,6 @@ namespace NeuroAttention
                     }
             }
          
-
-
         }
 
 
@@ -1323,25 +1321,69 @@ namespace NeuroAttention
         {
             
              
-            if(checkbox_plus.Checked == false && checkbox_minus.Checked == false && checkbox_impact.Checked == false && checkbox_compartment.Checked == false || numeric_time.Value == 0 || numeric_screentime.Value == 0)
+            if(checkbox_plus.Checked == false && checkbox_minus.Checked == false && checkbox_impact.Checked == false && checkbox_compartment.Checked == false || int.Parse(txt_numerictime.Text) == 0 || int.Parse(txt_numericscreentime.Text) == 0 )
             {
-                MessageBox.Show("Ayarları doğru şekilde yapınız.");
+                DialogResult dresult = new DialogResult();
+                dresult = MessageBox.Show("Lütfen ayarları doğru şekilde yapınız", "Uyarı", MessageBoxButtons.OK);
                 btn_stop.Visible = false;
                 btn_start.Visible = true;
-                numeric_time.Value = 60;
-                numeric_screentime.Value = 1000;
-                numeric_numberrange1.Value = 1;
-                numeric_numberrange2.Value = 9;
-                checkbox_plus.Checked = false;
-                checkbox_minus.Checked = false;
-                checkbox_impact.Checked = false;
-                checkbox_compartment.Checked = false;
                 lbl_screentime.Focus();
             }
 
             
            else if (checkbox_mustasigntask.Checked==true)
             {
+
+                if(checkbox_plus.Checked && checkbox_minus.Checked && checkbox_impact.Checked && checkbox_compartment.Checked)
+                {
+                    if(btn_color1.Visible ==false || btn_color2.Visible == false || btn_color3.Visible == false || btn_color4.Visible == false)
+                    {
+                        btn_color1.Location = new Point(45, 45);
+                        btn_color2.Location = new Point(90, 45);
+                        btn_color3.Location = new Point(135, 45);
+                        btn_color4.Location = new Point(180, 45);
+                        btn_color1.Visible = true;
+                        btn_color2.Visible = true;
+                        btn_color3.Visible = true;
+                        btn_color4.Visible = true;
+                     
+                    }
+                }
+
+                else if(checkbox_plus.Checked && checkbox_minus.Checked && checkbox_impact.Checked &&checkbox_compartment.Checked == false)
+                {
+                    btn_color4.Visible = false;
+                    btn_color1.Location = new Point(50, 45);
+                    btn_color2.Location = new Point(btn_color1.Location.X + 60, 45);
+                    btn_color3.Location = new Point(btn_color2.Location.X + 60, 45);
+                }
+
+                else if (checkbox_plus.Checked && checkbox_minus.Checked && checkbox_impact.Checked== false && checkbox_compartment.Checked == false)
+                {
+                    btn_color3.Visible = false;
+                    btn_color4.Visible = false;
+                    btn_color1.Location = new Point(50, 45);
+                    btn_color2.Location = new Point(btn_color1.Location.X + 120, 45);
+                    
+                }
+
+                else if (checkbox_plus.Checked && checkbox_minus.Checked == false && checkbox_impact.Checked == false && checkbox_compartment.Checked == false)
+                {
+                    btn_color2.Visible = false;
+                    btn_color3.Visible = false;
+                    btn_color4.Visible = false;
+                    btn_color1.Location = new Point(110, 45);
+                   
+                }
+
+                else if (checkbox_plus.Checked && checkbox_minus.Checked == false && checkbox_impact.Checked && checkbox_compartment.Checked == false)
+                {
+                    btn_color2.Visible = false;
+                    btn_color4.Visible = false;
+                    btn_color1.Location = new Point(50, 45);
+                    btn_color3.Location = new Point(btn_color1.Location.X + 120, 45);
+                }
+
                 int color = rnd.Next(1, 5);
                 if(color == 1)
                 {
@@ -1382,29 +1424,46 @@ namespace NeuroAttention
 
             else if (checkbox_gostergizle.Checked == true)
             {
-                randomNumber();
-                timer_time.Interval = (int)numeric_time.Value * 1000;
-                timer_screentime.Interval = (int)numeric_screentime.Value;
-                timer_hidetime.Interval = (int)numeric_screentime.Value;
-                timer_time.Start();
-                timer_hidetime.Start();
-                lbl_process.Visible = true;
-                btn_start.Visible = false;
-                btn_stop.Visible = true;
-
-
+                if(int.Parse(txt_numericrange2.Text) < int.Parse(txt_numericrange1.Text) || int.Parse(txt_numericrange2.Text) == int.Parse(txt_numericrange1.Text))
+                {
+                    DialogResult dresult = new DialogResult();
+                    dresult = MessageBox.Show("Lütfen ayarları doğru şekilde yapınız", "Uyarı", MessageBoxButtons.OK);
+                }
+                else
+                {
+                    randomNumber();
+                    timer_time.Interval = int.Parse(txt_numerictime.Text) * 1000;
+                    timer_screentime.Interval = int.Parse(txt_numericscreentime.Text);
+                    timer_hidetime.Interval = int.Parse(txt_numericscreentime.Text);
+                    timer_time.Start();
+                    timer_hidetime.Start();
+                    lbl_process.Visible = true;
+                    btn_start.Visible = false;
+                    btn_stop.Visible = true;
+                }
+              
             }
 
             else
-            { 
-                randomNumber();
-                timer_time.Interval = (int)numeric_time.Value * 1000;
-                timer_screentime.Interval = (int)numeric_screentime.Value;
-                timer_time.Start();
-                timer_screentime.Start();
-                lbl_process.Visible = true;
-                btn_start.Visible = false;
-                btn_stop.Visible = true;
+            {
+                if (int.Parse(txt_numericrange2.Text) < int.Parse(txt_numericrange1.Text) || int.Parse(txt_numericrange2.Text) == int.Parse(txt_numericrange1.Text))
+                {
+                    DialogResult dresult = new DialogResult();
+                    dresult = MessageBox.Show("Lütfen ayarları doğru şekilde yapınız", "Uyarı", MessageBoxButtons.OK);
+                }
+                else
+                {
+                    randomNumber();
+                    timer_time.Interval = int.Parse(txt_numerictime.Text) * 1000;
+                    timer_screentime.Interval = int.Parse(txt_numericscreentime.Text);
+                    timer_time.Start();
+                    timer_screentime.Start();
+                    lbl_process.Visible = true;
+                    btn_start.Visible = false;
+                    btn_stop.Visible = true;
+
+                }
+               
 
             }
 
@@ -1489,15 +1548,19 @@ namespace NeuroAttention
 
         private void ConstantAttention_Load(object sender, EventArgs e)
         {
-            musicArray[0] = @"https://enesbilgi.com/audio/1.mp3";
-            musicArray[1] = @"https://enesbilgi.com/audio/2.mp3";
-            musicArray[2] = @"https://enesbilgi.com/audio/3.mp3";
+            musicArray[0] = @"http://enesbilgi.com/audio/1.mp3";
+            musicArray[1] = @"http://enesbilgi.com/audio/2.mp3";
+            musicArray[2] = @"http://enesbilgi.com/audio/3.mp3";
+            musicArray[3] = @"http://enesbilgi.com/audio/4.mp3";
             musicinfoArray[0] = "Legend of the Eagle Bearer";
             musicinfoArray[1] = "Season Two Main Theme";
             musicinfoArray[2] = "Azura's Coast";
+            musicinfoArray[3] = "Soundtrack";
             musictitleArray[0] = "Assassin's Creed Odyssey";
             musictitleArray[1] = "The Walking Dead";
             musictitleArray[2] = "Brad Derrick";
+            musictitleArray[3] = "The Witcher";
+           
         }
 
        
@@ -1510,9 +1573,9 @@ namespace NeuroAttention
               if (checkbox_gostergizle.Checked == true)
             {
                 randomNumberMustAssignTask();
-                timer_time.Interval = (int)numeric_time.Value * 1000;
-                timer_screentime.Interval = (int)numeric_screentime.Value;
-                timer_hidetime.Interval = (int)numeric_screentime.Value;
+                timer_time.Interval = int.Parse(txt_numerictime.Text) * 1000;
+                timer_screentime.Interval = int.Parse(txt_numericscreentime.Text);
+                timer_hidetime.Interval = int.Parse(txt_numericscreentime.Text);
                 timer_time.Start();
                 timer_hidetime.Start();
                panel_mustasigntask.Visible=true;
@@ -1525,8 +1588,8 @@ namespace NeuroAttention
             else
             {
                 randomNumberMustAssignTask();
-                timer_time.Interval = (int)numeric_time.Value * 1000;
-                timer_screentime.Interval = (int)numeric_screentime.Value;
+                timer_time.Interval = int.Parse(txt_numerictime.Text) * 1000;
+                timer_screentime.Interval = int.Parse(txt_numericscreentime.Text);
                 timer_time.Start();
                 timer_screentime.Start();
                 panel_mustasigntask.Visible = true;
@@ -1567,7 +1630,7 @@ namespace NeuroAttention
                 lbl_songtitle.Visible = true;
                 lbl_songinfo.Visible = true;
                 btn_pause.Visible = true;
-               
+              
             }
 
             else if(musicpaused == true)
@@ -1632,7 +1695,8 @@ namespace NeuroAttention
 
                 lbl_songtitle.Text = musictitleArray[musicid];
                 lbl_songinfo.Text = musicinfoArray[musicid];
-
+                lbl_songtitle.Location = new Point(290, 9);
+                lbl_songinfo.Location = new Point(290 + lbl_songtitle.Width, 9);
                 lbl_songtitle.Visible = true;
                 lbl_songinfo.Visible = true;
                 btn_pause.Visible = true;
@@ -1685,6 +1749,8 @@ namespace NeuroAttention
                 timer_musicinfo.Start();
                 lbl_songtitle.Text = musictitleArray[musicid];
                 lbl_songinfo.Text = musicinfoArray[musicid];
+                lbl_songtitle.Location = new Point(290, 9);
+                lbl_songinfo.Location = new Point(290 + lbl_songtitle.Width, 9);
                 lbl_songtitle.Visible = true;
                 lbl_songinfo.Visible = true;
                 btn_pause.Visible = true;
@@ -1743,6 +1809,174 @@ namespace NeuroAttention
             }
         }
 
+        private void btn_numerictimeupdown_MouseDown(object sender, MouseEventArgs e)
+        {
+            int numericsayi;
+            switch (MouseButtons)
+            {
+                case MouseButtons.Right:
+                    if(txt_numerictime.Text != "")
+                    {
+                        numericsayi = int.Parse(txt_numerictime.Text);
+                        if (numericsayi != 0)
+                        {
+                            numericsayi -= 1;
+                        }
+                        txt_numerictime.Text = numericsayi.ToString();
+
+                    }
+                    break;
+
+                case MouseButtons.Left:
+                    if(txt_numerictime.Text != "")
+                    {
+                        numericsayi = int.Parse(txt_numerictime.Text);
+                        if (numericsayi >= 0)
+                        {
+                            numericsayi += 1;
+                        }
+                        txt_numerictime.Text = numericsayi.ToString();
+                    }
+                    break;
+            }
+        }
+
+        private void txt_numerictime_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Char chr = e.KeyChar;
+            if (!Char.IsDigit(chr) && chr !=8)
+            {
+                e.Handled = true;
+              
+            }
+        }
+
+        private void btn_numericrangeupdown1_MouseDown(object sender, MouseEventArgs e)
+        {
+            int numericsayi;
+            switch (MouseButtons)
+            {
+                case MouseButtons.Right:
+                    if (txt_numericrange1.Text != "")
+                    {
+                        numericsayi = int.Parse(txt_numericrange1.Text);
+                        if (numericsayi != 0)
+                        {
+                            numericsayi -= 1;
+                        }
+                        txt_numericrange1.Text = numericsayi.ToString();
+
+                    }
+                    break;
+
+                case MouseButtons.Left:
+                    if (txt_numericrange1.Text != "")
+                    {
+                        numericsayi = int.Parse(txt_numericrange1.Text);
+                        if (numericsayi >= 0)
+                        {
+                            numericsayi += 1;
+                        }
+                        txt_numericrange1.Text = numericsayi.ToString();
+                    }
+                    break;
+            }
+        }
+
+        private void txt_numericrange1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Char chr = e.KeyChar;
+            if (!Char.IsDigit(chr) && chr != 8)
+            {
+                e.Handled = true;
+
+            }
+        }
+
+        private void btn_numericrangeupdown2_MouseDown(object sender, MouseEventArgs e)
+        {
+            int numericsayi;
+            switch (MouseButtons)
+            {
+                case MouseButtons.Right:
+                    if (txt_numericrange2.Text != "")
+                    {
+                        numericsayi = int.Parse(txt_numericrange2.Text);
+                        if (numericsayi != 0)
+                        {
+                            numericsayi -= 1;
+                        }
+                        txt_numericrange2.Text = numericsayi.ToString();
+
+                    }
+                    break;
+
+                case MouseButtons.Left:
+                    if (txt_numericrange2.Text != "")
+                    {
+                        numericsayi = int.Parse(txt_numericrange2.Text);
+                        if (numericsayi >= 0)
+                        {
+                            numericsayi += 1;
+                        }
+                        txt_numericrange2.Text = numericsayi.ToString();
+                    }
+                    break;
+            }
+        }
+
+        private void txt_numericrange2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Char chr = e.KeyChar;
+            if (!Char.IsDigit(chr) && chr != 8)
+            {
+                e.Handled = true;
+
+            }
+        }
+
+        private void txt_numericscreentime_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Char chr = e.KeyChar;
+            if (!Char.IsDigit(chr) && chr != 8)
+            {
+                e.Handled = true;
+
+            }
+        }
+
+        private void btn_numericscreentimeupdown_MouseDown(object sender, MouseEventArgs e)
+        {
+            int numericsayi;
+            switch (MouseButtons)
+            {
+                case MouseButtons.Right:
+                    if (txt_numericscreentime.Text != "")
+                    {
+                        numericsayi = int.Parse(txt_numericscreentime.Text);
+                        if (numericsayi != 0)
+                        {
+                            numericsayi -= 1;
+                        }
+                        txt_numericscreentime.Text = numericsayi.ToString();
+
+                    }
+                    break;
+
+                case MouseButtons.Left:
+                    if (txt_numericscreentime.Text != "")
+                    {
+                        numericsayi = int.Parse(txt_numericscreentime.Text);
+                        if (numericsayi >= 0)
+                        {
+                            numericsayi += 1;
+                        }
+                        txt_numericscreentime.Text = numericsayi.ToString();
+                    }
+                    break;
+            }
+        }
+
         private void btn_playlist_Click(object sender, EventArgs e)
         {
             if (playlistmode == 0)
@@ -1771,21 +2005,12 @@ namespace NeuroAttention
                 btn_stop.Visible = false;
                 btn_start.Visible = true;
             }
-            numeric_numberrange1.Value = 1;
-            numeric_numberrange2.Value = 9;
-            numeric_screentime.Value = 1000;
-            numeric_time.Value = 60;
             timer_time.Stop();
             timer_screentime.Stop();
             timer_hidetime.Stop();
-            checkbox_plus.Checked = false;
-            checkbox_minus.Checked = false;
-            checkbox_impact.Checked = false;
-            checkbox_compartment.Checked = false;
             lbl_process.Visible = false;
-            lbl_process.Text = "";
             panel_mustasigntask.Visible = false;
-            
+            lbl_process.Text = "";
 
         }
     }
