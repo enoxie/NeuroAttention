@@ -78,8 +78,9 @@
     <ManifestKeyFile>NeuroAttention_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.52">
-      <HintPath>..\..\..\SeyahatAcentasi\SeyahatAcentasi\SeyahatAcentasi\lib\Bunifu_UI_v1.52.dll</HintPath>
+    <Reference Include="Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
     <Reference Include="ChreneLib">
       <HintPath>..\..\..\SeyahatAcentasi\SeyahatAcentasi\SeyahatAcentasi\source\ChreneLib.dll</HintPath>

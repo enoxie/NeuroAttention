@@ -486,7 +486,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.bunifuCustomDataGrid1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
+            this.bunifuCustomDataGrid1.DoubleBuffered = false;
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.Black;

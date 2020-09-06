@@ -27,8 +27,8 @@ namespace NeuroAttention
         public NetworkStatus()
         {
             InitializeComponent();
-            this.BackColor = Color.LimeGreen;
-            this.TransparencyKey = Color.LimeGreen;
+            this.BackColor = Color.White;
+            this.TransparencyKey = Color.White;
         }
 
         public bool InternetKontrol()

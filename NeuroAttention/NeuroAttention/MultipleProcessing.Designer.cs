@@ -32,65 +32,54 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MultipleProcessing));
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.gunaGroupBox2 = new Guna.UI.WinForms.GunaGroupBox();
+            this.btn_numeric_numberoftransactionsupdown = new Guna.UI.WinForms.GunaButton();
+            this.txt_numeric_numberoftransactions = new Guna.UI.WinForms.GunaTextBox();
+            this.btn_numericrangeupdown2 = new Guna.UI.WinForms.GunaButton();
+            this.txt_numericrange2 = new Guna.UI.WinForms.GunaTextBox();
+            this.btn_numericrangeupdown1 = new Guna.UI.WinForms.GunaButton();
+            this.btn_numericscreentimeupdown = new Guna.UI.WinForms.GunaButton();
+            this.txt_numericrange1 = new Guna.UI.WinForms.GunaTextBox();
+            this.txt_numericscreentime = new Guna.UI.WinForms.GunaTextBox();
             this.gunaGroupBox3 = new Guna.UI.WinForms.GunaGroupBox();
             this.checkbox_gostergizle = new Guna.UI.WinForms.GunaCheckBox();
             this.checkbox_mustasigntask = new Guna.UI.WinForms.GunaCheckBox();
             this.btn_stop = new Guna.UI.WinForms.GunaTileButton();
             this.btn_start = new Guna.UI.WinForms.GunaTileButton();
-            this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
-            this.gunaCheckBox3 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox1 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox2 = new Guna.UI.WinForms.GunaCheckBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.checkbox_8 = new Guna.UI.WinForms.GunaCheckBox();
-            this.numeric_numberoftransactions = new Guna.UI.WinForms.GunaNumeric();
             this.gbox_normal = new Guna.UI.WinForms.GunaGroupBox();
             this.checkbox_compartment = new Guna.UI.WinForms.GunaCheckBox();
             this.checkbox_impact = new Guna.UI.WinForms.GunaCheckBox();
             this.checkbox_minus = new Guna.UI.WinForms.GunaCheckBox();
             this.checkbox_plus = new Guna.UI.WinForms.GunaCheckBox();
-            this.numeric_screentime = new Guna.UI.WinForms.GunaNumeric();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.checkbox_7 = new Guna.UI.WinForms.GunaCheckBox();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
-            this.checkbox_6 = new Guna.UI.WinForms.GunaCheckBox();
-            this.numeric_numberrange1 = new Guna.UI.WinForms.GunaNumeric();
-            this.checkbox_5 = new Guna.UI.WinForms.GunaCheckBox();
             this.lbl_screentime = new Guna.UI.WinForms.GunaLabel();
-            this.numeric_numberrange2 = new Guna.UI.WinForms.GunaNumeric();
-            this.checkbox_4 = new Guna.UI.WinForms.GunaCheckBox();
-            this.checkbox_1 = new Guna.UI.WinForms.GunaCheckBox();
-            this.checkbox_3 = new Guna.UI.WinForms.GunaCheckBox();
-            this.checkbox_2 = new Guna.UI.WinForms.GunaCheckBox();
             this.btn_logout = new Guna.UI.WinForms.GunaAdvenceButton();
             this.timer_screentime = new System.Windows.Forms.Timer(this.components);
             this.lbl_process2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.timer_hidetime = new System.Windows.Forms.Timer(this.components);
             this.panel_colortable = new ns1.BunifuCards();
-            this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_color4 = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_color3 = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_color2 = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_color1 = new Guna.UI.WinForms.GunaLabel();
             this.btn_colortableok = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_colortabletitle = new Guna.UI.WinForms.GunaLabel();
             this.lbl_mustassignnumber = new Guna.UI.WinForms.GunaLabel();
             this.panel_mustasigntask = new Guna.UI.WinForms.GunaPanel();
             this.panel_process = new Guna.UI.WinForms.GunaPanel();
             this.lbl_process = new Guna.UI.WinForms.GunaLabel();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.panel_mustasigntask2 = new Guna.UI.WinForms.GunaPanel();
             this.lbl_mustassignnumber2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1.SuspendLayout();
             this.gunaGroupBox2.SuspendLayout();
             this.gunaGroupBox3.SuspendLayout();
-            this.gunaGroupBox1.SuspendLayout();
             this.gbox_normal.SuspendLayout();
             this.panel_colortable.SuspendLayout();
             this.panel_mustasigntask.SuspendLayout();
             this.panel_process.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
-            this.panel_mustasigntask2.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaPanel1
@@ -110,36 +99,207 @@
             this.gunaGroupBox2.BaseColor = System.Drawing.Color.White;
             this.gunaGroupBox2.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox2.BorderSize = 1;
+            this.gunaGroupBox2.Controls.Add(this.btn_numeric_numberoftransactionsupdown);
+            this.gunaGroupBox2.Controls.Add(this.txt_numeric_numberoftransactions);
+            this.gunaGroupBox2.Controls.Add(this.btn_numericrangeupdown2);
+            this.gunaGroupBox2.Controls.Add(this.txt_numericrange2);
+            this.gunaGroupBox2.Controls.Add(this.btn_numericrangeupdown1);
+            this.gunaGroupBox2.Controls.Add(this.btn_numericscreentimeupdown);
+            this.gunaGroupBox2.Controls.Add(this.txt_numericrange1);
+            this.gunaGroupBox2.Controls.Add(this.txt_numericscreentime);
             this.gunaGroupBox2.Controls.Add(this.gunaGroupBox3);
             this.gunaGroupBox2.Controls.Add(this.btn_stop);
             this.gunaGroupBox2.Controls.Add(this.btn_start);
-            this.gunaGroupBox2.Controls.Add(this.gunaGroupBox1);
             this.gunaGroupBox2.Controls.Add(this.gunaLabel2);
-            this.gunaGroupBox2.Controls.Add(this.checkbox_8);
-            this.gunaGroupBox2.Controls.Add(this.numeric_numberoftransactions);
             this.gunaGroupBox2.Controls.Add(this.gbox_normal);
-            this.gunaGroupBox2.Controls.Add(this.numeric_screentime);
             this.gunaGroupBox2.Controls.Add(this.gunaLabel1);
-            this.gunaGroupBox2.Controls.Add(this.checkbox_7);
             this.gunaGroupBox2.Controls.Add(this.gunaLabel5);
-            this.gunaGroupBox2.Controls.Add(this.checkbox_6);
-            this.gunaGroupBox2.Controls.Add(this.numeric_numberrange1);
-            this.gunaGroupBox2.Controls.Add(this.checkbox_5);
             this.gunaGroupBox2.Controls.Add(this.lbl_screentime);
-            this.gunaGroupBox2.Controls.Add(this.numeric_numberrange2);
-            this.gunaGroupBox2.Controls.Add(this.checkbox_4);
-            this.gunaGroupBox2.Controls.Add(this.checkbox_1);
-            this.gunaGroupBox2.Controls.Add(this.checkbox_3);
-            this.gunaGroupBox2.Controls.Add(this.checkbox_2);
             this.gunaGroupBox2.Font = new System.Drawing.Font("Infoma Light", 10F);
             this.gunaGroupBox2.LineColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox2.LineTop = 24;
-            this.gunaGroupBox2.Location = new System.Drawing.Point(15, 0);
+            this.gunaGroupBox2.Location = new System.Drawing.Point(20, 0);
             this.gunaGroupBox2.Name = "gunaGroupBox2";
-            this.gunaGroupBox2.Size = new System.Drawing.Size(745, 170);
+            this.gunaGroupBox2.Size = new System.Drawing.Size(740, 170);
             this.gunaGroupBox2.TabIndex = 55;
             this.gunaGroupBox2.Text = "Uygulama Ayarları";
             this.gunaGroupBox2.TextLocation = new System.Drawing.Point(330, 6);
+            // 
+            // btn_numeric_numberoftransactionsupdown
+            // 
+            this.btn_numeric_numberoftransactionsupdown.AnimationHoverSpeed = 0.07F;
+            this.btn_numeric_numberoftransactionsupdown.AnimationSpeed = 0.03F;
+            this.btn_numeric_numberoftransactionsupdown.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_numeric_numberoftransactionsupdown.BorderColor = System.Drawing.Color.Black;
+            this.btn_numeric_numberoftransactionsupdown.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_numeric_numberoftransactionsupdown.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_numeric_numberoftransactionsupdown.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_numeric_numberoftransactionsupdown.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_numeric_numberoftransactionsupdown.ForeColor = System.Drawing.Color.White;
+            this.btn_numeric_numberoftransactionsupdown.Image = ((System.Drawing.Image)(resources.GetObject("btn_numeric_numberoftransactionsupdown.Image")));
+            this.btn_numeric_numberoftransactionsupdown.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_numeric_numberoftransactionsupdown.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_numeric_numberoftransactionsupdown.Location = new System.Drawing.Point(167, 102);
+            this.btn_numeric_numberoftransactionsupdown.Name = "btn_numeric_numberoftransactionsupdown";
+            this.btn_numeric_numberoftransactionsupdown.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_numeric_numberoftransactionsupdown.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_numeric_numberoftransactionsupdown.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_numeric_numberoftransactionsupdown.OnHoverImage = null;
+            this.btn_numeric_numberoftransactionsupdown.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_numeric_numberoftransactionsupdown.OnPressedDepth = 0;
+            this.btn_numeric_numberoftransactionsupdown.Size = new System.Drawing.Size(25, 25);
+            this.btn_numeric_numberoftransactionsupdown.TabIndex = 80;
+            this.btn_numeric_numberoftransactionsupdown.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_numerictimeupdown_MouseDown);
+            // 
+            // txt_numeric_numberoftransactions
+            // 
+            this.txt_numeric_numberoftransactions.BaseColor = System.Drawing.Color.White;
+            this.txt_numeric_numberoftransactions.BorderColor = System.Drawing.Color.Silver;
+            this.txt_numeric_numberoftransactions.BorderSize = 1;
+            this.txt_numeric_numberoftransactions.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_numeric_numberoftransactions.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_numeric_numberoftransactions.FocusedBorderColor = System.Drawing.Color.Silver;
+            this.txt_numeric_numberoftransactions.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_numeric_numberoftransactions.Font = new System.Drawing.Font("Infoma Light", 10F);
+            this.txt_numeric_numberoftransactions.Location = new System.Drawing.Point(105, 101);
+            this.txt_numeric_numberoftransactions.Name = "txt_numeric_numberoftransactions";
+            this.txt_numeric_numberoftransactions.PasswordChar = '\0';
+            this.txt_numeric_numberoftransactions.Size = new System.Drawing.Size(90, 27);
+            this.txt_numeric_numberoftransactions.TabIndex = 79;
+            this.txt_numeric_numberoftransactions.Text = "10";
+            this.txt_numeric_numberoftransactions.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_numerictime_KeyPress);
+            // 
+            // btn_numericrangeupdown2
+            // 
+            this.btn_numericrangeupdown2.AnimationHoverSpeed = 0.07F;
+            this.btn_numericrangeupdown2.AnimationSpeed = 0.03F;
+            this.btn_numericrangeupdown2.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_numericrangeupdown2.BorderColor = System.Drawing.Color.Black;
+            this.btn_numericrangeupdown2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_numericrangeupdown2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_numericrangeupdown2.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_numericrangeupdown2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_numericrangeupdown2.ForeColor = System.Drawing.Color.White;
+            this.btn_numericrangeupdown2.Image = ((System.Drawing.Image)(resources.GetObject("btn_numericrangeupdown2.Image")));
+            this.btn_numericrangeupdown2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_numericrangeupdown2.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_numericrangeupdown2.Location = new System.Drawing.Point(264, 69);
+            this.btn_numericrangeupdown2.Name = "btn_numericrangeupdown2";
+            this.btn_numericrangeupdown2.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_numericrangeupdown2.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_numericrangeupdown2.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_numericrangeupdown2.OnHoverImage = null;
+            this.btn_numericrangeupdown2.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_numericrangeupdown2.OnPressedDepth = 0;
+            this.btn_numericrangeupdown2.Size = new System.Drawing.Size(25, 25);
+            this.btn_numericrangeupdown2.TabIndex = 78;
+            this.btn_numericrangeupdown2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_numericrangeupdown2_MouseDown);
+            // 
+            // txt_numericrange2
+            // 
+            this.txt_numericrange2.BaseColor = System.Drawing.Color.White;
+            this.txt_numericrange2.BorderColor = System.Drawing.Color.Silver;
+            this.txt_numericrange2.BorderSize = 1;
+            this.txt_numericrange2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_numericrange2.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_numericrange2.FocusedBorderColor = System.Drawing.Color.Silver;
+            this.txt_numericrange2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_numericrange2.Font = new System.Drawing.Font("Infoma Light", 10F);
+            this.txt_numericrange2.Location = new System.Drawing.Point(202, 68);
+            this.txt_numericrange2.Name = "txt_numericrange2";
+            this.txt_numericrange2.PasswordChar = '\0';
+            this.txt_numericrange2.Size = new System.Drawing.Size(90, 27);
+            this.txt_numericrange2.TabIndex = 77;
+            this.txt_numericrange2.Text = "9";
+            this.txt_numericrange2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_numericrange2_KeyPress);
+            // 
+            // btn_numericrangeupdown1
+            // 
+            this.btn_numericrangeupdown1.AnimationHoverSpeed = 0.07F;
+            this.btn_numericrangeupdown1.AnimationSpeed = 0.03F;
+            this.btn_numericrangeupdown1.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_numericrangeupdown1.BorderColor = System.Drawing.Color.Black;
+            this.btn_numericrangeupdown1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_numericrangeupdown1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_numericrangeupdown1.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_numericrangeupdown1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_numericrangeupdown1.ForeColor = System.Drawing.Color.White;
+            this.btn_numericrangeupdown1.Image = ((System.Drawing.Image)(resources.GetObject("btn_numericrangeupdown1.Image")));
+            this.btn_numericrangeupdown1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_numericrangeupdown1.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_numericrangeupdown1.Location = new System.Drawing.Point(167, 69);
+            this.btn_numericrangeupdown1.Name = "btn_numericrangeupdown1";
+            this.btn_numericrangeupdown1.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_numericrangeupdown1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_numericrangeupdown1.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_numericrangeupdown1.OnHoverImage = null;
+            this.btn_numericrangeupdown1.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_numericrangeupdown1.OnPressedDepth = 0;
+            this.btn_numericrangeupdown1.Size = new System.Drawing.Size(25, 25);
+            this.btn_numericrangeupdown1.TabIndex = 72;
+            this.btn_numericrangeupdown1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_numericrangeupdown1_MouseDown);
+            // 
+            // btn_numericscreentimeupdown
+            // 
+            this.btn_numericscreentimeupdown.AnimationHoverSpeed = 0.07F;
+            this.btn_numericscreentimeupdown.AnimationSpeed = 0.03F;
+            this.btn_numericscreentimeupdown.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_numericscreentimeupdown.BorderColor = System.Drawing.Color.Black;
+            this.btn_numericscreentimeupdown.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_numericscreentimeupdown.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_numericscreentimeupdown.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_numericscreentimeupdown.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_numericscreentimeupdown.ForeColor = System.Drawing.Color.White;
+            this.btn_numericscreentimeupdown.Image = ((System.Drawing.Image)(resources.GetObject("btn_numericscreentimeupdown.Image")));
+            this.btn_numericscreentimeupdown.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_numericscreentimeupdown.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_numericscreentimeupdown.Location = new System.Drawing.Point(167, 35);
+            this.btn_numericscreentimeupdown.Name = "btn_numericscreentimeupdown";
+            this.btn_numericscreentimeupdown.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_numericscreentimeupdown.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_numericscreentimeupdown.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_numericscreentimeupdown.OnHoverImage = null;
+            this.btn_numericscreentimeupdown.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_numericscreentimeupdown.OnPressedDepth = 0;
+            this.btn_numericscreentimeupdown.Size = new System.Drawing.Size(25, 25);
+            this.btn_numericscreentimeupdown.TabIndex = 76;
+            this.btn_numericscreentimeupdown.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_numericscreentimeupdown_MouseDown);
+            // 
+            // txt_numericrange1
+            // 
+            this.txt_numericrange1.BaseColor = System.Drawing.Color.White;
+            this.txt_numericrange1.BorderColor = System.Drawing.Color.Silver;
+            this.txt_numericrange1.BorderSize = 1;
+            this.txt_numericrange1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_numericrange1.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_numericrange1.FocusedBorderColor = System.Drawing.Color.Silver;
+            this.txt_numericrange1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_numericrange1.Font = new System.Drawing.Font("Infoma Light", 10F);
+            this.txt_numericrange1.Location = new System.Drawing.Point(105, 68);
+            this.txt_numericrange1.Name = "txt_numericrange1";
+            this.txt_numericrange1.PasswordChar = '\0';
+            this.txt_numericrange1.Size = new System.Drawing.Size(90, 27);
+            this.txt_numericrange1.TabIndex = 71;
+            this.txt_numericrange1.Text = "1";
+            this.txt_numericrange1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_numericrange1_KeyPress);
+            // 
+            // txt_numericscreentime
+            // 
+            this.txt_numericscreentime.BaseColor = System.Drawing.Color.White;
+            this.txt_numericscreentime.BorderColor = System.Drawing.Color.Silver;
+            this.txt_numericscreentime.BorderSize = 1;
+            this.txt_numericscreentime.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_numericscreentime.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_numericscreentime.FocusedBorderColor = System.Drawing.Color.Silver;
+            this.txt_numericscreentime.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_numericscreentime.Font = new System.Drawing.Font("Infoma Light", 10F);
+            this.txt_numericscreentime.Location = new System.Drawing.Point(105, 34);
+            this.txt_numericscreentime.Name = "txt_numericscreentime";
+            this.txt_numericscreentime.PasswordChar = '\0';
+            this.txt_numericscreentime.Size = new System.Drawing.Size(90, 27);
+            this.txt_numericscreentime.TabIndex = 75;
+            this.txt_numericscreentime.Text = "1000";
+            this.txt_numericscreentime.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_numericscreentime_KeyPress);
             // 
             // gunaGroupBox3
             // 
@@ -151,7 +311,7 @@
             this.gunaGroupBox3.Controls.Add(this.checkbox_gostergizle);
             this.gunaGroupBox3.Controls.Add(this.checkbox_mustasigntask);
             this.gunaGroupBox3.LineColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox3.Location = new System.Drawing.Point(400, 90);
+            this.gunaGroupBox3.Location = new System.Drawing.Point(570, 30);
             this.gunaGroupBox3.Name = "gunaGroupBox3";
             this.gunaGroupBox3.Size = new System.Drawing.Size(160, 55);
             this.gunaGroupBox3.TabIndex = 58;
@@ -182,7 +342,7 @@
             this.checkbox_mustasigntask.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkbox_mustasigntask.FillColor = System.Drawing.Color.White;
             this.checkbox_mustasigntask.Font = new System.Drawing.Font("Infoma Light", 10F);
-            this.checkbox_mustasigntask.Location = new System.Drawing.Point(5, 25);
+            this.checkbox_mustasigntask.Location = new System.Drawing.Point(5, 30);
             this.checkbox_mustasigntask.Name = "checkbox_mustasigntask";
             this.checkbox_mustasigntask.Size = new System.Drawing.Size(114, 20);
             this.checkbox_mustasigntask.TabIndex = 56;
@@ -206,7 +366,7 @@
             this.btn_stop.ForeColor = System.Drawing.Color.White;
             this.btn_stop.Image = ((System.Drawing.Image)(resources.GetObject("btn_stop.Image")));
             this.btn_stop.ImageSize = new System.Drawing.Size(35, 35);
-            this.btn_stop.Location = new System.Drawing.Point(670, 90);
+            this.btn_stop.Location = new System.Drawing.Point(665, 95);
             this.btn_stop.Name = "btn_stop";
             this.btn_stop.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_stop.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
@@ -237,7 +397,7 @@
             this.btn_start.ForeColor = System.Drawing.Color.White;
             this.btn_start.Image = ((System.Drawing.Image)(resources.GetObject("btn_start.Image")));
             this.btn_start.ImageSize = new System.Drawing.Size(50, 50);
-            this.btn_start.Location = new System.Drawing.Point(670, 90);
+            this.btn_start.Location = new System.Drawing.Point(665, 95);
             this.btn_start.Name = "btn_start";
             this.btn_start.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_start.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
@@ -249,66 +409,6 @@
             this.btn_start.TabIndex = 38;
             this.btn_start.Click += new System.EventHandler(this.btn_start_Click);
             // 
-            // gunaGroupBox1
-            // 
-            this.gunaGroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaGroupBox1.BorderColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox1.BorderSize = 1;
-            this.gunaGroupBox1.Controls.Add(this.gunaCheckBox3);
-            this.gunaGroupBox1.Controls.Add(this.gunaCheckBox1);
-            this.gunaGroupBox1.Controls.Add(this.gunaCheckBox2);
-            this.gunaGroupBox1.LineColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox1.Location = new System.Drawing.Point(575, 30);
-            this.gunaGroupBox1.Name = "gunaGroupBox1";
-            this.gunaGroupBox1.Size = new System.Drawing.Size(160, 55);
-            this.gunaGroupBox1.TabIndex = 55;
-            this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
-            // 
-            // gunaCheckBox3
-            // 
-            this.gunaCheckBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaCheckBox3.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox3.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox3.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaCheckBox3.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox3.Location = new System.Drawing.Point(5, 25);
-            this.gunaCheckBox3.Name = "gunaCheckBox3";
-            this.gunaCheckBox3.Size = new System.Drawing.Size(57, 20);
-            this.gunaCheckBox3.TabIndex = 57;
-            this.gunaCheckBox3.Text = "İşlem";
-            // 
-            // gunaCheckBox1
-            // 
-            this.gunaCheckBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaCheckBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox1.Checked = true;
-            this.gunaCheckBox1.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaCheckBox1.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox1.Location = new System.Drawing.Point(5, 5);
-            this.gunaCheckBox1.Name = "gunaCheckBox1";
-            this.gunaCheckBox1.Size = new System.Drawing.Size(63, 20);
-            this.gunaCheckBox1.TabIndex = 55;
-            this.gunaCheckBox1.Text = "Sessiz";
-            // 
-            // gunaCheckBox2
-            // 
-            this.gunaCheckBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaCheckBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox2.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaCheckBox2.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox2.Location = new System.Drawing.Point(75, 5);
-            this.gunaCheckBox2.Name = "gunaCheckBox2";
-            this.gunaCheckBox2.Size = new System.Drawing.Size(56, 20);
-            this.gunaCheckBox2.TabIndex = 56;
-            this.gunaCheckBox2.Text = "Renk";
-            // 
             // gunaLabel2
             // 
             this.gunaLabel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -319,38 +419,6 @@
             this.gunaLabel2.Size = new System.Drawing.Size(74, 14);
             this.gunaLabel2.TabIndex = 4;
             this.gunaLabel2.Text = "İşlem Sayısı";
-            // 
-            // checkbox_8
-            // 
-            this.checkbox_8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkbox_8.BaseColor = System.Drawing.Color.White;
-            this.checkbox_8.CheckedOffColor = System.Drawing.Color.Gray;
-            this.checkbox_8.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.checkbox_8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkbox_8.FillColor = System.Drawing.Color.White;
-            this.checkbox_8.Location = new System.Drawing.Point(312, 142);
-            this.checkbox_8.Name = "checkbox_8";
-            this.checkbox_8.Size = new System.Drawing.Size(36, 20);
-            this.checkbox_8.TabIndex = 9;
-            this.checkbox_8.Text = "8";
-            this.checkbox_8.Click += new System.EventHandler(this.checkbox_8_Click);
-            // 
-            // numeric_numberoftransactions
-            // 
-            this.numeric_numberoftransactions.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numeric_numberoftransactions.BaseColor = System.Drawing.Color.White;
-            this.numeric_numberoftransactions.BorderColor = System.Drawing.Color.Silver;
-            this.numeric_numberoftransactions.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.numeric_numberoftransactions.ButtonForeColor = System.Drawing.Color.White;
-            this.numeric_numberoftransactions.Font = new System.Drawing.Font("Infoma Light", 10F);
-            this.numeric_numberoftransactions.ForeColor = System.Drawing.Color.Black;
-            this.numeric_numberoftransactions.Location = new System.Drawing.Point(105, 100);
-            this.numeric_numberoftransactions.Maximum = ((long)(9999999));
-            this.numeric_numberoftransactions.Minimum = ((long)(0));
-            this.numeric_numberoftransactions.Name = "numeric_numberoftransactions";
-            this.numeric_numberoftransactions.Size = new System.Drawing.Size(90, 30);
-            this.numeric_numberoftransactions.TabIndex = 3;
-            this.numeric_numberoftransactions.Value = ((long)(15));
             // 
             // gbox_normal
             // 
@@ -428,24 +496,6 @@
             this.checkbox_plus.TabIndex = 15;
             this.checkbox_plus.Text = "+";
             // 
-            // numeric_screentime
-            // 
-            this.numeric_screentime.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numeric_screentime.BaseColor = System.Drawing.Color.White;
-            this.numeric_screentime.BorderColor = System.Drawing.Color.Silver;
-            this.numeric_screentime.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.numeric_screentime.ButtonForeColor = System.Drawing.Color.White;
-            this.numeric_screentime.Font = new System.Drawing.Font("Infoma Light", 10F);
-            this.numeric_screentime.ForeColor = System.Drawing.Color.Black;
-            this.numeric_screentime.Location = new System.Drawing.Point(105, 30);
-            this.numeric_screentime.Maximum = ((long)(9999999));
-            this.numeric_screentime.Minimum = ((long)(0));
-            this.numeric_screentime.Name = "numeric_screentime";
-            this.numeric_screentime.Size = new System.Drawing.Size(90, 30);
-            this.numeric_screentime.TabIndex = 41;
-            this.numeric_screentime.Text = "gunaNumeric3";
-            this.numeric_screentime.Value = ((long)(1000));
-            // 
             // gunaLabel1
             // 
             this.gunaLabel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -457,79 +507,16 @@
             this.gunaLabel1.TabIndex = 2;
             this.gunaLabel1.Text = "Sayı Aralığı";
             // 
-            // checkbox_7
-            // 
-            this.checkbox_7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkbox_7.BaseColor = System.Drawing.Color.White;
-            this.checkbox_7.CheckedOffColor = System.Drawing.Color.Gray;
-            this.checkbox_7.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.checkbox_7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkbox_7.FillColor = System.Drawing.Color.White;
-            this.checkbox_7.Location = new System.Drawing.Point(270, 142);
-            this.checkbox_7.Name = "checkbox_7";
-            this.checkbox_7.Size = new System.Drawing.Size(36, 20);
-            this.checkbox_7.TabIndex = 8;
-            this.checkbox_7.Text = "7";
-            this.checkbox_7.Click += new System.EventHandler(this.checkbox_7_Click);
-            // 
             // gunaLabel5
             // 
             this.gunaLabel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Infoma Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.Location = new System.Drawing.Point(200, 40);
+            this.gunaLabel5.Location = new System.Drawing.Point(198, 40);
             this.gunaLabel5.Name = "gunaLabel5";
             this.gunaLabel5.Size = new System.Drawing.Size(56, 12);
             this.gunaLabel5.TabIndex = 10;
             this.gunaLabel5.Text = "Milisaniye";
-            // 
-            // checkbox_6
-            // 
-            this.checkbox_6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkbox_6.BaseColor = System.Drawing.Color.White;
-            this.checkbox_6.CheckedOffColor = System.Drawing.Color.Gray;
-            this.checkbox_6.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.checkbox_6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkbox_6.FillColor = System.Drawing.Color.White;
-            this.checkbox_6.Location = new System.Drawing.Point(228, 142);
-            this.checkbox_6.Name = "checkbox_6";
-            this.checkbox_6.Size = new System.Drawing.Size(36, 20);
-            this.checkbox_6.TabIndex = 7;
-            this.checkbox_6.Text = "6";
-            this.checkbox_6.Click += new System.EventHandler(this.checkbox_6_Click);
-            // 
-            // numeric_numberrange1
-            // 
-            this.numeric_numberrange1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numeric_numberrange1.BaseColor = System.Drawing.Color.White;
-            this.numeric_numberrange1.BorderColor = System.Drawing.Color.Silver;
-            this.numeric_numberrange1.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.numeric_numberrange1.ButtonForeColor = System.Drawing.Color.White;
-            this.numeric_numberrange1.Font = new System.Drawing.Font("Infoma Light", 10F);
-            this.numeric_numberrange1.ForeColor = System.Drawing.Color.Black;
-            this.numeric_numberrange1.Location = new System.Drawing.Point(105, 65);
-            this.numeric_numberrange1.Maximum = ((long)(9999999));
-            this.numeric_numberrange1.Minimum = ((long)(1));
-            this.numeric_numberrange1.Name = "numeric_numberrange1";
-            this.numeric_numberrange1.Size = new System.Drawing.Size(90, 30);
-            this.numeric_numberrange1.TabIndex = 0;
-            this.numeric_numberrange1.Text = "gunaNumeric1";
-            this.numeric_numberrange1.Value = ((long)(1));
-            // 
-            // checkbox_5
-            // 
-            this.checkbox_5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkbox_5.BaseColor = System.Drawing.Color.White;
-            this.checkbox_5.CheckedOffColor = System.Drawing.Color.Gray;
-            this.checkbox_5.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.checkbox_5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkbox_5.FillColor = System.Drawing.Color.White;
-            this.checkbox_5.Location = new System.Drawing.Point(186, 142);
-            this.checkbox_5.Name = "checkbox_5";
-            this.checkbox_5.Size = new System.Drawing.Size(36, 20);
-            this.checkbox_5.TabIndex = 6;
-            this.checkbox_5.Text = "5";
-            this.checkbox_5.Click += new System.EventHandler(this.checkbox_5_Click);
             // 
             // lbl_screentime
             // 
@@ -541,85 +528,6 @@
             this.lbl_screentime.Size = new System.Drawing.Size(79, 14);
             this.lbl_screentime.TabIndex = 8;
             this.lbl_screentime.Text = "Ekran Süresi";
-            // 
-            // numeric_numberrange2
-            // 
-            this.numeric_numberrange2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numeric_numberrange2.BaseColor = System.Drawing.Color.White;
-            this.numeric_numberrange2.BorderColor = System.Drawing.Color.Silver;
-            this.numeric_numberrange2.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.numeric_numberrange2.ButtonForeColor = System.Drawing.Color.White;
-            this.numeric_numberrange2.Font = new System.Drawing.Font("Infoma Light", 10F);
-            this.numeric_numberrange2.ForeColor = System.Drawing.Color.Black;
-            this.numeric_numberrange2.Location = new System.Drawing.Point(200, 65);
-            this.numeric_numberrange2.Maximum = ((long)(9999999));
-            this.numeric_numberrange2.Minimum = ((long)(1));
-            this.numeric_numberrange2.Name = "numeric_numberrange2";
-            this.numeric_numberrange2.Size = new System.Drawing.Size(90, 30);
-            this.numeric_numberrange2.TabIndex = 7;
-            this.numeric_numberrange2.Text = "gunaNumeric2";
-            this.numeric_numberrange2.Value = ((long)(9));
-            // 
-            // checkbox_4
-            // 
-            this.checkbox_4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkbox_4.BaseColor = System.Drawing.Color.White;
-            this.checkbox_4.CheckedOffColor = System.Drawing.Color.Gray;
-            this.checkbox_4.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.checkbox_4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkbox_4.FillColor = System.Drawing.Color.White;
-            this.checkbox_4.Location = new System.Drawing.Point(144, 142);
-            this.checkbox_4.Name = "checkbox_4";
-            this.checkbox_4.Size = new System.Drawing.Size(36, 20);
-            this.checkbox_4.TabIndex = 5;
-            this.checkbox_4.Text = "4";
-            this.checkbox_4.Click += new System.EventHandler(this.checkbox_4_Click);
-            // 
-            // checkbox_1
-            // 
-            this.checkbox_1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkbox_1.BaseColor = System.Drawing.Color.White;
-            this.checkbox_1.Checked = true;
-            this.checkbox_1.CheckedOffColor = System.Drawing.Color.Gray;
-            this.checkbox_1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.checkbox_1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkbox_1.FillColor = System.Drawing.Color.White;
-            this.checkbox_1.Location = new System.Drawing.Point(18, 142);
-            this.checkbox_1.Name = "checkbox_1";
-            this.checkbox_1.Size = new System.Drawing.Size(36, 20);
-            this.checkbox_1.TabIndex = 2;
-            this.checkbox_1.Text = "1";
-            this.checkbox_1.Click += new System.EventHandler(this.checkbox_1_Click);
-            // 
-            // checkbox_3
-            // 
-            this.checkbox_3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkbox_3.BaseColor = System.Drawing.Color.White;
-            this.checkbox_3.CheckedOffColor = System.Drawing.Color.Gray;
-            this.checkbox_3.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.checkbox_3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkbox_3.FillColor = System.Drawing.Color.White;
-            this.checkbox_3.Location = new System.Drawing.Point(102, 142);
-            this.checkbox_3.Name = "checkbox_3";
-            this.checkbox_3.Size = new System.Drawing.Size(36, 20);
-            this.checkbox_3.TabIndex = 4;
-            this.checkbox_3.Text = "3";
-            this.checkbox_3.Click += new System.EventHandler(this.checkbox_3_Click);
-            // 
-            // checkbox_2
-            // 
-            this.checkbox_2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkbox_2.BaseColor = System.Drawing.Color.White;
-            this.checkbox_2.CheckedOffColor = System.Drawing.Color.Gray;
-            this.checkbox_2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.checkbox_2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkbox_2.FillColor = System.Drawing.Color.White;
-            this.checkbox_2.Location = new System.Drawing.Point(60, 142);
-            this.checkbox_2.Name = "checkbox_2";
-            this.checkbox_2.Size = new System.Drawing.Size(36, 20);
-            this.checkbox_2.TabIndex = 3;
-            this.checkbox_2.Text = "2";
-            this.checkbox_2.Click += new System.EventHandler(this.checkbox_2_Click);
             // 
             // btn_logout
             // 
@@ -643,7 +551,7 @@
             this.btn_logout.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_logout.LineBottom = 4;
             this.btn_logout.LineColor = System.Drawing.Color.Transparent;
-            this.btn_logout.Location = new System.Drawing.Point(650, 170);
+            this.btn_logout.Location = new System.Drawing.Point(650, 169);
             this.btn_logout.Name = "btn_logout";
             this.btn_logout.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.btn_logout.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -668,7 +576,7 @@
             this.lbl_process2.Font = new System.Drawing.Font("Infoma Light", 66F);
             this.lbl_process2.Location = new System.Drawing.Point(390, 0);
             this.lbl_process2.Name = "lbl_process2";
-            this.lbl_process2.Size = new System.Drawing.Size(390, 200);
+            this.lbl_process2.Size = new System.Drawing.Size(370, 200);
             this.lbl_process2.TabIndex = 54;
             this.lbl_process2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -696,14 +604,14 @@
             this.panel_colortable.BorderRadius = 5;
             this.panel_colortable.BottomSahddow = true;
             this.panel_colortable.color = System.Drawing.Color.Tomato;
-            this.panel_colortable.Controls.Add(this.gunaLabel8);
-            this.panel_colortable.Controls.Add(this.gunaLabel9);
-            this.panel_colortable.Controls.Add(this.gunaLabel7);
-            this.panel_colortable.Controls.Add(this.gunaLabel3);
+            this.panel_colortable.Controls.Add(this.lbl_color4);
+            this.panel_colortable.Controls.Add(this.lbl_color3);
+            this.panel_colortable.Controls.Add(this.lbl_color2);
+            this.panel_colortable.Controls.Add(this.lbl_color1);
             this.panel_colortable.Controls.Add(this.btn_colortableok);
-            this.panel_colortable.Controls.Add(this.gunaLabel6);
+            this.panel_colortable.Controls.Add(this.lbl_colortabletitle);
             this.panel_colortable.LeftSahddow = false;
-            this.panel_colortable.Location = new System.Drawing.Point(500, 300);
+            this.panel_colortable.Location = new System.Drawing.Point(968, 542);
             this.panel_colortable.Name = "panel_colortable";
             this.panel_colortable.RightSahddow = true;
             this.panel_colortable.ShadowDepth = 20;
@@ -711,57 +619,57 @@
             this.panel_colortable.TabIndex = 57;
             this.panel_colortable.Visible = false;
             // 
-            // gunaLabel8
+            // lbl_color4
             // 
-            this.gunaLabel8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.gunaLabel8.AutoSize = true;
-            this.gunaLabel8.Font = new System.Drawing.Font("Infoma Light", 15F);
-            this.gunaLabel8.ForeColor = System.Drawing.Color.Green;
-            this.gunaLabel8.Location = new System.Drawing.Point(165, 86);
-            this.gunaLabel8.Name = "gunaLabel8";
-            this.gunaLabel8.Size = new System.Drawing.Size(62, 20);
-            this.gunaLabel8.TabIndex = 59;
-            this.gunaLabel8.Text = "Bölme";
-            this.gunaLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_color4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lbl_color4.AutoSize = true;
+            this.lbl_color4.Font = new System.Drawing.Font("Infoma Light", 15F);
+            this.lbl_color4.ForeColor = System.Drawing.Color.Green;
+            this.lbl_color4.Location = new System.Drawing.Point(160, 90);
+            this.lbl_color4.Name = "lbl_color4";
+            this.lbl_color4.Size = new System.Drawing.Size(62, 20);
+            this.lbl_color4.TabIndex = 59;
+            this.lbl_color4.Text = "Bölme";
+            this.lbl_color4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // gunaLabel9
+            // lbl_color3
             // 
-            this.gunaLabel9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.gunaLabel9.AutoSize = true;
-            this.gunaLabel9.Font = new System.Drawing.Font("Infoma Light", 15F);
-            this.gunaLabel9.ForeColor = System.Drawing.Color.Yellow;
-            this.gunaLabel9.Location = new System.Drawing.Point(155, 61);
-            this.gunaLabel9.Name = "gunaLabel9";
-            this.gunaLabel9.Size = new System.Drawing.Size(76, 20);
-            this.gunaLabel9.TabIndex = 58;
-            this.gunaLabel9.Text = "Çarpma";
-            this.gunaLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_color3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lbl_color3.AutoSize = true;
+            this.lbl_color3.Font = new System.Drawing.Font("Infoma Light", 15F);
+            this.lbl_color3.ForeColor = System.Drawing.Color.Yellow;
+            this.lbl_color3.Location = new System.Drawing.Point(70, 90);
+            this.lbl_color3.Name = "lbl_color3";
+            this.lbl_color3.Size = new System.Drawing.Size(76, 20);
+            this.lbl_color3.TabIndex = 58;
+            this.lbl_color3.Text = "Çarpma";
+            this.lbl_color3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // gunaLabel7
+            // lbl_color2
             // 
-            this.gunaLabel7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.gunaLabel7.AutoSize = true;
-            this.gunaLabel7.Font = new System.Drawing.Font("Infoma Light", 15F);
-            this.gunaLabel7.ForeColor = System.Drawing.Color.Blue;
-            this.gunaLabel7.Location = new System.Drawing.Point(68, 86);
-            this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(79, 20);
-            this.gunaLabel7.TabIndex = 57;
-            this.gunaLabel7.Text = "Çıkarma";
-            this.gunaLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_color2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lbl_color2.AutoSize = true;
+            this.lbl_color2.Font = new System.Drawing.Font("Infoma Light", 15F);
+            this.lbl_color2.ForeColor = System.Drawing.Color.Blue;
+            this.lbl_color2.Location = new System.Drawing.Point(160, 60);
+            this.lbl_color2.Name = "lbl_color2";
+            this.lbl_color2.Size = new System.Drawing.Size(79, 20);
+            this.lbl_color2.TabIndex = 57;
+            this.lbl_color2.Text = "Çıkarma";
+            this.lbl_color2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // gunaLabel3
+            // lbl_color1
             // 
-            this.gunaLabel3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Infoma Light", 15F);
-            this.gunaLabel3.ForeColor = System.Drawing.Color.Red;
-            this.gunaLabel3.Location = new System.Drawing.Point(68, 61);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(81, 20);
-            this.gunaLabel3.TabIndex = 56;
-            this.gunaLabel3.Text = "Toplama";
-            this.gunaLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_color1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lbl_color1.AutoSize = true;
+            this.lbl_color1.Font = new System.Drawing.Font("Infoma Light", 15F);
+            this.lbl_color1.ForeColor = System.Drawing.Color.Red;
+            this.lbl_color1.Location = new System.Drawing.Point(70, 60);
+            this.lbl_color1.Name = "lbl_color1";
+            this.lbl_color1.Size = new System.Drawing.Size(81, 20);
+            this.lbl_color1.TabIndex = 56;
+            this.lbl_color1.Text = "Toplama";
+            this.lbl_color1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_colortableok
             // 
@@ -804,25 +712,25 @@
             this.btn_colortableok.TextOffsetX = -10;
             this.btn_colortableok.Click += new System.EventHandler(this.btn_colortableok_Click);
             // 
-            // gunaLabel6
+            // lbl_colortabletitle
             // 
-            this.gunaLabel6.AutoSize = true;
-            this.gunaLabel6.Font = new System.Drawing.Font("Infoma Light", 15F);
-            this.gunaLabel6.Location = new System.Drawing.Point(30, 15);
-            this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(244, 20);
-            this.gunaLabel6.TabIndex = 0;
-            this.gunaLabel6.Text = "Görev Atamalı Renk Tablosu";
+            this.lbl_colortabletitle.AutoSize = true;
+            this.lbl_colortabletitle.Font = new System.Drawing.Font("Infoma Light", 15F);
+            this.lbl_colortabletitle.Location = new System.Drawing.Point(30, 15);
+            this.lbl_colortabletitle.Name = "lbl_colortabletitle";
+            this.lbl_colortabletitle.Size = new System.Drawing.Size(244, 20);
+            this.lbl_colortabletitle.TabIndex = 0;
+            this.lbl_colortabletitle.Text = "Görev Atamalı Renk Tablosu";
             // 
             // lbl_mustassignnumber
             // 
             this.lbl_mustassignnumber.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_mustassignnumber.Font = new System.Drawing.Font("Infoma Light", 80F);
-            this.lbl_mustassignnumber.Location = new System.Drawing.Point(0, 0);
+            this.lbl_mustassignnumber.Font = new System.Drawing.Font("Infoma Light", 62F);
+            this.lbl_mustassignnumber.Location = new System.Drawing.Point(20, 0);
             this.lbl_mustassignnumber.Name = "lbl_mustassignnumber";
-            this.lbl_mustassignnumber.Size = new System.Drawing.Size(390, 200);
+            this.lbl_mustassignnumber.Size = new System.Drawing.Size(370, 200);
             this.lbl_mustassignnumber.TabIndex = 58;
             this.lbl_mustassignnumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -830,10 +738,11 @@
             // 
             this.panel_mustasigntask.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel_mustasigntask.BackColor = System.Drawing.Color.Transparent;
+            this.panel_mustasigntask.Controls.Add(this.lbl_mustassignnumber2);
             this.panel_mustasigntask.Controls.Add(this.lbl_mustassignnumber);
             this.panel_mustasigntask.Location = new System.Drawing.Point(250, 300);
             this.panel_mustasigntask.Name = "panel_mustasigntask";
-            this.panel_mustasigntask.Size = new System.Drawing.Size(390, 200);
+            this.panel_mustasigntask.Size = new System.Drawing.Size(780, 200);
             this.panel_mustasigntask.TabIndex = 61;
             this.panel_mustasigntask.Visible = false;
             // 
@@ -843,7 +752,7 @@
             this.panel_process.BackColor = System.Drawing.Color.Transparent;
             this.panel_process.Controls.Add(this.lbl_process);
             this.panel_process.Controls.Add(this.lbl_process2);
-            this.panel_process.Location = new System.Drawing.Point(250, 230);
+            this.panel_process.Location = new System.Drawing.Point(250, 300);
             this.panel_process.Name = "panel_process";
             this.panel_process.Size = new System.Drawing.Size(780, 200);
             this.panel_process.TabIndex = 62;
@@ -853,9 +762,9 @@
             // 
             this.lbl_process.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbl_process.Font = new System.Drawing.Font("Infoma Light", 66F);
-            this.lbl_process.Location = new System.Drawing.Point(0, 0);
+            this.lbl_process.Location = new System.Drawing.Point(20, 0);
             this.lbl_process.Name = "lbl_process";
-            this.lbl_process.Size = new System.Drawing.Size(390, 200);
+            this.lbl_process.Size = new System.Drawing.Size(370, 200);
             this.lbl_process.TabIndex = 53;
             this.lbl_process.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -872,26 +781,15 @@
             this.gunaPictureBox1.TabIndex = 56;
             this.gunaPictureBox1.TabStop = false;
             // 
-            // panel_mustasigntask2
-            // 
-            this.panel_mustasigntask2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel_mustasigntask2.BackColor = System.Drawing.Color.Transparent;
-            this.panel_mustasigntask2.Controls.Add(this.lbl_mustassignnumber2);
-            this.panel_mustasigntask2.Location = new System.Drawing.Point(640, 300);
-            this.panel_mustasigntask2.Name = "panel_mustasigntask2";
-            this.panel_mustasigntask2.Size = new System.Drawing.Size(390, 200);
-            this.panel_mustasigntask2.TabIndex = 63;
-            this.panel_mustasigntask2.Visible = false;
-            // 
             // lbl_mustassignnumber2
             // 
             this.lbl_mustassignnumber2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_mustassignnumber2.Font = new System.Drawing.Font("Infoma Light", 80F);
-            this.lbl_mustassignnumber2.Location = new System.Drawing.Point(0, 0);
+            this.lbl_mustassignnumber2.Font = new System.Drawing.Font("Infoma Light", 62F);
+            this.lbl_mustassignnumber2.Location = new System.Drawing.Point(390, 0);
             this.lbl_mustassignnumber2.Name = "lbl_mustassignnumber2";
-            this.lbl_mustassignnumber2.Size = new System.Drawing.Size(390, 200);
+            this.lbl_mustassignnumber2.Size = new System.Drawing.Size(370, 200);
             this.lbl_mustassignnumber2.TabIndex = 58;
             this.lbl_mustassignnumber2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -901,7 +799,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1280, 720);
-            this.Controls.Add(this.panel_mustasigntask2);
             this.Controls.Add(this.panel_process);
             this.Controls.Add(this.panel_mustasigntask);
             this.Controls.Add(this.panel_colortable);
@@ -920,8 +817,6 @@
             this.gunaGroupBox2.PerformLayout();
             this.gunaGroupBox3.ResumeLayout(false);
             this.gunaGroupBox3.PerformLayout();
-            this.gunaGroupBox1.ResumeLayout(false);
-            this.gunaGroupBox1.PerformLayout();
             this.gbox_normal.ResumeLayout(false);
             this.gbox_normal.PerformLayout();
             this.panel_colortable.ResumeLayout(false);
@@ -929,7 +824,6 @@
             this.panel_mustasigntask.ResumeLayout(false);
             this.panel_process.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
-            this.panel_mustasigntask2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -938,9 +832,7 @@
         #endregion
 
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
-        private Guna.UI.WinForms.GunaNumeric numeric_screentime;
         private Guna.UI.WinForms.GunaTileButton btn_stop;
-        private Guna.UI.WinForms.GunaNumeric numeric_numberrange2;
         private Guna.UI.WinForms.GunaGroupBox gbox_normal;
         private Guna.UI.WinForms.GunaCheckBox checkbox_compartment;
         private Guna.UI.WinForms.GunaCheckBox checkbox_impact;
@@ -948,26 +840,12 @@
         private Guna.UI.WinForms.GunaCheckBox checkbox_plus;
         private Guna.UI.WinForms.GunaTileButton btn_start;
         private Guna.UI.WinForms.GunaLabel lbl_screentime;
-        private Guna.UI.WinForms.GunaNumeric numeric_numberrange1;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaNumeric numeric_numberoftransactions;
-        private Guna.UI.WinForms.GunaCheckBox checkbox_8;
-        private Guna.UI.WinForms.GunaCheckBox checkbox_7;
-        private Guna.UI.WinForms.GunaCheckBox checkbox_6;
-        private Guna.UI.WinForms.GunaCheckBox checkbox_5;
-        private Guna.UI.WinForms.GunaCheckBox checkbox_4;
-        private Guna.UI.WinForms.GunaCheckBox checkbox_3;
-        private Guna.UI.WinForms.GunaCheckBox checkbox_2;
-        private Guna.UI.WinForms.GunaCheckBox checkbox_1;
         private Guna.UI.WinForms.GunaAdvenceButton btn_logout;
         private System.Windows.Forms.Timer timer_screentime;
         private Guna.UI.WinForms.GunaLabel lbl_process2;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox3;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox2;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox1;
-        private Guna.UI.WinForms.GunaGroupBox gunaGroupBox1;
         private Guna.UI.WinForms.GunaGroupBox gunaGroupBox2;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
@@ -977,16 +855,23 @@
         private System.Windows.Forms.Timer timer_hidetime;
         private ns1.BunifuCards panel_colortable;
         private Guna.UI.WinForms.GunaAdvenceButton btn_colortableok;
-        private Guna.UI.WinForms.GunaLabel gunaLabel6;
+        private Guna.UI.WinForms.GunaLabel lbl_colortabletitle;
         private Guna.UI.WinForms.GunaLabel lbl_mustassignnumber;
         private Guna.UI.WinForms.GunaPanel panel_mustasigntask;
         private Guna.UI.WinForms.GunaPanel panel_process;
-        private Guna.UI.WinForms.GunaPanel panel_mustasigntask2;
         private Guna.UI.WinForms.GunaLabel lbl_mustassignnumber2;
         private Guna.UI.WinForms.GunaLabel lbl_process;
-        private Guna.UI.WinForms.GunaLabel gunaLabel8;
-        private Guna.UI.WinForms.GunaLabel gunaLabel9;
-        private Guna.UI.WinForms.GunaLabel gunaLabel7;
-        private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI.WinForms.GunaLabel lbl_color4;
+        private Guna.UI.WinForms.GunaLabel lbl_color3;
+        private Guna.UI.WinForms.GunaLabel lbl_color2;
+        private Guna.UI.WinForms.GunaLabel lbl_color1;
+        private Guna.UI.WinForms.GunaButton btn_numericscreentimeupdown;
+        private Guna.UI.WinForms.GunaTextBox txt_numericscreentime;
+        private Guna.UI.WinForms.GunaButton btn_numericrangeupdown1;
+        private Guna.UI.WinForms.GunaTextBox txt_numericrange1;
+        private Guna.UI.WinForms.GunaButton btn_numericrangeupdown2;
+        private Guna.UI.WinForms.GunaTextBox txt_numericrange2;
+        private Guna.UI.WinForms.GunaButton btn_numeric_numberoftransactionsupdown;
+        private Guna.UI.WinForms.GunaTextBox txt_numeric_numberoftransactions;
     }
 }

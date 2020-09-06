@@ -28,6 +28,7 @@ namespace NeuroAttention
         public bool musicStarted = false;
         public bool musicpaused = false;
         public int playlistmode = 0;
+        public int processStarted = 0;
         public int number1, number2, processnumber, rndoperators;
         public string operators;
         Random rndmath = new Random();
@@ -659,6 +660,3118 @@ namespace NeuroAttention
          
         }
 
+        public void randomColor()
+        {
+            if (checkbox_plus.Checked && checkbox_minus.Checked && checkbox_impact.Checked && checkbox_compartment.Checked)
+            {
+                if (btn_color1.Visible == false || btn_color2.Visible == false || btn_color3.Visible == false || btn_color4.Visible == false)
+                {
+                    btn_color1.Location = new Point(45, 45);
+                    btn_color2.Location = new Point(90, 45);
+                    btn_color3.Location = new Point(135, 45);
+                    btn_color4.Location = new Point(180, 45);
+                    btn_color1.Visible = true;
+                    btn_color2.Visible = true;
+                    btn_color3.Visible = true;
+                    btn_color4.Visible = true;
+
+
+                    int color = rnd.Next(1, 22);
+                    if (color == 1)
+                    {
+                        Settings1.Default.color1 = Color.Green;
+                        Settings1.Default.color2 = Color.Yellow;
+                        Settings1.Default.color3 = Color.Blue;
+                        Settings1.Default.color4 = Color.Red;
+                        Settings1.Default.Save();
+                    }
+                    else if (color == 2)
+                    {
+                        Settings1.Default.color1 = Color.Red;
+                        Settings1.Default.color2 = Color.Yellow;
+                        Settings1.Default.color3 = Color.Blue;
+                        Settings1.Default.color4 = Color.Green;
+                        Settings1.Default.Save();
+                    }
+
+                    else if (color == 3)
+                    {
+                        Settings1.Default.color1 = Color.Yellow;
+                        Settings1.Default.color2 = Color.Green;
+                        Settings1.Default.color3 = Color.Red;
+                        Settings1.Default.color4 = Color.Blue;
+                        Settings1.Default.Save();
+                    }
+                    else if (color == 4)
+                    {
+                        Settings1.Default.color1 = Color.Red;
+                        Settings1.Default.color2 = Color.Yellow;
+                        Settings1.Default.color3 = Color.Blue;
+                        Settings1.Default.color4 = Color.Green;
+                        Settings1.Default.Save();
+                    }
+                    else if (color == 5)
+                    {
+                        Settings1.Default.color1 = Color.Blue;
+                        Settings1.Default.color2 = Color.Green;
+                        Settings1.Default.color3 = Color.Yellow;
+                        Settings1.Default.color4 = Color.Red;
+                        Settings1.Default.Save();
+                    }
+
+                    else if (color == 6)
+                    {
+                        Settings1.Default.color1 = Color.Green;
+                        Settings1.Default.color2 = Color.Blue;
+                        Settings1.Default.color3 = Color.Yellow;
+                        Settings1.Default.color4 = Color.Red;
+                        Settings1.Default.Save();
+                    }
+                    else if (color == 7)
+                    {
+                        Settings1.Default.color1 = Color.Red;
+                        Settings1.Default.color2 = Color.Green;
+                        Settings1.Default.color3 = Color.Yellow;
+                        Settings1.Default.color4 = Color.Blue;
+                        Settings1.Default.Save();
+                    }
+                    else if (color == 8)
+                    {
+                        Settings1.Default.color1 = Color.Green;
+                        Settings1.Default.color2 = Color.Red;
+                        Settings1.Default.color3 = Color.Yellow;
+                        Settings1.Default.color4 = Color.Blue;
+                        Settings1.Default.Save();
+                    }
+
+
+
+                    else if (color == 9)
+                    {
+                        Settings1.Default.color1 = Color.Red;
+                        Settings1.Default.color2 = Color.Green;
+                        Settings1.Default.color3 = Color.Blue;
+                        Settings1.Default.color4 = Color.Yellow;
+                        Settings1.Default.Save();
+                    }
+
+                    else if (color == 10)
+                    {
+                        Settings1.Default.color1 = Color.Green;
+                        Settings1.Default.color2 = Color.Yellow;
+                        Settings1.Default.color3 = Color.Red;
+                        Settings1.Default.color4 = Color.Blue;
+                        Settings1.Default.Save();
+                    }
+
+                    else if (color == 11)
+                    {
+                        Settings1.Default.color1 = Color.Yellow;
+                        Settings1.Default.color2 = Color.Blue;
+                        Settings1.Default.color3 = Color.Green;
+                        Settings1.Default.color4 = Color.Red;
+                        Settings1.Default.Save();
+                    }
+
+
+                    else if (color == 12)
+                    {
+                        Settings1.Default.color1 = Color.Yellow;
+                        Settings1.Default.color2 = Color.Red;
+                        Settings1.Default.color3 = Color.Blue;
+                        Settings1.Default.color4 = Color.Green;
+                        Settings1.Default.Save();
+                    }
+
+                    else if (color == 13)
+                    {
+                        Settings1.Default.color1 = Color.Red;
+                        Settings1.Default.color2 = Color.Green;
+                        Settings1.Default.color3 = Color.Yellow;
+                        Settings1.Default.color4 = Color.Blue;
+                        Settings1.Default.Save();
+                    }
+                    else if (color == 14)
+                    {
+                        Settings1.Default.color1 = Color.Green;
+                        Settings1.Default.color2 = Color.Yellow;
+                        Settings1.Default.color3 = Color.Red;
+                        Settings1.Default.color4 = Color.Blue;
+                        Settings1.Default.Save();
+                    }
+                    else if (color == 15)
+                    {
+                        Settings1.Default.color1 = Color.Red;
+                        Settings1.Default.color2 = Color.Blue;
+                        Settings1.Default.color3 = Color.Green;
+                        Settings1.Default.color4 = Color.Yellow;
+                        Settings1.Default.Save();
+                    }
+
+                    else if (color == 16)
+                    {
+                        Settings1.Default.color1 = Color.Green;
+                        Settings1.Default.color2 = Color.Blue;
+                        Settings1.Default.color3 = Color.Red;
+                        Settings1.Default.color4 = Color.Yellow;
+                        Settings1.Default.Save();
+                    }
+                    else if (color == 17)
+                    {
+                        Settings1.Default.color1 = Color.Red;
+                        Settings1.Default.color2 = Color.Blue;
+                        Settings1.Default.color3 = Color.Green;
+                        Settings1.Default.color4 = Color.Yellow;
+                        Settings1.Default.Save();
+                    }
+
+                    else if (color == 18)
+                    {
+                        Settings1.Default.color1 = Color.Green;
+                        Settings1.Default.color2 = Color.Blue;
+                        Settings1.Default.color3 = Color.Red;
+                        Settings1.Default.color4 = Color.Yellow;
+                        Settings1.Default.Save();
+                    }
+                    else if (color == 19)
+                    {
+                        Settings1.Default.color1 = Color.Red;
+                        Settings1.Default.color2 = Color.Blue;
+                        Settings1.Default.color3 = Color.Yellow;
+                        Settings1.Default.color4 = Color.Green;
+                        Settings1.Default.Save();
+                    }
+                    else if (color == 20)
+                    {
+                        Settings1.Default.color1 = Color.Yellow;
+                        Settings1.Default.color2 = Color.Red;
+                        Settings1.Default.color3 = Color.Green;
+                        Settings1.Default.color4 = Color.Blue;
+                        Settings1.Default.Save();
+                    }
+
+                    else if (color == 21)
+                    {
+                        Settings1.Default.color1 = Color.Red;
+                        Settings1.Default.color2 = Color.Yellow;
+                        Settings1.Default.color3 = Color.Green;
+                        Settings1.Default.color4 = Color.Blue;
+                        Settings1.Default.Save();
+                    }
+
+
+                }
+            }
+            else if (checkbox_plus.Checked && checkbox_minus.Checked && checkbox_impact.Checked && checkbox_compartment.Checked == false)
+            {
+                if (btn_color1.Visible == false || btn_color2.Visible == false || btn_color3.Visible == false)
+                {
+                    btn_color1.Show();
+                    btn_color2.Show();
+                    btn_color3.Show();
+                }
+                btn_color4.Visible = false;
+                btn_color1.Location = new Point(50, 45);
+                btn_color2.Location = new Point(btn_color1.Location.X + 60, 45);
+                btn_color3.Location = new Point(btn_color2.Location.X + 60, 45);
+
+                int color = rnd.Next(1, 22);
+                if (color == 1)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 2)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 3)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 4)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 5)
+                {
+                    Settings1.Default.color1 = Color.Blue;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 6)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 7)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 8)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 9)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 10)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 11)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+
+                else if (color == 12)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 13)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 14)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 15)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 16)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 17)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 18)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 19)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 20)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 21)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+            }
+            else if (checkbox_plus.Checked && checkbox_minus.Checked == false && checkbox_impact.Checked == false && checkbox_compartment.Checked == false)
+            {
+                if (btn_color1.Visible == false)
+                {
+                    btn_color1.Show();
+                }
+                btn_color2.Visible = false;
+                btn_color3.Visible = false;
+                btn_color4.Visible = false;
+                btn_color1.Location = new Point(110, 45);
+
+                int color = rnd.Next(1, 22);
+                if (color == 1)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 2)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 3)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 4)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 5)
+                {
+                    Settings1.Default.color1 = Color.Blue;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 6)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 7)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 8)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 9)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 10)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 11)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+
+                else if (color == 12)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 13)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 14)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 15)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 16)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 17)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 18)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 19)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 20)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 21)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+            }
+            else if (checkbox_plus.Checked == false && checkbox_minus.Checked && checkbox_impact.Checked == false && checkbox_compartment.Checked == false)
+            {
+                if (btn_color2.Visible == false)
+                {
+                    btn_color2.Show();
+                }
+                btn_color1.Visible = false;
+                btn_color3.Visible = false;
+                btn_color4.Visible = false;
+                btn_color2.Location = new Point(110, 45);
+
+                int color = rnd.Next(1, 22);
+                if (color == 1)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 2)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 3)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 4)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 5)
+                {
+                    Settings1.Default.color1 = Color.Blue;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 6)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 7)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 8)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 9)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 10)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 11)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+
+                else if (color == 12)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 13)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 14)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 15)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 16)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 17)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 18)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 19)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 20)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 21)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+            }
+            else if (checkbox_plus.Checked == false && checkbox_minus.Checked == false && checkbox_impact.Checked && checkbox_compartment.Checked == false)
+            {
+                if (btn_color3.Visible == false)
+                {
+                    btn_color3.Show();
+                }
+                btn_color1.Visible = false;
+                btn_color2.Visible = false;
+                btn_color4.Visible = false;
+                btn_color3.Location = new Point(110, 45);
+
+                int color = rnd.Next(1, 22);
+                if (color == 1)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 2)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 3)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 4)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 5)
+                {
+                    Settings1.Default.color1 = Color.Blue;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 6)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 7)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 8)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 9)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 10)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 11)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+
+                else if (color == 12)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 13)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 14)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 15)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 16)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 17)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 18)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 19)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 20)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 21)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+            }
+            else if (checkbox_plus.Checked == false && checkbox_minus.Checked == false && checkbox_impact.Checked == false && checkbox_compartment.Checked)
+            {
+                if (btn_color4.Visible == false)
+                {
+                    btn_color4.Show();
+                }
+                btn_color1.Visible = false;
+                btn_color2.Visible = false;
+                btn_color3.Visible = false;
+                btn_color4.Location = new Point(110, 45);
+
+                int color = rnd.Next(1, 22);
+                if (color == 1)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 2)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 3)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 4)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 5)
+                {
+                    Settings1.Default.color1 = Color.Blue;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 6)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 7)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 8)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 9)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 10)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 11)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+
+                else if (color == 12)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 13)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 14)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 15)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 16)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 17)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 18)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 19)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 20)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 21)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+            }
+            else if (checkbox_plus.Checked && checkbox_minus.Checked && checkbox_impact.Checked == false && checkbox_compartment.Checked == false)
+            {
+                if (btn_color1.Visible == false || btn_color2.Visible == false)
+                {
+                    btn_color1.Show();
+                    btn_color2.Show();
+                }
+                btn_color3.Visible = false;
+                btn_color4.Visible = false;
+                btn_color1.Location = new Point(50, 45);
+                btn_color2.Location = new Point(btn_color1.Location.X + 120, 45);
+
+                int color = rnd.Next(1, 22);
+                if (color == 1)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 2)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 3)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 4)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 5)
+                {
+                    Settings1.Default.color1 = Color.Blue;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 6)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 7)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 8)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 9)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 10)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 11)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+
+                else if (color == 12)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 13)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 14)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 15)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 16)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 17)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 18)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 19)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 20)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 21)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+            }
+            else if (checkbox_plus.Checked && checkbox_minus.Checked == false && checkbox_impact.Checked && checkbox_compartment.Checked == false)
+            {
+                if (btn_color1.Visible == false || btn_color3.Visible == false)
+                {
+                    btn_color1.Show();
+                    btn_color3.Show();
+                }
+                btn_color2.Visible = false;
+                btn_color4.Visible = false;
+                btn_color1.Location = new Point(50, 45);
+                btn_color3.Location = new Point(btn_color1.Location.X + 120, 45);
+
+                int color = rnd.Next(1, 22);
+                if (color == 1)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 2)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 3)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 4)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 5)
+                {
+                    Settings1.Default.color1 = Color.Blue;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 6)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 7)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 8)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 9)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 10)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 11)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+
+                else if (color == 12)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 13)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 14)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 15)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 16)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 17)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 18)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 19)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 20)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 21)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+            }
+            else if (checkbox_plus.Checked && checkbox_minus.Checked == false && checkbox_impact.Checked == false && checkbox_compartment.Checked)
+            {
+                if (btn_color1.Visible == false || btn_color4.Visible == false)
+                {
+                    btn_color1.Show();
+                    btn_color4.Show();
+                }
+                btn_color2.Visible = false;
+                btn_color3.Visible = false;
+                btn_color1.Location = new Point(50, 45);
+                btn_color4.Location = new Point(btn_color1.Location.X + 120, 45);
+
+                int color = rnd.Next(1, 22);
+                if (color == 1)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 2)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 3)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 4)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 5)
+                {
+                    Settings1.Default.color1 = Color.Blue;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 6)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 7)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 8)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 9)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 10)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 11)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+
+                else if (color == 12)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 13)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 14)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 15)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 16)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 17)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 18)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 19)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 20)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 21)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+            }
+            else if (checkbox_plus.Checked == false && checkbox_minus.Checked && checkbox_impact.Checked && checkbox_compartment.Checked == false)
+            {
+                if (btn_color2.Visible == false || btn_color3.Visible == false)
+                {
+                    btn_color2.Show();
+                    btn_color3.Show();
+                }
+                btn_color1.Visible = false;
+                btn_color4.Visible = false;
+                btn_color2.Location = new Point(50, 45);
+                btn_color3.Location = new Point(btn_color1.Location.X + 120, 45);
+
+                int color = rnd.Next(1, 22);
+                if (color == 1)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 2)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 3)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 4)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 5)
+                {
+                    Settings1.Default.color1 = Color.Blue;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 6)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 7)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 8)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 9)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 10)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 11)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+
+                else if (color == 12)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 13)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 14)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 15)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 16)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 17)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 18)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 19)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 20)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 21)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+            }
+            else if (checkbox_plus.Checked == false && checkbox_minus.Checked && checkbox_impact.Checked == false && checkbox_compartment.Checked)
+            {
+                if (btn_color2.Visible == false || btn_color4.Visible == false)
+                {
+                    btn_color2.Show();
+                    btn_color4.Show();
+                }
+                btn_color1.Visible = false;
+                btn_color3.Visible = false;
+                btn_color2.Location = new Point(50, 45);
+                btn_color4.Location = new Point(btn_color1.Location.X + 120, 45);
+
+                int color = rnd.Next(1, 22);
+                if (color == 1)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 2)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 3)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 4)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 5)
+                {
+                    Settings1.Default.color1 = Color.Blue;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 6)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 7)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 8)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 9)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 10)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 11)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+
+                else if (color == 12)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 13)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 14)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 15)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 16)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 17)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 18)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 19)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 20)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 21)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+            }
+            else if (checkbox_plus.Checked == false && checkbox_minus.Checked == false && checkbox_impact.Checked && checkbox_compartment.Checked)
+            {
+                if (btn_color3.Visible == false || btn_color4.Visible == false)
+                {
+                    btn_color3.Show();
+                    btn_color4.Show();
+                }
+                btn_color1.Visible = false;
+                btn_color2.Visible = false;
+                btn_color3.Location = new Point(50, 45);
+                btn_color4.Location = new Point(btn_color1.Location.X + 120, 45);
+
+                int color = rnd.Next(1, 22);
+                if (color == 1)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 2)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 3)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 4)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 5)
+                {
+                    Settings1.Default.color1 = Color.Blue;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 6)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 7)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 8)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 9)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 10)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 11)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+
+                else if (color == 12)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 13)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 14)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 15)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 16)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 17)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 18)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 19)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 20)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 21)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+            }
+            else if (checkbox_plus.Checked && checkbox_minus.Checked && checkbox_impact.Checked && checkbox_compartment.Checked == false)
+            {
+                if (btn_color1.Visible == false || btn_color2.Visible == false || btn_color3.Visible == false)
+                {
+                    btn_color1.Show();
+                    btn_color2.Show();
+                    btn_color3.Show();
+                }
+                btn_color4.Visible = false;
+                btn_color1.Location = new Point(50, 45);
+                btn_color2.Location = new Point(btn_color1.Location.X + 120, 45);
+                btn_color3.Location = new Point(btn_color2.Location.X + 120, 45);
+
+                int color = rnd.Next(1, 22);
+                if (color == 1)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 2)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 3)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 4)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 5)
+                {
+                    Settings1.Default.color1 = Color.Blue;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 6)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 7)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 8)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 9)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 10)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 11)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+
+                else if (color == 12)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 13)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 14)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 15)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 16)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 17)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 18)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 19)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 20)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 21)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+            }
+            else if (checkbox_plus.Checked == false && checkbox_minus.Checked && checkbox_impact.Checked && checkbox_compartment.Checked)
+            {
+                if (btn_color2.Visible == false || btn_color3.Visible == false || btn_color4.Visible == false)
+                {
+                    btn_color2.Show();
+                    btn_color3.Show();
+                    btn_color4.Show();
+                }
+                btn_color1.Visible = false;
+                btn_color2.Location = new Point(50, 45);
+                btn_color3.Location = new Point(btn_color2.Location.X + 60, 45);
+                btn_color4.Location = new Point(btn_color3.Location.X + 60, 45);
+
+                int color = rnd.Next(1, 22);
+                if (color == 1)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 2)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 3)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 4)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 5)
+                {
+                    Settings1.Default.color1 = Color.Blue;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 6)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 7)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 8)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 9)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 10)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 11)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+
+                else if (color == 12)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 13)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 14)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 15)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 16)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 17)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 18)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 19)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 20)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 21)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+            }
+            else if (checkbox_plus.Checked && checkbox_minus.Checked == false && checkbox_impact.Checked && checkbox_compartment.Checked)
+            {
+                if (btn_color1.Visible == false || btn_color3.Visible == false || btn_color4.Visible == false)
+                {
+                    btn_color1.Show();
+                    btn_color3.Show();
+                    btn_color4.Show();
+                }
+                btn_color2.Visible = false;
+                btn_color1.Location = new Point(50, 45);
+                btn_color3.Location = new Point(btn_color1.Location.X + 60, 45);
+                btn_color4.Location = new Point(btn_color3.Location.X + 60, 45);
+
+                int color = rnd.Next(1, 22);
+                if (color == 1)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 2)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 3)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 4)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 5)
+                {
+                    Settings1.Default.color1 = Color.Blue;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 6)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 7)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 8)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 9)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 10)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 11)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+
+                else if (color == 12)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 13)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 14)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 15)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 16)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 17)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 18)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 19)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 20)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 21)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+            }
+            else if (checkbox_plus.Checked && checkbox_minus.Checked && checkbox_impact.Checked == false && checkbox_compartment.Checked)
+            {
+                if (btn_color1.Visible == false || btn_color2.Visible == false || btn_color4.Visible == false)
+                {
+                    btn_color1.Show();
+                    btn_color2.Show();
+                    btn_color4.Show();
+                }
+                btn_color3.Visible = false;
+                btn_color1.Location = new Point(50, 45);
+                btn_color2.Location = new Point(btn_color1.Location.X + 60, 45);
+                btn_color4.Location = new Point(btn_color2.Location.X + 60, 45);
+
+                int color = rnd.Next(1, 22);
+                if (color == 1)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 2)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 3)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 4)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 5)
+                {
+                    Settings1.Default.color1 = Color.Blue;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 6)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+                else if (color == 7)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 8)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 9)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 10)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 11)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Red;
+                    Settings1.Default.Save();
+                }
+
+
+                else if (color == 12)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Blue;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 13)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Green;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 14)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+                else if (color == 15)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 16)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 17)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 18)
+                {
+                    Settings1.Default.color1 = Color.Green;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Red;
+                    Settings1.Default.color4 = Color.Yellow;
+                    Settings1.Default.Save();
+                }
+                else if (color == 19)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Blue;
+                    Settings1.Default.color3 = Color.Yellow;
+                    Settings1.Default.color4 = Color.Green;
+                    Settings1.Default.Save();
+                }
+                else if (color == 20)
+                {
+                    Settings1.Default.color1 = Color.Yellow;
+                    Settings1.Default.color2 = Color.Red;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+
+                else if (color == 21)
+                {
+                    Settings1.Default.color1 = Color.Red;
+                    Settings1.Default.color2 = Color.Yellow;
+                    Settings1.Default.color3 = Color.Green;
+                    Settings1.Default.color4 = Color.Blue;
+                    Settings1.Default.Save();
+                }
+            }
+
+            btn_color1.BaseColor = Settings1.Default.color1;
+            btn_color1.OnHoverBaseColor = Settings1.Default.color1;
+            btn_color2.BaseColor = Settings1.Default.color2;
+            btn_color2.OnHoverBaseColor = Settings1.Default.color2;
+            btn_color3.BaseColor = Settings1.Default.color3;
+            btn_color3.OnHoverBaseColor = Settings1.Default.color3;
+            btn_color4.BaseColor = Settings1.Default.color4;
+            btn_color4.OnHoverBaseColor = Settings1.Default.color4;
+        }
+
 
         public void randomNumberMustAssignTask()
         {
@@ -672,18 +3785,18 @@ namespace NeuroAttention
                         rndoperators = rndmath.Next(1, 5);
 
                         if (rndoperators == 1)
-                            lbl_mustassignoperator.ForeColor = Color.Blue;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color1;
 
 
                         else if (rndoperators == 2)
-                            lbl_mustassignoperator.ForeColor = Color.Green;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color2;
 
 
                         else if (rndoperators == 3)
-                            lbl_mustassignoperator.ForeColor = Color.Red;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color3;
 
                         else if (rndoperators == 4)
-                            lbl_mustassignoperator.ForeColor = Color.Yellow;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color4;
 
 
                         if (rndoperators == 4)
@@ -742,11 +3855,11 @@ namespace NeuroAttention
                         rndoperators = rndmath.Next(1, 3);
 
                         if (rndoperators == 1)
-                            lbl_mustassignoperator.ForeColor = Color.Blue;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color1;
 
 
                         else if (rndoperators == 2)
-                            lbl_mustassignoperator.ForeColor = Color.Green;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color2;
 
 
 
@@ -769,13 +3882,13 @@ namespace NeuroAttention
                         rndoperators = rndmath.Next(1, 4);
 
                         if (rndoperators == 1)
-                            lbl_mustassignoperator.ForeColor = Color.Blue;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color1;
 
                         else if (rndoperators == 2)
-                            lbl_mustassignoperator.ForeColor = Color.Green;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color2;
 
                         else if (rndoperators == 3)
-                            lbl_mustassignoperator.ForeColor = Color.Red;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color3;
 
                         if (number1 < number2)
                         {
@@ -793,7 +3906,7 @@ namespace NeuroAttention
                     }
                 case 4:
                     {
-                        lbl_mustassignoperator.ForeColor = Color.Blue;
+                        lbl_mustassignoperator.ForeColor = Settings1.Default.color1;
 
                         if (number1 < number2)
                         {
@@ -811,7 +3924,7 @@ namespace NeuroAttention
                     }
                 case 5:
                     {
-                        lbl_mustassignoperator.ForeColor = Color.Green;
+                        lbl_mustassignoperator.ForeColor = Settings1.Default.color2;
 
                         if (number1 < number2)
                         {
@@ -829,7 +3942,7 @@ namespace NeuroAttention
                     }
                 case 6:
                     {
-                        lbl_mustassignoperator.ForeColor = Color.Red;
+                        lbl_mustassignoperator.ForeColor = Settings1.Default.color3;
 
                         if (number1 < number2)
                         {
@@ -846,7 +3959,7 @@ namespace NeuroAttention
                     }
                 case 7:
                     {
-                        lbl_mustassignoperator.ForeColor = Color.Yellow;
+                        lbl_mustassignoperator.ForeColor = Settings1.Default.color4;
 
                         
                             if (number1 < number2)
@@ -892,10 +4005,10 @@ namespace NeuroAttention
                         rndoperators = rndmath.Next(1, 3);
 
                         if (rndoperators == 1)
-                            lbl_mustassignoperator.ForeColor = Color.Green;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color2;
 
                         else if (rndoperators == 2)
-                            lbl_mustassignoperator.ForeColor = Color.Red;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color3;
 
 
                         if (number1 < number2)
@@ -917,10 +4030,10 @@ namespace NeuroAttention
                         rndoperators = rndmath.Next(1, 3);
 
                         if (rndoperators == 1)
-                            lbl_mustassignoperator.ForeColor = Color.Blue;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color1;
 
                         else if (rndoperators == 2)
-                            lbl_mustassignoperator.ForeColor = Color.Red;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color3;
 
 
                         if (number1 < number2)
@@ -941,10 +4054,10 @@ namespace NeuroAttention
                         rndoperators = rndmath.Next(1, 3);
 
                         if (rndoperators == 1)
-                            lbl_mustassignoperator.ForeColor = Color.Blue;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color1;
 
                         else if (rndoperators == 2)
-                            lbl_mustassignoperator.ForeColor = Color.Yellow;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color4;
 
                         if (rndoperators == 2)
                         {
@@ -1002,10 +4115,10 @@ namespace NeuroAttention
                         rndoperators = rndmath.Next(1, 3);
 
                         if (rndoperators == 1)
-                            lbl_mustassignoperator.ForeColor = Color.Red;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color3;
 
                         else if (rndoperators == 2)
-                            lbl_mustassignoperator.ForeColor = Color.Yellow;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color4;
 
 
                         if (rndoperators == 2)
@@ -1064,10 +4177,10 @@ namespace NeuroAttention
                         rndoperators = rndmath.Next(1, 3);
 
                         if (rndoperators == 1)
-                            lbl_mustassignoperator.ForeColor = Color.Green;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color2;
 
                         else if (rndoperators == 2)
-                            lbl_mustassignoperator.ForeColor = Color.Yellow;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color4;
 
 
                         if (rndoperators == 2)
@@ -1125,13 +4238,13 @@ namespace NeuroAttention
                         rndoperators = rndmath.Next(1, 4);
 
                         if (rndoperators == 1)
-                            lbl_mustassignoperator.ForeColor = Color.Green;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color2;
 
                         else if (rndoperators == 2)
-                            lbl_mustassignoperator.ForeColor = Color.Red;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color3;
 
                         else if (rndoperators == 3)
-                            lbl_mustassignoperator.ForeColor = Color.Yellow;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color4;
 
                         if (rndoperators == 3)
                         {
@@ -1189,13 +4302,13 @@ namespace NeuroAttention
                         rndoperators = rndmath.Next(1, 4);
 
                         if (rndoperators == 1)
-                            lbl_mustassignoperator.ForeColor = Color.Blue;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color1;
 
                         else if (rndoperators == 2)
-                            lbl_mustassignoperator.ForeColor = Color.Green;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color2;
 
                         else if (rndoperators == 3)
-                            lbl_mustassignoperator.ForeColor = Color.Yellow;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color4;
 
 
                         if (rndoperators == 3)
@@ -1253,13 +4366,13 @@ namespace NeuroAttention
                         rndoperators = rndmath.Next(1, 4);
 
                         if (rndoperators == 1)
-                            lbl_mustassignoperator.ForeColor = Color.Blue;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color1;
 
                         else if (rndoperators == 2)
-                            lbl_mustassignoperator.ForeColor = Color.Red;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color3;
 
                         else if (rndoperators == 3)
-                            lbl_mustassignoperator.ForeColor = Color.Yellow;
+                            lbl_mustassignoperator.ForeColor = Settings1.Default.color4;
 
 
                         if (rndoperators == 3)
@@ -1321,7 +4434,7 @@ namespace NeuroAttention
         {
             
              
-            if(checkbox_plus.Checked == false && checkbox_minus.Checked == false && checkbox_impact.Checked == false && checkbox_compartment.Checked == false || int.Parse(txt_numerictime.Text) == 0 || int.Parse(txt_numericscreentime.Text) == 0 )
+            if(checkbox_plus.Checked == false && checkbox_minus.Checked == false && checkbox_impact.Checked == false && checkbox_compartment.Checked == false || int.Parse(txt_numerictime.Text) == 0 || int.Parse(txt_numericscreentime.Text) == 0  || int.Parse(txt_numericrange2.Text) < int.Parse(txt_numericrange1.Text) || int.Parse(txt_numericrange2.Text) == int.Parse(txt_numericrange1.Text))
             {
                 DialogResult dresult = new DialogResult();
                 dresult = MessageBox.Show("Lütfen ayarları doğru şekilde yapınız", "Uyarı", MessageBoxButtons.OK);
@@ -1333,93 +4446,19 @@ namespace NeuroAttention
             
            else if (checkbox_mustasigntask.Checked==true)
             {
-
-                if(checkbox_plus.Checked && checkbox_minus.Checked && checkbox_impact.Checked && checkbox_compartment.Checked)
+                if (int.Parse(txt_numericrange2.Text) < int.Parse(txt_numericrange1.Text) || int.Parse(txt_numericrange2.Text) == int.Parse(txt_numericrange1.Text))
                 {
-                    if(btn_color1.Visible ==false || btn_color2.Visible == false || btn_color3.Visible == false || btn_color4.Visible == false)
-                    {
-                        btn_color1.Location = new Point(45, 45);
-                        btn_color2.Location = new Point(90, 45);
-                        btn_color3.Location = new Point(135, 45);
-                        btn_color4.Location = new Point(180, 45);
-                        btn_color1.Visible = true;
-                        btn_color2.Visible = true;
-                        btn_color3.Visible = true;
-                        btn_color4.Visible = true;
-                     
-                    }
+                    DialogResult dresult = new DialogResult();
+                    dresult = MessageBox.Show("Lütfen ayarları doğru şekilde yapınız", "Uyarı", MessageBoxButtons.OK);
                 }
 
-                else if(checkbox_plus.Checked && checkbox_minus.Checked && checkbox_impact.Checked &&checkbox_compartment.Checked == false)
+                else
                 {
-                    btn_color4.Visible = false;
-                    btn_color1.Location = new Point(50, 45);
-                    btn_color2.Location = new Point(btn_color1.Location.X + 60, 45);
-                    btn_color3.Location = new Point(btn_color2.Location.X + 60, 45);
+                    randomColor();
+                    panel_colortable.Visible = true;
+                    processStarted = 1;
                 }
-
-                else if (checkbox_plus.Checked && checkbox_minus.Checked && checkbox_impact.Checked== false && checkbox_compartment.Checked == false)
-                {
-                    btn_color3.Visible = false;
-                    btn_color4.Visible = false;
-                    btn_color1.Location = new Point(50, 45);
-                    btn_color2.Location = new Point(btn_color1.Location.X + 120, 45);
-                    
-                }
-
-                else if (checkbox_plus.Checked && checkbox_minus.Checked == false && checkbox_impact.Checked == false && checkbox_compartment.Checked == false)
-                {
-                    btn_color2.Visible = false;
-                    btn_color3.Visible = false;
-                    btn_color4.Visible = false;
-                    btn_color1.Location = new Point(110, 45);
-                   
-                }
-
-                else if (checkbox_plus.Checked && checkbox_minus.Checked == false && checkbox_impact.Checked && checkbox_compartment.Checked == false)
-                {
-                    btn_color2.Visible = false;
-                    btn_color4.Visible = false;
-                    btn_color1.Location = new Point(50, 45);
-                    btn_color3.Location = new Point(btn_color1.Location.X + 120, 45);
-                }
-
-                int color = rnd.Next(1, 5);
-                if(color == 1)
-                {
-                    Settings1.Default.color1 = Color.Green;
-                    Settings1.Default.color2 = Color.Red;
-                    Settings1.Default.color3 = Color.Blue;
-                    Settings1.Default.color4 = Color.Yellow;
-                    Settings1.Default.Save();
-                }
-                else if (color == 2)
-                {
-                    Settings1.Default.color1 = Color.Red;
-                    Settings1.Default.color2 = Color.Green;
-                    Settings1.Default.color3 = Color.Blue;
-                    Settings1.Default.color4 = Color.Yellow;
-                    Settings1.Default.Save();
-                }
-                else if (color == 3)
-                {
-                    Settings1.Default.color1 = Color.Blue;
-                    Settings1.Default.color2 = Color.Red;
-                    Settings1.Default.color3 = Color.Green;
-                    Settings1.Default.color4 = Color.Yellow;
-                    Settings1.Default.Save();
-                }
-
-                btn_color1.BaseColor = Settings1.Default.color1;
-                btn_color1.OnHoverBaseColor = Settings1.Default.color1;
-                btn_color2.BaseColor = Settings1.Default.color2;
-                btn_color2.OnHoverBaseColor = Settings1.Default.color2;
-                btn_color3.BaseColor = Settings1.Default.color3;
-                btn_color3.OnHoverBaseColor = Settings1.Default.color3;
-                btn_color4.BaseColor = Settings1.Default.color4;
-                btn_color4.OnHoverBaseColor = Settings1.Default.color4;
-                panel_colortable.Visible = true;
-               
+              
             }
 
             else if (checkbox_gostergizle.Checked == true)
@@ -1440,19 +4479,14 @@ namespace NeuroAttention
                     lbl_process.Visible = true;
                     btn_start.Visible = false;
                     btn_stop.Visible = true;
+                    processStarted = 1;
                 }
               
             }
 
             else
             {
-                if (int.Parse(txt_numericrange2.Text) < int.Parse(txt_numericrange1.Text) || int.Parse(txt_numericrange2.Text) == int.Parse(txt_numericrange1.Text))
-                {
-                    DialogResult dresult = new DialogResult();
-                    dresult = MessageBox.Show("Lütfen ayarları doğru şekilde yapınız", "Uyarı", MessageBoxButtons.OK);
-                }
-                else
-                {
+               
                     randomNumber();
                     timer_time.Interval = int.Parse(txt_numerictime.Text) * 1000;
                     timer_screentime.Interval = int.Parse(txt_numericscreentime.Text);
@@ -1461,9 +4495,7 @@ namespace NeuroAttention
                     lbl_process.Visible = true;
                     btn_start.Visible = false;
                     btn_stop.Visible = true;
-
-                }
-               
+                
 
             }
 
@@ -1487,6 +4519,7 @@ namespace NeuroAttention
             panel_mustasigntask.Visible = false;
             btn_stop.Visible = false;
             btn_start.Visible = true;
+            processStarted = 0;
         }
 
         private void timer_screentime_Tick(object sender, EventArgs e)
@@ -1548,10 +4581,10 @@ namespace NeuroAttention
 
         private void ConstantAttention_Load(object sender, EventArgs e)
         {
-            musicArray[0] = @"http://enesbilgi.com/audio/1.mp3";
-            musicArray[1] = @"http://enesbilgi.com/audio/2.mp3";
-            musicArray[2] = @"http://enesbilgi.com/audio/3.mp3";
-            musicArray[3] = @"http://enesbilgi.com/audio/4.mp3";
+            musicArray[0] = @"https://enesbilgi.com/audio/1.mp3";
+            musicArray[1] = @"https://enesbilgi.com/audio/2.mp3";
+            musicArray[2] = @"https://enesbilgi.com/audio/3.mp3";
+            musicArray[3] = @"https://enesbilgi.com/audio/4.mp3";
             musicinfoArray[0] = "Legend of the Eagle Bearer";
             musicinfoArray[1] = "Season Two Main Theme";
             musicinfoArray[2] = "Azura's Coast";
@@ -1562,9 +4595,6 @@ namespace NeuroAttention
             musictitleArray[3] = "The Witcher";
            
         }
-
-       
-
 
         private void btn_colortableok_Click(object sender, EventArgs e)
         {
@@ -1977,6 +5007,89 @@ namespace NeuroAttention
             }
         }
 
+        private void lbl_quickaction1_Click(object sender, EventArgs e)
+        {
+
+            if(btn_stop.Visible != true)
+            {
+                txt_numerictime.Text = "30";
+                checkbox_plus.Checked = true;
+                checkbox_minus.Checked = true;
+                checkbox_impact.Checked = true;
+                checkbox_compartment.Checked = true;
+                checkbox_mustasigntask.Checked = false;
+            }
+           
+        }
+
+        private void lbl_quickaction2_Click(object sender, EventArgs e)
+        {
+
+            if(btn_stop.Visible != true)
+            {
+                txt_numerictime.Text = "60";
+                txt_numericrange2.Text = "15";
+                checkbox_plus.Checked = true;
+                checkbox_minus.Checked = true;
+                checkbox_impact.Checked = true;
+                checkbox_compartment.Checked = true;
+                checkbox_mustasigntask.Checked = false;
+            }
+        
+        }
+
+        private void lbl_quickaction3_Click(object sender, EventArgs e)
+        {
+            if(btn_stop.Visible != true)
+            {
+                txt_numerictime.Text = "30";
+                txt_numericrange2.Text = "10";
+                checkbox_plus.Checked = true;
+                checkbox_minus.Checked = false;
+                checkbox_impact.Checked = false;
+                checkbox_compartment.Checked = true;
+                checkbox_mustasigntask.Checked = true;
+            }
+         
+        }
+
+        private void lbl_quickaction4_Click(object sender, EventArgs e)
+        {
+            if(btn_stop.Visible != true)
+            {
+                txt_numerictime.Text = "30";
+                txt_numericrange2.Text = "10";
+                checkbox_plus.Checked = true;
+                checkbox_minus.Checked = true;
+                checkbox_impact.Checked = false;
+                checkbox_compartment.Checked = false;
+                checkbox_mustasigntask.Checked = true;
+            }
+           
+        }
+
+        private void checkbox_mustasigntask_Click(object sender, EventArgs e)
+        {
+            if (processStarted == 0)
+            {
+               
+            }
+            else
+            {
+
+                if(checkbox_mustasigntask.Checked == true)
+                {
+                    checkbox_mustasigntask.Checked = false;
+                }
+
+                else
+                {
+                    checkbox_mustasigntask.Checked = true;
+                }
+                
+            }
+        }
+
         private void btn_playlist_Click(object sender, EventArgs e)
         {
             if (playlistmode == 0)
@@ -2011,7 +5124,7 @@ namespace NeuroAttention
             lbl_process.Visible = false;
             panel_mustasigntask.Visible = false;
             lbl_process.Text = "";
-
+            processStarted = 0;
         }
     }
 }

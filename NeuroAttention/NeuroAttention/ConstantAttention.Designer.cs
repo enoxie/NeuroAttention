@@ -30,8 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConstantAttention));
-            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
+            this.panel_settings = new Guna.UI.WinForms.GunaPanel();
+            this.gunaGroupBox_settings = new Guna.UI.WinForms.GunaGroupBox();
+            this.lbl_quickaction4 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaSeparator_quickactions = new Guna.UI.WinForms.GunaSeparator();
+            this.lbl_quickaction3 = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_quickaction2 = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_quickaction1 = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_quickactions = new Guna.UI.WinForms.GunaLabel();
             this.btn_numericscreentimeupdown = new Guna.UI.WinForms.GunaButton();
             this.txt_numericscreentime = new Guna.UI.WinForms.GunaTextBox();
             this.btn_numericrangeupdown2 = new Guna.UI.WinForms.GunaButton();
@@ -92,12 +98,8 @@
             this.timer_musicinfo = new System.Windows.Forms.Timer(this.components);
             this.timer_playlist = new System.Windows.Forms.Timer(this.components);
             this.timer_playlistreverse = new System.Windows.Forms.Timer(this.components);
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaPanel1.SuspendLayout();
-            this.gunaGroupBox1.SuspendLayout();
+            this.panel_settings.SuspendLayout();
+            this.gunaGroupBox_settings.SuspendLayout();
             this.gunaGroupBox2.SuspendLayout();
             this.gbox_normal.SuspendLayout();
             this.panel_colortable.SuspendLayout();
@@ -110,54 +112,127 @@
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // gunaPanel1
+            // panel_settings
             // 
-            this.gunaPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaPanel1.Controls.Add(this.gunaGroupBox1);
-            this.gunaPanel1.Controls.Add(this.btn_logout);
-            this.gunaPanel1.Location = new System.Drawing.Point(250, 0);
-            this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(780, 200);
-            this.gunaPanel1.TabIndex = 0;
+            this.panel_settings.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel_settings.Controls.Add(this.gunaGroupBox_settings);
+            this.panel_settings.Controls.Add(this.btn_logout);
+            this.panel_settings.Location = new System.Drawing.Point(250, 0);
+            this.panel_settings.Name = "panel_settings";
+            this.panel_settings.Size = new System.Drawing.Size(780, 200);
+            this.panel_settings.TabIndex = 0;
             // 
-            // gunaGroupBox1
+            // gunaGroupBox_settings
             // 
-            this.gunaGroupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaGroupBox1.BorderColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox1.BorderSize = 1;
-            this.gunaGroupBox1.Controls.Add(this.gunaLabel5);
-            this.gunaGroupBox1.Controls.Add(this.gunaLabel3);
-            this.gunaGroupBox1.Controls.Add(this.gunaLabel2);
-            this.gunaGroupBox1.Controls.Add(this.gunaLabel1);
-            this.gunaGroupBox1.Controls.Add(this.btn_numericscreentimeupdown);
-            this.gunaGroupBox1.Controls.Add(this.txt_numericscreentime);
-            this.gunaGroupBox1.Controls.Add(this.btn_numericrangeupdown2);
-            this.gunaGroupBox1.Controls.Add(this.txt_numericrange2);
-            this.gunaGroupBox1.Controls.Add(this.btn_numericrangeupdown1);
-            this.gunaGroupBox1.Controls.Add(this.txt_numericrange1);
-            this.gunaGroupBox1.Controls.Add(this.btn_numerictimeupdown);
-            this.gunaGroupBox1.Controls.Add(this.gunaGroupBox2);
-            this.gunaGroupBox1.Controls.Add(this.gbox_normal);
-            this.gunaGroupBox1.Controls.Add(this.txt_numerictime);
-            this.gunaGroupBox1.Controls.Add(this.btn_stop);
-            this.gunaGroupBox1.Controls.Add(this.lbl_numericrange);
-            this.gunaGroupBox1.Controls.Add(this.lbl_screentimems);
-            this.gunaGroupBox1.Controls.Add(this.lbl_time);
-            this.gunaGroupBox1.Controls.Add(this.btn_start);
-            this.gunaGroupBox1.Controls.Add(this.lbl_timesec);
-            this.gunaGroupBox1.Controls.Add(this.lbl_screentime);
-            this.gunaGroupBox1.Font = new System.Drawing.Font("Infoma Light", 10F);
-            this.gunaGroupBox1.LineColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox1.LineTop = 24;
-            this.gunaGroupBox1.Location = new System.Drawing.Point(15, 0);
-            this.gunaGroupBox1.Name = "gunaGroupBox1";
-            this.gunaGroupBox1.Size = new System.Drawing.Size(745, 170);
-            this.gunaGroupBox1.TabIndex = 52;
-            this.gunaGroupBox1.Text = "Uygulama Ayarları";
-            this.gunaGroupBox1.TextLocation = new System.Drawing.Point(330, 6);
+            this.gunaGroupBox_settings.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.gunaGroupBox_settings.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGroupBox_settings.BaseColor = System.Drawing.Color.White;
+            this.gunaGroupBox_settings.BorderColor = System.Drawing.Color.Gainsboro;
+            this.gunaGroupBox_settings.BorderSize = 1;
+            this.gunaGroupBox_settings.Controls.Add(this.lbl_quickaction4);
+            this.gunaGroupBox_settings.Controls.Add(this.gunaSeparator_quickactions);
+            this.gunaGroupBox_settings.Controls.Add(this.lbl_quickaction3);
+            this.gunaGroupBox_settings.Controls.Add(this.lbl_quickaction2);
+            this.gunaGroupBox_settings.Controls.Add(this.lbl_quickaction1);
+            this.gunaGroupBox_settings.Controls.Add(this.lbl_quickactions);
+            this.gunaGroupBox_settings.Controls.Add(this.btn_numericscreentimeupdown);
+            this.gunaGroupBox_settings.Controls.Add(this.txt_numericscreentime);
+            this.gunaGroupBox_settings.Controls.Add(this.btn_numericrangeupdown2);
+            this.gunaGroupBox_settings.Controls.Add(this.txt_numericrange2);
+            this.gunaGroupBox_settings.Controls.Add(this.btn_numericrangeupdown1);
+            this.gunaGroupBox_settings.Controls.Add(this.txt_numericrange1);
+            this.gunaGroupBox_settings.Controls.Add(this.btn_numerictimeupdown);
+            this.gunaGroupBox_settings.Controls.Add(this.gunaGroupBox2);
+            this.gunaGroupBox_settings.Controls.Add(this.gbox_normal);
+            this.gunaGroupBox_settings.Controls.Add(this.txt_numerictime);
+            this.gunaGroupBox_settings.Controls.Add(this.btn_stop);
+            this.gunaGroupBox_settings.Controls.Add(this.lbl_numericrange);
+            this.gunaGroupBox_settings.Controls.Add(this.lbl_screentimems);
+            this.gunaGroupBox_settings.Controls.Add(this.lbl_time);
+            this.gunaGroupBox_settings.Controls.Add(this.btn_start);
+            this.gunaGroupBox_settings.Controls.Add(this.lbl_timesec);
+            this.gunaGroupBox_settings.Controls.Add(this.lbl_screentime);
+            this.gunaGroupBox_settings.Font = new System.Drawing.Font("Infoma Light", 10F);
+            this.gunaGroupBox_settings.LineColor = System.Drawing.Color.Gainsboro;
+            this.gunaGroupBox_settings.LineTop = 24;
+            this.gunaGroupBox_settings.Location = new System.Drawing.Point(15, 0);
+            this.gunaGroupBox_settings.Name = "gunaGroupBox_settings";
+            this.gunaGroupBox_settings.Size = new System.Drawing.Size(745, 170);
+            this.gunaGroupBox_settings.TabIndex = 52;
+            this.gunaGroupBox_settings.Text = "Uygulama Ayarları";
+            this.gunaGroupBox_settings.TextLocation = new System.Drawing.Point(330, 6);
+            // 
+            // lbl_quickaction4
+            // 
+            this.lbl_quickaction4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_quickaction4.AutoSize = true;
+            this.lbl_quickaction4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_quickaction4.Font = new System.Drawing.Font("Infoma Light", 8F);
+            this.lbl_quickaction4.Location = new System.Drawing.Point(493, 136);
+            this.lbl_quickaction4.Name = "lbl_quickaction4";
+            this.lbl_quickaction4.Size = new System.Drawing.Size(67, 11);
+            this.lbl_quickaction4.TabIndex = 79;
+            this.lbl_quickaction4.Text = "Hızlı Seçim 4";
+            this.lbl_quickaction4.Click += new System.EventHandler(this.lbl_quickaction4_Click);
+            // 
+            // gunaSeparator_quickactions
+            // 
+            this.gunaSeparator_quickactions.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gunaSeparator_quickactions.LineColor = System.Drawing.Color.Silver;
+            this.gunaSeparator_quickactions.Location = new System.Drawing.Point(400, 150);
+            this.gunaSeparator_quickactions.Name = "gunaSeparator_quickactions";
+            this.gunaSeparator_quickactions.Size = new System.Drawing.Size(160, 10);
+            this.gunaSeparator_quickactions.TabIndex = 66;
+            // 
+            // lbl_quickaction3
+            // 
+            this.lbl_quickaction3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_quickaction3.AutoSize = true;
+            this.lbl_quickaction3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_quickaction3.Font = new System.Drawing.Font("Infoma Light", 8F);
+            this.lbl_quickaction3.Location = new System.Drawing.Point(398, 136);
+            this.lbl_quickaction3.Name = "lbl_quickaction3";
+            this.lbl_quickaction3.Size = new System.Drawing.Size(67, 11);
+            this.lbl_quickaction3.TabIndex = 78;
+            this.lbl_quickaction3.Text = "Hızlı Seçim 3";
+            this.lbl_quickaction3.Click += new System.EventHandler(this.lbl_quickaction3_Click);
+            // 
+            // lbl_quickaction2
+            // 
+            this.lbl_quickaction2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_quickaction2.AutoSize = true;
+            this.lbl_quickaction2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_quickaction2.Font = new System.Drawing.Font("Infoma Light", 8F);
+            this.lbl_quickaction2.Location = new System.Drawing.Point(493, 117);
+            this.lbl_quickaction2.Name = "lbl_quickaction2";
+            this.lbl_quickaction2.Size = new System.Drawing.Size(67, 11);
+            this.lbl_quickaction2.TabIndex = 77;
+            this.lbl_quickaction2.Text = "Hızlı Seçim 2";
+            this.lbl_quickaction2.Click += new System.EventHandler(this.lbl_quickaction2_Click);
+            // 
+            // lbl_quickaction1
+            // 
+            this.lbl_quickaction1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_quickaction1.AutoSize = true;
+            this.lbl_quickaction1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_quickaction1.Font = new System.Drawing.Font("Infoma Light", 8F);
+            this.lbl_quickaction1.Location = new System.Drawing.Point(398, 117);
+            this.lbl_quickaction1.Name = "lbl_quickaction1";
+            this.lbl_quickaction1.Size = new System.Drawing.Size(65, 11);
+            this.lbl_quickaction1.TabIndex = 76;
+            this.lbl_quickaction1.Text = "Hızlı Seçim 1";
+            this.lbl_quickaction1.Click += new System.EventHandler(this.lbl_quickaction1_Click);
+            // 
+            // lbl_quickactions
+            // 
+            this.lbl_quickactions.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_quickactions.AutoSize = true;
+            this.lbl_quickactions.Font = new System.Drawing.Font("Infoma Light", 10F);
+            this.lbl_quickactions.Location = new System.Drawing.Point(452, 93);
+            this.lbl_quickactions.Name = "lbl_quickactions";
+            this.lbl_quickactions.Size = new System.Drawing.Size(53, 14);
+            this.lbl_quickactions.TabIndex = 75;
+            this.lbl_quickactions.Text = "Profiller";
             // 
             // btn_numericscreentimeupdown
             // 
@@ -165,6 +240,7 @@
             this.btn_numericscreentimeupdown.AnimationSpeed = 0.03F;
             this.btn_numericscreentimeupdown.BaseColor = System.Drawing.Color.Transparent;
             this.btn_numericscreentimeupdown.BorderColor = System.Drawing.Color.Black;
+            this.btn_numericscreentimeupdown.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_numericscreentimeupdown.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_numericscreentimeupdown.FocusedColor = System.Drawing.Color.Empty;
             this.btn_numericscreentimeupdown.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -208,6 +284,7 @@
             this.btn_numericrangeupdown2.AnimationSpeed = 0.03F;
             this.btn_numericrangeupdown2.BaseColor = System.Drawing.Color.Transparent;
             this.btn_numericrangeupdown2.BorderColor = System.Drawing.Color.Black;
+            this.btn_numericrangeupdown2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_numericrangeupdown2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_numericrangeupdown2.FocusedColor = System.Drawing.Color.Empty;
             this.btn_numericrangeupdown2.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -251,6 +328,7 @@
             this.btn_numericrangeupdown1.AnimationSpeed = 0.03F;
             this.btn_numericrangeupdown1.BaseColor = System.Drawing.Color.Transparent;
             this.btn_numericrangeupdown1.BorderColor = System.Drawing.Color.Black;
+            this.btn_numericrangeupdown1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_numericrangeupdown1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_numericrangeupdown1.FocusedColor = System.Drawing.Color.Empty;
             this.btn_numericrangeupdown1.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -294,6 +372,7 @@
             this.btn_numerictimeupdown.AnimationSpeed = 0.03F;
             this.btn_numerictimeupdown.BaseColor = System.Drawing.Color.Transparent;
             this.btn_numerictimeupdown.BorderColor = System.Drawing.Color.Black;
+            this.btn_numerictimeupdown.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_numerictimeupdown.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_numerictimeupdown.FocusedColor = System.Drawing.Color.Empty;
             this.btn_numerictimeupdown.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -343,6 +422,7 @@
             this.checkbox_mustasigntask.Size = new System.Drawing.Size(114, 20);
             this.checkbox_mustasigntask.TabIndex = 43;
             this.checkbox_mustasigntask.Text = "Görev Atamalı";
+            this.checkbox_mustasigntask.Click += new System.EventHandler(this.checkbox_mustasigntask_Click);
             // 
             // checkbox_gostergizle
             // 
@@ -791,7 +871,7 @@
             this.panel_colortable.Controls.Add(this.btn_color2);
             this.panel_colortable.Controls.Add(this.btn_color1);
             this.panel_colortable.LeftSahddow = false;
-            this.panel_colortable.Location = new System.Drawing.Point(1008, 206);
+            this.panel_colortable.Location = new System.Drawing.Point(500, 300);
             this.panel_colortable.Name = "panel_colortable";
             this.panel_colortable.RightSahddow = true;
             this.panel_colortable.ShadowDepth = 20;
@@ -1129,50 +1209,6 @@
             this.timer_playlistreverse.Interval = 1;
             this.timer_playlistreverse.Tick += new System.EventHandler(this.timer_playlistreverse_Tick);
             // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Infoma Light", 10F);
-            this.gunaLabel1.Location = new System.Drawing.Point(41, 144);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(53, 14);
-            this.gunaLabel1.TabIndex = 75;
-            this.gunaLabel1.Text = "Profiller";
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Infoma Light", 8F);
-            this.gunaLabel2.Location = new System.Drawing.Point(114, 145);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(65, 11);
-            this.gunaLabel2.TabIndex = 76;
-            this.gunaLabel2.Text = "Hızlı Seçim 1";
-            // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Infoma Light", 8F);
-            this.gunaLabel3.Location = new System.Drawing.Point(200, 145);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(67, 11);
-            this.gunaLabel3.TabIndex = 77;
-            this.gunaLabel3.Text = "Hızlı Seçim 2";
-            // 
-            // gunaLabel5
-            // 
-            this.gunaLabel5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.Font = new System.Drawing.Font("Infoma Light", 8F);
-            this.gunaLabel5.Location = new System.Drawing.Point(279, 145);
-            this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(67, 11);
-            this.gunaLabel5.TabIndex = 78;
-            this.gunaLabel5.Text = "Hızlı Seçim 3";
-            // 
             // ConstantAttention
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1185,7 +1221,7 @@
             this.Controls.Add(this.panel_mustasigntask);
             this.Controls.Add(this.panel_colortable);
             this.Controls.Add(this.lbl_process);
-            this.Controls.Add(this.gunaPanel1);
+            this.Controls.Add(this.panel_settings);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConstantAttention";
@@ -1193,9 +1229,9 @@
             this.Text = "MayaClient - Sürekli Dikkat Uygulaması";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ConstantAttention_Load);
-            this.gunaPanel1.ResumeLayout(false);
-            this.gunaGroupBox1.ResumeLayout(false);
-            this.gunaGroupBox1.PerformLayout();
+            this.panel_settings.ResumeLayout(false);
+            this.gunaGroupBox_settings.ResumeLayout(false);
+            this.gunaGroupBox_settings.PerformLayout();
             this.gunaGroupBox2.ResumeLayout(false);
             this.gunaGroupBox2.PerformLayout();
             this.gbox_normal.ResumeLayout(false);
@@ -1218,7 +1254,7 @@
 
         #endregion
 
-        private Guna.UI.WinForms.GunaPanel gunaPanel1;
+        private Guna.UI.WinForms.GunaPanel panel_settings;
         private Guna.UI.WinForms.GunaLabel lbl_time;
         private Guna.UI.WinForms.GunaLabel lbl_numericrange;
         private Guna.UI.WinForms.GunaLabel lbl_timesec;
@@ -1247,7 +1283,7 @@
         private System.Windows.Forms.Timer timer_hidetime;
         private Guna.UI.WinForms.GunaCheckBox checkbox_gostergizle;
         private Guna.UI.WinForms.GunaAdvenceButton btn_logout;
-        private Guna.UI.WinForms.GunaGroupBox gunaGroupBox1;
+        private Guna.UI.WinForms.GunaGroupBox gunaGroupBox_settings;
         private Guna.UI.WinForms.GunaGroupBox gunaGroupBox2;
         private Guna.UI.WinForms.GunaCheckBox checkbox_mustasigntask;
         private Guna.UI.WinForms.GunaPanel panel_mustasigntask;
@@ -1280,9 +1316,11 @@
         private Guna.UI.WinForms.GunaTextBox txt_numericrange2;
         private Guna.UI.WinForms.GunaButton btn_numericrangeupdown1;
         private Guna.UI.WinForms.GunaTextBox txt_numericrange1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel5;
-        private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaLabel lbl_quickaction3;
+        private Guna.UI.WinForms.GunaLabel lbl_quickaction2;
+        private Guna.UI.WinForms.GunaLabel lbl_quickaction1;
+        private Guna.UI.WinForms.GunaLabel lbl_quickactions;
+        private Guna.UI.WinForms.GunaLabel lbl_quickaction4;
+        private Guna.UI.WinForms.GunaSeparator gunaSeparator_quickactions;
     }
 }
